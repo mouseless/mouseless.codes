@@ -19,5 +19,8 @@ export default defineNuxtConfig({
         "remark-emoji": false
       }
     }
+  },
+  dir: {
+    public: ".public"
   }
 });
