@@ -1,3 +1,3 @@
-__404__
+# 404
 
 Page Not Found
