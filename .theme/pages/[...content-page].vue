@@ -1,5 +1,9 @@
 <template>
-  <ContentDoc v-if="!trailingSlash" />
+  <ContentDoc v-if="!trailingSlash">
+    <template #not-found>
+      <ContentDoc path="/not-found" :head="false" />
+    </template>
+  </ContentDoc>
 </template>
 <script setup>
 import { useRoute, onMounted } from "#imports";
