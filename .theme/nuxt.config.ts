@@ -23,6 +23,11 @@ export default defineNuxtConfig({
       }
     }
   },
+  router: {
+    options: {
+      strict: true
+    }
+  },
   dir: {
     public: ".public"
   }
