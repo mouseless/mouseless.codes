@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
+  typescript: {
+    typeCheck: true
+  },
   runtimeConfig: {
     public: {
       content: {
@@ -22,6 +25,9 @@ export default defineNuxtConfig({
         "remark-emoji": false
       }
     }
+  },
+  experimental: {
+    payloadExtraction: false
   },
   router: {
     options: {
