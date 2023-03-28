@@ -1,3 +1,3 @@
 <template>
-  Mouseless
+  <ContentDoc />
 </template>
