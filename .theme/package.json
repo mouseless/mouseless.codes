@@ -2,13 +2,28 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "prebuild": "npm run preparation",
+    "build": "npx nuxi build",
+    "predev": "npm run preparation --env=local",
+    "dev": "npx nuxi dev",
+    "predev:build": "npm run build --env=local",
+    "dev:build": "npx nuxi dev",
+    "pregenerate": "npx cross-var npm run build --env=$npm_config_env",
+    "generate": "npx cross-var npx nuxi generate --dotenv .env.$npm_config_env",
+    "generate:local": "npm run generate --env=local",
+    "generate:production": "npm run generate --env=production",
+    "postinstall": "npx nuxi prepare",
+    "prelocal": "npm run generate:local",
+    "local": "npx http-server .output/public -p 3000",
+    "preparation": "npx eslint . && npx cross-var node -r dotenv/config prebuild dotenv_config_path=.env.$npm_config_env"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/node": "^18.15.5",
+    "dotenv": "^16.0.3",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.9.0",
     "nuxt": "^3.3.2"
   }
 }
