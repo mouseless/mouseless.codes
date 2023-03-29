@@ -1,15 +1,16 @@
 <template>
   <ContentDoc v-if="!trailingSlash">
     <template #not-found>
-      <ContentDoc path="/not-found" :head="false" />
+      <ContentRenderer :value="notFound" />
     </template>
   </ContentDoc>
 </template>
 <script setup>
-import { useRoute, onMounted } from "#imports";
+import { useRoute, navigateTo, onMounted, queryContent } from "#imports";
 
 const route = useRoute();
 const trailingSlash = route.path !== "/" && route.path.endsWith("/");
+const notFound = await queryContent("/not-found").findOne();
 
 onMounted(async () => {
   if(trailingSlash) {
