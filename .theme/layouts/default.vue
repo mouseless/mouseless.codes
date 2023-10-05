@@ -10,7 +10,8 @@
 </template>
 <style lang="scss" scoped>
 header, article {
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
 }
 
