@@ -1,0 +1,1 @@
+import{k as a,l as c,S as s,r as o,o as t,U as l,V as _}from"./entry.0fb1a3c3.js";const d={},n=e=>(l("data-v-7475c0ca"),e=e(),_(),e),r=n(()=>s("header",null,[s("img",{class:"mouseless logo"})],-1));function u(e,p){return t(),c("div",null,[r,s("article",null,[o(e.$slots,"default",{},void 0,!0)])])}const i=a(d,[["render",u],["__scopeId","data-v-7475c0ca"]]);export{i as default};
