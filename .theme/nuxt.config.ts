@@ -14,7 +14,19 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    baseURL: process.env.BASE_URL
+    baseURL: process.env.BASE_URL,
+    head: {
+      meta: [
+        { charset: "utf-8" }
+      ],
+      link: [
+        {
+          rel: "stylesheet",
+          type: "text/css",
+          href: "https://mouseless.github.io/brand/assets/css/default.css"
+        }
+      ]
+    }
   },
   modules: [
     "@nuxt/content"
