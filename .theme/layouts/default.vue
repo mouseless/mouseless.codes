@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <img class="mouseless logo">
+      <a href="/"><img class="mouseless logo"></a>
     </header>
     <article>
       <slot />
@@ -10,7 +10,7 @@
 </template>
 <style lang="scss" scoped>
 header, article {
-  max-width: 1024px;
+  max-width: var(--width-content);
   width: 100%;
   margin: 0 auto;
 }

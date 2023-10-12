@@ -19,5 +19,11 @@ customers to focus their development teams on their core business concerns.
 
 Reach out.
 
-We are [here](https://github.com/mouseless) and
-[here](mailto:connect@mouseless.codes)
+We are [here][github] and [here][mail].
+
+---
+
+Tell me [more](./services.md).
+
+[github]: https://github.com/mouseless
+[mail]: mailto:connect@mouseless.codes
