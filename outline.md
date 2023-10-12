@@ -4,6 +4,8 @@ title: Site Outline
 
 ## What can we do for you?
 
+<!-- TODO -->
+
 - Service Cards
   - longterm partnership
     - Let's Talk / Meet
@@ -49,11 +51,43 @@ We own _how_ we do.
 We know that we're truly productive only when we do things in our way. So we
 take full responsibility and ownership of _how_ we develop.
 
-- our process
-- open source repos
-- learn repos
+We experiment, learn and progress.
+
+We sell our expertise through the software increments we develop for you.
+
+### Our Process
+
+<!-- TODO -->
+
+- Continuous delivery with short increments
+- Transparency through Draft PR’s, open discussions in github and clean commit
+  messages
+- Progressive in method, learn continuously
+- We provide you with a team lead as your single point of contact
+- You get a self-managing team of developers behind your contact
+- Give a little brief and let mouseless examine and develop what you need
+- With 3 days of development lead time on average
+- No minimum monthly work required. Pay-as-you-go.
+
+### Open Source
+
+We are open.
+
+Our development style produces high quality software but it requires a lot of
+effort. To maintain our services in high quality while being affordable, we've
+built a strong cross-pollination mindset. So we open source everything we own.
+
+### Continuous Learning
+
+<!-- TODO -->
+
+We are eager.
+
+<!-- I AM HERE -->
 
 ## What we've done
+
+<!-- TODO -->
 
 You own _what_ we do.
 
@@ -65,6 +99,8 @@ You own _what_ we do.
 - Place `Let's Talk / Meet` CTA here
 
 ## Who are we?
+
+<!-- TODO -->
 
 - Team
 - Culture and manifesto
