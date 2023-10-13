@@ -27,7 +27,23 @@ So we've chosen to be a collective.
 
 ## Team
 
-<!-- TODO -->
+Our [team][github-people] constists of independent engineers that committed to
+work with respect to our [process](./process.md). Each developer has a
+contribution rate that fits to their seniority in their field.
+
+```mermaid
+flowchart LR
+    1([x0.5])
+    2([x1])
+    3([x1.5])
+    4([x2])
+    5([x3])
+
+    1 --Junior--> 2
+    2 --Senior--> 3
+    3 --Lead--> 4
+    4 --Principal--> 5
+```
 
 ## Culture
 
@@ -36,3 +52,5 @@ So we've chosen to be a collective.
 - Our manifesto
 - We are a people-first organization
   > people-first might not be a good name
+
+[github-people]: https://github.com/orgs/mouseless/people
