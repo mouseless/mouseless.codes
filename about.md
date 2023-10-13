@@ -40,8 +40,8 @@ Mouseless and deliver software increments continuously.
 
 Exclusive in expertise, inclusive in conditions.
 
-Our [team][github-people] constists of independent engineers that committed to
-work with respect to our [process](./process.md). Each engineer has a
+Our [team][github-people] consists of independent engineers that are committed
+to work with respect to our [process](./process.md). Each engineer has a
 contribution rate that fits to their seniority in the field.
 
 ```mermaid
@@ -61,12 +61,12 @@ flowchart LR
 ### Join Us
 
 If you are a new graduate and looking for opportunities, we have this _fresh
-developer_ program. You join us as a new graduate. We teach you our way, assign
+engineer_ program. You join us as a new graduate. We teach you our way, assign
 you with real customer tasks and regraduate you after 2 years of hard work.
 
 Or if you are a software engineer and you feel like home when you read all of
-the things in this site, and liked what you've seen in [GitHub][github], let us
-know.
+the things in this site, and liked what you've seen in our [GitHub][github], let
+us know.
 
 Reach out from [here][mail].
 
