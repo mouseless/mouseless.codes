@@ -23,3 +23,8 @@ header {
   }
 }
 </style>
+<style lang="scss">
+p img {
+  max-width: 100%;
+}
+</style>

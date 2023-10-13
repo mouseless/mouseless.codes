@@ -25,11 +25,24 @@ choose its core product over the people.
 We think that this introduces a direct conflict with the idea of being a team.
 So we've chosen to be a collective.
 
-## Team
+```mermaid
+flowchart LR
+    Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
+```
+
+One of our engineers negotiates with a customer and brings their needs to the
+team. The individual who negotiates with the customer becomes the _Single Point
+of Contact_ and manages all the communication and operations, while we work as
+Mouseless and deliver software increments continuously.
+
+
+## The Team
+
+Exclusive in expertise, inclusive in conditions.
 
 Our [team][github-people] constists of independent engineers that committed to
-work with respect to our [process](./process.md). Each developer has a
-contribution rate that fits to their seniority in their field.
+work with respect to our [process](./process.md). Each engineer has a
+contribution rate that fits to their seniority in the field.
 
 ```mermaid
 flowchart LR
@@ -45,12 +58,30 @@ flowchart LR
     4 --Principal--> 5
 ```
 
-## Culture
+### Join Us
 
-<!-- TODO -->
+If you are a new graduate and looking for opportunities, we have this _fresh
+developer_ program. You join us as a new graduate. We teach you our way, assign
+you with real customer tasks and regraduate you after 2 years of hard work.
 
+Or if you are a software engineer and you feel like home when you read all of
+the things in this site, and liked what you've seen in [GitHub][github], let us
+know.
+
+Reach out from [here][mail].
+
+## The Culture
+
+- Love how we do
+- Embrace weirdness
+- Slow but sure
 - Our manifesto
-- We are a people-first organization
-  > people-first might not be a good name
+  - People first
+  - Hands on
+  - Keep it real
+  - Us before them
+  - No bullshit
 
 [github-people]: https://github.com/orgs/mouseless/people
+[github]: https://github.com/mouseless
+[mail]: mailto:connect@mouseless.codes
