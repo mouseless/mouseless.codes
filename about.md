@@ -72,15 +72,30 @@ Reach out from [here][mail].
 
 ## The Culture
 
-- Love how we do
-- Embrace weirdness
-- Slow but sure
-- Our manifesto
-  - People first
-  - Hands on
-  - Keep it real
-  - Us before them
-  - No bullshit
+_We strive for excellence._
+
+We view perfection as doing the best we can each day, understanding that it's a
+dynamic goal, not an unchanging ideal. With this perspective, we pursue
+excellence in our work every day.
+
+_We welcome the unconventional._
+
+It is our path to evolution. It involves trying and experimenting, embracing new
+approaches even when they make us feel strange and uneasy. We are perfectly fine
+with stepping out of the comfort zone, inviting the unconventional.
+
+_We love our profession._
+
+As software engineers, we constantly debate over better and cleaner ways to
+write code, even after its delivery. It's not just about the end product; it's
+the inherently elegant and intriguing nature of the work itself that keeps us
+engaged.
+
+_We are efficient._
+
+We prioritize quality over speed, understanding that haste can result in costly
+errors. To achieve a balance between quality and productivity, we employ
+effective scope management and incremental delivery.
 
 [github-people]: https://github.com/orgs/mouseless/people
 [github]: https://github.com/mouseless
