@@ -35,7 +35,6 @@ team. The individual who negotiates with the customer becomes the _Single Point
 of Contact_ and manages all the communication and operations, while we work as
 Mouseless and deliver software increments continuously.
 
-
 ## The Team
 
 Exclusive in expertise, inclusive in conditions.
