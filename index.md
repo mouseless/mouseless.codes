@@ -2,9 +2,7 @@
 title: Mouseless, A Software Development Colletive
 ---
 
-We like to develop software.
-
-Together.
+We like to develop software, together.
 
 ---
 

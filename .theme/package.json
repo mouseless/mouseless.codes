@@ -20,7 +20,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "log-symbols": "^6.0.0",
-    "nuxt": "^3.7.4",
+    "nuxt": "~3.7.4",
     "sass": "^1.69.4",
     "vue": "^3.3.6",
     "vue-router": "^4.2.5"
