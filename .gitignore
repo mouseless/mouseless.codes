@@ -1,27 +1,28 @@
-# Dependency directories
+# Node dependencies
 .theme/node_modules/
 
-# Nuxt build
+# Nuxt dev/build outputs
 .theme/.nuxt
 .theme/.nitro
 .theme/.cache
 .theme/.output
-
-# Nuxt generate
 .theme/dist
+.theme/.data
 
-# vscode files
+# Misc
 .editorconfig
 .vscode
 .vs
-
-# Vim swap files
 *.swp
+.DS_Store
+.fleet
+.idea
 
-# log file
-*.log*
+# Logs
+logs
+*.log
 
-# env files
+# Local env files
 .theme/.env.local
 
 # prebuild files

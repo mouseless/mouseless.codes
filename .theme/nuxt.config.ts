@@ -1,24 +1,7 @@
-import { defineNuxtConfig } from "nuxt/config";
-
 export default defineNuxtConfig({
-  typescript: {
-    typeCheck: true
-  },
-  runtimeConfig: {
-    public: {
-      content: {
-        anchorLinks: {
-          depth: 0
-        }
-      }
-    }
-  },
   app: {
-    baseURL: process.env.BASE_URL,
+    baseURL: process.env.NUXT_PUBLIC_BASE_URL,
     head: {
-      meta: [
-        { charset: "utf-8" }
-      ],
       link: [
         {
           rel: "stylesheet",
@@ -28,28 +11,43 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: [
-    "@nuxt/content"
-  ],
-  content: {
-    markdown: {
-      remarkPlugins: {
-        "remark-emoji": false
-      }
-    }
+  components: {
+    dirs: [
+      {
+        global: true,
+        path: "~/components/Prose"
+      },
+      "~/components"
+    ]
   },
-  experimental: {
-    payloadExtraction: false
-  },
-  router: {
-    options: {
-      strict: true
-    }
+  devtools: {
+    enabled: false
   },
   dir: {
     public: ".public"
   },
+  experimental: {
+    payloadExtraction: false
+  },
   generate: {
     routes: ["/not-found"]
+  },
+  modules: [ "@nuxt/content" ],
+  runtimeConfig: {
+    public: {
+      baseUrl: "",
+      mdc: {
+        headings: {
+          anchorLinks: {
+            h1: false,
+            h2: false,
+            h3: false,
+            h4: false,
+            h5: false,
+            h6: false
+          }
+        }
+      }
+    }
   }
 });

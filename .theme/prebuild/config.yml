@@ -38,6 +38,7 @@ tasks:
         backgroundColor: '#092122'
         theme: base
         deviceScaleFactor: 1
+        headless: new
         themeVariables:
           fontFamily: '"Roboto Mono", monospace'
           fontSize: '16px'
