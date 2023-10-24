@@ -13,7 +13,24 @@ where we take the full responsibility of software system(s) that you prefer to
 be dealt with externally so that you keep your focus on your core business
 concerns.
 
+## Custom Software Development
+
+We help you advance.
+
+We recommend our clients to develop only what is crucial for their core product
+vision and leverage ready-to-use software for the rest of their needs. Although
+this is feasible for start-ups or early-stage products of established companies,
+there is a turning point that you start to require a custom development even for
+complementary needs such as notification services, integration systems etc.
+
+This is where we kick in. We offer our services for you to keep your focus on
+your core business concerns without any compromise in your custom requirements.
+We are a self-managing software engineering team who takes care of its own
+technical-debts out of the box.
+
 ## Re-engineering
+
+We keep you focused.
 
 If your organization uses a custom software developed specifically to support
 your core operations, this software is likely to become legacy and lack the
@@ -27,11 +44,18 @@ responsibility of such systems. This way we aim to create a win-win situation,
 where you focus your work force on your core business challenges while we find a
 chance to solve several engineering challenges.
 
-## Custom Software Development
-
 ## Long-term Partnership
 
-- Let's Talk / Meet
+We trust.
+
+Software development requires a keen focus. It's not something that you can
+achieve through a short-term deal. As Mouseless, we believe that building trust
+is a prerequisite to have a high-performing team. Let's meet, build a long-term
+partnership and see what we can achieve together.
+
+Reach out.
+
+We are [here][github] and [here][mail].
 
 ## Skills
 
@@ -52,3 +76,6 @@ chance to solve several engineering challenges.
 - [process](./process.md)
 - [portfolio](./portfolio.md)
 - [about](./about.md)
+
+[github]: https://github.com/mouseless
+[mail]: mailto:connect@mouseless.codes
