@@ -80,7 +80,6 @@ We are [here][github] and [here][mail].
 ---
 
 - [process](./process.md)
-- [portfolio](./portfolio.md)
 - [about](./about.md)
 
 [github]: https://github.com/mouseless
