@@ -4,14 +4,14 @@ title: Services
 
 We offer our expertise through the software increments we develop.
 
-As a software development collective, we basically work on a __time &
-materials__ basis. We work as __a self managing team__ with a single point of
-contact assigned to you.
+As a software development collective, we work on a __time & materials__ basis.
+We work as __a self-managing team__ with a single point of contact assigned to
+you.
 
-Within this model we position ourselves as an __IT staff augmentation__ service,
-where we take the full responsibility of software system(s) that you prefer to
-be dealt with externally so that you keep your focus on your core business
-concerns.
+Within this model we position ourselves as an __IT staff augmentation__ service
+provider, where we take the full responsibility of software system(s) that you
+prefer to be dealt with externally so that you keep your focus on your core
+business concerns.
 
 ## Custom Software Development
 
@@ -57,6 +57,13 @@ Reach out.
 
 We are [here][github] and [here][mail].
 
+## Industries
+
+- Software Development
+- Fintech & Payment Services
+- Delivery Services
+- Sales Enablement
+
 ## Skills
 
 - technologies we are great at
@@ -64,12 +71,11 @@ We are [here][github] and [here][mail].
 - concepts we are great at
   - oop, ddd, agile project man etc.
 
-## Industries
+## Portfolio
 
-- Software Development
-- Fintech & Payment Services
-- Delivery Services
-- Sales Enablement
+- previous projects
+- current projects
+- ...
 
 ---
 
