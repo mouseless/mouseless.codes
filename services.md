@@ -28,6 +28,9 @@ your core business concerns without any compromise in your custom requirements.
 We are a self-managing software engineering team who takes care of its own
 technical-debts out of the box.
 
+Have a look at our [case studies](./case-studies.md) to get a better feeling of
+how we can help you.
+
 ## Re-engineering
 
 We keep you focused.
@@ -44,6 +47,9 @@ responsibility of such systems. This way we aim to create a win-win situation,
 where you focus your work force on your core business challenges while we find a
 chance to solve several engineering challenges.
 
+Have a look at our [case studies](./case-studies.md) to get a better feeling of
+how we can help you.
+
 ## Long-term Partnership
 
 We trust.
@@ -57,30 +63,10 @@ Reach out.
 
 We are [here][github] and [here][mail].
 
-## Industries
-
-- Software Development
-- Fintech & Payment Services
-- Delivery Services
-- Sales Enablement
-
-## Skills
-
-- technologies we are great at
-  - index by category, e.g., db, orm, platform, etc
-- concepts we are great at
-  - oop, ddd, agile project man etc.
-
-## Portfolio
-
-- previous projects
-- current projects
-- ...
-
 ---
 
-- [process](./process.md)
-- [about](./about.md)
+Want more? Dig in to learn about [our process](./process.md) and [who we
+are](./about.md).
 
 [github]: https://github.com/mouseless
 [mail]: mailto:connect@mouseless.codes
