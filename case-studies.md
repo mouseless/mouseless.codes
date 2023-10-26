@@ -2,6 +2,8 @@
 title: Case Studies
 ---
 
+<!-- TODO -->
+
 We help.
 
 Here you can find a list of how we helped our clients.
@@ -38,47 +40,57 @@ achieve their goals.
 
 ## Flopal
 
+[Flopal][] is a raised floor systems manifacturing company, operating since
+early '90s. Their internal business processes were renewed in 2013 with which
+they decided to develop a custom software solution for their production,
+procurement and sales processes.
+
+We're providing them with a well structured backend framework and a solid
+runtime admin UI generation tool so that they can be productive and responsive
+in terms of their custom software needs.
+
+### History
+
+Flopal has always been an enabler for us to discover our unique way of
+developing software. Thanks to this long-term partnership that goes back to
+2010, we were courageous when establishing our collective.
+
+### Overview
+
+- __Industry__: Construction
+- __Integrated Systems__: Logo
+- __Project Management__: GitHub, Discord
+
+### Tech Stack
+
+[![Bootstrap][logo-bootstrap]][bootstrap][![C#][logo-csharp]][csharp]
+[![.NET][logo-dotnet]][dotnet][![SQL Server][logo-sqlserver]][sqlserver]
+
 ## Inventiv
-
----
-
-# Industries
-
-- Software Development
-- Fintech & Payment Services
-- Delivery Services
-- Sales Enablement
-
-# Skills
-
-- technologies we are great at
-  - index by category, e.g., db, orm, platform, etc
-- concepts we are great at
-  - oop, ddd, agile project man etc.
-
-# Portfolio
-
-- previous projects
-- current projects
-- ...
 
 ---
 
 Want more? Dig in to learn about [our process](./process.md) and [who we
 are](./about.md).
 
+[Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/
 
 [aws]: https://aws.amazon.com/
+[bootstrap]: https://getbootstrap.com/
 [csharp]: https://dotnet.microsoft.com/en-us/languages/csharp
 [do]: https://do.mouseless.codes/
 [docker]: https://docker.com/
 [dotnet]: https://dotnet.microsoft.com/
 [mysql]: https://www.mysql.com/
+[sqlserver]: https://www.microsoft.com/en-us/sql-server
 
 [logo-aws]: //img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
+[logo-bootstrap]: //img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white
 [logo-csharp]: //img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white
 [logo-do]: //img.shields.io/badge/DO-000000?style=for-the-badge&label=&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9Im1hc2swXzEwMV8xNTE4IiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiPgo8cGF0aCBkPSJNMTAgMEgyMFYxMEgxMFYwWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTIwIDEwSDMwVjIwSDIwVjEwWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTMwIDIwSDQwVjMwSDMwVjIwWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTIwIDMwSDMwVjQwSDIwVjMwWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTEwIDQwSDIwVjUwSDEwVjQwWiIgZmlsbD0id2hpdGUiLz4KPC9tYXNrPgo8ZyBtYXNrPSJ1cmwoI21hc2swXzEwMV8xNTE4KSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iI0Y5NDY1QiIvPgo8L2c+Cjwvc3ZnPgo=
 [logo-docker]: //img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
 [logo-dotnet]: //img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white
 [logo-mysql]: //img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
+[logo-nhibernate]: //img.shields.io/badge/NHibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white
+[logo-sqlserver]: //img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white
