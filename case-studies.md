@@ -68,6 +68,36 @@ developing software. Thanks to this long-term partnership that goes back to
 
 ## Inventiv
 
+[Inventiv][] is founded as the technology subsidiary of _Multinet | Up_ and is a
+payment technology copmany. They have a strong in-house software development
+mindset for which they utilize a software development framework in .NET.
+
+We were directly responsible for the development of their in-house framework,
+[Gazel][], researching, applying new features of .NET, managing technology
+upgrades, delivering new features along with maintaining the documentation.
+
+Almost all of Inventiv's software runs on Gazel framework, everyday handling
+millions of payment transactions of _Multinet | Up_ with high-performance.
+
+### History
+
+We designed and developed _Multinet | Up_'s framework with the first version
+released in 2014. We also open-sourced the service framework, [Routine][] which
+is a technology that Gazel uses as a service framework on top of ASP.NET.
+
+This was a 10 year journey that helped us learn how to overcome struggles of
+creating an open-source product, for which we'll always be grateful.
+
+### Overview
+
+- __Industry__: Fintech
+- __Project Management__: GitHub, Azure DevOps, Microsoft Teams
+
+### Tech Stack
+
+[![C#][logo-csharp]][csharp][![.NET][logo-dotnet]][dotnet]
+[![Postgres][logo-postgres]][postgres][![SQL Server][logo-sqlserver]][sqlserver]
+
 ---
 
 Want more? Dig in to learn about [our process](./process.md) and [who we
@@ -75,6 +105,9 @@ are](./about.md).
 
 [Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/
+[Gazel]: https://gazel.io/
+[Inventiv]: https://inventiv.com.tr/en/home
+[Routine]: https://github.com/multinetinventiv/routine
 
 [aws]: https://aws.amazon.com/
 [bootstrap]: https://getbootstrap.com/
@@ -83,6 +116,7 @@ are](./about.md).
 [docker]: https://docker.com/
 [dotnet]: https://dotnet.microsoft.com/
 [mysql]: https://www.mysql.com/
+[postgres]: https://www.postgresql.org/
 [sqlserver]: https://www.microsoft.com/en-us/sql-server
 
 [logo-aws]: //img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
@@ -92,5 +126,5 @@ are](./about.md).
 [logo-docker]: //img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
 [logo-dotnet]: //img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white
 [logo-mysql]: //img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
-[logo-nhibernate]: //img.shields.io/badge/NHibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white
+[logo-postgres]: //img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
 [logo-sqlserver]: //img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white
