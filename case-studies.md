@@ -2,25 +2,28 @@
 title: Case Studies
 ---
 
-We work to create a collective value.
+We've built value, together.
+
+Explore our real-world success stories and discover how we've made a difference
+for our clients. These case studies provide insights into our custom software
+development and re-engineering projects, showcasing how we've helped businesses
+overcome challenges and achieve their goals.
 
 ## Forward
 
-[Forward][] is a sales enablement tool that helps B2B companies to increase
-their buyer engagement through digital sales rooms that can be shared with a
-single link.
+[Forward][] is a sales enablement tool that empowers B2B companies to enhance
+their buyer engagement through digital sales rooms, shared with a single link.
 
-Their product requires lots of integrations, especially to CRM systems. This is
-where we kicked in. We are currently helping them to create an integration
-gateway. This way we help them to keep their focus on the seller and buyer
-experience they create.
+Their product requires lots of integrations, particularly with CRM systems. This
+is where we came in. Currently, we are helping them establish an integration
+gateway, ensuring they can maintain their focus on enhencing the seller and
+buyer experience they provide.
 
 ### History
 
-We have worked in several projects with the team of Forward some of which goes
-back to 2015, even before our collective was born. Having this strong
-relationship in the background, we are more than happy to help Forwardians to
-achieve their goals.
+We have collaborated on several projects with the Forward team, with some
+datingback to 2015, even before our collective was born. With this strong
+relationship, we are happy to support Forwardians in achieving their goals.
 
 ### Overview
 
@@ -36,20 +39,20 @@ achieve their goals.
 
 ## Flopal
 
-[Flopal][] is a raised floor systems manifacturing company, operating since
-early '90s. Their internal business processes were renewed in 2014 with which
-they decided to develop a custom software solution for their production,
-procurement and sales processes.
+[Flopal][] is a manufacturer of raised floor systems, operating since the early
+'90s. In 2014, they initiated the modernization of their internal business
+processes and decided to create a custom software solution for their production,
+procurement and sales operations.
 
-We're providing them with a well structured backend framework and a solid
-runtime admin UI generation tool so that they can be productive and responsive
-in terms of their custom software needs.
+We're providing them with a well-structured backend framework and a robust
+runtime admin UI generation tool, enhancing their productivity and
+responsiveness to their custom software needs.
 
 ### History
 
-Flopal has always been an enabler for us to discover our unique way of
-developing software. Thanks to this long-term partnership that goes back to
-2011, we were courageous when establishing our collective.
+Flopal has always been an enabler for us in shaping our unique approach to
+software development. Our lasting partnership, dating back to 2011, empowered us
+to take bold steps in forming our collective.
 
 ### Overview
 
@@ -64,25 +67,29 @@ developing software. Thanks to this long-term partnership that goes back to
 
 ## Inventiv
 
-[Inventiv][] is founded as the technology subsidiary of _Multinet | Up_ and is a
-payment technology copmany. They have a strong in-house software development
-mindset for which they utilize a software development framework in .NET.
+[Inventiv][] is the technology subsidiary of _Multinet | Up_, specializing in
+payment technology. They have a strong in-house software development culture,
+providing us with the opportunity to explore innovative ways to develop
+software. This led us to create their backend framework, [Gazel][], and their
+service framework, [Routine][], both in .NET.
 
-We were directly responsible for the development of their in-house framework,
-[Gazel][], researching, applying new features of .NET, managing technology
-upgrades, delivering new features along with maintaining the documentation.
+We were directly responsible for Gazel's entire development. Our tasks included
+introducing new features, planning and managing releases, researching and
+implementing the latest .NET advancements into the framework, managing
+technology upgrades, and maintaining the framework's documentation.
 
-Almost all of Inventiv's software runs on Gazel framework, everyday handling
-millions of payment transactions of _Multinet | Up_ with high-performance.
+The majority of Inventiv's software runs on Gazel, efficiently processing
+millions of daily payment transactions for _Multinet | Up_ card users.
 
 ### History
 
-We designed and developed _Multinet | Up_'s framework with the first version
-released in 2014. We also open-sourced the service framework, [Routine][] which
-is a technology that Gazel uses as a service framework on top of ASP.NET.
+We initiated the design and development of _Multinet | Up_'s framework, with the
+first version released in 2014. We've open-sourced Routine, and turn their
+internal framework into the product it is today.
 
-This was a 10 year journey that helped us learn how to overcome struggles of
-creating an open-source product, for which we'll always be grateful.
+This 10 year journey has been invaluable in teaching us how to tackle the
+challenges of creating an open-source product, for which we'll always be
+grateful.
 
 ### Overview
 
@@ -96,8 +103,8 @@ creating an open-source product, for which we'll always be grateful.
 
 ---
 
-Want more? Dig in to learn about [our process](./process.md) and [who we
-are](./about.md).
+Interested in learning more? Explore [our process](./process.md) and discover
+[more about us](./about.md).
 
 [Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/
