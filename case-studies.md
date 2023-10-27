@@ -2,11 +2,7 @@
 title: Case Studies
 ---
 
-<!-- TODO -->
-
-We help.
-
-Here you can find a list of how we helped our clients.
+We work to create a collective value.
 
 ## Forward
 

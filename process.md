@@ -41,7 +41,7 @@ Our development style produces high quality software but it requires a lot of
 effort. To maintain our services in high quality while being affordable, we've
 built a strong cross-pollination mindset. So we open source everything we own.
 
-See what we've open sourced from [here][github-repos].
+See what we've [open sourced][github-repos].
 
 ### Continuous Learning
 
@@ -51,7 +51,7 @@ When we realize we don't know how to do something, we pause our active work, put
 on the learning hat and create a pull request in the corresponding `learn-`
 repository.
 
-See what we've been learning from [here][github-learn].
+See what we've been [learning][github-learn].
 
 [github-repos]: https://github.com/orgs/mouseless/repositories
 [github-learn]: https://github.com/mouseless?q=learn-

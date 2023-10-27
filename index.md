@@ -2,26 +2,34 @@
 title: Mouseless, A Software Development Colletive
 ---
 
-We like to develop software, together.
+We love to develop software, together.
 
 ---
 
-We are a software development collective that is centered around its engineers.
+We are a software development collective, bonded by our profession.
+
+Tell me [more](./about.md).
 
 ---
 
-We develop tailor-made software and re-engineer legacy code to help our
-customers to focus their development teams on their core business concerns.
+We offer custom software development and re-engineering services.
+
+Tell me [more](./services.md).
 
 ---
+
+We experiment, learn, and progress, documenting our insights and open-sourcing
+the artifacts we create.
+
+Tell me [more](./process.md).
+
+---
+
+Do you feel like we fit your needs?
 
 Reach out.
 
 We are [here][github] and [here][mail].
-
----
-
-Tell me [more](./services.md).
 
 [github]: https://github.com/mouseless
 [mail]: mailto:connect@mouseless.codes
