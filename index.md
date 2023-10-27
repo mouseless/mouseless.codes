@@ -6,26 +6,25 @@ We love to develop software, together.
 
 ---
 
-We are a software development collective, bonded by our profession.
+We are a software development collective, connected through our craft.
 
-Tell me [more](./about.md).
+[...see more](./about.md)
 
 ---
 
 We offer custom software development and re-engineering services.
 
-Tell me [more](./services.md).
+[...see more](./services.md)
 
 ---
 
-We experiment, learn, and progress, documenting our insights and open-sourcing
-the artifacts we create.
+We experiment, learn, and progress, open-sourcing the artifacts we create.
 
-Tell me [more](./process.md).
+[...see more](./process.md)
 
 ---
 
-Do you feel like we fit your needs?
+Do you think we meet your needs?
 
 Reach out.
 
