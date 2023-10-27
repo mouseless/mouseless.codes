@@ -37,7 +37,7 @@ achieve their goals.
 ## Flopal
 
 [Flopal][] is a raised floor systems manifacturing company, operating since
-early '90s. Their internal business processes were renewed in 2013 with which
+early '90s. Their internal business processes were renewed in 2014 with which
 they decided to develop a custom software solution for their production,
 procurement and sales processes.
 
@@ -49,7 +49,7 @@ in terms of their custom software needs.
 
 Flopal has always been an enabler for us to discover our unique way of
 developing software. Thanks to this long-term partnership that goes back to
-2010, we were courageous when establishing our collective.
+2011, we were courageous when establishing our collective.
 
 ### Overview
 
