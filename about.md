@@ -9,20 +9,6 @@ collective is a team of 3-7 software engineers guided by our people-centric
 philosophy. We prioritize excellence and efficiency, focusing on delivering
 quality work collaboratively.
 
-## Why a collective?
-
-We are people-centric.
-
-A collective is inherently centered around its people, creating an environment
-of communication and efficiency. In contrast, a business centers on its core
-product vision, emphasizing product delivery, regardless of obstacles.
-
-When faced with an inevitable choice between the product and the people,
-collectives lean toward their people, whereas businesses lean toward their
-products.
-
-Recognizing this, we've chosen to be a collective.
-
 ## Our Culture
 
 _We strive for excellence._
@@ -50,6 +36,12 @@ We prioritize quality over speed, understanding that rushing can result in
 costly errors. To achieve a balance between quality and productivity, we employ
 effective scope management and incremental delivery.
 
+_We are people-centric._
+
+We prioritize our people above all else, promoting open communication and
+efficiency. With this philosophy, our collective keeps its focus on its craft
+which eventually leads to excellence.
+
 ## Our Structure
 
 At Mouseless, we function as a cohesive software development collective. Our
@@ -66,13 +58,25 @@ for a client. This _Single Point of Contact_ manages all client communications
 and operations seamlessly while we, as Mouseless, focus on delivering software
 increments continuously.
 
+### Why a collective?
+
+A collective is inherently centered around its people, creating an environment
+of communication and efficiency. In contrast, a business centers on its core
+product vision, emphasizing product delivery, regardless of obstacles.
+
+When faced with an inevitable choice between the product and the people,
+collectives lean toward their people, whereas businesses lean toward their
+products.
+
+Recognizing this, we've chosen to be a collective.
+
 ## Our Team
 
-We are exclusive in expertise, open in participation.
+We are exclusive in expertise, inclusive in participation.
 
 Our [team][github-people] consists of independent engineers who are committed to
-work in accordane with our [process](./process.md). Each engineer's contribution
-aligns with their level of experience in the field.
+work in accordance with our [process](./process.md). Each engineer's
+contribution aligns with their level of experience in the field.
 
 ```mermaid
 flowchart LR
