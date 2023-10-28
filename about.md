@@ -2,46 +2,77 @@
 title: About
 ---
 
-We like to develop software, together.
+We love to develop software, together.
 
-We are a software development collective that is centered around its engineers.
-We develop tailor-made software and re-engineer legacy code to help our
-customers to focus their development teams on their core business concerns.
-
-We are, and will always be, a small team that consists of 3-7 software
-engineers.
+We are a software development collective, connected through our craft. Our
+collective is a team of 3-7 software engineers guided by our people-centric
+philosophy. We prioritize excellence and efficiency, focusing on delivering
+quality work collaboratively.
 
 ## Why a collective?
 
-People over business.
+We are people-centric.
 
-Teams are centered around their people. This property alone is a constant
-invitation for any team to be communicative, productive and creative.
+A collective is inherently centered around its people, creating an environment
+of communication and efficiency. In contrast, a business centers on its core
+product vision, emphasizing product delivery, regardless of obstacles.
 
-A business centric organization is centered around its core product vision. This
-means when a company have to choose between the product and the people, it will
-choose its core product over the people.
+When faced with an inevitable choice between the product and the people,
+collectives lean toward their people, whereas businesses lean toward their
+products.
 
-We think that this introduces a direct conflict with the idea of being a team.
-So we've chosen to be a collective.
+Recognizing this, we've chosen to be a collective.
+
+## Our Culture
+
+_We strive for excellence._
+
+We view perfection as doing the best we can each day, understanding that it's a
+dynamic goal, not an unchanging ideal. With this perspective, we pursue
+excellence in our work every day.
+
+_We welcome the unconventional._
+
+It is our path to evolution. It involves trying and experimenting, embracing new
+approaches even when they make us feel strange and uneasy. We are perfectly fine
+with stepping out of the comfort zone, inviting the unconventional.
+
+_We love our craft._
+
+As software engineers, we constantly debate over better and cleaner ways to
+write code, even after its delivery. It's not just about the end product; it's
+the inherently elegant and fascinating nature of the work itself that keeps us
+engaged.
+
+_We are efficient._
+
+We prioritize quality over speed, understanding that rushing can result in
+costly errors. To achieve a balance between quality and productivity, we employ
+effective scope management and incremental delivery.
+
+## Our Structure
+
+At Mouseless, we function as a cohesive software development collective. Our
+structure is designed to promote collaboration and communication, aligning with
+our people-centric philosophy.
 
 ```mermaid
 flowchart LR
     Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
 ```
 
-One of our engineers negotiates with a customer and brings their needs to the
-team. The individual who negotiates with the customer becomes the _Single Point
-of Contact_ and manages all the communication and operations, while we work as
-Mouseless and deliver software increments continuously.
+Within our collective, one of our engineers serves as the main point of contact
+for a client. This _Single Point of Contact_ manages all client communications
+and operations seamlessly while we, as Mouseless, focus on delivering software
+increments continuously.
 
-## The Team
+## Our Team
 
-Exclusive in expertise, inclusive in conditions.
+We are exclusive in expertise, open in participation.
 
-Our [team][github-people] consists of independent engineers that are committed
-to work with respect to our [process](./process.md). Each engineer has a
-contribution rate that fits to their seniority in the field.
+Our [team][github-people] consists of independent engineers who are committed to
+work in accordane with our [process](./process.md). Each engineer's contribution
+aligns with their level of experience in the field.
 
 ```mermaid
 flowchart LR
@@ -59,42 +90,20 @@ flowchart LR
 
 ### Join Us
 
-If you are a new graduate and looking for opportunities, we have this _fresh
-engineer_ program. You join us as a new graduate. We teach you our way, assign
-you with real customer tasks and regraduate you after 2 years of hard work.
+If you are a recent graduate seeking opportunities, consider our _Fresh
+Engineer_ program. You join us as a new graduate. We'll guide you through our
+way, assign you with real customer tasks, and regraduate you after two years of
+dedicated work.
 
-Or if you are a software engineer and you feel like home when you read all of
-the things in this site, and liked what you've seen in our [GitHub][github], let
-us know.
+Or, if you are an experienced software engineer and you think you align with our
+principles and appreciate what you've seen on our [GitHub][github], let us know.
 
-Reach out from [here][mail].
+You can reach out to us [here][mail].
 
-## The Culture
+---
 
-_We strive for excellence._
-
-We view perfection as doing the best we can each day, understanding that it's a
-dynamic goal, not an unchanging ideal. With this perspective, we pursue
-excellence in our work every day.
-
-_We welcome the unconventional._
-
-It is our path to evolution. It involves trying and experimenting, embracing new
-approaches even when they make us feel strange and uneasy. We are perfectly fine
-with stepping out of the comfort zone, inviting the unconventional.
-
-_We love our profession._
-
-As software engineers, we constantly debate over better and cleaner ways to
-write code, even after its delivery. It's not just about the end product; it's
-the inherently elegant and intriguing nature of the work itself that keeps us
-engaged.
-
-_We are efficient._
-
-We prioritize quality over speed, understanding that haste can result in costly
-errors. To achieve a balance between quality and productivity, we employ
-effective scope management and incremental delivery.
+Interested in learning more? Explore [our process](./process.md) and discover
+how [we can help](./services.md).
 
 [github-people]: https://github.com/orgs/mouseless/people
 [github]: https://github.com/mouseless
