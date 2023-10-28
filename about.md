@@ -106,8 +106,8 @@ You can reach out to us [here][mail].
 
 ---
 
-Interested in learning more? Explore [our process](./process.md) and discover
-how [we can help](./services.md).
+Interested in learning more? Explore [our services](./services.md) and discover
+[how we operate](./process.md).
 
 [github-people]: https://github.com/orgs/mouseless/people
 [github]: https://github.com/mouseless

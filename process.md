@@ -2,56 +2,62 @@
 title: Process
 ---
 
-We own _how_ we do.
-
-We know that we're truly productive only when we do things in our way. So we
-take full responsibility and ownership of _how_ we develop.
-
 We experiment, learn and progress.
 
-### Our Process
+We run on a flexible, pay-as-you-go model. We prioritize timely feature
+delivery, automated testing, code refactoring, and keeping technology up to date
+without extra cost.
 
-We are agile.
+## How We Work
 
-We are self-managing team of engineers. You give a little brief to your single
-point of contact. A self-managing team of engineers examine and develop what you
-need.
+We are self-organized.
 
-No commitment required, it is pay-as-you-go.
+We operate as a self-managing team of engineers. When you share your
+requirements with your single point of contact, our team of engineers take it
+from there. No long-term commitments required – it's a pay-as-you-go model.
 
-We respect all the technical necessities of being agile in software development.
+Our process includes;
 
-- We deliver features within __3 days__ of development lead time on average.
-- We utilize __automated tests__.
-- We __refactor__ constantly.
-- We update our technology __without any cost__ to our customers.
+- Delivering features with an average lead time of __3 days__.
+- Employing __automated tests__ for robustness.
+- Engaging in __constant refactoring__ to maintain code quality.
+- Keeping our technlogy up to date __at no extra cost__ to our clients.
 
-We create __transparency__ through;
+## Transparency Matters
 
-- draft pull requests that are opend as soon as a work has started
-- well detailed task lists
-- open discussions in GitHub
-- and clean commit messages.
+We value transparency.
 
-### Open Source
+To keep our clients informed, we maintain;
+
+- __Draft pull requests__ that are opened as soon as a work begins.
+- Well detailed __task lists__.
+- Open discussions in __GitHub__.
+- Clear __commit messages__.
+
+## Open Source
 
 We are open.
 
-Our development style produces high quality software but it requires a lot of
-effort. To maintain our services in high quality while being affordable, we've
-built a strong cross-pollination mindset. So we open source everything we own.
+While our development style produces high-quality software, it requires
+considerable effort. To provide top-tier services that are also cost-effective,
+we follow a philosophy of cross-pollination by open sourcing everything we own.
 
-See what we've [open sourced][github-repos].
+Explore our [open sourced projects][github-repos].
 
-### Continuous Learning
+## Continuous Learning
 
 We are eager.
 
-When we realize we don't know how to do something, we pause our active work, put
-on the learning hat and create a pull request in the corresponding `learn-`
+When we encounter something new, we pause our active work-in-progress, put on
+our learning hats and create a pull request in the corresponding `learn-`
 repository.
 
-See what we've been [learning][github-learn].
+Discover what we've been [learning][github-learn].
 
-[github-repos]: https://github.com/orgs/mouseless/repositories
-[github-learn]: https://github.com/mouseless?q=learn-
+---
+
+Interested in learning more? Explore [our services](./services.md) and discover
+[more about us](./about.md).
+
+[github-repos]: https://github.com/mouseless?type=public
+[github-learn]: https://github.com/orgs/mouseless/repositories?q=learn-&type=public

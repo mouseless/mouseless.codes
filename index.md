@@ -6,12 +6,6 @@ We love to develop software, together.
 
 ---
 
-We are a software development collective, connected through our craft.
-
-[...see more](./about.md)
-
----
-
 We offer custom software development and re-engineering services.
 
 [...see more](./services.md)
@@ -21,6 +15,12 @@ We offer custom software development and re-engineering services.
 We experiment, learn, and progress, open-sourcing the artifacts we create.
 
 [...see more](./process.md)
+
+---
+
+We are a software development collective, connected through our craft.
+
+[...see more](./about.md)
 
 ---
 
