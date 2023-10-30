@@ -1,1 +1,0 @@
-import{k as a,l as d,S as s,r as o,o as t,U as c,V as l}from"./entry.afca8381.js";const _={},n=e=>(c("data-v-9d1d14ea"),e=e(),l(),e),r=n(()=>s("header",null,[s("img",{class:"mouseless logo"})],-1));function u(e,p){return t(),d("div",null,[r,s("article",null,[o(e.$slots,"default",{},void 0,!0)])])}const i=a(_,[["render",u],["__scopeId","data-v-9d1d14ea"]]);export{i as default};
