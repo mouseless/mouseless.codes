@@ -70,12 +70,12 @@ products.
 
 Recognizing this, we've chosen to be a collective.
 
-## Our Team
+## Our People
 
 We are exclusive in expertise, inclusive in participation.
 
-Our [team][github-people] consists of independent engineers who are committed to
-work in accordance with our [process](./process.md). Each engineer's
+Our [people][github-people] consists of independent engineers who are committed
+to work in accordance with our [process](./process.md). Each engineer's
 contribution aligns with their level of experience in the field.
 
 ```mermaid

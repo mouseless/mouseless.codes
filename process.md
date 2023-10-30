@@ -12,11 +12,11 @@ without extra cost.
 
 We are self-organized.
 
-We operate as a self-managing team of engineers. When you share your
-requirements with your single point of contact, our team of engineers take it
-from there. No long-term commitments required – it's a pay-as-you-go model.
+We are a __self-managing__ team with a single point of contact assigned per
+client. We operate on a __time & materials__ basis without requiring a
+fixed-budget or a fixed-plan thanks to our fast response time.
 
-Our process includes;
+Our efficiency relies on;
 
 - Delivering features with an average lead time of __3 days__.
 - Employing __automated tests__ for robustness.
@@ -38,9 +38,11 @@ To keep our clients informed, we maintain;
 
 We are open.
 
-While our development style produces high-quality software, it requires
-considerable effort. To provide top-tier services that are also cost-effective,
-we follow a philosophy of cross-pollination by open sourcing everything we own.
+Our development style produces high-quality software which requires considerable
+effort. To provide top-tier services that are also cost-effective, we follow a
+philosophy of cross-pollination by open sourcing everything we own. This
+approach ensures our clients avoid potential risks of depending on a service
+provider and allows them to benefit from our total experience.
 
 Explore our [open sourced projects][github-repos].
 

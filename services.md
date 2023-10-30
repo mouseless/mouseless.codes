@@ -4,10 +4,6 @@ title: Services
 
 We offer our expertise through the software increments we develop.
 
-As a software development collective, we operate on a __time & materials__
-basis. We function as a __self-managing team__ with a single point of contact
-assigned to you.
-
 We position ourselves as a __staff augmentation__ service provider, offering
 full responsibility for software systems that you'd rather outsource. This
 allows you to maintain your focus on your core business concerns.
@@ -25,10 +21,10 @@ integration systems.
 That's where we come in. We offer our services to ensure you can maintain your
 focus on core business concerns without compromising your custom requirements.
 
-We're a self-managing software engineering team, handling the entire development
-process from design and planning to implementation, with all technical aspects,
-including maintenance and upgrades, professionally managed out of the box to
-ensure a seamless experience for you.
+We function as a self-managing software engineering team, handling the entire
+development process from design and planning to implementation, with all
+technical aspects, including maintenance and upgrades, professionally managed
+out of the box to ensure a seamless experience for you.
 
 Explore our [case studies](./case-studies.md) to have a better understanding of
 how we can assist you.

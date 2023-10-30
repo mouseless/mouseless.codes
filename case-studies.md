@@ -9,6 +9,43 @@ for our clients. These case studies provide insights into our custom software
 development and re-engineering projects, showcasing how we've helped businesses
 overcome challenges and achieve their goals.
 
+## Inventiv - Multinet | Up
+
+[Inventiv][] is the technology subsidiary of [Multinet | Up][], specializing in
+payment technology. They have a strong in-house software development culture,
+providing us with the opportunity to explore innovative ways to develop
+software. This led us to create their backend framework, [Gazel][], and their
+service framework, [Routine][], both in .NET.
+
+We were directly responsible for Gazel's entire development. Our tasks included
+introducing new features, planning and managing releases, researching and
+implementing the latest .NET advancements into the framework, managing
+technology upgrades, and maintaining the framework's documentation.
+
+The majority of Inventiv's software runs on Gazel, efficiently processing
+millions of daily payment transactions for _Multinet | Up_ card users.
+
+### History
+
+We initiated the design and development of _Multinet | Up_'s framework, with the
+first version released in 2014. We've open-sourced Routine, and turn their
+internal framework into the product it is today.
+
+This 10 year journey has been invaluable in teaching us how to tackle the
+challenges of creating an open-source product, for which we'll always be
+grateful.
+
+### Overview
+
+- __Industry__: Fintech
+- __Project Management__: GitHub, Azure DevOps, Microsoft Teams
+
+### Tech Stack
+
+[![C#][logo-csharp]][csharp][![.NET][logo-dotnet]][dotnet]
+[![Postgres][logo-postgres]][postgres][![RabbitMQ][logo-rabbitmq]][rabbitmq]
+[![SQL Server][logo-sqlserver]][sqlserver][![Vue.js][logo-vue]][vue]
+
 ## Forward
 
 [Forward][] is a sales enablement tool that empowers B2B companies to enhance
@@ -21,8 +58,8 @@ buyer experience they provide.
 
 ### History
 
-We have collaborated on several projects with the Forward team, with some
-datingback to 2015, even before our collective was born. With this strong
+We have collaborated on several projects with the Forward team, with some dating
+back to 2015, even before our collective was born. With this strong
 relationship, we are happy to support Forwardians in achieving their goals.
 
 ### Overview
@@ -65,42 +102,6 @@ to take bold steps in forming our collective.
 [![Bootstrap][logo-bootstrap]][bootstrap][![C#][logo-csharp]][csharp]
 [![.NET][logo-dotnet]][dotnet][![SQL Server][logo-sqlserver]][sqlserver]
 
-## Inventiv
-
-[Inventiv][] is the technology subsidiary of _Multinet | Up_, specializing in
-payment technology. They have a strong in-house software development culture,
-providing us with the opportunity to explore innovative ways to develop
-software. This led us to create their backend framework, [Gazel][], and their
-service framework, [Routine][], both in .NET.
-
-We were directly responsible for Gazel's entire development. Our tasks included
-introducing new features, planning and managing releases, researching and
-implementing the latest .NET advancements into the framework, managing
-technology upgrades, and maintaining the framework's documentation.
-
-The majority of Inventiv's software runs on Gazel, efficiently processing
-millions of daily payment transactions for _Multinet | Up_ card users.
-
-### History
-
-We initiated the design and development of _Multinet | Up_'s framework, with the
-first version released in 2014. We've open-sourced Routine, and turn their
-internal framework into the product it is today.
-
-This 10 year journey has been invaluable in teaching us how to tackle the
-challenges of creating an open-source product, for which we'll always be
-grateful.
-
-### Overview
-
-- __Industry__: Fintech
-- __Project Management__: GitHub, Azure DevOps, Microsoft Teams
-
-### Tech Stack
-
-[![C#][logo-csharp]][csharp][![.NET][logo-dotnet]][dotnet]
-[![Postgres][logo-postgres]][postgres][![SQL Server][logo-sqlserver]][sqlserver]
-
 ---
 
 Interested in learning more? Explore [our process](./process.md) and discover
@@ -110,6 +111,7 @@ Interested in learning more? Explore [our process](./process.md) and discover
 [Forward]: https://dealforward.com/
 [Gazel]: https://gazel.io/
 [Inventiv]: https://inventiv.com.tr/en/home
+[Multinet | Up]: https://multinet.com.tr/
 [Routine]: https://github.com/multinetinventiv/routine
 
 [aws]: https://aws.amazon.com/
@@ -120,7 +122,9 @@ Interested in learning more? Explore [our process](./process.md) and discover
 [dotnet]: https://dotnet.microsoft.com/
 [mysql]: https://www.mysql.com/
 [postgres]: https://www.postgresql.org/
+[rabbitmq]: https://www.rabbitmq.com/
 [sqlserver]: https://www.microsoft.com/en-us/sql-server
+[vue]: https://vuejs.org/
 
 [logo-aws]: //img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
 [logo-bootstrap]: //img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white
@@ -130,4 +134,6 @@ Interested in learning more? Explore [our process](./process.md) and discover
 [logo-dotnet]: //img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white
 [logo-mysql]: //img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
 [logo-postgres]: //img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
+[logo-rabbitmq]: //img.shields.io/badge/Rabbitmq-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white
 [logo-sqlserver]: //img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white
+[logo-vue]: //img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D
