@@ -34,6 +34,23 @@ tasks:
   - extractDiagrams:
       source: ./
       target: ./.theme/.temp
+      config:
+        backgroundColor: '#092122'
+        theme: base
+        deviceScaleFactor: 1
+        headless: new
+        themeVariables:
+          fontFamily: '"Roboto Mono", monospace'
+          fontSize: '16px'
+          primaryColor: '#fa465b'
+          primaryTextColor: '#f6f6f6'
+          primaryBorderColor': '#fa465b'
+          lineColor: '#888888'
+          secondaryColor: '#061819'
+          secondaryTextColor: '#cacaca'
+          secondaryBorderColor: '#061819'
+          tertiaryColor: '#163738'
+          activationBkgColor: '#fa465b'
   - move:
       extension: .png
       source: ./.theme/.temp
