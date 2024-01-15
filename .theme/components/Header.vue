@@ -27,3 +27,10 @@
     </nav>
   </header>
 </template>
+<style lang="scss" scoped>
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+</style>

@@ -8,7 +8,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-header, article {
+header, footer, article {
   max-width: var(--width-content);
   width: 100%;
   margin: 0 auto;
