@@ -9,7 +9,7 @@
 </template>
 <style lang="scss" scoped>
 header, footer, article {
-  max-width: var(--width-content);
+  max-width: calc(var(--width-content) + 70ch);
   width: 100%;
   margin: 0 auto;
 }
