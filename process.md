@@ -21,7 +21,7 @@ Our efficiency relies on;
 - Delivering features with an average lead time of __3 days__.
 - Employing __automated tests__ for robustness.
 - Engaging in __constant refactoring__ to maintain code quality.
-- Keeping our technlogy up to date __at no extra cost__ to our clients.
+- Keeping our technology up to date __at no extra cost__ to our clients.
 
 ## Transparency Matters
 
