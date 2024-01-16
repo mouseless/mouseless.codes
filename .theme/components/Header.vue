@@ -12,14 +12,14 @@
         :only="['_path', 'title', 'position']"
         :where="{
           _dir: { $eq: '' },
-          _path: { $ne: '/' },
+          _path: { $and: [ { $ne: '/footer'}, { $ne:'/header' }, { $ne:'/' }, { $ne:'/not-found' } ] },
         }"
       >
         <NuxtLink
           v-for="menu in menus"
           :key="menu.title"
+          :class="{ active: menu._path === root }"
           :to="menu._path == $route.path ? '' : menu._path"
-          :class="menu.position < 100 ? 'left' : 'right'"
         >
           {{ menu.title }}
         </NuxtLink>
@@ -27,6 +27,12 @@
     </nav>
   </header>
 </template>
+<script setup>
+import { useRoute } from "#imports";
+
+const route = useRoute();
+const root = computed(() => `/${route.path.split("/")[1]}`);
+</script>
 <style lang="scss" scoped>
 header {
     display: flex;

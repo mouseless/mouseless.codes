@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     }
   },
   components: {
+    global: true,
     dirs: [
       {
         global: true,
