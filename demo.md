@@ -5,7 +5,7 @@
 ::card
 ---
 align: left
-link:
+link: /demo
 ---
 
 ## Card Header
@@ -33,4 +33,38 @@ Lorem ipsum dolor sit amet
 
 - customer1
 - customer2
+::
+
+## Columns
+
+::columns
+#column 1
+
+::card
+---
+align: left
+link: /demo
+---
+
+## Card Header
+
+Lorem ipsum dolor sit amet
+
+![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+::
+
+#column 2
+
+::card
+---
+align: left
+link: /demo
+---
+
+## Card Header
+
+Lorem ipsum dolor sit amet
+
+![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+::
 ::
