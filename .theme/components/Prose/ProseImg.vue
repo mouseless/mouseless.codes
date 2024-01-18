@@ -32,7 +32,7 @@ const props = defineProps({
 const route = useRoute();
 
 const refinedSrc = computed(() => {
-  if(props.src.startsWith("//")) {
+  if(props.src.startsWith("//") || props.src.startsWith("http")) {
     return props.src;
   }
 
