@@ -11,7 +11,7 @@
       <div class="footer-content-area">
         <div class="logo">
           <NuxtLink to="/">
-            <img class="mouseless logo mark" />
+            <img class="mouseless logo mark">
           </NuxtLink>
           <ContentRenderer>
             <ContentRendererMarkdown :value="footer" />

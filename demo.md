@@ -68,3 +68,18 @@ Lorem ipsum dolor sit amet
 ![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
 ::
 ::
+
+## Slider
+
+::slider
+
+## Page 1
+
+page 1 content
+
+---
+
+## Page 2
+
+page 2 content
+::
