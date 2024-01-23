@@ -20,6 +20,9 @@
         >
       </button>
     </div>
+    <div class="boxes">
+      <div v-for="n in slides.length" :key="n" :class="{active : n - 1 == pageNumber}" />
+    </div>
   </div>
 </template>
 <script setup>
@@ -41,7 +44,8 @@ const current = computed(() => {
   grid-template-areas:
     "title title title title"
     "previous content content next"
-    "previous content content next";
+    "previous content content next"
+    ". boxes boxes .";
 
   .title {
     grid-area: title;
@@ -72,6 +76,25 @@ const current = computed(() => {
     button {
       background-color: transparent;
       border: 0;
+    }
+  }
+
+  .boxes {
+    grid-area: boxes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      border-radius: 50%;
+      border-width: 0.5;
+      background-color: gray;
+      width: 10px;
+      height: 10px;
+
+      &.active {
+        background-color: black;
+      }
     }
   }
 }
