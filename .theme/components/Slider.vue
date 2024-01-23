@@ -24,28 +24,14 @@
 </template>
 <script setup>
 const slots = useSlots();
-
-const elements = slots.default();
-const _slides = [];
-
-let hrIndex = 0;
-elements.forEach((element, index) => {
-  if(element.type.tag === "hr") {
-    _slides.push(h("div", {}, [...elements.slice(hrIndex, index)]));
-    hrIndex = index + 1;
-  }
-
-  if(index === elements.length - 1) {
-    _slides.push(h("div", {}, [...elements.slice(hrIndex, index + 1)]));
-  }
-});
+const slides = slots.default();
 
 const pageNumber = ref(0);
 const left = () => pageNumber.value > 0 ? pageNumber.value = pageNumber.value - 1 : pageNumber.value;
-const right = () => pageNumber.value < _slides.length ? pageNumber.value = pageNumber.value + 1 : pageNumber.value;
+const right = () => (pageNumber.value < slides.length - 1) ? pageNumber.value = pageNumber.value + 1 : pageNumber.value;
 
 const current = computed(() => {
-  return _slides[pageNumber.value];
+  return h("div", slides[pageNumber.value]);
 });
 </script>
 <style scoped lang="scss">

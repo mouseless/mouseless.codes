@@ -72,29 +72,34 @@ Lorem ipsum dolor sit amet
 ## Slider
 
 ::slider
+::::slide
 
 ## Page 1
 
 page 1 content
+::::
 
----
+::::slide
 
 ## Page 2
 
 page 2 content
+::::
 
----
+::::slide
 
 ![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+::::
 
----
+::::slide
 
-::card
+::::::card
 ---
 align: center
 ---
 # Card
 
 card component
-::
+::::::
+::::
 ::
