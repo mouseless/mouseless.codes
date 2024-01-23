@@ -82,4 +82,19 @@ page 1 content
 ## Page 2
 
 page 2 content
+
+---
+
+![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+
+---
+
+::card
+---
+align: center
+---
+# Card
+
+card component
+::
 ::

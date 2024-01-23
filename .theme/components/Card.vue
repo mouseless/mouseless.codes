@@ -57,6 +57,5 @@ defineProps({
       grid-row-end: 4;
     }
   }
-
 }
 </style>
