@@ -11,7 +11,7 @@
       </button>
     </div>
     <div class="content">
-      <current />
+      <slot :name="current" />
     </div>
     <div class="next">
       <button @click="right">
@@ -33,9 +33,7 @@ const pageNumber = ref(0);
 const left = () => pageNumber.value > 0 ? pageNumber.value = pageNumber.value - 1 : pageNumber.value;
 const right = () => (pageNumber.value < slideNames.length - 1) ? pageNumber.value = pageNumber.value + 1 : pageNumber.value;
 
-const current = computed(() => {
-  return h("div", slots[slideNames[pageNumber.value]]());
-});
+const current = computed(() => slideNames[pageNumber.value]);
 </script>
 <style scoped lang="scss">
 .slider-root {

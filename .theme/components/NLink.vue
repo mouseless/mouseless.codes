@@ -6,11 +6,21 @@
   </div>
 </template>
 <script setup>
-const props = defineProps({
+defineProps({
   to: {
     type: String,
     default: ""
   }
 });
-console.log(props);
 </script>
+<style lang="scss" scoped>
+.n-link {
+  background-color: var(--color-logo-mark);
+  padding-inline: 30px;
+  height: 50px;
+
+  a {
+    text-decoration: none;
+  }
+}
+</style>
