@@ -72,108 +72,72 @@ Lorem ipsum dolor sit amet
 ## Slider
 
 ::slider
-::::slide
+
+#slide1
 
 ## Page 1
 
 page 1 content
-::::
 
-::::slide
+#slide2
 
 ## Page 2
 
 page 2 content
-::::
 
-::::slide
+#slide3
 
 ![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
-::::
 
-::::slide
+#slide4
 
-::::::card
+::card
 ---
 align: center
 ---
 # Card
 
 card component
-::::::
-::::
+::
 ::
 
 ## Multiple Slider
 
 ::multiple-slider
 
-::::slider
-::::::slide
+#customer1
 
-## Page 1
+::slider
 
-page 1 content
-::::::
+#slide1
 
-::::::slide
+## Page customer1
 
-## Page 2
+page customer1 content
 
-page 2 content
-::::::
+#slide2
 
-::::::slide
+## Customer 1 Page 2
 
-![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+Customer 1 page 2 content
 
-::::::
+::
 
-::::::slide
+#customer2
 
-::::::::card
----
-align: center
----
+::slider
 
-# Card
+#slide1
 
-card component
-::::::::
+## customer2
 
-::::
+page customer2 content
 
-::::slider
+#slide2
 
-::::::slide
+## Customer 2 Page 2
 
-## Page 1
+Customer 2 page 2 content
 
-page 1 content
-::::::
-
-::::::slide
-
-## Page 2
-
-page 2 content
-::::::
-
-::::::slide
-
-![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
-::::::
-
-::::::slide
-
-::::::::card
----
-align: center
----
-# Card
-
-card component
-::::::::
-::::::
-::::
+::
 ::

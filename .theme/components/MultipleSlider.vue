@@ -1,18 +1,20 @@
 <template>
-  <div>
-    <div>
+  <div class="multiple-slider">
+    <div class="sections">
       <ul>
-        <li v-for="slot in slots" :key="slot">
-          {{ slot }}
+        <li v-for="(slot, index) in slotNames" :key="slot">
+          <button @click="() => currentSlider = index">
+            {{ slot }}
+          </button>
         </li>
       </ul>
     </div>
-    <div>
-      <slot :name="slots[1]" />
+    <div class="slider">
+      <slot :name="slotNames[currentSlider]" />
     </div>
   </div>
 </template>
 <script setup>
-const slots = Object.keys(useSlots());
-console.log(slots);
+const slotNames = Object.keys(useSlots());
+const currentSlider = ref(0);
 </script>
