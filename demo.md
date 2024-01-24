@@ -141,3 +141,16 @@ Customer 2 page 2 content
 
 ::
 ::
+
+## Contact Us
+
+::contact
+  ::::card
+    **Name:** Cihan Deniz
+    **Email:** cihan@gcbrains.com
+    **Tel:** -
+  ::::
+  ::::div
+  [Schedule Meeting](www.google.com)
+  ::::
+::
