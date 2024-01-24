@@ -38,7 +38,7 @@ const current = computed(() => slideNames[pageNumber.value]);
 <style scoped lang="scss">
 .slider-root {
   display: grid;
-  grid-template-columns: 50px 100px 100px 50px;
+  grid-template-columns: 50px 200px 200px 50px;
   grid-template-areas:
     "title title title title"
     "previous content content next"

@@ -103,56 +103,12 @@ card component
 
 ## Multiple Slider
 
-::multiple-slider
-
-#customer1
-
-::slider
-
-#slide1
-
-## Page customer1
-
-page customer1 content
-
-#slide2
-
-## Customer 1 Page 2
-
-Customer 1 page 2 content
-
-::
-
-#customer2
-
-::slider
-
-#slide1
-
-## customer2
-
-page customer2 content
-
-#slide2
-
-## Customer 2 Page 2
-
-Customer 2 page 2 content
-
-::
-::
+:github-prs-component
 
 ## Contact Us
 
 ::contact
-  ::::card
-    **Name:** Cihan Deniz
-    **Email:** cihan@gcbrains.com
-    **Tel:** -
-  ::::
-  ::::div
-  [Schedule Meeting](www.google.com)
-  ::::
+  Google calendar schedule form will be come here.
 ::
 
 ## Call To Action
