@@ -18,6 +18,7 @@ const count = computed(() => Object.keys(slots).length);
 </script>
 <style lang="scss" scoped>
 .container {
-    display: inline;
+  display: flex;
+  justify-content: space-evenly;
 }
 </style>
