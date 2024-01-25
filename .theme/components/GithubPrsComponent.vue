@@ -41,8 +41,7 @@ const repository = ref([]);
 onBeforeMount(async() => {
   const results = [];
   for(let i = 0; i < props.repos.length; i++) {
-    const result = await getActivePullRequests(props.repos[i]);
-    results.push(result);
+    results.push(await getActivePullRequests(props.repos[i]));
   }
 
   repository.value = results;

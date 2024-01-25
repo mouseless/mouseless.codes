@@ -117,7 +117,7 @@ card component
 
   # We value trust!
 
-  ::::n-link{to="https://www.mouseless.codes"}
+  ::::link-button{to="https://www.mouseless.codes"}
   Reach out!
   ::::
 ::

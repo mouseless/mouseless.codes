@@ -1,5 +1,5 @@
 <template>
-  <div class="n-link">
+  <div class="link-button" :class="name">
     <NuxtLink :to="to">
       <slot />
     </NuxtLink>
@@ -7,6 +7,10 @@
 </template>
 <script setup>
 defineProps({
+  name: {
+    type: String,
+    default: ""
+  },
   to: {
     type: String,
     default: ""
@@ -14,7 +18,7 @@ defineProps({
 });
 </script>
 <style lang="scss" scoped>
-.n-link {
+.link-button {
   background-color: var(--color-logo-mark);
   padding-inline: 30px;
   height: 50px;
