@@ -1,5 +1,5 @@
 <template>
-  <div class="link-button" :class="name">
+  <div class="link-button" :class="type">
     <NuxtLink :to="to">
       <slot />
     </NuxtLink>
@@ -7,7 +7,7 @@
 </template>
 <script setup>
 defineProps({
-  name: {
+  type: {
     type: String,
     default: ""
   },

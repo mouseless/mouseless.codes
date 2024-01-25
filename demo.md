@@ -1,6 +1,25 @@
 # Demo
 
-## Card Component
+## Bullet List
+
+::bullet-list
+
+- task 1
+- task 2
+::
+
+## Call To Action
+
+::call-to-action
+
+  # We value trust!
+
+  ::::link-button{to="https://www.mouseless.codes"}
+  Reach out!
+  ::::
+::
+
+## Card
 
 ::card
 ---
@@ -27,46 +46,18 @@ Lorem ipsum dolor sit amet
 
 ::
 
-## Bullet List Component
-
-::bullet-list
-
-- customer1
-- customer2
-::
-
 ## Columns
 
 ::columns
+
 #column 1
 
-::card
----
-align: left
-link: /demo
----
-
-## Card Header
-
-Lorem ipsum dolor sit amet
-
-![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
-::
+column 1
 
 #column 2
 
-::card
----
-align: left
-link: /demo
----
+column 2
 
-## Card Header
-
-Lorem ipsum dolor sit amet
-
-![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
-::
 ::
 
 ## Slider
@@ -75,49 +66,17 @@ Lorem ipsum dolor sit amet
 
 #slide1
 
-## Page 1
+## Slide 1
 
-page 1 content
+Slide 1
 
 #slide2
 
-## Page 2
+## Slide 2
 
-page 2 content
-
-#slide3
-
-![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
-
-#slide4
-
-::card
----
-align: center
----
-# Card
-
-card component
-::
+Slide 2
 ::
 
-## Multiple Slider
+## Repositories And Active Pull Requests
 
 :github-prs-component
-
-## Contact Us
-
-::contact
-  Google calendar schedule form will be come here.
-::
-
-## Call To Action
-
-::call-to-action
-
-  # We value trust!
-
-  ::::link-button{to="https://www.mouseless.codes"}
-  Reach out!
-  ::::
-::

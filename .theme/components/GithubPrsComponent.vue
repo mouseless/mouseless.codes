@@ -11,7 +11,7 @@
     </div>
     <div class="prs">
       <Slider>
-        <Slide v-for="pr in repository[currentSlider]" :key="pr.id">
+        <div v-for="pr in repository[currentSlider]" :key="pr.id" class="slide">
           <div class="title">
             <h2>
               <NuxtLink :to="pr.html_url">
@@ -22,7 +22,7 @@
           <div class="info">
             {{ pr.body }}
           </div>
-        </Slide>
+        </div>
       </Slider>
     </div>
   </div>
