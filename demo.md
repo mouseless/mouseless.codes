@@ -31,7 +31,7 @@ link: /demo
 
 Lorem ipsum dolor sit amet
 
-![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+![](//mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
 ::
 
 ::card
@@ -60,6 +60,10 @@ column 2
 
 ::
 
+## GitHub PRs Component
+
+:github-prs-component{:repos='["mouseless.codes", "do"]'}
+
 ## Slider
 
 ::slider
@@ -76,7 +80,3 @@ Slide 1
 
 Slide 2
 ::
-
-## Repositories And Active Pull Requests
-
-:github-prs-component

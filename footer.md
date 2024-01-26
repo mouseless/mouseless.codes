@@ -1,3 +1,3 @@
 ---
-copyRight: "Mouseless"
+copyright: "Mouseless"
 ---

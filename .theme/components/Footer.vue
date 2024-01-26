@@ -44,7 +44,7 @@
         </ContentQuery>
       </div>
       <div class="footer-copyright-area">
-        <span class="copyright-text"> &copy; {{ footer.copyRight }} </span>
+        <span class="copyright-text"> &copy; {{ footer.copyright }} </span>
       </div>
     </ContentQuery>
   </footer>
