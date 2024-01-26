@@ -12,7 +12,7 @@
         :only="['_path', 'title', 'position']"
         :where="{
           _dir: { $eq: '' },
-          _path: { $and: [ { $ne: '/footer'}, { $ne:'/header' }, { $ne:'/' }, { $ne:'/not-found' } ] },
+          _path: { $not: { $in: excludePath } },
         }"
       >
         <NuxtLink
@@ -29,7 +29,7 @@
 </template>
 <script setup>
 import { useRoute } from "#imports";
-
+const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/README"];
 const route = useRoute();
 const root = computed(() => `/${route.path.split("/")[1]}`);
 </script>

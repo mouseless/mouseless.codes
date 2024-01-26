@@ -22,7 +22,7 @@
           path="/"
           :where="{
             _dir: { $eq: '' },
-            _path: { $and: [ { $ne: '/footer'}, { $ne:'/header' }, { $ne:'/' }, { $ne:'/not-found' } ] },
+            _path: { $not: { $in: excludePath } },
           }"
         >
           <div class="links">
@@ -49,6 +49,9 @@
     </ContentQuery>
   </footer>
 </template>
+<script setup>
+const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/README"];
+</script>
 <style lang="scss" scoped>
 footer {
   display: flex;
@@ -59,7 +62,15 @@ footer {
 .footer-content-area {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
+  .logo {
+    left: 0px;
+  }
+
+  .links {
+    width: 100%;
+    justify-content: space-evenly;
+  }
 }
 
 .links {
