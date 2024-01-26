@@ -31,7 +31,7 @@ link: /demo
 
 Lorem ipsum dolor sit amet
 
-![](https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+![](//mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
 ::
 
 ::card
@@ -62,7 +62,7 @@ column 2
 
 ## Github PRs Component
 
-:github-prs-component{repos='["mouseless.codes", "do"]'}
+:github-prs-component{:repos='["mouseless.codes", "do"]'}
 
 ## Slider
 
