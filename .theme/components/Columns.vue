@@ -1,13 +1,15 @@
 <template>
-  <div class="container">
-    <div
-      v-for="i in Array(count)
-        .fill(0)
-        .map((_, i) => i)"
-      :key="i"
-      class="column"
-    >
-      <slot :name="`column ${i + 1}`" />
+  <div class="columns">
+    <div class="container">
+      <div
+        v-for="i in Array(count)
+          .fill(0)
+          .map((_, i) => i)"
+        :key="i"
+        class="column"
+      >
+        <slot :name="`column ${i + 1}`" />
+      </div>
     </div>
   </div>
 </template>

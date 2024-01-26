@@ -1,11 +1,13 @@
 <template>
   <div class="card">
-    <div class="content" :class="`align-${align}`">
-      <slot />
-      <div class="learn-more">
-        <NuxtLink v-if="link != null" :to="link">
-          Learn More...
-        </NuxtLink>
+    <div class="container">
+      <div class="content" :class="`align-${align}`">
+        <slot />
+        <div class="learn-more">
+          <NuxtLink v-if="link != null" :to="link">
+            Learn More...
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
@@ -23,7 +25,7 @@ defineProps({
 });
 </script>
 <style lang="scss">
-.card {
+.container {
   display: flex;
 
   .content {
