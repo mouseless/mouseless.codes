@@ -6,7 +6,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-.call-to-action {
+.container {
   display: flex;
   background-color: var(--color-bg-soft);
   flex-direction: column;

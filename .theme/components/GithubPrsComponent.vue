@@ -3,7 +3,7 @@
     <div class="repos">
       <ul>
         <li v-for="(repo, index) in repos" :key="repo">
-          <button @click="() => currentSlider = index">
+          <button @click="changeSlider(index)">
             {{ repo }}
           </button>
         </li>
@@ -11,18 +11,20 @@
     </div>
     <div class="prs">
       <Slider>
-        <div v-for="pr in repository[currentSlider]" :key="pr.id" class="slide">
-          <div class="title">
-            <h2>
-              <NuxtLink :to="pr.html_url">
-                {{ pr.title }}
-              </NuxtLink>
-            </h2>
+        <template v-for="pr in repository[currentSlider]" #[pr.id] :key="pr.id">
+          <div class="slide">
+            <div class="title">
+              <h2>
+                <NuxtLink :to="pr.html_url">
+                  {{ pr.title }}
+                </NuxtLink>
+              </h2>
+            </div>
+            <div class="info">
+              {{ pr.body }}
+            </div>
           </div>
-          <div class="info">
-            {{ pr.body }}
-          </div>
-        </div>
+        </template>
       </Slider>
     </div>
   </div>
@@ -31,7 +33,7 @@
 const props = defineProps({
   repos: {
     type: Array,
-    default: () => ["mouseless.codes", "do"]
+    default: () => []
   }
 });
 const { getActivePullRequests } = useGitHub();
@@ -40,14 +42,17 @@ const repository = ref([]);
 
 onBeforeMount(async() => {
   const results = [];
-  for(let i = 0; i < props.repos.length; i++) {
-    results.push(await getActivePullRequests(props.repos[i]));
+  for(const repo of props.repos) {
+    results.push(await getActivePullRequests(repo));
   }
 
   repository.value = results;
 });
 
 const currentSlider = ref(0);
+function changeSlider(index) {
+  currentSlider.value = index;
+}
 </script>
 <style lang="scss" scoped>
 .github-prs {

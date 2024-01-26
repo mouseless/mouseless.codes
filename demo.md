@@ -60,6 +60,10 @@ column 2
 
 ::
 
+## Github PRs Component
+
+:github-prs-component{repos='["mouseless.codes", "do"]'}
+
 ## Slider
 
 ::slider
@@ -76,7 +80,3 @@ Slide 1
 
 Slide 2
 ::
-
-## Repositories And Active Pull Requests
-
-:github-prs-component
