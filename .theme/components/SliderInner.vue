@@ -41,7 +41,7 @@ const left = () =>
     ? (pageNumber.value = pageNumber.value - 1)
     : pageNumber.value;
 const right = () =>
-  pageNumber.value < upToDateSlides.length - 1
+  pageNumber.value < upToDateSlides.value.length - 1
     ? (pageNumber.value = pageNumber.value + 1)
     : pageNumber.value;
 </script>
