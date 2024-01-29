@@ -10,22 +10,27 @@
       </ul>
     </div>
     <div class="prs">
-      <Slider>
-        <template v-for="pr in repository[currentSlider]" #[pr.id] :key="pr.id">
-          <div class="slide">
+      <SliderInner v-if="render" :slides="repository[currentSlider]">
+        <template #default="{pageNumber, slides}">
+          <div v-if="slides.length !== 0" class="slide">
             <div class="title">
               <h2>
-                <NuxtLink :to="pr.html_url">
-                  {{ pr.title }}
+                <NuxtLink :to="slides[pageNumber]?.html_url">
+                  {{ slides[pageNumber]?.title }}
                 </NuxtLink>
               </h2>
             </div>
             <div class="info">
-              {{ pr.body }}
+              {{ slides[pageNumber]?.body }}
             </div>
           </div>
+          <div v-else class="no-content">
+            <h3>
+              There is currently no active pull request.
+            </h3>
+          </div>
         </template>
-      </Slider>
+      </SliderInner>
     </div>
   </div>
 </template>
@@ -39,6 +44,8 @@ const props = defineProps({
 const { getActivePullRequests } = useGitHub();
 
 const repository = ref([]);
+const currentSlider = ref(0);
+const render = ref(false);
 
 onBeforeMount(async() => {
   const results = [];
@@ -47,9 +54,9 @@ onBeforeMount(async() => {
   }
 
   repository.value = results;
+  render.value = true;
 });
 
-const currentSlider = ref(0);
 function changeSlider(index) {
   currentSlider.value = index;
 }
