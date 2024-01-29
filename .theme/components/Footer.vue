@@ -8,15 +8,10 @@
         _path: { $eq: '/footer' },
       }"
     >
-      <div class="footer-content-area">
-        <div class="logo">
-          <NuxtLink to="/">
-            <img class="mouseless logo mark">
-          </NuxtLink>
-          <ContentRenderer>
-            <ContentRendererMarkdown :value="footer" />
-          </ContentRenderer>
-        </div>
+      <div class="content">
+        <ContentRenderer>
+          <ContentRendererMarkdown :value="footer" />
+        </ContentRenderer>
         <ContentQuery
           v-slot="{ data: menus }"
           path="/"
@@ -43,37 +38,40 @@
           </div>
         </ContentQuery>
       </div>
-      <div class="footer-copyright-area">
+      <div class="copyright">
+        <NuxtLink to="/">
+          <img class="mouseless logo mono">
+        </NuxtLink>
         <span class="copyright-text"> &copy; {{ footer.copyright }} </span>
       </div>
     </ContentQuery>
   </footer>
 </template>
 <script setup>
-const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/README"];
+const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
 </script>
 <style lang="scss" scoped>
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+  border-top: solid 2px var(--color-fg-box);
 
-.footer-content-area {
-  display: flex;
-  flex-direction: row;
+  .content {
+    display: flex;
+    flex-direction: row;
 
-  .logo {
-    left: 0px;
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 
-  .links {
-    width: 100%;
-    justify-content: space-evenly;
+  .copyright {
+    .logo {
+      opacity: 0.50;
+      height: 1em;
+    }
   }
-}
-
-.links {
-  display: flex;
 }
 </style>

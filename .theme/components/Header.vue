@@ -29,14 +29,19 @@
 </template>
 <script setup>
 import { useRoute } from "#imports";
-const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/README"];
+const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
 const route = useRoute();
 const root = computed(() => `/${route.path.split("/")[1]}`);
 </script>
 <style lang="scss" scoped>
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  nav a {
+    margin-left: 1em;
+  }
 }
 </style>
