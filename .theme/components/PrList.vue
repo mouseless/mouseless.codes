@@ -41,12 +41,11 @@ const props = defineProps({
     default: () => []
   }
 });
-const { getActivePullRequests } = useGitHub();
-
 const repository = ref([]);
 const currentSlider = ref(0);
 const render = ref(false);
 
+const { getActivePullRequests } = useGitHub();
 onBeforeMount(async() => {
   const results = [];
   for(const repo of props.repos) {
@@ -67,8 +66,10 @@ function changeSlider(index) {
   justify-content: space-around;
 
   .repos {
+
     li {
       margin: 30px;
+
       &::marker {
         content: none;
       }
@@ -89,7 +90,9 @@ function changeSlider(index) {
   }
 
   .prs {
+
     .title {
+
       a {
         text-decoration: none;
       }

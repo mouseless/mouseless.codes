@@ -6,8 +6,7 @@
   </SliderInner>
 </template>
 <script setup>
-const slots = useSlots();
-const slideNames = Object.keys(slots);
+const slideNames = Object.keys(useSlots());
 </script>
 <style scoped lang="scss">
 .slider-root {

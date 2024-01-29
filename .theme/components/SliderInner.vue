@@ -6,7 +6,7 @@
       </button>
     </div>
     <div class="content">
-      <slot :page-number="pageNumber" :slides="item" />
+      <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div class="next">
       <button @click="right">
@@ -30,10 +30,9 @@ const props = defineProps({
   }
 });
 
-const item = ref(props.slides);
-
+const upToDateSlides = ref(props.slides);
 watch(props, () => {
-  item.value = props.slides;
+  upToDateSlides.value = props.slides;
 });
 
 const pageNumber = ref(0);
@@ -42,7 +41,7 @@ const left = () =>
     ? (pageNumber.value = pageNumber.value - 1)
     : pageNumber.value;
 const right = () =>
-  pageNumber.value < props.slides.length - 1
+  pageNumber.value < upToDateSlides.length - 1
     ? (pageNumber.value = pageNumber.value + 1)
     : pageNumber.value;
 </script>
