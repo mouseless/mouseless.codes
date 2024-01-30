@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     }
   },
   components: {
+    global: true,
     dirs: [
       {
         global: true,
@@ -32,7 +33,7 @@ export default defineNuxtConfig({
   generate: {
     routes: ["/not-found"]
   },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/mdc"],
   runtimeConfig: {
     public: {
       baseUrl: "",
