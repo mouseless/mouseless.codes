@@ -1,3 +1,3 @@
 ---
-copyright: "Mouseless"
+copyright: "2024"
 ---

@@ -10,22 +10,27 @@
       </ul>
     </div>
     <div class="prs">
-      <Slider>
-        <template v-for="pr in repository[currentSlider]" #[pr.id] :key="pr.id">
-          <div class="slide">
+      <SliderInner v-if="render" :slides="repository[currentSlider]">
+        <template #default="{pageNumber, slides}">
+          <div v-if="slides.length !== 0" class="slide">
             <div class="title">
               <h2>
-                <NuxtLink :to="pr.html_url">
-                  {{ pr.title }}
+                <NuxtLink :to="slides[pageNumber]?.html_url">
+                  {{ slides[pageNumber]?.title }}
                 </NuxtLink>
               </h2>
             </div>
             <div class="info">
-              {{ pr.body }}
+              <MDC :value="slides[pageNumber]?.body" tag="article" />
             </div>
           </div>
+          <div v-else class="no-content">
+            <h3>
+              There are currently no active pull requests.
+            </h3>
+          </div>
         </template>
-      </Slider>
+      </SliderInner>
     </div>
   </div>
 </template>
@@ -36,9 +41,12 @@ const props = defineProps({
     default: () => []
   }
 });
+
 const { getActivePullRequests } = useGitHub();
 
 const repository = ref([]);
+const currentSlider = ref(0);
+const render = ref(false);
 
 onBeforeMount(async() => {
   const results = [];
@@ -47,9 +55,9 @@ onBeforeMount(async() => {
   }
 
   repository.value = results;
+  render.value = true;
 });
 
-const currentSlider = ref(0);
 function changeSlider(index) {
   currentSlider.value = index;
 }
@@ -60,32 +68,38 @@ function changeSlider(index) {
   justify-content: space-around;
 
   .repos {
+    margin-right: 1em;
 
-    li {
-      margin: 30px;
-      &::marker {
-        content: none;
-      }
+    ul {
+      padding: 0;
 
-      & button {
-        background-color: var(--color-bg-box);
-        border: 0cap;
-        color: aliceblue;
-        border-radius: 25px;
-        width: 200px;
-        height: 50px;
+      li {
+        margin-bottom: 1em;
 
-        &:hover {
-          background-color: var(--color-fg-box);
+        &::marker {
+          content: none;
+        }
+
+        & button {
+          background-color: var(--color-bg-soft);
+          border: 0cap;
+          color: var(--color-fg);
+          cursor: pointer;
+          border-radius: 25px;
+          width: 100%;
+          height: 50px;
+          padding: 0px 30px;
+
+          &:hover {
+            background-color: var(--color-bg-mute);
+          }
         }
       }
     }
   }
 
   .prs {
-
     .title {
-
       a {
         text-decoration: none;
       }

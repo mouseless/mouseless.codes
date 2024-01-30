@@ -60,9 +60,9 @@ column 2
 
 ::
 
-## Github PRs Component
+## PR List
 
-:github-prs-component{:repos='["mouseless.codes", "do"]'}
+:pr-list{:repos='["mouseless.codes", "do"]'}
 
 ## Slider
 

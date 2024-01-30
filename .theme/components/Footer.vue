@@ -8,10 +8,10 @@
         _path: { $eq: '/footer' },
       }"
     >
-      <div class="footer-content-area">
-        <div class="logo">
+      <div class="content">
+        <div>
           <NuxtLink to="/">
-            <img class="mouseless logo mark">
+            <img class="mouseless logo mono">
           </NuxtLink>
           <ContentRenderer>
             <ContentRendererMarkdown :value="footer" />
@@ -26,54 +26,46 @@
           }"
         >
           <div class="links">
-            <div v-for="menu in menus" :key="menu.title" class="link">
-              <h5>
+            <ul>
+              <li v-for="menu in menus" :key="menu.title" class="link">
                 <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
                   {{ menu.title }}
                 </NuxtLink>
-              </h5>
-              <ul>
-                <li v-for="link in menu?.body.toc.links" :key="link.id">
-                  <NuxtLink :to="menu._path + '#' + link.id">
-                    {{ link.text }}
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
+              </li>
+            </ul>
           </div>
         </ContentQuery>
       </div>
-      <div class="footer-copyright-area">
-        <span class="copyright-text"> &copy; {{ footer.copyright }} </span>
+      <div class="copyright">
+        <br>
+        <span class="copyright-text"> Mouseless &copy; {{ footer.copyright }} </span>
       </div>
     </ContentQuery>
   </footer>
 </template>
 <script setup>
-const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/README"];
+const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
 </script>
 <style lang="scss" scoped>
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer-content-area {
-  display: flex;
-  flex-direction: row;
+  margin-top: 2em;
+  border-top: solid 2px var(--color-fg-box);
 
   .logo {
-    left: 0px;
+    opacity: 0.50;
+    height: 1em;
   }
 
-  .links {
-    width: 100%;
-    justify-content: space-evenly;
-  }
-}
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1em;
 
-.links {
-  display: flex;
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 }
 </style>
