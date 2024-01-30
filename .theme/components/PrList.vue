@@ -21,12 +21,12 @@
               </h2>
             </div>
             <div class="info">
-              {{ slides[pageNumber]?.body }}
+              <MDC :value="slides[pageNumber]?.body" tag="article" />
             </div>
           </div>
           <div v-else class="no-content">
             <h3>
-              There is currently no active pull request.
+              There are currently no active pull requests.
             </h3>
           </div>
         </template>
@@ -41,11 +41,13 @@ const props = defineProps({
     default: () => []
   }
 });
+
+const { getActivePullRequests } = useGitHub();
+
 const repository = ref([]);
 const currentSlider = ref(0);
 const render = ref(false);
 
-const { getActivePullRequests } = useGitHub();
 onBeforeMount(async() => {
   const results = [];
   for(const repo of props.repos) {
@@ -66,33 +68,38 @@ function changeSlider(index) {
   justify-content: space-around;
 
   .repos {
+    margin-right: 1em;
 
-    li {
-      margin: 30px;
+    ul {
+      padding: 0;
 
-      &::marker {
-        content: none;
-      }
+      li {
+        margin-bottom: 1em;
 
-      & button {
-        background-color: var(--color-bg-box);
-        border: 0cap;
-        color: aliceblue;
-        border-radius: 25px;
-        width: 200px;
-        height: 50px;
+        &::marker {
+          content: none;
+        }
 
-        &:hover {
-          background-color: var(--color-fg-box);
+        & button {
+          background-color: var(--color-bg-soft);
+          border: 0cap;
+          color: var(--color-fg);
+          cursor: pointer;
+          border-radius: 25px;
+          width: 100%;
+          height: 50px;
+          padding: 0px 30px;
+
+          &:hover {
+            background-color: var(--color-bg-mute);
+          }
         }
       }
     }
   }
 
   .prs {
-
     .title {
-
       a {
         text-decoration: none;
       }

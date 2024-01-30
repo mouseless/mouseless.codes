@@ -11,7 +11,8 @@
 header, footer, article {
   max-width: var(--width-content);
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {

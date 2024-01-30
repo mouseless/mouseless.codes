@@ -55,6 +55,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 2em;
   border-top: solid 2px var(--color-fg-box);
 
   .content {

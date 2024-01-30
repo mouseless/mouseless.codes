@@ -48,19 +48,16 @@ const right = () =>
 <style scoped lang="scss">
 .slider-root {
   display: grid;
-  grid-template-columns: 50px 200px 200px 50px;
+  grid-template-columns: 50px auto 50px;
   grid-template-areas:
-    "previous content content next"
-    "previous content content next"
-    ". boxes boxes .";
+    "previous content next"
+    "previous content next"
+    ". boxes .";
 
   .previous {
     grid-area: previous;
 
     button {
-      background-color: transparent;
-      border: 0;
-
       img {
         transform: scaleX(-1);
         object-fit: cover;
@@ -70,14 +67,29 @@ const right = () =>
 
   .content {
     grid-area: content;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: var(--color-bg-box);
+    border-radius: var(--border-radius);
+    padding: var(--border-radius);
   }
 
   .next {
     grid-area: next;
+  }
+
+  .next, .previous {
+    display: flex;
+    justify-content: center;
 
     button {
       background-color: transparent;
       border: 0;
+
+      img {
+        cursor: pointer;
+        height: 25px;
+      }
     }
   }
 
@@ -86,6 +98,7 @@ const right = () =>
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 
     div {
       border-radius: 50%;
@@ -99,5 +112,10 @@ const right = () =>
       }
     }
   }
+}
+</style>
+<style lang="scss">
+.slider-root .content h2 {
+  margin-top: 0;
 }
 </style>
