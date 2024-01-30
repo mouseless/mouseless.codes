@@ -1,3 +1,3 @@
 ---
-copyright: "(c) 2024"
+copyright: "2024"
 ---

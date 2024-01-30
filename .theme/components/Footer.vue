@@ -9,9 +9,14 @@
       }"
     >
       <div class="content">
-        <ContentRenderer>
-          <ContentRendererMarkdown :value="footer" />
-        </ContentRenderer>
+        <div>
+          <NuxtLink to="/">
+            <img class="mouseless logo mono">
+          </NuxtLink>
+          <ContentRenderer>
+            <ContentRendererMarkdown :value="footer" />
+          </ContentRenderer>
+        </div>
         <ContentQuery
           v-slot="{ data: menus }"
           path="/"
@@ -21,28 +26,19 @@
           }"
         >
           <div class="links">
-            <div v-for="menu in menus" :key="menu.title" class="link">
-              <h5>
+            <ul>
+              <li v-for="menu in menus" :key="menu.title" class="link">
                 <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
                   {{ menu.title }}
                 </NuxtLink>
-              </h5>
-              <ul>
-                <li v-for="link in menu?.body.toc.links" :key="link.id">
-                  <NuxtLink :to="menu._path + '#' + link.id">
-                    {{ link.text }}
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
+              </li>
+            </ul>
           </div>
         </ContentQuery>
       </div>
       <div class="copyright">
-        <NuxtLink to="/">
-          <img class="mouseless logo mono">
-        </NuxtLink>
-        <span class="copyright-text"> &copy; {{ footer.copyright }} </span>
+        <br>
+        <span class="copyright-text"> Mouseless &copy; {{ footer.copyright }} </span>
       </div>
     </ContentQuery>
   </footer>
@@ -52,26 +48,23 @@ const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"
 </script>
 <style lang="scss" scoped>
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-top: 2em;
   border-top: solid 2px var(--color-fg-box);
+
+  .logo {
+    opacity: 0.50;
+    height: 1em;
+  }
 
   .content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1em;
 
     .links {
       display: flex;
       justify-content: space-evenly;
-    }
-  }
-
-  .copyright {
-    .logo {
-      opacity: 0.50;
-      height: 1em;
     }
   }
 }
