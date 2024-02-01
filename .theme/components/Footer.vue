@@ -25,9 +25,9 @@
             _path: { $not: { $in: excludePath } },
           }"
         >
-          <div class="links">
+          <div class="content__links">
             <ul>
-              <li v-for="menu in menus" :key="menu.title" class="link">
+              <li v-for="menu in menus" :key="menu.title" class="content__link">
                 <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
                   {{ menu.title }}
                 </NuxtLink>
@@ -38,7 +38,7 @@
       </div>
       <div class="copyright">
         <br>
-        <span class="copyright-text"> Mouseless &copy; {{ footer.copyright }} </span>
+        <span class="copyright__text"> Mouseless &copy; {{ footer.copyright }} </span>
       </div>
     </ContentQuery>
   </footer>
@@ -62,7 +62,7 @@ footer {
     justify-content: space-between;
     padding-top: 1em;
 
-    .links {
+    &__links {
       display: flex;
       justify-content: space-evenly;
     }

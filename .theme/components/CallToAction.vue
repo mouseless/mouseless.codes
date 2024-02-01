@@ -1,12 +1,10 @@
 <template>
   <div class="call-to-action">
-    <div class="container">
-      <slot />
-    </div>
+    <slot />
   </div>
 </template>
 <style lang="scss" scoped>
-.container {
+.call-to-action {
   display: flex;
   background-color: var(--color-bg-soft);
   flex-direction: column;

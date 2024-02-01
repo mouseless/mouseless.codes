@@ -5,7 +5,7 @@
         <img class="mouseless logo">
       </NuxtLink>
     </div>
-    <nav>
+    <nav class="menu">
       <ContentQuery
         v-slot="{ data: menus }"
         path="/"
@@ -18,8 +18,9 @@
         <NuxtLink
           v-for="menu in menus"
           :key="menu.title"
-          :class="{ active: menu._path === root }"
+          :class="{ 'menu__link--active': menu._path === root }"
           :to="menu._path == $route.path ? '' : menu._path"
+          class="menu__link"
         >
           {{ menu.title }}
         </NuxtLink>
@@ -40,8 +41,11 @@ header {
   flex-direction: row;
   justify-content: space-between;
 
-  nav a {
-    margin-left: 1em;
+  .menu {
+
+    &__link {
+      margin-left: 1em;
+    }
   }
 }
 </style>

@@ -1,13 +1,11 @@
 <template>
   <div class="card">
-    <div class="container">
-      <div class="content" :class="`align-${align}`">
-        <slot />
-        <div class="learn-more">
-          <NuxtLink v-if="link != null" :to="link">
-            Learn More...
-          </NuxtLink>
-        </div>
+    <div class="card__content" :class="`card__content--align_${align}`">
+      <slot />
+      <div class="card__learn-more">
+        <NuxtLink v-if="link != null" :to="link">
+          Learn More...
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -25,10 +23,10 @@ defineProps({
 });
 </script>
 <style lang="scss">
-.container {
+.card {
   display: flex;
 
-  .content {
+  &__content {
     display: grid;
 
     h2 {
@@ -51,13 +49,13 @@ defineProps({
         grid-row-end: 3;
       }
     }
+  }
 
-    .learn-more {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 4;
-      grid-row-end: 4;
-    }
+  &__learn-more {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
   }
 }
 </style>

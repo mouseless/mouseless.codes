@@ -1,6 +1,6 @@
 <template>
-  <div class="github-prs">
-    <div class="repos">
+  <div class="github">
+    <div class="github__repos">
       <ul>
         <li v-for="(repo, index) in repos" :key="repo">
           <button @click="changeSlider(index)">
@@ -9,18 +9,18 @@
         </li>
       </ul>
     </div>
-    <div class="prs">
+    <div class="github__prs">
       <SliderInner v-if="render" :slides="repository[currentSlider]">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0" class="slide">
-            <div class="title">
+            <div class="slide__title">
               <h2>
                 <NuxtLink :to="slides[pageNumber]?.html_url">
                   {{ slides[pageNumber]?.title }}
                 </NuxtLink>
               </h2>
             </div>
-            <div class="info">
+            <div class="slide__body">
               <MDC :value="slides[pageNumber]?.body" tag="article" />
             </div>
           </div>
@@ -63,11 +63,11 @@ function changeSlider(index) {
 }
 </script>
 <style lang="scss" scoped>
-.github-prs {
+.github {
   display: flex;
   justify-content: space-around;
 
-  .repos {
+  &__repos {
     margin-right: 1em;
 
     ul {
@@ -98,8 +98,10 @@ function changeSlider(index) {
     }
   }
 
-  .prs {
-    .title {
+  .slide {
+
+    &__title {
+
       a {
         text-decoration: none;
       }

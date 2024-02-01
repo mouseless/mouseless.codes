@@ -1,23 +1,24 @@
 <template>
-  <div class="slider-root">
-    <div class="previous">
+  <div class="slider">
+    <div class="slider__previous">
       <button @click="left">
         <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
       </button>
     </div>
-    <div class="content">
+    <div class="slider__content">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div class="next">
+    <div class="slider__next">
       <button @click="right">
         <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
       </button>
     </div>
-    <div class="boxes">
+    <div class="slider__thumb">
       <div
         v-for="n in slides.length"
         :key="n"
-        :class="{ active: n - 1 == pageNumber }"
+        :class="{ 'slider__dot--active': n - 1 == pageNumber }"
+        class="slider__dot"
       />
     </div>
   </div>
@@ -46,7 +47,7 @@ const right = () =>
     : pageNumber.value;
 </script>
 <style scoped lang="scss">
-.slider-root {
+.slider {
   display: grid;
   grid-template-columns: 50px auto 50px;
   grid-template-areas:
@@ -54,7 +55,7 @@ const right = () =>
     "previous content next"
     ". boxes .";
 
-  .previous {
+  &__previous {
     grid-area: previous;
 
     button {
@@ -65,7 +66,7 @@ const right = () =>
     }
   }
 
-  .content {
+  &__content {
     grid-area: content;
     max-height: 300px;
     overflow: hidden;
@@ -74,11 +75,11 @@ const right = () =>
     padding: var(--border-radius);
   }
 
-  .next {
+  &__next {
     grid-area: next;
   }
 
-  .next, .previous {
+  &__next, &__previous {
     display: flex;
     justify-content: center;
 
@@ -93,21 +94,21 @@ const right = () =>
     }
   }
 
-  .boxes {
+  &__thumb {
     grid-area: boxes;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
 
-    div {
+    .slider__dot {
       border-radius: 50%;
       border-width: 0.5;
       background-color: gray;
       width: 10px;
       height: 10px;
 
-      &.active {
+      &--active {
         background-color: black;
       }
     }
@@ -115,7 +116,7 @@ const right = () =>
 }
 </style>
 <style lang="scss">
-.slider-root .content h2 {
+.slider .slider__content h2 {
   margin-top: 0;
 }
 </style>

@@ -1,14 +1,12 @@
 <template>
   <div class="bullet-list">
-    <div class="container">
-      <ul>
-        <ContentSlot :use="$slots.default" unwrap="ul" />
-      </ul>
-    </div>
+    <ul>
+      <ContentSlot :use="$slots.default" unwrap="ul" />
+    </ul>
   </div>
 </template>
 <style lang="scss" scoped>
-.container {
+.bullet-list {
   li {
     display: flex;
     box-sizing: inherit;
