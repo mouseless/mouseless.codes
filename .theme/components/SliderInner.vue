@@ -100,23 +100,18 @@ const right = () =>
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+  }
 
-    .slider__dot {
-      border-radius: 50%;
-      border-width: 0.5;
-      background-color: gray;
-      width: 10px;
-      height: 10px;
+  &__dot {
+    border-radius: 50%;
+    border-width: 0.5;
+    background-color: gray;
+    width: 10px;
+    height: 10px;
 
-      &--active {
-        background-color: black;
-      }
+    &--active {
+      background-color: black;
     }
   }
-}
-</style>
-<style lang="scss">
-.slider .slider__content h2 {
-  margin-top: 0;
 }
 </style>

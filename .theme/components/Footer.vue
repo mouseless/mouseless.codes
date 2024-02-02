@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="footer">
     <ContentQuery
       v-slot="{ data: footer }"
       find="one"
@@ -8,8 +8,8 @@
         _path: { $eq: '/footer' },
       }"
     >
-      <div class="content">
-        <div>
+      <div class="footer__content">
+        <div class="footer__logo">
           <NuxtLink to="/">
             <img class="mouseless logo mono">
           </NuxtLink>
@@ -25,9 +25,9 @@
             _path: { $not: { $in: excludePath } },
           }"
         >
-          <div class="content__links">
-            <ul>
-              <li v-for="menu in menus" :key="menu.title" class="content__link">
+          <div class="footer-menu footer__menu">
+            <ul class="footer-menu__inner">
+              <li v-for="menu in menus" :key="menu.title" class="footer-menu__item">
                 <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
                   {{ menu.title }}
                 </NuxtLink>
@@ -47,25 +47,25 @@
 const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
 </script>
 <style lang="scss" scoped>
-footer {
+.footer {
   margin-top: 2em;
   border-top: solid 2px var(--color-fg-box);
 
-  .logo {
+  &__logo {
     opacity: 0.50;
     height: 1em;
   }
 
-  .content {
+  &__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 1em;
+  }
 
-    &__links {
-      display: flex;
-      justify-content: space-evenly;
-    }
+  &__menu {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 </style>

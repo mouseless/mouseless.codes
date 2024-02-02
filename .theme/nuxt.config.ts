@@ -6,7 +6,7 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           type: "text/css",
-          href: "https://mouseless.github.io/brand/assets/css/default.css"
+          href: "https://mouseless.github.io/brand/assets/css/secondary.css"
         }
       ]
     }
@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       "~/components"
     ]
   },
+  css: ["~/assets/styles.scss"],
   devtools: {
     enabled: false
   },
@@ -47,6 +48,15 @@ export default defineNuxtConfig({
             h5: false,
             h6: false
           }
+        }
+      }
+    }
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: "@import \"@/assets/_variables.scss\"; @import \"@/assets/_mixins.scss\";"
         }
       }
     }

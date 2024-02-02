@@ -1,6 +1,6 @@
 <template>
-  <div class="github">
-    <div class="github__repos">
+  <div class="pr-list">
+    <div class="pr-list__repos">
       <ul>
         <li v-for="(repo, index) in repos" :key="repo">
           <button @click="changeSlider(index)">
@@ -9,7 +9,7 @@
         </li>
       </ul>
     </div>
-    <div class="github__prs">
+    <div class="pr-list__prs">
       <SliderInner v-if="render" :slides="repository[currentSlider]">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0" class="slide">
@@ -63,7 +63,7 @@ function changeSlider(index) {
 }
 </script>
 <style lang="scss" scoped>
-.github {
+.pr-list {
   display: flex;
   justify-content: space-around;
 
@@ -97,15 +97,15 @@ function changeSlider(index) {
       }
     }
   }
+}
 
-  .slide {
+.slide {
 
-    &__title {
+&__title {
 
-      a {
-        text-decoration: none;
-      }
-    }
+  a {
+    text-decoration: none;
   }
+}
 }
 </style>

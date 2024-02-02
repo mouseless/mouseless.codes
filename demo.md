@@ -23,7 +23,7 @@
 
 ::card
 ---
-align: left
+type: left
 link: /demo
 ---
 
@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet
 
 ::card
 ---
-align: center
+type: center
 link:
 ---
 
