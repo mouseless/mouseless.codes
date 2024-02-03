@@ -1,22 +1,16 @@
 <template>
   <div class="card">
-    <div class="card__content" :class="`card__content--type_${align}`">
+    <div
+      class="card__content"
+      :class="align !== null ? `card__content--align_${align}` : ''"
+    >
       <slot />
-    </div>
-    <div class="card__learn-more">
-      <NuxtLink v-if="link != null" :to="link">
-        Learn More...
-      </NuxtLink>
     </div>
   </div>
 </template>
 <script setup>
 defineProps({
-  type: {
-    type: String,
-    default: "default"
-  },
-  link: {
+  align: {
     type: String,
     default: null
   }

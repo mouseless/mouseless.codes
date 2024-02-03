@@ -20,5 +20,9 @@ const count = computed(() => Object.keys(slots).length);
 .columns {
   display: flex;
   justify-content: space-evenly;
+
+  &__column {
+    padding: 10px
+  }
 }
 </style>

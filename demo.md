@@ -20,12 +20,6 @@
 
 :link-button{to="#buttons" type="cta" text="CTA Button"}
 
-### With Slot
-
-::::link-button{to="#buttons" type="default" text="With Slot"}
-  Slot
-::::
-
 ---
 
 ## Call To Action
@@ -34,38 +28,44 @@
 
   # We value trust!
 
-  ::::link-button{to="https://www.mouseless.codes"}
-  Reach out!
-  ::::
+  :::link-button{to="https://www.mouseless.codes" type="cta" text="Reach out!"}
 ::
 
 ---
 
 ## Card
 
+### Default Card
+
 ::card
----
-type: left
-link: /demo
----
 
-## Card Header
+![](/images/calendar.png)
 
-Lorem ipsum dolor sit amet
+## Header
 
-![](//mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+:::link-button{to="#card" text="for more..." type="default"}
 ::
 
+### Align `left` Card with column
+
 ::card
 ---
-type: center
-link:
+align: left
 ---
 
-## Card Header
+  ::::columns
+  #column 1
 
-Lorem ipsum dolor sit amet
+    ## Card Header
 
+    Lorem ipsum dolor sit amet
+
+  #column 2
+
+    ![](//mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg)
+  ::::
 ::
 
 ---

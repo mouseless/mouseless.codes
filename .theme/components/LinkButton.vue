@@ -1,8 +1,13 @@
 <template>
-  <div class="link-button" :class="type !== null ? `link-button--type_${type}` : ''">
+  <div
+    class="link-button"
+    :class="[
+      type !== null ? `link-button--type_${type}` : '',
+      `link-button--color_${bg}`,
+    ]"
+  >
     <NuxtLink :to="to">
       {{ text }}
-      <slot v-if="text === null" />
     </NuxtLink>
   </div>
 </template>
@@ -15,6 +20,10 @@ defineProps({
   type: {
     type: String,
     default: null
+  },
+  bg: {
+    type: String,
+    default: "fg"
   },
   to: {
     type: String,
@@ -33,7 +42,14 @@ defineProps({
   &--type_cta {
     background-color: var(--color-logo-mark);
     padding-inline: 30px;
-    height: 50px;
+    padding-block: 10px;
+
+    &:hover {
+
+      a {
+        color: var(--color-bg-mute);
+      }
+    }
   }
 
   &--type_default {
