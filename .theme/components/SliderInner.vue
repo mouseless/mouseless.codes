@@ -105,12 +105,13 @@ const right = () =>
   &__dot {
     border-radius: 50%;
     border-width: 0.5;
-    background-color: gray;
+    background-color: var(--color-bg-mute);
     width: 10px;
     height: 10px;
+    margin: 2px;
 
     &--active {
-      background-color: black;
+      background-color: var(--color-fg);
     }
   }
 }

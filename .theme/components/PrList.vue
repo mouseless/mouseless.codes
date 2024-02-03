@@ -101,11 +101,11 @@ function changeSlider(index) {
 
 .slide {
 
-&__title {
+  &__title {
 
-  a {
-    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
   }
-}
 }
 </style>

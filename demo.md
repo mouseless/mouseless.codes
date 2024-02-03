@@ -8,6 +8,26 @@
 - task 2
 ::
 
+---
+
+## Buttons
+
+### Default
+
+:link-button{to="#buttons" type="default" text="Default Button"}
+
+### CTA
+
+:link-button{to="#buttons" type="cta" text="CTA Button"}
+
+### With Slot
+
+::::link-button{to="#buttons" type="default" text="With Slot"}
+  Slot
+::::
+
+---
+
 ## Call To Action
 
 ::call-to-action
@@ -18,6 +38,8 @@
   Reach out!
   ::::
 ::
+
+---
 
 ## Card
 
@@ -46,6 +68,8 @@ Lorem ipsum dolor sit amet
 
 ::
 
+---
+
 ## Columns
 
 ::columns
@@ -60,9 +84,13 @@ column 2
 
 ::
 
+---
+
 ## PR List
 
 :pr-list{:repos='["mouseless.codes", "do"]'}
+
+---
 
 ## Slider
 
