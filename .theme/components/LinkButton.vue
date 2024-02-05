@@ -1,10 +1,9 @@
 <template>
   <div
     class="link-button"
-    :class="[
-      type !== null ? `link-button--type_${type}` : '',
-      `link-button--color_${bg}`,
-    ]"
+    :class="
+      type !== null ? `link-button--type_${type}` : ''
+    "
   >
     <NuxtLink :to="to">
       {{ text }}
@@ -20,10 +19,6 @@ defineProps({
   type: {
     type: String,
     default: null
-  },
-  bg: {
-    type: String,
-    default: "fg"
   },
   to: {
     type: String,
@@ -45,7 +40,6 @@ defineProps({
     padding-block: 10px;
 
     &:hover {
-
       a {
         color: var(--color-bg-mute);
       }
@@ -56,17 +50,33 @@ defineProps({
     background: var(--color-fg-mute);
     border-radius: var(--border-radius);
 
+    a {
+      color: var(--color-bg-mute);
+    }
+
     &:hover {
       background: var(--color-bg-mute);
-      border-radius: var(--border-radius);
 
       a {
         color: var(--color-fg-mute);
       }
     }
 
-    a {
-      color: var(--color-bg-mute);
+    &-bg {
+      background: var(--color-bg-mute);
+      border-radius: var(--border-radius);
+
+      &:hover {
+        background: var(--color-fg-mute);
+
+        a {
+          color: var(--color-bg-mute);
+        }
+      }
+
+      a {
+        color: var(--color-fg-mute);
+      }
     }
   }
 
