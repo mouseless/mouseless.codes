@@ -1,13 +1,13 @@
 .card {
-  flex-direction: column;
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 
   &--align_left {
-    justify-content: left;
     align-items: left;
+    justify-content: left;
     text-align: left;
   }
 
@@ -27,8 +27,8 @@
     &--theme_code-block {
       background-color: var(--color-bg-box);
       border-radius: var(--border-radius);
-      padding: var(--border-radius);
       color: var(--color-bg);
+      padding: var(--border-radius);
 
       a,
       h1,
@@ -47,9 +47,9 @@
     }
 
     &--theme_card {
-      border-width: 1.4px;
       border-color: var(--color-fg-mute);
       border-style: solid;
+      border-width: 1.4px;
       color: var(--color-fg-mute);
 
       a,

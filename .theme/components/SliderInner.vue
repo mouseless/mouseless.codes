@@ -1,11 +1,17 @@
 <template>
-  <div :class="`slider--type_${type}`" class="slider">
+  <div
+    :class="`slider--type_${type}`"
+    class="slider"
+  >
     <div class="slider__previous">
       <button @click="left">
         <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
       </button>
     </div>
-    <div :class="`slider__content--theme_${contentTheme}`" class="slider__content">
+    <div
+      :class="`slider__content--theme_${contentTheme}`"
+      class="slider__content"
+    >
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div class="slider__next">
