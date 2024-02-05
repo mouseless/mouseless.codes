@@ -26,11 +26,3 @@ defineProps({
   }
 }
 </style>
-<style lang="scss">
-.card {
-  h2 {
-    color: var(--color-fg-mute);
-    margin: 0px;
-  }
-}
-</style>
