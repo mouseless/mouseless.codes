@@ -1,11 +1,11 @@
 <template>
-  <div class="slider">
+  <div :class="`slider--type_${type}`" class="slider">
     <div class="slider__previous">
       <button @click="left">
         <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
       </button>
     </div>
-    <div class="slider__content">
+    <div :class="`slider__content--theme_${contentTheme}`" class="slider__content">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div class="slider__next">
@@ -28,6 +28,14 @@ const props = defineProps({
   slides: {
     type: Array,
     default: () => []
+  },
+  type: {
+    type: String,
+    default: "arrow-on-sides"
+  },
+  contentTheme: {
+    type: String,
+    default: "code-block"
   }
 });
 
@@ -49,11 +57,21 @@ const right = () =>
 <style scoped lang="scss">
 .slider {
   display: grid;
-  grid-template-columns: 50px auto 50px;
-  grid-template-areas:
-    "previous content next"
-    "previous content next"
-    ". boxes .";
+
+  &--type_arrow-on-sides {
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas:
+      "previous content next"
+      "previous content next"
+      ". boxes .";
+  }
+
+  &--type_arrow-on-bottom {
+    grid-template-columns: auto 50px auto;
+    grid-template-areas:
+      "content content content"
+      "previous boxes next";
+  }
 
   &__previous {
     grid-area: previous;
@@ -70,9 +88,6 @@ const right = () =>
     grid-area: content;
     max-height: 300px;
     overflow: hidden;
-    background-color: var(--color-bg-box);
-    border-radius: var(--border-radius);
-    padding: var(--border-radius);
   }
 
   &__next {

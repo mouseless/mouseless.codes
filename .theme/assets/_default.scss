@@ -23,21 +23,49 @@
 
 .slider {
   &__content {
-    color: var(--color-bg);
 
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    &--theme_code-block {
+      background-color: var(--color-bg-box);
+      border-radius: var(--border-radius);
+      padding: var(--border-radius);
       color: var(--color-bg);
+
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--color-bg);
+      }
+
+      code {
+        background-color: var(--color-fg-mute);
+        border-radius: var(--border-radius);
+      }
     }
 
-    code {
-      background-color: var(--color-fg-mute);
-      border-radius: var(--border-radius);
+    &--theme_card {
+      border-width: 1.4px;
+      border-color: var(--color-fg-mute);
+      border-style: solid;
+      color: var(--color-fg-mute);
+
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--color-fg-mute);
+      }
+
+      code {
+        background-color: var(--color-bg-mute);
+        border-radius: var(--border-radius);
+      }
     }
   }
 }
