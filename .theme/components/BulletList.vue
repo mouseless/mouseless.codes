@@ -1,6 +1,6 @@
 <template>
   <div class="bullet-list">
-    <ul>
+    <ul class="bullet-list__inner">
       <ContentSlot :use="$slots.default" unwrap="ul" />
     </ul>
   </div>

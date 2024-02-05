@@ -1,11 +1,6 @@
 <template>
-  <div class="card">
-    <div
-      class="card__content"
-      :class="align !== null ? `card__content--align_${align}` : ''"
-    >
-      <slot />
-    </div>
+  <div class="card" :class="align !== null ? `card--align_${align}` : ''">
+    <slot />
   </div>
 </template>
 <script setup>
