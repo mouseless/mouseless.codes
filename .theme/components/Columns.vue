@@ -22,7 +22,7 @@ const count = computed(() => Object.keys(slots).length);
   justify-content: space-evenly;
 
   &__column {
-    padding: 10px
+    padding: 10px;
   }
 }
 </style>

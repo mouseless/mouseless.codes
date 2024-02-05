@@ -82,7 +82,7 @@ function changeSlider(index) {
 
         & button {
           background-color: var(--color-bg-soft);
-          border: 0cap;
+          border: 0px;
           color: var(--color-fg);
           cursor: pointer;
           border-radius: 25px;
@@ -95,16 +95,6 @@ function changeSlider(index) {
           }
         }
       }
-    }
-  }
-}
-
-.slide {
-
-  &__title {
-
-    a {
-      text-decoration: none;
     }
   }
 }

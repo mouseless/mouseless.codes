@@ -48,7 +48,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 :::link-button{to="#card" text="for more..." type="default"}
 ::
 
-### Align `left` Card with column
+### Align `left` Card with `columns`
 
 ::card
 ---

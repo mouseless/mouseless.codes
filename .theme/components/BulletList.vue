@@ -7,6 +7,7 @@
 </template>
 <style lang="scss" scoped>
 .bullet-list {
+
   li {
     display: flex;
     box-sizing: inherit;

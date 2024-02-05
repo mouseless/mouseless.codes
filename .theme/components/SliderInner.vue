@@ -68,7 +68,6 @@ const right = () =>
     grid-template-columns: 50px auto 50px;
     grid-template-areas:
       "previous content next"
-      "previous content next"
       ". boxes .";
   }
 
@@ -77,6 +76,56 @@ const right = () =>
     grid-template-areas:
       "content content content"
       "previous boxes next";
+  }
+
+  &__content {
+    h2 {
+      margin-top: 0;
+    }
+
+    &--theme_code-block {
+      background-color: var(--color-bg-box);
+      border-radius: var(--border-radius);
+      color: var(--color-bg);
+      padding: var(--border-radius);
+
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--color-bg);
+      }
+
+      code {
+        background-color: var(--color-fg-mute);
+        border-radius: var(--border-radius);
+      }
+    }
+
+    &--theme_card {
+      border-color: var(--color-fg-mute);
+      border-style: solid;
+      border-width: 1.4px;
+      color: var(--color-fg-mute);
+
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--color-fg-mute);
+      }
+
+      code {
+        background-color: var(--color-bg-mute);
+        border-radius: var(--border-radius);
+      }
+    }
   }
 
   &__previous {
@@ -100,7 +149,8 @@ const right = () =>
     grid-area: next;
   }
 
-  &__next, &__previous {
+  &__next,
+  &__previous {
     display: flex;
     justify-content: center;
 
@@ -133,6 +183,53 @@ const right = () =>
 
     &--active {
       background-color: var(--color-fg);
+    }
+  }
+}
+</style>
+<style lang="scss">
+.slider {
+  a {
+    text-decoration: none;
+  }
+
+  &__content {
+    h2 {
+      margin-top: 0;
+    }
+
+    &--theme_code-block {
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--color-bg);
+      }
+
+      code {
+        background-color: var(--color-fg-mute);
+        border-radius: var(--border-radius);
+      }
+    }
+
+    &--theme_card {
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--color-fg-mute);
+      }
+
+      code {
+        background-color: var(--color-bg-mute);
+        border-radius: var(--border-radius);
+      }
     }
   }
 }
