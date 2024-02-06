@@ -15,11 +15,11 @@ header, footer, article {
 }
 
 article {
-  max-width: var(--width-content);
+  max-width: calc(var(--width-content) + 30ch);
 }
 
 header, footer {
-  max-width: calc(var(--width-content) + 30ch)
+  max-width: calc(var(--width-content) + 30ch);
 }
 
 header {
