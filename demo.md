@@ -41,22 +41,39 @@ title: Card Header
 imageAlign: left
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
-Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
 ::
 
 ---
 
-## Columns
-
-::columns
+::columns{display="stack" align="evenly"}
 
 #column 1
 
-column 1
+::::card
+---
+title: Card 1
+---
+Lorem ipsum dolor sit amet consectetur adipisicing elit
+::::
 
 #column 2
 
-column 2
+::::card
+---
+title: Card 2
+---
+Maxime mollitia, molestiae quas vel sint commodi repudiandae
+::::
+
+#column 3
+
+::::card
+---
+title: Card 3
+---
+laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
+::::
 
 ::
 
