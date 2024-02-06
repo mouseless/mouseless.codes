@@ -1,17 +1,11 @@
 <template>
-  <div
-    :class="`slider--type_${type}`"
-    class="slider"
-  >
+  <div class="slider">
     <div class="slider__previous">
       <button @click="left">
         <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
       </button>
     </div>
-    <div
-      :class="`slider__content--theme_${contentTheme}`"
-      class="slider__content"
-    >
+    <div class="slider__content">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div class="slider__next">
@@ -34,14 +28,6 @@ const props = defineProps({
   slides: {
     type: Array,
     default: () => []
-  },
-  type: {
-    type: String,
-    default: "arrow-on-sides"
-  },
-  contentTheme: {
-    type: String,
-    default: "code-block"
   }
 });
 
@@ -63,69 +49,15 @@ const right = () =>
 <style scoped lang="scss">
 .slider {
   display: grid;
-
-  &--type_arrow-on-sides {
-    grid-template-columns: 50px auto 50px;
-    grid-template-areas:
-      "previous content next"
-      ". boxes .";
-  }
-
-  &--type_arrow-on-bottom {
-    grid-template-columns: auto 50px auto;
-    grid-template-areas:
-      "content content content"
-      "previous boxes next";
-  }
+  grid-template-columns: 50px auto 50px;
+  grid-template-areas:
+    "previous content next"
+    ". boxes .";
 
   &__content {
-    h2 {
-      margin-top: 0;
-    }
-
-    &--theme_code-block {
-      background-color: var(--color-bg-box);
-      border-radius: var(--border-radius);
-      color: var(--color-bg);
-      padding: var(--border-radius);
-
-      a,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: var(--color-bg);
-      }
-
-      code {
-        background-color: var(--color-fg-mute);
-        border-radius: var(--border-radius);
-      }
-    }
-
-    &--theme_card {
-      border-color: var(--color-fg-mute);
-      border-style: solid;
-      border-width: 1.4px;
-      color: var(--color-fg-mute);
-
-      a,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: var(--color-fg-mute);
-      }
-
-      code {
-        background-color: var(--color-bg-mute);
-        border-radius: var(--border-radius);
-      }
-    }
+    border-radius: var(--border-radius);
+    color: var(--color-fg);
+    padding: var(--border-radius);
   }
 
   &__previous {
