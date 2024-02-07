@@ -1,5 +1,19 @@
 # Demo
 
+## Banner
+
+### Option 1
+
+::banner{:hr=true}
+## Our Collective
+::
+
+### Option 2
+
+::banner{:hr="false" align="right"}
+**We** Offer
+::
+
 ## Bullet List
 
 ::bullet-list
@@ -102,18 +116,4 @@ Slide 1
 ## Slide 2
 
 Slide 2
-::
-
-## Title
-
-### Option 1
-
-::banner{hr=true}
-## Our Collective
-::
-
-### Option 2
-
-::banner{hr="false" align="right"}
-**We** Offer
 ::

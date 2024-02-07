@@ -3,18 +3,18 @@
     :class="`banner--align_${align}`"
     class="banner"
   >
-    <hr v-if="hr === 'true'" class="banner__line">
+    <hr v-if="hr" class="banner__line">
     <div class="banner__text">
       <slot />
     </div>
-    <hr v-if="hr === 'true'" class="banner__line">
+    <hr v-if="hr" class="banner__line">
   </div>
 </template>
 <script setup>
 defineProps({
   hr: {
-    type: String, // Boolean didn't work
-    default: "true"
+    type: Boolean,
+    default: true
   },
   align: {
     type: String,
