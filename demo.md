@@ -46,9 +46,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ---
 
-::columns{display="stack" align="evenly"}
+## Card Layout
 
-#column 1
+::card-layout{display="stack" align="left"}
+
+#item 1
 
 ::::card
 ---
@@ -57,7 +59,7 @@ title: Card 1
 Lorem ipsum dolor sit amet consectetur adipisicing elit
 ::::
 
-#column 2
+#item 2
 
 ::::card
 ---
@@ -66,7 +68,7 @@ title: Card 2
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
-#column 3
+#item 3
 
 ::::card
 ---
@@ -104,6 +106,14 @@ Slide 2
 
 ## Title
 
-::title
---- This is the title ---
+### Option 1
+
+::banner{hr=true}
+## Our Collective
+::
+
+### Option 2
+
+::banner{hr="false" align="right"}
+**We** Offer
 ::
