@@ -46,19 +46,13 @@ const right = () =>
     ? (pageNumber.value = pageNumber.value + 1)
     : pageNumber.value;
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 .slider {
   display: grid;
   grid-template-columns: 50px auto 50px;
   grid-template-areas:
     "previous content next"
     ". boxes .";
-
-  &__content {
-    border-radius: var(--border-radius);
-    color: var(--color-fg);
-    padding: var(--border-radius);
-  }
 
   &__previous {
     grid-area: previous;
@@ -75,6 +69,29 @@ const right = () =>
     grid-area: content;
     max-height: 300px;
     overflow: hidden;
+    border-radius: var(--border-radius);
+    color: var(--color-fg);
+    padding: var(--border-radius);
+
+    h2 {
+      margin-top: 0;
+      text-align: left;
+    }
+
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color-fg-mute);
+    }
+
+    code {
+      background-color: var(--color-bg-mute);
+      border-radius: var(--border-radius);
+    }
   }
 
   &__next {
@@ -116,6 +133,10 @@ const right = () =>
     &--active {
       background-color: var(--color-fg);
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 </style>

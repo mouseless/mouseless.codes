@@ -28,7 +28,7 @@ defineProps({
   }
 });
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .card {
   display: grid;
   grid-template-areas:
@@ -37,6 +37,9 @@ defineProps({
   width: 100%;
   border-width: 1px;
   border-style: solid;
+  border-radius: var(--border-radius);
+  border-color: var(--color-bg-mute);
+  padding: 1em;
 
   &__title {
     grid-area: title;
@@ -54,6 +57,11 @@ defineProps({
     grid-template-areas:
     "title title"
     "image detail";
+  }
+
+  h2 {
+    color: var(--color-fg-mute);
+    margin: 0px;
   }
 }
 </style>

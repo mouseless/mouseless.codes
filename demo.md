@@ -101,3 +101,9 @@ Slide 1
 
 Slide 2
 ::
+
+## Title
+
+::title
+--- This is the title ---
+::

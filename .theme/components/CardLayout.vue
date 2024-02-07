@@ -1,17 +1,17 @@
 <template>
   <div
-    :class="[`columns--layout_${display}`, `columns--align_${align}`]"
-    class="columns"
+    :class="[`card-layout--display_${display}`, `card-layout--align_${align}`]"
+    class="card-layout"
   >
     <div
       v-for="i in Array(count)
         .fill(0)
         .map((_, i) => i)"
       :key="i"
-      class="columns__column"
+      class="card-layout__item"
       :class="`wd-${display == 'flex' ? 100 : 20}`"
     >
-      <slot :name="`column ${i + 1}`" />
+      <slot :name="`item ${i + 1}`" />
     </div>
   </div>
 </template>
@@ -31,13 +31,13 @@ const slots = useSlots();
 const count = computed(() => Object.keys(slots).length);
 </script>
 <style lang="scss" scoped>
-.columns {
+.card-layout {
 
-  &--layout_flex {
+  &--display_flex {
     display: flex;
   }
 
-  &--layout_stack {
+  &--display_stack {
     display: flex;
     flex-wrap: wrap;
   }
@@ -58,7 +58,7 @@ const count = computed(() => Object.keys(slots).length);
     justify-content: space-evenly;
   }
 
-  &__column {
+  &__item {
     padding: 10px;
     display: flex;
     justify-content: center;
