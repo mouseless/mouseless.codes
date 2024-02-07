@@ -48,12 +48,12 @@ const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"
 </script>
 <style lang="scss" scoped>
 .footer {
-  margin-top: 2em;
   border-top: solid 2px var(--color-fg-box);
+  margin-top: 2em;
 
   &__logo {
-    opacity: 0.50;
     height: 1em;
+    opacity: 0.50;
   }
 
   &__content {

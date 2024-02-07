@@ -1,11 +1,9 @@
 <template>
   <div
     class="link-button"
-    :class="
-      type !== null ? `link-button--type_${type}` : ''
-    "
+    :class="`link-button--type_${type}`"
   >
-    <NuxtLink :to="to">
+    <NuxtLink class="link-button__link" :to="to">
       {{ text }}
     </NuxtLink>
   </div>
@@ -18,7 +16,7 @@ defineProps({
   },
   type: {
     type: String,
-    default: null
+    default: "default"
   },
   to: {
     type: String,
@@ -26,11 +24,11 @@ defineProps({
   }
 });
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .link-button {
+  align-items: center;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
   padding-inline: 18px;
   padding-block: 9px;
 
@@ -40,8 +38,10 @@ defineProps({
     padding-block: 10px;
 
     &:hover {
-      a {
-        color: var(--color-bg-mute);
+      background-color: var(--color-fg-box);
+
+      .link-button__link {
+        color: var(--color-fg-mute);
       }
     }
   }
@@ -50,14 +50,14 @@ defineProps({
     background: var(--color-fg-mute);
     border-radius: var(--border-radius);
 
-    a {
+    .link-button__link {
       color: var(--color-bg-mute);
     }
 
     &:hover {
       background: var(--color-bg-mute);
 
-      a {
+      .link-button__link {
         color: var(--color-fg-mute);
       }
     }
@@ -69,18 +69,18 @@ defineProps({
       &:hover {
         background: var(--color-fg-mute);
 
-        a {
+        .link-button__link {
           color: var(--color-bg-mute);
         }
       }
 
-      a {
+      .link-button__link {
         color: var(--color-fg-mute);
       }
     }
   }
 
-  a {
+  &__link {
     text-decoration: none;
   }
 }

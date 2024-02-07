@@ -24,8 +24,8 @@ defineProps({
 </script>
 <style lang="scss">
 .banner {
-  display: flex;
   align-items: center;
+  display: flex;
 
   &--align_center {
     justify-content: center;
@@ -40,11 +40,11 @@ defineProps({
   }
 
   &__line {
-    flex: 1;
-    margin: 0;
     border: none;
     border-top: 2px solid var(--color-fg);
     border-radius: var(--border-radius);
+    flex: 1;
+    margin: 0;
   }
 
   &__text {

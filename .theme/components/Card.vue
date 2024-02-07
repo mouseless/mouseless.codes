@@ -30,19 +30,21 @@ defineProps({
 </script>
 <style lang="scss">
 .card {
-  display: grid;
-  grid-template-areas:
-    "title title"
-    "detail image";
-  width: 100%;
   border-width: 1px;
   border-style: solid;
   border-radius: var(--border-radius);
   border-color: var(--color-bg-mute);
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "detail image";
   padding: 1em;
+  width: 100%;
 
   &__title {
+    color: var(--color-fg-mute);
     grid-area: title;
+    margin: 0px;
   }
 
   &__detail {
@@ -57,11 +59,6 @@ defineProps({
     grid-template-areas:
     "title title"
     "image detail";
-  }
-
-  h2 {
-    color: var(--color-fg-mute);
-    margin: 0px;
   }
 }
 </style>

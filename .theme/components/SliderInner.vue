@@ -1,16 +1,16 @@
 <template>
   <div class="slider">
-    <div class="slider__previous">
-      <button @click="left">
-        <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
+    <div class="navigation slider__previous">
+      <button class="navigation__button" @click="left">
+        <img class="navigation__image" src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
       </button>
     </div>
     <div class="slider__content">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div class="slider__next">
-      <button @click="right">
-        <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
+    <div class="navigation slider__next">
+      <button class="navigation__button" @click="right">
+        <img class="navigation__image" src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
       </button>
     </div>
     <div class="slider__thumb">
@@ -57,11 +57,9 @@ const right = () =>
   &__previous {
     grid-area: previous;
 
-    button {
-      img {
-        transform: scaleX(-1);
-        object-fit: cover;
-      }
+    .navigation__image {
+      transform: scaleX(-1);
+      object-fit: cover;
     }
   }
 
@@ -102,16 +100,6 @@ const right = () =>
   &__previous {
     display: flex;
     justify-content: center;
-
-    button {
-      background-color: transparent;
-      border: 0;
-
-      img {
-        cursor: pointer;
-        height: 25px;
-      }
-    }
   }
 
   &__thumb {
@@ -137,6 +125,19 @@ const right = () =>
 
   a {
     text-decoration: none;
+  }
+}
+
+.navigation {
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &__image {
+    cursor: pointer;
+    height: 25px;
   }
 }
 </style>

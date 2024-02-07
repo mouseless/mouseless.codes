@@ -5,17 +5,20 @@
     </ul>
   </div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 .bullet-list {
 
-  li {
-    display: flex;
-    box-sizing: inherit;
-    align-items: center;
+  &__inner {
 
-    &::before {
-      content: url("/images/explosion-star.png");
-      margin-right: 5px;
+    li {
+      align-items: center;
+      box-sizing: inherit;
+      display: flex;
+
+      &::before {
+        content: url("/images/explosion-star.png");
+        margin-right: 5px;
+      }
     }
   }
 }

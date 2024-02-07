@@ -59,9 +59,9 @@ const count = computed(() => Object.keys(slots).length);
   }
 
   &__item {
-    padding: 10px;
     display: flex;
     justify-content: center;
+    padding: 10px;
   }
 }
 </style>

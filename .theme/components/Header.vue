@@ -36,18 +36,18 @@ const root = computed(() => `/${route.path.split("/")[1]}`);
 </script>
 <style lang="scss" scoped>
 .header {
-  padding-top: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 1em;
 }
 
 .header-menu {
 
   &__item {
     margin-left: 1em;
-    text-decoration: none;
     padding: 1em;
+    text-decoration: none;
 
     &--active {
       background: var(--color-fg-mute);

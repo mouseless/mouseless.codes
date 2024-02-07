@@ -1,9 +1,9 @@
 <template>
   <div class="pr-list">
     <div class="pr-list__repos">
-      <ul>
-        <li v-for="(repo, index) in repos" :key="repo">
-          <button @click="changeSlider(index)">
+      <ul class="menu">
+        <li v-for="(repo, index) in repos" :key="repo" class="menu__item">
+          <button class="menu__item-link" @click="changeSlider(index)">
             {{ repo }}
           </button>
         </li>
@@ -62,39 +62,39 @@ function changeSlider(index) {
   currentSlider.value = index;
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .pr-list {
   display: flex;
   justify-content: space-around;
 
   &__repos {
     margin-right: 1em;
+  }
+}
 
-    ul {
-      padding: 0;
+.menu {
+  padding: 0;
 
-      li {
-        margin-bottom: 1em;
+  &__item {
+    margin-bottom: 1em;
 
-        &::marker {
-          content: none;
-        }
+    &::marker {
+      content: none;
+    }
+  }
 
-        & button {
-          background-color: var(--color-bg-soft);
-          border: 0px;
-          color: var(--color-fg);
-          cursor: pointer;
-          border-radius: 25px;
-          width: 100%;
-          height: 50px;
-          padding: 0px 30px;
+  &__item-link {
+    background-color: var(--color-bg-soft);
+    border: 0px;
+    color: var(--color-fg);
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    padding: 0px 30px;
 
-          &:hover {
-            background-color: var(--color-bg-mute);
-          }
-        }
-      }
+    &:hover {
+      background-color: var(--color-bg-mute);
     }
   }
 }
