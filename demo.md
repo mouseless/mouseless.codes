@@ -24,8 +24,14 @@
 
 ---
 
-::block
 ## Block
+
+::block{title="Block 1" :colored=false}
+Block 1 Content
+::
+
+::block{title="Block 2" :colored=true}
+Block 2 Content
 ::
 
 ---
