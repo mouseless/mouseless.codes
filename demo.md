@@ -24,6 +24,12 @@
 
 ---
 
+::block
+## Block
+::
+
+---
+
 ## Buttons
 
 ### Default
