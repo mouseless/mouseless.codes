@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="footer">
     <ContentQuery
       v-slot="{ data: footer }"
       find="one"
@@ -8,8 +8,8 @@
         _path: { $eq: '/footer' },
       }"
     >
-      <div class="content">
-        <div>
+      <div class="footer__content">
+        <div class="footer__logo">
           <NuxtLink to="/">
             <img class="mouseless logo mono">
           </NuxtLink>
@@ -25,9 +25,9 @@
             _path: { $not: { $in: excludePath } },
           }"
         >
-          <div class="links">
+          <div class="footer__menu">
             <ul>
-              <li v-for="menu in menus" :key="menu.title" class="link">
+              <li v-for="menu in menus" :key="menu.title">
                 <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
                   {{ menu.title }}
                 </NuxtLink>
@@ -38,7 +38,7 @@
       </div>
       <div class="copyright">
         <br>
-        <span class="copyright-text"> Mouseless &copy; {{ footer.copyright }} </span>
+        <span> Mouseless &copy; {{ footer.copyright }} </span>
       </div>
     </ContentQuery>
   </footer>
@@ -47,25 +47,25 @@
 const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
 </script>
 <style lang="scss" scoped>
-footer {
-  margin-top: 2em;
+.footer {
   border-top: solid 2px var(--color-fg-box);
+  margin-top: 2em;
 
-  .logo {
-    opacity: 0.50;
+  &__logo {
     height: 1em;
+    opacity: 0.50;
   }
 
-  .content {
+  &__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 1em;
+  }
 
-    .links {
-      display: flex;
-      justify-content: space-evenly;
-    }
+  &__menu {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 </style>

@@ -1,11 +1,9 @@
 <template>
-  <header>
-    <div class="logo">
-      <NuxtLink to="/">
-        <img class="mouseless logo">
-      </NuxtLink>
-    </div>
-    <nav>
+  <header class="header">
+    <NuxtLink to="/">
+      <img class="mouseless logo">
+    </NuxtLink>
+    <nav class="menu header__menu">
       <ContentQuery
         v-slot="{ data: menus }"
         path="/"
@@ -18,8 +16,9 @@
         <NuxtLink
           v-for="menu in menus"
           :key="menu.title"
-          :class="{ active: menu._path === root }"
+          :class="{ 'menu__item--active': menu._path === root }"
           :to="menu._path == $route.path ? '' : menu._path"
+          class="menu__item"
         >
           {{ menu.title }}
         </NuxtLink>
@@ -34,14 +33,25 @@ const route = useRoute();
 const root = computed(() => `/${route.path.split("/")[1]}`);
 </script>
 <style lang="scss" scoped>
-header {
-  padding-top: 1em;
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 1em;
+  text-align: left;
+}
 
-  nav a {
+.menu {
+  &__item {
     margin-left: 1em;
+    padding: 1em;
+    text-decoration: none;
+
+    &--active {
+      background: var(--color-fg-mute);
+      border-radius: var(--border-radius);
+      color: var(--color-bg);
+    }
   }
 }
 </style>

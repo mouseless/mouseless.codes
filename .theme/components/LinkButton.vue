@@ -1,15 +1,21 @@
 <template>
-  <div class="link-button" :class="type">
-    <NuxtLink :to="to">
-      <slot />
-    </NuxtLink>
-  </div>
+  <NuxtLink
+    class="link-button"
+    :class="`link-button--type_${type}`"
+    :to="to"
+  >
+    {{ text }}
+  </NuxtLink>
 </template>
 <script setup>
 defineProps({
+  text: {
+    type: String,
+    default: null
+  },
   type: {
     type: String,
-    default: ""
+    default: "default"
   },
   to: {
     type: String,
@@ -17,14 +23,31 @@ defineProps({
   }
 });
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .link-button {
-  background-color: var(--color-logo-mark);
-  padding-inline: 30px;
-  height: 50px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  padding-inline: 18px;
+  padding-block: 9px;
+  text-decoration: none;
+  border-radius: var(--border-radius);
 
-  a {
-    text-decoration: none;
+  &:hover {
+    background-color: var(--color-bg-mute);
+    color: var(--color-fg);
+  }
+
+  &--type_default {
+    background: var(--color-fg-mute);
+    color: var(--color-bg-mute);
+  }
+
+  &--type_cta {
+    background-color: var(--color-logo-mark);
+    color: var(--color-white-lightest);
+    padding-inline: 30px;
+    padding-block: 10px;
   }
 }
 </style>

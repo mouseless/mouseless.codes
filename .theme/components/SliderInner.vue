@@ -1,23 +1,24 @@
 <template>
-  <div class="slider-root">
-    <div class="previous">
-      <button @click="left">
-        <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
+  <div class="slider">
+    <div class="navigation slider__previous">
+      <button class="navigation__button" @click="left">
+        <img class="mouseless logo mark primary navigation__image navigation__image--reverse">
       </button>
     </div>
-    <div class="content">
+    <div class="slider__content">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div class="next">
-      <button @click="right">
-        <img src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
+    <div class="navigation slider__next">
+      <button class="navigation__button" @click="right">
+        <img class="mouseless logo mark primary navigation__image">
       </button>
     </div>
-    <div class="boxes">
+    <div class="slider__thumb">
       <div
         v-for="n in slides.length"
         :key="n"
-        :class="{ active: n - 1 == pageNumber }"
+        :class="{ 'slider__dot--active': n - 1 == pageNumber }"
+        class="slider__dot"
       />
     </div>
   </div>
@@ -45,77 +46,98 @@ const right = () =>
     ? (pageNumber.value = pageNumber.value + 1)
     : pageNumber.value;
 </script>
-<style scoped lang="scss">
-.slider-root {
+<style lang="scss">
+.slider {
   display: grid;
   grid-template-columns: 50px auto 50px;
   grid-template-areas:
     "previous content next"
-    "previous content next"
     ". boxes .";
 
-  .previous {
+  &__previous {
     grid-area: previous;
+  }
 
-    button {
-      img {
-        transform: scaleX(-1);
-        object-fit: cover;
-      }
+  &__content {
+    grid-area: content;
+    color: var(--color-fg);
+    overflow: auto;
+    max-height: 50ch;
+    padding-inline: 1em;
+
+    h2 {
+      margin-top: 0;
+      text-align: left;
+    }
+
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color-fg-mute);
+    }
+
+    code {
+      background-color: var(--color-bg-mute);
+      border-radius: var(--border-radius);
     }
   }
 
-  .content {
-    grid-area: content;
-    max-height: 300px;
-    overflow: hidden;
-    background-color: var(--color-bg-box);
-    border-radius: var(--border-radius);
-    padding: var(--border-radius);
-  }
-
-  .next {
+  &__next {
     grid-area: next;
   }
 
-  .next, .previous {
+  &__next,
+  &__previous {
     display: flex;
     justify-content: center;
-
-    button {
-      background-color: transparent;
-      border: 0;
-
-      img {
-        cursor: pointer;
-        height: 25px;
-      }
-    }
   }
 
-  .boxes {
+  &__thumb {
     grid-area: boxes;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+  }
 
-    div {
-      border-radius: 50%;
-      border-width: 0.5;
-      background-color: gray;
-      width: 10px;
-      height: 10px;
+  &__dot {
+    border-radius: 50%;
+    border-width: 0.5;
+    background-color: var(--color-bg-mute);
+    width: 10px;
+    height: 10px;
+    margin: 2px;
 
-      &.active {
-        background-color: black;
-      }
+    &--active {
+      background-color: var(--color-fg);
     }
   }
+
+  a {
+    text-decoration: none;
+  }
 }
-</style>
-<style lang="scss">
-.slider-root .content h2 {
-  margin-top: 0;
+
+.navigation {
+  &__button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  &__image {
+    cursor: pointer;
+    height: 25px;
+    object-fit: cover;
+    padding-inline: 2em 0;
+
+    &--reverse {
+      transform: scaleX(-1);
+    }
+  }
 }
 </style>

@@ -1,26 +1,26 @@
 <template>
-  <div class="github-prs">
-    <div class="repos">
-      <ul>
-        <li v-for="(repo, index) in repos" :key="repo">
-          <button @click="changeSlider(index)">
+  <div class="pr-list">
+    <div class="pr-list__repos">
+      <ul class="repo-list">
+        <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
+          <button class="repo-list__item-link" @click="changeSlider(index)">
             {{ repo }}
           </button>
         </li>
       </ul>
     </div>
-    <div class="prs">
+    <div class="pr-list__prs">
       <SliderInner v-if="render" :slides="repository[currentSlider]">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0" class="slide">
-            <div class="title">
+            <div class="slide__title">
               <h2>
                 <NuxtLink :to="slides[pageNumber]?.html_url">
                   {{ slides[pageNumber]?.title }}
                 </NuxtLink>
               </h2>
             </div>
-            <div class="info">
+            <div class="slide__body">
               <MDC :value="slides[pageNumber]?.body" tag="article" />
             </div>
           </div>
@@ -62,47 +62,39 @@ function changeSlider(index) {
   currentSlider.value = index;
 }
 </script>
-<style lang="scss" scoped>
-.github-prs {
+<style lang="scss">
+.pr-list {
   display: flex;
   justify-content: space-around;
 
-  .repos {
+  &__repos {
     margin-right: 1em;
+  }
+}
 
-    ul {
-      padding: 0;
+.repo-list {
+  padding: 0;
 
-      li {
-        margin-bottom: 1em;
+  &__item {
+    margin-bottom: 1em;
 
-        &::marker {
-          content: none;
-        }
-
-        & button {
-          background-color: var(--color-bg-soft);
-          border: 0cap;
-          color: var(--color-fg);
-          cursor: pointer;
-          border-radius: 25px;
-          width: 100%;
-          height: 50px;
-          padding: 0px 30px;
-
-          &:hover {
-            background-color: var(--color-bg-mute);
-          }
-        }
-      }
+    &::marker {
+      content: none;
     }
   }
 
-  .prs {
-    .title {
-      a {
-        text-decoration: none;
-      }
+  &__item-link {
+    background-color: var(--color-bg-soft);
+    border: 0px;
+    color: var(--color-fg);
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    padding: 0px 30px;
+
+    &:hover {
+      background-color: var(--color-bg-mute);
     }
   }
 }

@@ -1,63 +1,64 @@
 <template>
-  <div class="card">
-    <div class="container">
-      <div class="content" :class="`align-${align}`">
-        <slot />
-        <div class="learn-more">
-          <NuxtLink v-if="link != null" :to="link">
-            Learn More...
-          </NuxtLink>
-        </div>
-      </div>
+  <div
+    :class="`card--image-align_${imageAlign}`"
+    class="card"
+  >
+    <h2 v-if="title !== null" class="card__title">
+      {{ title }}
+    </h2>
+    <div class="card__detail">
+      <slot />
     </div>
+    <img v-if="image !== null" class="card__img" :src="image">
   </div>
 </template>
 <script setup>
 defineProps({
-  align: {
+  imageAlign: {
     type: String,
-    default: "left"
+    default: "right"
   },
-  link: {
+  title: {
+    type: String,
+    default: null
+  },
+  image: {
     type: String,
     default: null
   }
 });
 </script>
 <style lang="scss">
-.container {
-  display: flex;
+.card {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-color: var(--color-bg-mute);
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "detail image";
+  padding: 1em;
+  width: 100%;
 
-  .content {
-    display: grid;
+  &__title {
+    color: var(--color-fg-mute);
+    grid-area: title;
+    margin: 0px;
+  }
 
-    h2 {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 1;
-    }
+  &__detail {
+    grid-area: detail;
+  }
 
-    p {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 3;
+  &__img {
+    grid-area: image;
+  }
 
-      &:has(img) {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 3;
-      }
-    }
-
-    .learn-more {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 4;
-      grid-row-end: 4;
-    }
+  &--image-align_left {
+    grid-template-areas:
+    "title title"
+    "image detail";
   }
 }
 </style>

@@ -5,11 +5,10 @@
 </template>
 <style lang="scss" scoped>
 .call-to-action {
+  align-items: center;
   display: flex;
-  background-color: var(--color-bg-soft);
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-bottom: 40px;
 }
 </style>
