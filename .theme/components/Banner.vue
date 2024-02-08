@@ -1,7 +1,7 @@
 <template>
   <div
-    :class="`banner--align_${align}`"
     class="banner"
+    :class="`banner--align_${align}`"
   >
     <hr v-if="hr" class="banner__line">
     <div class="banner__text">
@@ -27,16 +27,10 @@ defineProps({
   align-items: center;
   display: flex;
 
-  &--align_center {
-    justify-content: center;
-  }
-
-  &--align_left {
-    justify-content: flex-start;
-  }
-
-  &--align_right {
-    justify-content: flex-end;
+  &--align {
+    &_center { justify-content: center; }
+    &_left { justify-content: flex-start; }
+    &_right { justify-content: flex-end; }
   }
 
   &__line {

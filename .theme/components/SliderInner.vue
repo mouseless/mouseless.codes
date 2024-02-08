@@ -2,7 +2,7 @@
   <div class="slider">
     <div class="navigation slider__previous">
       <button class="navigation__button" @click="left">
-        <img class="navigation__image" src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
+        <img class="mouseless logo mark primary navigation__image navigation__image--reverse">
       </button>
     </div>
     <div class="slider__content">
@@ -10,7 +10,7 @@
     </div>
     <div class="navigation slider__next">
       <button class="navigation__button" @click="right">
-        <img class="navigation__image" src="https://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg">
+        <img class="mouseless logo mark primary navigation__image">
       </button>
     </div>
     <div class="slider__thumb">
@@ -56,20 +56,14 @@ const right = () =>
 
   &__previous {
     grid-area: previous;
-
-    .navigation__image {
-      transform: scaleX(-1);
-      object-fit: cover;
-    }
   }
 
   &__content {
     grid-area: content;
-    max-height: 300px;
-    overflow: hidden;
-    border-radius: var(--border-radius);
     color: var(--color-fg);
-    padding: var(--border-radius);
+    overflow: auto;
+    max-height: 50ch;
+    padding-inline: 1em;
 
     h2 {
       margin-top: 0;
@@ -132,11 +126,18 @@ const right = () =>
   &__button {
     background-color: transparent;
     border: 0;
+    padding: 0;
   }
 
   &__image {
     cursor: pointer;
     height: 25px;
+    object-fit: cover;
+    padding-inline: 2em 0;
+
+    &--reverse {
+      transform: scaleX(-1);
+    }
   }
 }
 </style>
