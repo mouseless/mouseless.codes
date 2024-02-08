@@ -1,9 +1,9 @@
 <template>
   <div class="pr-list">
     <div class="pr-list__repos">
-      <ul class="menu">
-        <li v-for="(repo, index) in repos" :key="repo" class="menu__item">
-          <button class="menu__item-link" @click="changeSlider(index)">
+      <ul class="repo-list">
+        <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
+          <button class="repo-list__item-link" @click="changeSlider(index)">
             {{ repo }}
           </button>
         </li>
@@ -72,7 +72,7 @@ function changeSlider(index) {
   }
 }
 
-.menu {
+.repo-list {
   padding: 0;
 
   &__item {
