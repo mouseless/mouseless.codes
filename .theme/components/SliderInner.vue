@@ -129,7 +129,6 @@ const right = () =>
 }
 
 .navigation {
-
   &__button {
     background-color: transparent;
     border: 0;

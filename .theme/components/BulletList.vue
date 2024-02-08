@@ -7,9 +7,7 @@
 </template>
 <style lang="scss">
 .bullet-list {
-
   &__inner {
-
     li {
       align-items: center;
       box-sizing: inherit;

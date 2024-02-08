@@ -1,32 +1,31 @@
 <template>
   <div>
-    <Header />
-    <article>
+    <Header class="content" />
+    <article class="content article">
       <slot />
     </article>
-    <Footer />
+    <Footer class="content" />
   </div>
 </template>
-<style lang="scss" scoped>
-header, footer, article {
+<style lang="scss">
+.content {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-article {
   max-width: calc(var(--width-content) + 30ch);
 }
 
-header, footer {
-  max-width: calc(var(--width-content) + 30ch);
-}
+.article {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
 
-header {
-  text-align: left;
-
-  img.logo {
-    margin: 2em 0;
+  p {
+    max-width: var(--width-content);
   }
 }
 </style>

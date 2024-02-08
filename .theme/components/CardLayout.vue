@@ -1,6 +1,9 @@
 <template>
   <div
-    :class="[`card-layout--display_${display}`, `card-layout--align_${align}`]"
+    :class="[
+      {'card-layout--stack': display == 'stack'},
+      `card-layout--align_${align}`
+    ]"
     class="card-layout"
   >
     <div
@@ -9,7 +12,7 @@
         .map((_, i) => i)"
       :key="i"
       class="card-layout__item"
-      :class="`wd-${display == 'flex' ? 100 : 20}`"
+      :class="{'card-layout__item--flex': display == 'flex'}"
     >
       <slot :name="`item ${i + 1}`" />
     </div>
@@ -32,36 +35,28 @@ const count = computed(() => Object.keys(slots).length);
 </script>
 <style lang="scss" scoped>
 .card-layout {
+  display: flex;
 
-  &--display_flex {
-    display: flex;
-  }
-
-  &--display_stack {
-    display: flex;
+  &--stack {
     flex-wrap: wrap;
   }
 
-  &--align_center {
-    justify-content: center;
-  }
-
-  &--align_left {
-    justify-content: flex-start;
-  }
-
-  &--align_right {
-    justify-content: flex-end;
-  }
-
-  &--align_evenly {
-    justify-content: space-evenly;
+  &--align {
+    &_center { justify-content: center; }
+    &_left { justify-content: flex-start; }
+    &_right { justify-content: flex-end; }
+    &_evenly { justify-content: space-evenly; }
   }
 
   &__item {
     display: flex;
     justify-content: center;
     padding: 10px;
+    width: 25em;
+
+    &--flex {
+      width: 100%;
+    }
   }
 }
 </style>

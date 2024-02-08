@@ -62,6 +62,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Card Layout
 
+### Option 1
+
 ::card-layout{display="stack" align="left"}
 
 #item 1
@@ -82,13 +84,28 @@ title: Card 2
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
-#item 3
+::
+
+### Option 2
+
+::card-layout{display="flex" align="center"}
+
+#item 1
 
 ::::card
 ---
-title: Card 3
+title: Card 1
 ---
-laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
+Lorem ipsum dolor sit amet consectetur adipisicing elit
+::::
+
+#item 2
+
+::::card
+---
+title: Card 2
+---
+Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
 ::
