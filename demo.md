@@ -1,40 +1,35 @@
-# Demo
+---
+title: Demo
+---
+
+::block{color=green}
 
 ## Banner
 
-### Option 1
+### Banner Option 1
 
-::banner{:hr=true}
-## Our Collective
-::
+:::banner{:hr=true}
 
-### Option 2
+#### Our Collective
 
-::banner{:hr="false" align="right"}
+:::
+
+### Banner Option 2
+
+:::banner{:hr="false" align="right"}
+
 **We** Offer
-::
+
+:::
 
 ## Bullet List
 
-::bullet-list
+:::bullet-list
 
 - task 1
 - task 2
-::
 
----
-
-## Block
-
-::block{title="Block 1" :colored=false}
-Block 1 Content
-::
-
-::block{title="Block 2" :colored=true}
-Block 2 Content
-::
-
----
+:::
 
 ## Buttons
 
@@ -46,103 +41,82 @@ Block 2 Content
 
 :link-button{to="#buttons" type="cta" text="CTA Button"}
 
----
-
 ## Call To Action
 
-::call-to-action
+:::call-to-action
 
-  # We value trust!
+### We value trust
 
-  :::link-button{to="https://www.mouseless.codes" type="cta" text="Reach out!"}
-::
-
----
+:link-button{to="https://www.mouseless.codes" type="cta" text="Reach out!"}
+:::
 
 ## Card
 
-::card
+:::card{title="Card Header" image-align="left"}
 ---
-title: Card Header
-imageAlign: left
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-::
 
----
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+:::
 
 ## Card Layout
 
-### Option 1
+### Card Option 1
 
-::card-layout{display="stack" align="left"}
+:::card-layout{display="stack" align="left"}
 
 #item 1
 
-::::card
----
-title: Card 1
----
+::::card{title="Card 1"}
 Lorem ipsum dolor sit amet consectetur adipisicing elit
 ::::
 
 #item 2
 
-::::card
----
-title: Card 2
----
+::::card{title="Card 2"}
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
-::
+:::
 
-### Option 2
+### Card Option 2
 
-::card-layout{display="flex" align="center"}
+:::card-layout{display="flex" align="center"}
 
 #item 1
 
-::::card
----
-title: Card 1
----
+::::card{title="Card 1"}
 Lorem ipsum dolor sit amet consectetur adipisicing elit
 ::::
 
 #item 2
 
-::::card
----
-title: Card 2
----
+::::card{title="Card 2"}
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
-::
-
----
+:::
 
 ## PR List
 
 :pr-list{:repos='["mouseless.codes", "do"]'}
 
----
-
 ## Slider
 
-::slider
+:::slider
 
 #slide1
 
-## Slide 1
+### Slide 1
 
 Slide 1
 
 #slide2
 
-## Slide 2
+### Slide 2
 
 Slide 2
+:::
+
 ::
