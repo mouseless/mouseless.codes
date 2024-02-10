@@ -2,7 +2,7 @@
 title: Demo
 ---
 
-::block{color=green}
+::block{:debug=true}
 
 ## Banner
 

@@ -37,7 +37,7 @@ const root = computed(() => `/${route.path.split("/")[1]}`);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 1em;
+  padding: 2em 0;
   text-align: left;
 }
 
