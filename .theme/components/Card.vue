@@ -42,12 +42,12 @@ const color = colors[blockColor] || "light";
 .card {
   border-style: solid;
   border-radius: var(--border-radius);
+  box-sizing: border-box;
   display: grid;
   grid-template-areas:
     "title title"
     "detail image";
   padding: 1em;
-  margin: 10px;
   width: 100%;
 
   &__title {

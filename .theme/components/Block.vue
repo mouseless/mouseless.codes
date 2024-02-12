@@ -77,7 +77,7 @@ function backgroundChange(color) {
 .colors {
   position: fixed;
   left: 20px;
-  top: 87px;
+  top: 90px;
   width: 20px;
 
   &__item {
