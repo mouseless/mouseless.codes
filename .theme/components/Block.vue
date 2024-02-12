@@ -50,6 +50,8 @@ function backgroundChange(color) {
 <style lang="scss">
 .block {
   text-align: start;
+  display: inline-block;
+  width: 100%;
 
   h1,
   h2,
