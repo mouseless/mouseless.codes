@@ -3,11 +3,19 @@
     class="banner"
     :class="`banner--align_${align}`"
   >
-    <hr v-if="hr" class="banner__line">
-    <div class="banner__text">
+    <hr
+      v-if="hr"
+      class="banner__line"
+      :class="`banner__line--color_${color}`"
+    >
+    <div class="banner__text" :class="`banner__text--color_${color}`">
       <slot />
     </div>
-    <hr v-if="hr" class="banner__line">
+    <hr
+      v-if="hr"
+      class="banner__line"
+      :class="`banner__line--color_${color}`"
+    >
   </div>
 </template>
 <script setup>
@@ -21,6 +29,19 @@ defineProps({
     default: null
   }
 });
+
+const blockColor = inject("block-color", "default");
+const colors = {
+  black: "light",
+  gray: "dark",
+  white: "dark",
+  yellow: "dark",
+  orange: "dark",
+  red: "dark",
+  blue: "dark",
+  green: "dark"
+};
+const color = computed(() => colors[blockColor.value] || "dark");
 </script>
 <style lang="scss">
 .banner {
@@ -39,6 +60,11 @@ defineProps({
     border-radius: var(--border-radius);
     flex: 1;
     margin: 0;
+
+    &--color {
+      &_dark { border-color: var(--color-fg); }
+      &_light { border-color: var(--color-bg); }
+    }
   }
 
   &__text {
@@ -48,6 +74,19 @@ defineProps({
 
     strong {
       color: var(--color-logo-mark);
+    }
+
+    &--color {
+      &_dark {
+        color: var(--color-fg);
+
+        h1, h2, h3, h4, h5, h6 { color: var(--color-fg); }
+      }
+      &_light {
+        color: var(--color-bg);
+
+        h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
+      }
     }
   }
 }

@@ -41,7 +41,7 @@ const colors = [
   "green"
 ];
 
-provide("block-color", props.color);
+provide("block-color", currentColor);
 
 function backgroundChange(color) {
   currentColor.value = color;

@@ -5,7 +5,7 @@
         <img class="mouseless logo mark primary navigation__image navigation__image--reverse">
       </button>
     </div>
-    <div class="slider__content">
+    <div class="slider__content" :class="`slider__content--color_${color}`">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div class="navigation slider__next">
@@ -30,6 +30,19 @@ const props = defineProps({
     default: () => []
   }
 });
+
+const blockColor = inject("block-color", "default");
+const colors = {
+  black: "light",
+  gray: "dark",
+  white: "dark",
+  yellow: "dark",
+  orange: "dark",
+  red: "light",
+  blue: "dark",
+  green: "dark"
+};
+const color = computed(() => colors[blockColor.value] || "dark");
 
 const upToDateSlides = ref(props.slides);
 watch(props, () => {
@@ -70,19 +83,42 @@ const right = () =>
       text-align: left;
     }
 
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: var(--color-fg-mute);
-    }
+    &--color {
+      &_dark {
+        color: var(--color-fg);
 
-    code {
-      background-color: var(--color-bg-mute);
-      border-radius: var(--border-radius);
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: var(--color-fg-mute);
+        }
+
+        code {
+          background-color: var(--color-bg-mute);
+        }
+      }
+      &_light {
+        color: var(--color-bg-mute);
+
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: var(--color-bg);
+        }
+
+        code {
+          background-color: var(--color-fg-mute);
+          color: var(--color-bg);
+        }
+      }
     }
   }
 

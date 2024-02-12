@@ -44,7 +44,7 @@
   </footer>
 </template>
 <script setup>
-const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
+const excludePath = ["/footer", "/header", "/", "/not-found", "/readme"];
 </script>
 <style lang="scss" scoped>
 .footer {

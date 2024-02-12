@@ -9,3 +9,7 @@ body {
     margin-right: auto;
     max-width: calc(var(--width-content) + 30ch);
 }
+
+code {
+    border-radius: var(--border-radius);
+}

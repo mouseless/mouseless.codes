@@ -3,7 +3,11 @@
     <div class="pr-list__repos">
       <ul class="repo-list">
         <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
-          <button class="repo-list__item-link" @click="changeSlider(index)">
+          <button
+            class="repo-list__item-link"
+            :class="`repo-list__item-link--color_${color}`"
+            @click="changeSlider(index)"
+          >
             {{ repo }}
           </button>
         </li>
@@ -43,6 +47,19 @@ const props = defineProps({
 });
 
 const { getActivePullRequests } = useGitHub();
+
+const blockColor = inject("block-color", "default");
+const colors = {
+  black: "light",
+  gray: "dark",
+  white: "dark",
+  yellow: "dark",
+  orange: "dark",
+  red: "light",
+  blue: "dark",
+  green: "dark"
+};
+const color = computed(() => colors[blockColor.value] || "dark");
 
 const repository = ref([]);
 const currentSlider = ref(0);
@@ -86,15 +103,31 @@ function changeSlider(index) {
   &__item-link {
     background-color: var(--color-bg-soft);
     border: 0px;
-    color: var(--color-fg);
     cursor: pointer;
     border-radius: 25px;
     width: 100%;
     height: 50px;
     padding: 0px 30px;
 
-    &:hover {
-      background-color: var(--color-bg-mute);
+    &--color{
+      &_dark {
+        background-color: var(--color-fg);
+        color: var(--color-bg-mute);
+
+        &:hover {
+          background-color: var(--color-fg-mute);
+          color: var(--color-bg);
+        }
+      }
+      &_light {
+        background-color: var(--color-bg-mute);
+        color: var(--color-fg);
+
+        &:hover {
+          background-color: var(--color-fg-mute);
+          color: var(--color-bg-soft);
+        }
+      }
     }
   }
 }

@@ -34,9 +34,16 @@ defineProps({
 
 const blockColor = inject("block-color", "default");
 const colors = {
+  black: "light",
+  gray: "dark",
+  white: "dark",
+  yellow: "dark",
+  orange: "dark",
+  red: "light",
+  blue: "dark",
   green: "dark"
 };
-const color = colors[blockColor] || "light";
+const color = computed(() => colors[blockColor.value] || "dark");
 </script>
 <style lang="scss">
 .card {
@@ -55,8 +62,8 @@ const color = colors[blockColor] || "light";
     margin: 0px;
 
     &--color {
-      &_dark { color: var(--color-white); }
-      &_light { color: var(--color-fg-mute); }
+      &_dark { color: var(--color-fg); }
+      &_light { color: var(--color-bg); }
     }
   }
 
@@ -75,8 +82,14 @@ const color = colors[blockColor] || "light";
   }
 
   &--color {
-    &_dark { border-color: var(--color-white); color: var(--color-white); }
-    &_light { border-color: var(--color-bg-mute); }
+    &_dark {
+      border-color: var(--color-fg);
+      color: var(--color-fg);
+    }
+    &_light {
+      border-color: var(--color-bg);
+      color: var(--color-bg);
+    }
   }
 }
 </style>
