@@ -32,18 +32,7 @@ defineProps({
   }
 });
 
-const blockColor = inject("block-color", "default");
-const colors = {
-  black: "light",
-  gray: "dark",
-  white: "dark",
-  yellow: "dark",
-  orange: "dark",
-  red: "light",
-  blue: "dark",
-  green: "dark"
-};
-const color = computed(() => colors[blockColor.value] || "dark");
+const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .card {

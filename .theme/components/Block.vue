@@ -5,7 +5,7 @@
     </div>
     <div v-if="debug" class="colors">
       <button
-        v-for="item in colors"
+        v-for="(_, item) in colors"
         :key="item"
         class="colors__item"
         :class="`colors__item--color_${item}`"
@@ -29,19 +29,21 @@ const props = defineProps({
     default: "center"
   }
 });
-const currentColor = ref(props.color);
-const colors = [
-  "black",
-  "gray",
-  "white",
-  "yellow",
-  "orange",
-  "red",
-  "blue",
-  "green"
-];
 
-provide("block-color", currentColor);
+const colors = {
+  black: "light",
+  gray: "dark",
+  white: "dark",
+  yellow: "dark",
+  orange: "dark",
+  red: "light",
+  blue: "dark",
+  green: "dark"
+};
+const currentColor = ref(props.color);
+const childColor = computed(() => colors[currentColor.value] || "dark");
+
+provide("block-child-color", childColor);
 
 function backgroundChange(color) {
   currentColor.value = color;
