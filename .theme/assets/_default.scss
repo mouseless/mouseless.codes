@@ -14,10 +14,16 @@ code {
     border-radius: var(--border-radius);
 }
 
-img.mouseless:is(.logo:is(.mark:is(.mono:is(.invert)))) {
-    content: url(https://raw.githubusercontent.com/mouseless/brand/main/assets/logo/svg/logo-mark-white.svg);
-}
+img.mouseless {
+    &:is(.logo) {
+        &:is(.mark) {
+            &:is(.mono) {
+                content: url(https://raw.githubusercontent.com/mouseless/brand/main/assets/logo/svg/logo-mark-black.svg);
 
-img.mouseless:is(.logo:is(.mark:is(.mono))) {
-    content: url(https://raw.githubusercontent.com/mouseless/brand/main/assets/logo/svg/logo-mark-black.svg);
+                &:is(.invert) {
+                    content: url(https://raw.githubusercontent.com/mouseless/brand/main/assets/logo/svg/logo-mark-white.svg);
+                }
+            }
+        }
+    }
 }
