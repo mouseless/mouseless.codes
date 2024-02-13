@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <NuxtLink to="/">
+    <NuxtLink class="header__logo" to="/">
       <img class="mouseless logo">
     </NuxtLink>
     <nav class="menu header__menu">
@@ -12,6 +12,7 @@
           _dir: { $eq: '' },
           _path: { $not: { $in: excludePath } },
         }"
+        :sort="{ position: 1, $numeric: true }"
       >
         <NuxtLink
           v-for="menu in menus"
@@ -37,8 +38,12 @@ const root = computed(() => `/${route.path.split("/")[1]}`);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 1em;
+  padding: 2em 0;
   text-align: left;
+
+  &__logo {
+    height: 25px;
+  }
 }
 
 .menu {

@@ -2,22 +2,31 @@
   <div class="slider">
     <div class="navigation slider__previous">
       <button class="navigation__button" @click="left">
-        <img class="mouseless logo mark primary navigation__image navigation__image--reverse">
+        <img
+          :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
+          class="navigation__image navigation__image--reverse"
+        >
       </button>
     </div>
-    <div class="slider__content">
+    <div class="slider__content" :class="`slider__content--color_${color}`">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div class="navigation slider__next">
       <button class="navigation__button" @click="right">
-        <img class="mouseless logo mark primary navigation__image">
+        <img
+          :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
+          class="navigation__image"
+        >
       </button>
     </div>
     <div class="slider__thumb">
       <div
         v-for="n in slides.length"
         :key="n"
-        :class="{ 'slider__dot--active': n - 1 == pageNumber }"
+        :class="[
+          { 'slider__dot--active': n - 1 == pageNumber },
+          `slider__dot--color_${color}`
+        ]"
         class="slider__dot"
       />
     </div>
@@ -30,6 +39,8 @@ const props = defineProps({
     default: () => []
   }
 });
+
+const color = inject("block-child-color", "dark");
 
 const upToDateSlides = ref(props.slides);
 watch(props, () => {
@@ -64,25 +75,50 @@ const right = () =>
     overflow: auto;
     max-height: 50ch;
     padding-inline: 1em;
+    text-align: start;
 
     h2 {
       margin-top: 0;
       text-align: left;
     }
 
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: var(--color-fg-mute);
-    }
+    &--color {
+      &_dark {
+        color: var(--color-fg);
 
-    code {
-      background-color: var(--color-bg-mute);
-      border-radius: var(--border-radius);
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: var(--color-fg-mute);
+        }
+
+        code {
+          background-color: var(--color-bg-mute);
+        }
+      }
+
+      &_light {
+        color: var(--color-bg-mute);
+
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: var(--color-bg);
+        }
+
+        code {
+          background-color: var(--color-fg-mute);
+          color: var(--color-bg);
+        }
+      }
     }
   }
 
@@ -106,14 +142,21 @@ const right = () =>
 
   &__dot {
     border-radius: 50%;
-    border-width: 0.5;
-    background-color: var(--color-bg-mute);
     width: 10px;
     height: 10px;
     margin: 2px;
 
-    &--active {
+    &--color {
+      &_dark { background-color: var(--color-gray-darkest); }
+      &_light { background-color: var(--color-fg-mute); }
+    }
+
+    &--active.slider__dot--color_dark {
       background-color: var(--color-fg);
+    }
+
+    &--active.slider__dot--color_light {
+      background-color: var(--color-bg-mute);
     }
   }
 

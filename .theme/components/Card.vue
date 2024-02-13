@@ -1,9 +1,13 @@
 <template>
   <div
-    :class="`card--image-align_${imageAlign}`"
+    :class="[`card--image-align_${imageAlign}`, `card--color_${color}`]"
     class="card"
   >
-    <h2 v-if="title !== null" class="card__title">
+    <h2
+      v-if="title !== null"
+      class="card__title"
+      :class="`card__title--color_${color}`"
+    >
       {{ title }}
     </h2>
     <div class="card__detail">
@@ -27,13 +31,14 @@ defineProps({
     default: null
   }
 });
+
+const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .card {
-  border-width: 1px;
   border-style: solid;
   border-radius: var(--border-radius);
-  border-color: var(--color-bg-mute);
+  box-sizing: border-box;
   display: grid;
   grid-template-areas:
     "title title"
@@ -42,9 +47,13 @@ defineProps({
   width: 100%;
 
   &__title {
-    color: var(--color-fg-mute);
     grid-area: title;
     margin: 0px;
+
+    &--color {
+      &_dark { color: var(--color-fg); }
+      &_light { color: var(--color-bg); }
+    }
   }
 
   &__detail {
@@ -57,8 +66,19 @@ defineProps({
 
   &--image-align_left {
     grid-template-areas:
-    "title title"
-    "image detail";
+      "title title"
+      "image detail";
+  }
+
+  &--color {
+    &_dark {
+      border-color: var(--color-fg);
+      color: var(--color-fg);
+    }
+    &_light {
+      border-color: var(--color-bg);
+      color: var(--color-bg);
+    }
   }
 }
 </style>

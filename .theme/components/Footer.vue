@@ -24,6 +24,7 @@
             _dir: { $eq: '' },
             _path: { $not: { $in: excludePath } },
           }"
+          :sort="{ position: 1, $numeric: true }"
         >
           <div class="footer__menu">
             <ul>
@@ -48,7 +49,6 @@ const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"
 </script>
 <style lang="scss" scoped>
 .footer {
-  border-top: solid 2px var(--color-fg-box);
   margin-top: 2em;
 
   &__logo {

@@ -3,14 +3,21 @@
     <div class="pr-list__repos">
       <ul class="repo-list">
         <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
-          <button class="repo-list__item-link" @click="changeSlider(index)">
+          <button
+            class="repo-list__item-link"
+            :class="[
+              `repo-list__item-link--color_${color}`,
+              {'repo-list__item-link--active': index == repoIndex},
+            ]"
+            @click="changeSlider(index)"
+          >
             {{ repo }}
           </button>
         </li>
       </ul>
     </div>
     <div class="pr-list__prs">
-      <SliderInner v-if="render" :slides="repository[currentSlider]">
+      <SliderInner v-if="render" :slides="repoDetails[repoIndex]">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0" class="slide">
             <div class="slide__title">
@@ -44,8 +51,9 @@ const props = defineProps({
 
 const { getActivePullRequests } = useGitHub();
 
-const repository = ref([]);
-const currentSlider = ref(0);
+const color = inject("block-child-color", "dark");
+const repoDetails = ref([]);
+const repoIndex = ref(0);
 const render = ref(false);
 
 onBeforeMount(async() => {
@@ -54,18 +62,20 @@ onBeforeMount(async() => {
     results.push(await getActivePullRequests(repo));
   }
 
-  repository.value = results;
+  repoDetails.value = results;
   render.value = true;
 });
 
 function changeSlider(index) {
-  currentSlider.value = index;
+  repoIndex.value = index;
 }
 </script>
 <style lang="scss">
 .pr-list {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template: "column column";
+  grid-template-columns: 25ch auto;
+  gap: 2em;
 
   &__repos {
     margin-right: 1em;
@@ -86,15 +96,31 @@ function changeSlider(index) {
   &__item-link {
     background-color: var(--color-bg-soft);
     border: 0px;
-    color: var(--color-fg);
     cursor: pointer;
     border-radius: 25px;
     width: 100%;
     height: 50px;
-    padding: 0px 30px;
+    padding: 0 var(--border-radius);
+    text-align: left;
+
+    &--color{
+      &_dark {
+        background-color: var(--color-fg);
+        color: var(--color-bg-mute);
+      }
+
+      &_light {
+        background-color: var(--color-bg-mute);
+        color: var(--color-fg);
+      }
+    }
 
     &:hover {
-      background-color: var(--color-bg-mute);
+      margin-left: 2ch;
+    }
+
+    &--active {
+      margin-left: 1ch;
     }
   }
 }

@@ -1,13 +1,24 @@
 ---
-title: Case Studies
+title: Cases
+position: 3
 ---
 
-We've built value, together.
+::block
+
+:::banner{:hr=false align=center}
+
+## **We**'ve built value, together
+
+:::
 
 Explore our real-world success stories and discover how we've made a difference
 for our clients. These case studies provide insights into our custom software
 development and re-engineering projects, showcasing how we've helped businesses
 overcome challenges and achieve their goals.
+
+::
+
+::block{color=green}
 
 ## Inventiv - Multinet | Up
 
@@ -37,14 +48,22 @@ grateful.
 
 ### Overview
 
+:::bullet-list
+
 - __Industry__: Fintech
 - __Project Management__: GitHub, Azure DevOps, Microsoft Teams
+
+:::
 
 ### Tech Stack
 
 [![C#][logo-csharp]][csharp][![.NET][logo-dotnet]][dotnet]
 [![Postgres][logo-postgres]][postgres][![RabbitMQ][logo-rabbitmq]][rabbitmq]
 [![SQL Server][logo-sqlserver]][sqlserver][![Vue.js][logo-vue]][vue]
+
+::
+
+::block
 
 ## Forward
 
@@ -64,15 +83,23 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 ### Overview
 
+:::bullet-list
+
 - __Industry__: SalesTech
 - __Integrated Systems__: HubSpot, Zapier
 - __Project Management__: GitHub, Slack
+
+:::
 
 ### Tech Stack
 
 [![AWS][logo-aws]][aws][![C#][logo-csharp]][csharp][![DO][logo-do]][do]
 [![Docker][logo-docker]][docker][![.NET][logo-dotnet]][dotnet]
 [![MySQL][logo-mysql]][mysql]
+
+::
+
+::block{color=blue}
 
 ## Flopal
 
@@ -93,19 +120,31 @@ to take bold steps in forming our collective.
 
 ### Overview
 
+:::bullet-list
+
 - __Industry__: Construction
 - __Integrated Systems__: Logo
 - __Project Management__: GitHub, Discord
+
+:::
 
 ### Tech Stack
 
 [![Bootstrap][logo-bootstrap]][bootstrap][![C#][logo-csharp]][csharp]
 [![.NET][logo-dotnet]][dotnet][![SQL Server][logo-sqlserver]][sqlserver]
 
----
+::
+
+::block{color=red}
+
+:::banner{align=center}
 
 Interested in learning more? Explore [our process](./process.md) and discover
 [more about us](./about.md).
+
+:::
+
+::
 
 [Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/

@@ -1,46 +1,81 @@
 ---
-title: About
+title: Our Collective
+position: 4
 ---
 
-We love to develop software, together.
+::block
+
+:::banner{:hr=false align=center}
+
+## **We** love to develop software, together
+
+:::
 
 We are a software development collective, connected through our craft. Our
 collective is a team of 3-7 software engineers guided by our people-centric
 philosophy. We prioritize excellence and efficiency, focusing on delivering
 quality work collaboratively.
 
+::
+
+::block{color=green}
+
 ## Our Culture
 
-_We strive for excellence._
+:::banner{:hr=false align=center}
+
+_**We** strive for excellence._
+
+:::
 
 We view perfection as doing the best we can each day, understanding that it's a
 dynamic goal, not an unchanging ideal. With this perspective, we pursue
 excellence in our work every day.
 
-_We welcome the unconventional._
+:::banner{:hr=false align=center}
+
+_**We** welcome the unconventional._
+
+:::
 
 It is our path to evolution. It involves trying and experimenting, embracing new
 approaches even when they make us feel strange and uneasy. We are perfectly fine
 with stepping out of the comfort zone, inviting the unconventional.
 
-_We love our craft._
+:::banner{:hr=false align=center}
+
+_**We** love our craft._
+
+:::
 
 As software engineers, we constantly debate over better and cleaner ways to
 write code, even after its delivery. It's not just about the end product; it's
 the inherently elegant and fascinating nature of the work itself that keeps us
 engaged.
 
-_We are efficient._
+:::banner{:hr=false align=center}
+
+_**We** are efficient._
+
+:::
 
 We prioritize quality over speed, understanding that rushing can result in
 costly errors. To achieve a balance between quality and productivity, we employ
 effective scope management and incremental delivery.
 
-_We are people-centric._
+:::banner{:hr=false align=center}
+
+_**We** are people-centric._
+
+:::
 
 We prioritize our people above all else, promoting open communication and
 efficiency. With this philosophy, our collective keeps its focus on its craft
 which eventually leads to excellence.
+
+::
+
+::block
 
 ## Our Structure
 
@@ -69,6 +104,10 @@ collectives lean toward their people, whereas businesses lean toward their
 products.
 
 Recognizing this, we've chosen to be a collective.
+
+::
+
+::block{color=blue}
 
 ## Our People
 
@@ -104,10 +143,18 @@ principles and appreciate what you've seen on our [GitHub][github], let us know.
 
 You can reach out to us [here][mail].
 
----
+::
+
+::block{color=red}
+
+:::banner
 
 Interested in learning more? Explore [our services](./services.md) and discover
 [how we operate](./process.md).
+
+:::
+
+::
 
 [github-people]: https://github.com/orgs/mouseless/people
 [github]: https://github.com/mouseless
