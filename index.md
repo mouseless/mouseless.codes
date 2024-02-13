@@ -2,33 +2,60 @@
 title: Mouseless, A Software Development Colletive
 ---
 
-We love to develop software, together.
+::block{color=red}
 
----
+:::banner{:hr=false align=center}
 
-We offer custom software development and re-engineering services.
+**We** love to develop software, together.
 
-[...see more](./services.md)
+:::
 
----
+::
 
-We experiment, learn, and progress, open-sourcing the artifacts we create.
+::block
 
-[...see more](./process.md)
+:::banner{:hr=false align=center}
 
----
+**We** offer custom software development and re-engineering services.
 
-We are a software development collective, connected through our craft.
+:link-button{to="./services" type="default" text="...see more"}
 
-[...see more](./about.md)
+:::
 
----
+::
+
+::block{color=blue}
+
+:::banner{:hr=false align=center}
+
+**We** experiment, learn, and progress, open-sourcing the artifacts we create.
+
+:link-button{to="./process" type="default" text="...see more"}
+
+:::
+
+::
+
+::block
+
+:::banner{:hr=false align=center}
+
+**We** are a software development collective, connected through our craft.
+
+:link-button{to="./about" type="default" text="...see more"}
+
+:::
+
+::
+
+::block{color=black}
+
+:::banner{:hr=false align=center}
 
 Do you think we meet your needs?
 
-Reach out.
+:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
 
-We are [here][github] and [here][mail].
+:::
 
-[github]: https://github.com/mouseless
-[mail]: mailto:connect@mouseless.codes
+::
