@@ -24,7 +24,21 @@ title: Demo
 
 ## Bullet List
 
-:::bullet-list
+:::bullet-list{align=left}
+
+- task 1
+- task 2
+
+:::
+
+:::bullet-list{align=center}
+
+- task 1
+- task 2
+
+:::
+
+:::bullet-list{align=right}
 
 - task 1
 - task 2
