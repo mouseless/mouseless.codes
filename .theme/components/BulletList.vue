@@ -46,13 +46,16 @@ const color = inject("block-child-color", "dark");
   }
 
   li {
-    align-items: center;
-    box-sizing: inherit;
-    display: flex;
+    text-align: start;
+
+    &::marker {
+      content: "";
+    }
 
     &::before {
       content: url("/images/explosion-star.png");
       margin-right: 1em;
+      vertical-align: middle;
     }
   }
 }
