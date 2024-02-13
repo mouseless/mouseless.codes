@@ -1,5 +1,6 @@
 ---
-title: Case Studies
+title: Cases
+position: 3
 ---
 
 ::block

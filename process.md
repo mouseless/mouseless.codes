@@ -1,5 +1,6 @@
 ---
-title: Process
+title: How We Work
+position: 2
 ---
 
 ::block

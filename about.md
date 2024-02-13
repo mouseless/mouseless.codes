@@ -1,5 +1,6 @@
 ---
-title: About
+title: Our Collective
+position: 4
 ---
 
 ::block

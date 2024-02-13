@@ -2,53 +2,51 @@
 title: Mouseless, A Software Development Colletive
 ---
 
-::block{color=red}
+::block{color=default}
 
 :::banner{:hr=false align=center}
 
-**We** love to develop software, together.
+## **We** love to develop software, together.
 
 :::
 
 ::
 
+::block{color=green}
+
+## We offer
+
+custom software development and re-engineering services.
+
+:link-button{to="./services" type="default" text="see more"}
+
+::
+
 ::block
 
-:::banner{:hr=false align=center}
+:::card-layout{display=flex}
 
-**We** offer custom software development and re-engineering services.
+#item 1
 
-:link-button{to="./services" type="default" text="...see more"}
+## We do
+
+experiment, learn, and progress, open-sourcing the artifacts we create.
+
+:link-button{to="./process" type="default" text="see more"}
+
+#item 2
+
+## We are
+
+a software development collective, connected through our craft.
+
+:link-button{to="./about" type="default" text="see more"}
 
 :::
 
 ::
 
 ::block{color=blue}
-
-:::banner{:hr=false align=center}
-
-**We** experiment, learn, and progress, open-sourcing the artifacts we create.
-
-:link-button{to="./process" type="default" text="...see more"}
-
-:::
-
-::
-
-::block
-
-:::banner{:hr=false align=center}
-
-**We** are a software development collective, connected through our craft.
-
-:link-button{to="./about" type="default" text="...see more"}
-
-:::
-
-::
-
-::block{color=black}
 
 :::banner{:hr=false align=center}
 

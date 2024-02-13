@@ -12,6 +12,7 @@
           _dir: { $eq: '' },
           _path: { $not: { $in: excludePath } },
         }"
+        :sort="{ position: 1, $numeric: true }"
       >
         <NuxtLink
           v-for="menu in menus"

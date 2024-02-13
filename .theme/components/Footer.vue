@@ -24,6 +24,7 @@
             _dir: { $eq: '' },
             _path: { $not: { $in: excludePath } },
           }"
+          :sort="{ position: 1, $numeric: true }"
         >
           <div class="footer__menu">
             <ul>
