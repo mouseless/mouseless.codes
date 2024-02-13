@@ -69,6 +69,7 @@ const right = () =>
     overflow: auto;
     max-height: 50ch;
     padding-inline: 1em;
+    text-align: start;
 
     h2 {
       margin-top: 0;

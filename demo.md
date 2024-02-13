@@ -57,7 +57,7 @@ title: Demo
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Lorem ipsum dolor sit amet [consectetur](#demo) adipisicing elit.
 :::
 
 ## Card Layout
