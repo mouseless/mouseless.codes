@@ -2,12 +2,22 @@
 title: About
 ---
 
-We love to develop software, together.
+::block
+
+:::banner{:hr=false align=center}
+
+## **We** love to develop software, together
+
+:::
 
 We are a software development collective, connected through our craft. Our
 collective is a team of 3-7 software engineers guided by our people-centric
 philosophy. We prioritize excellence and efficiency, focusing on delivering
 quality work collaboratively.
+
+::
+
+::block{color=green}
 
 ## Our Culture
 
@@ -42,16 +52,17 @@ We prioritize our people above all else, promoting open communication and
 efficiency. With this philosophy, our collective keeps its focus on its craft
 which eventually leads to excellence.
 
+::
+
+::block
+
 ## Our Structure
 
 At Mouseless, we function as a cohesive software development collective. Our
 structure is designed to promote collaboration and communication, aligning with
 our people-centric philosophy.
 
-```mermaid
-flowchart LR
-    Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
-```
+![diagram](./about-1.png)
 
 Within our collective, one of our engineers serves as the main point of contact
 for a client. This _Single Point of Contact_ manages all client communications
@@ -70,6 +81,10 @@ products.
 
 Recognizing this, we've chosen to be a collective.
 
+::
+
+::block{color=blue}
+
 ## Our People
 
 We are exclusive in expertise, inclusive in participation.
@@ -78,19 +93,7 @@ Our [people][github-people] consists of independent engineers who are committed
 to work in accordance with our [process](./process.md). Each engineer's
 contribution aligns with their level of experience in the field.
 
-```mermaid
-flowchart LR
-    1([x0.5])
-    2([x1])
-    3([x1.5])
-    4([x2])
-    5([x3])
-
-    1 --Junior--> 2
-    2 --Senior--> 3
-    3 --Lead--> 4
-    4 --Principal--> 5
-```
+![diagram](./about-2.png)
 
 ### Join Us
 
@@ -104,10 +107,18 @@ principles and appreciate what you've seen on our [GitHub][github], let us know.
 
 You can reach out to us [here][mail].
 
----
+::
+
+::block{color=red}
+
+:::banner
 
 Interested in learning more? Explore [our services](./services.md) and discover
 [how we operate](./process.md).
+
+:::
+
+::
 
 [github-people]: https://github.com/orgs/mouseless/people
 [github]: https://github.com/mouseless

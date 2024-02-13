@@ -48,3 +48,8 @@ function parsePath(path: string) {
     : path.replace(/\/[^/]*\/?$/, "");
 }
 </script>
+<style lang="scss" scoped>
+img {
+  max-width: 100%;
+}
+</style>

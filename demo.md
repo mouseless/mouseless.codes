@@ -100,7 +100,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## PR List
 
-:pr-list{:repos='["mouseless.codes", "do"]'}
+:pr-list{:repos='["mouseless.codes", "do", "learn-nuxt", "learn-css", "prebuild"]'}
 
 ## Slider
 

@@ -23,10 +23,6 @@ const props = defineProps({
   debug: {
     type: Boolean,
     default: false
-  },
-  textAlign: {
-    type: String,
-    default: "center"
   }
 });
 
@@ -51,16 +47,12 @@ function backgroundChange(color) {
 </script>
 <style lang="scss">
 .block {
-  text-align: start;
-  padding: 1em;
+  text-align: center;
+  padding: 2em 0;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-align: center;
+  p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &--color {

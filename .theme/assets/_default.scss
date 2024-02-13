@@ -13,3 +13,9 @@ body {
 code {
     border-radius: var(--border-radius);
 }
+
+a {
+    &:hover {
+        color: var(--color-fg);
+    }
+}
