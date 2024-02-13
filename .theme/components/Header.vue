@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <NuxtLink to="/">
+    <NuxtLink class="header__logo" to="/">
       <img class="mouseless logo">
     </NuxtLink>
     <nav class="menu header__menu">
@@ -39,6 +39,10 @@ const root = computed(() => `/${route.path.split("/")[1]}`);
   justify-content: space-between;
   padding: 2em 0;
   text-align: left;
+
+  &__logo {
+    height: 25px;
+  }
 }
 
 .menu {

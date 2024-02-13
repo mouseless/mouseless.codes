@@ -52,8 +52,7 @@ function backgroundChange(color) {
 <style lang="scss">
 .block {
   text-align: start;
-  display: inline-block;
-  width: 100%;
+  padding: 1em;
 
   h1,
   h2,
@@ -66,14 +65,24 @@ function backgroundChange(color) {
 
   &--color {
     &_default { background-color: transparent; }
-    &_red { background-color: var(--color-red); }
     &_green { background-color: var(--color-green); }
     &_blue { background-color: var(--color-blue); }
     &_gray { background-color: var(--color-gray); }
-    &_black { background-color: var(--color-black); }
     &_white { background-color: var(--color-white); }
     &_orange { background-color: var(--color-orange); }
     &_yellow { background-color: var(--color-yellow); }
+    &_black {
+      background-color: var(--color-black);
+      color: var(--color-bg);
+
+      h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
+    }
+    &_red {
+      background-color: var(--color-red);
+      color: var(--color-bg);
+
+      h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
+    }
   }
 }
 </style>
@@ -81,7 +90,7 @@ function backgroundChange(color) {
 .colors {
   position: fixed;
   left: 20px;
-  top: 90px;
+  top: 100px;
   width: 20px;
 
   &__item {
