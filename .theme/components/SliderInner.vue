@@ -100,6 +100,7 @@ const right = () =>
           background-color: var(--color-bg-mute);
         }
       }
+
       &_light {
         color: var(--color-bg-mute);
 
@@ -146,12 +147,8 @@ const right = () =>
     margin: 2px;
 
     &--color {
-      &_dark {
-        background-color: var(--color-gray-darkest);
-      }
-      &_light {
-        background-color: var(--color-fg-mute);
-      }
+      &_dark { background-color: var(--color-gray-darkest); }
+      &_light { background-color: var(--color-fg-mute); }
     }
 
     &--active.slider__dot--color_dark {

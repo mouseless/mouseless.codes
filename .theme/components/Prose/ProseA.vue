@@ -28,6 +28,7 @@ const color = inject("block-child-color", "dark");
                 color: var(--color-logo-mark);
             }
         }
+
         &_light {
             color: var(--color-bg);
 
