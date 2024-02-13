@@ -17,7 +17,10 @@
       <div
         v-for="n in slides.length"
         :key="n"
-        :class="{ 'slider__dot--active': n - 1 == pageNumber }"
+        :class="[
+          { 'slider__dot--active': n - 1 == pageNumber },
+          `slider__dot--color_${color}`
+        ]"
         class="slider__dot"
       />
     </div>
@@ -31,18 +34,7 @@ const props = defineProps({
   }
 });
 
-const blockColor = inject("block-color", "default");
-const colors = {
-  black: "light",
-  gray: "dark",
-  white: "dark",
-  yellow: "dark",
-  orange: "dark",
-  red: "light",
-  blue: "dark",
-  green: "dark"
-};
-const color = computed(() => colors[blockColor.value] || "dark");
+const color = inject("block-child-color", "dark");
 
 const upToDateSlides = ref(props.slides);
 watch(props, () => {
@@ -142,14 +134,25 @@ const right = () =>
 
   &__dot {
     border-radius: 50%;
-    border-width: 0.5;
-    background-color: var(--color-bg-mute);
     width: 10px;
     height: 10px;
     margin: 2px;
 
-    &--active {
+    &--color {
+      &_dark {
+        background-color: var(--color-gray-darkest);
+      }
+      &_light {
+        background-color: var(--color-fg-mute);
+      }
+    }
+
+    &--active.slider__dot--color_dark {
       background-color: var(--color-fg);
+    }
+
+    &--active.slider__dot--color_light {
+      background-color: var(--color-bg-mute);
     }
   }
 
