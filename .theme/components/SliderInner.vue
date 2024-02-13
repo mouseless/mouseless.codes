@@ -2,7 +2,10 @@
   <div class="slider">
     <div class="navigation slider__previous">
       <button class="navigation__button" @click="left">
-        <img class="mouseless logo mark primary navigation__image navigation__image--reverse">
+        <img
+          :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
+          class="navigation__image navigation__image--reverse"
+        >
       </button>
     </div>
     <div class="slider__content" :class="`slider__content--color_${color}`">
@@ -10,7 +13,10 @@
     </div>
     <div class="navigation slider__next">
       <button class="navigation__button" @click="right">
-        <img class="mouseless logo mark primary navigation__image">
+        <img
+          :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
+          class="navigation__image"
+        >
       </button>
     </div>
     <div class="slider__thumb">
