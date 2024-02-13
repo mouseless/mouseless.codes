@@ -82,7 +82,10 @@ At Mouseless, we function as a cohesive software development collective. Our
 structure is designed to promote collaboration and communication, aligning with
 our people-centric philosophy.
 
-![diagram](./about-1.png)
+```mermaid
+flowchart LR
+    Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
+```
 
 Within our collective, one of our engineers serves as the main point of contact
 for a client. This _Single Point of Contact_ manages all client communications
@@ -113,7 +116,18 @@ Our [people][github-people] consists of independent engineers who are committed
 to work in accordance with our [process](./process.md). Each engineer's
 contribution aligns with their level of experience in the field.
 
-![diagram](./about-2.png)
+```mermaid
+flowchart LR
+    1([x0.5])
+    2([x1])
+    3([x1.5])
+    4([x2])
+    5([x3])
+    1 --Junior--> 2
+    2 --Senior--> 3
+    3 --Lead--> 4
+    4 --Principal--> 5
+```
 
 ### Join Us
 
