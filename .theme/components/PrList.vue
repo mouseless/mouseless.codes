@@ -115,8 +115,12 @@ function changeSlider(index) {
       }
     }
 
-    &:hover, &--active {
+    &:hover {
       margin-left: 2ch;
+    }
+
+    &--active {
+      margin-left: 1ch;
     }
   }
 }
