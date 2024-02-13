@@ -24,11 +24,11 @@ without extra cost.
 
 **We** are self-organized.
 
-**We** are a __self-managing__ team with a single point of contact assigned per
-client. **We** operate on a __time & materials__ basis without requiring a
-fixed-budget or a fixed-plan thanks to our fast response time.
-
 :::
+
+We are a __self-managing__ team with a single point of contact assigned per
+client. We operate on a __time & materials__ basis without requiring a
+fixed-budget or a fixed-plan thanks to our fast response time.
 
 Our efficiency relies on;
 
@@ -92,7 +92,7 @@ Explore our [open sourced projects][github-repos].
 
 :::banner{:hr=false align=center}
 
-We are eager.
+**We** are eager.
 
 :::
 
