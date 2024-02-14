@@ -39,9 +39,7 @@ const members = ref([]);
 const render = ref(false);
 
 onBeforeMount(async() => {
-  const results = await getPeople();
-
-  members.value = results;
+  members.value = await getPeople();
   render.value = true;
 });
 
