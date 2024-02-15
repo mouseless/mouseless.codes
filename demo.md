@@ -114,6 +114,8 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## Github People
 
+:people{align=left}
+:people{align=center}
 :people{align=right}
 
 ## PR List
