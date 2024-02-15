@@ -6,22 +6,12 @@
     <div
       v-if="render"
       class="members people__members"
-      :class="`people__members--align_${align == 'left' ? 'right' : 'left'}`"
     >
       <div v-for="member in members" :key="member.login">
-        <a :href="member.html_url">
+        <a :href="member.html_url" target="_blank">
           <img :src="member.avatar_url" class="members__image">
         </a>
       </div>
-    </div>
-    <div
-      class="people__title"
-      :class="[
-        `people__title--align_${align}`,
-        `people__title--color_${color}`
-      ]"
-    >
-      Our People
     </div>
   </div>
 </template>
@@ -29,7 +19,7 @@
 defineProps({
   align: {
     type: String,
-    default: "right"
+    default: "center"
   }
 });
 
@@ -42,74 +32,27 @@ onBeforeMount(async() => {
   members.value = await getPeople();
   render.value = true;
 });
-
-const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss" scoped>
 .people {
-  display: grid;
-  grid-template-areas: "left right";
   width: 100%;
 
   &--align {
     &_left {
-      grid-template-columns: 200px auto;
+      text-align: left;
+    }
+
+    &_center {
+      text-align: center;
     }
 
     &_right {
-      grid-template-columns: auto 200px;
+      text-align: right;
     }
   }
 
   &__members {
     display: inline-flex;
-
-    &--align {
-      &_left {
-        grid-area: left;
-        justify-content: end;
-      }
-
-      &_right {
-        grid-area: right;
-        justify-content: start;
-      }
-    }
-  }
-
-  &__title {
-    font-weight: bolder;
-    font-size: x-large;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    &--align {
-      &_left {
-        grid-area: left;
-        border-bottom-right-radius: var(--border-radius);
-        border-top-right-radius: var(--border-radius);
-        text-align: left;
-      }
-
-      &_right {
-        grid-area: right;
-        border-bottom-left-radius: var(--border-radius);
-        border-top-left-radius: var(--border-radius);
-        text-align: right;
-      }
-    }
-
-    &--color {
-      &_dark {
-        background-color: var(--color-fg);
-        color: var(--color-bg);
-      }
-
-      &_light {
-        background-color: var(--color-bg);
-        color: var(--color-fg);
-      }
-    }
   }
 }
 
