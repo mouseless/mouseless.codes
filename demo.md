@@ -112,6 +112,12 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 :::
 
+## Github People
+
+:people{align=left}
+:people{align=center}
+:people{align=right}
+
 ## PR List
 
 :pr-list{:repos='["mouseless.codes", "do", "learn-nuxt", "learn-css", "prebuild"]'}
