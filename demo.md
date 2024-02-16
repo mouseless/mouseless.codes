@@ -112,16 +112,9 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 :::
 
-## Form
+## External Frame
 
-:::google-form
----
-source: "https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true"
-height: "950px"
-meeting: false
----
-Loading...
-:::
+:::external-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true"}
 
 ## Github People
 
