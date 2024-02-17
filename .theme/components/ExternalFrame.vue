@@ -1,5 +1,9 @@
 <template>
-  <iframe ref="myIframe" :src="source" class="frame" scrolling="no">
+  <iframe
+    :src="source"
+    class="frame"
+    scrolling="no"
+  >
     <slot />
   </iframe>
 </template>
