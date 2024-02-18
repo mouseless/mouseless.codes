@@ -2,7 +2,7 @@
 title: Mouseless, A Software Development Colletive
 ---
 
-::block{color=default}
+::block
 
 :::banner{:hr=false align=center}
 
@@ -14,7 +14,7 @@ title: Mouseless, A Software Development Colletive
 
 ::block{color=green}
 
-## We offer
+## If you need
 
 custom software development and re-engineering services.
 
@@ -28,17 +28,17 @@ custom software development and re-engineering services.
 
 #item 1
 
-## We do
+## How?
 
-experiment, learn, and progress, open-sourcing the artifacts we create.
+We experiment, learn, and progress, open-sourcing the artifacts we create.
 
 :link-button{to="./process" type="default" text="see more"}
 
 #item 2
 
-## We are
+## Who?
 
-a software development collective, connected through our craft.
+We are a software development collective, connected through our craft.
 
 :link-button{to="./about" type="default" text="see more"}
 
@@ -46,11 +46,11 @@ a software development collective, connected through our craft.
 
 ::
 
-::block{color=blue}
+::block{color=black}
 
 :::banner{:hr=false align=center}
 
-Do you think we meet your needs?
+## If you're interested
 
 :link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
 
