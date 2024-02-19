@@ -1,14 +1,20 @@
 <template>
-  <div class="block" :class="`block--color_${currentColor}`">
+  <div
+    class="block color"
+    :class="[
+      `color--${currentColor}`,
+      `color--${colors[currentColor]}`
+    ]"
+  >
     <div class="content">
       <slot />
     </div>
-    <div v-if="debug" class="colors">
+    <div v-if="debug" class="block__colors">
       <button
         v-for="(_, item) in colors"
         :key="item"
-        class="colors__item"
-        :class="`colors__item--color_${item}`"
+        class="block__color-btn color"
+        :class="`color--${item}`"
         @click="backgroundChange(item)"
       />
     </div>
@@ -55,53 +61,39 @@ function backgroundChange(color) {
     margin-right: auto;
   }
 
-  &--color {
-    &_default { background-color: transparent; }
-    &_green { background-color: var(--color-green); }
-    &_blue { background-color: var(--color-blue); }
-    &_gray { background-color: var(--color-gray); }
-    &_white { background-color: var(--color-white); }
-    &_orange { background-color: var(--color-orange); }
-    &_yellow { background-color: var(--color-yellow); }
-    &_black {
-      background-color: var(--color-black);
-      color: var(--color-bg);
+  h1, h2, h3, h4, h5, h6 { margin-top: 0; }
 
-      h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
-    }
-    &_red {
-      background-color: var(--color-red);
-      color: var(--color-bg);
-
-      h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
-    }
+  &__colors {
+    position: fixed;
+    left: 20px;
+    top: 100px;
+    width: 20px;
   }
-}
-</style>
-<style lang="scss" scoped>
-.colors {
-  position: fixed;
-  left: 20px;
-  top: 100px;
-  width: 20px;
 
-  &__item {
+  &__color-btn {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
     border-width: 0px;
     border-radius: var(--border-radius);
+  }
+}
 
-    &--color {
-      &_red { background-color: var(--color-red); }
-      &_green { background-color: var(--color-green); }
-      &_blue { background-color: var(--color-blue); }
-      &_gray { background-color: var(--color-gray); }
-      &_black { background-color: var(--color-black); }
-      &_white { background-color: var(--color-white); }
-      &_orange { background-color: var(--color-orange); }
-      &_yellow { background-color: var(--color-yellow); }
-    }
+.color {
+  &--default { background-color: transparent; }
+  &--black { background-color: hsl(from var(--color-black-lightest) h s calc(l + .0)); }
+  &--gray { background-color: hsl(from var(--color-gray-darkest) h s calc(l - .0)); }
+  &--white { background-color: hsl(from var(--color-white) h s calc(l - .0)); }
+  &--yellow { background-color: hsl(from var(--color-yellow) h s calc(l + .1)); }
+  &--orange { background-color: hsl(from var(--color-orange) h s calc(l + .1)); }
+  &--red { background-color: hsl(from var(--color-red) h calc(s - .6) calc(l - .2)); }
+  &--blue { background-color: hsl(from var(--color-blue) h s calc(l + .2)); }
+  &--green { background-color: hsl(from var(--color-green) h s calc(l + .3)); }
+
+  &--light {
+    color: var(--color-bg);
+
+    h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
   }
 }
 </style>
