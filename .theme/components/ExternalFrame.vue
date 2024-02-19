@@ -25,5 +25,6 @@ const height = ref(props.height || "600px");
 .frame {
   width: 100%;
   border: 0;
+  border-radius: var(--border-radius);
 }
 </style>
