@@ -3,17 +3,23 @@
     :src="source"
     class="frame"
     scrolling="no"
+    :height="height"
   >
     <slot />
   </iframe>
 </template>
 <script setup>
-defineProps({
+const props = defineProps({
+  height: {
+    type: String,
+    default: ""
+  },
   source: {
     type: String,
     default: ""
   }
 });
+const height = ref(props.height || "600px");
 </script>
 <style lang="scss" scoped>
 .frame {
