@@ -145,12 +145,13 @@ function changeSlide(page) {
   }
 
   &__dot {
+    border: 0;
     border-radius: 50%;
-    width: 10px;
+    cursor: pointer;
     height: 10px;
     margin: 2px;
-    border: 0;
     padding: 0;
+    width: 10px;
 
     &--color {
       &_dark { background-color: var(--color-gray-darkest); }

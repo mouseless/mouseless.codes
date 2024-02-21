@@ -20,19 +20,15 @@
       <div v-if="!render" class="pr-list__loading" />
       <SliderInner v-if="render" :slides="repoDetails[repoIndex]">
         <template #default="{pageNumber, slides}">
-          <div v-if="slides.length !== 0" class="slide">
-            <div class="slide__title">
-              <h2>
-                <NuxtLink :to="slides[pageNumber]?.html_url">
-                  {{ slides[pageNumber]?.title }}
-                </NuxtLink>
-              </h2>
-            </div>
-            <div class="slide__body">
-              <MDC :value="slides[pageNumber]?.body" tag="article" />
-            </div>
+          <div v-if="slides.length !== 0">
+            <h2>
+              <NuxtLink :to="slides[pageNumber]?.html_url">
+                {{ slides[pageNumber]?.title }}
+              </NuxtLink>
+            </h2>
+            <MDC :value="slides[pageNumber]?.body" tag="article" />
           </div>
-          <div v-else class="no-content">
+          <div v-else>
             <h3>
               There are currently no active pull requests.
             </h3>
@@ -90,7 +86,7 @@ function changeSlider(index) {
     animation: spin 1s linear infinite;
     border: 4px solid var(--color-bg-soft);
     border-left-color: var(--color-fg);
-    border-radius: 50%;
+    border-radius: 50px;
     height: 50px;
     width: 50px;
   }
