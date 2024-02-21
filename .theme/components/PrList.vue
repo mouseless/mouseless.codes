@@ -17,6 +17,7 @@
       </ul>
     </div>
     <div class="pr-list__prs">
+      <div v-if="!render" class="pr-list__loading" />
       <SliderInner v-if="render" :slides="repoDetails[repoIndex]">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0" class="slide">
@@ -79,6 +80,25 @@ function changeSlider(index) {
 
   &__repos {
     margin-right: 1em;
+  }
+
+  &__prs {
+    margin: auto;
+  }
+
+  &__loading {
+    animation: spin 1s linear infinite;
+    border: 4px solid var(--color-bg-soft);
+    border-left-color: var(--color-fg);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
