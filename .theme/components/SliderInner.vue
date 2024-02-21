@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-    <div class="navigation slider__previous">
+    <div v-if="pageNumber != 0" class="navigation slider__previous">
       <button class="navigation__button" @click="left">
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
@@ -11,7 +11,7 @@
     <div class="slider__content" :class="`slider__content--color_${color}`">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div class="navigation slider__next">
+    <div v-if="pageNumber != upToDateSlides.length - 1" class="navigation slider__next">
       <button class="navigation__button" @click="right">
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
@@ -20,7 +20,7 @@
       </button>
     </div>
     <div class="slider__thumb">
-      <div
+      <button
         v-for="n in slides.length"
         :key="n"
         :class="[
@@ -28,6 +28,7 @@
           `slider__dot--color_${color}`
         ]"
         class="slider__dot"
+        @click="changeSlide(n - 1)"
       />
     </div>
   </div>
@@ -56,6 +57,9 @@ const right = () =>
   pageNumber.value < upToDateSlides.value.length - 1
     ? (pageNumber.value = pageNumber.value + 1)
     : pageNumber.value;
+function changeSlide(page) {
+  pageNumber.value = page;
+}
 </script>
 <style lang="scss">
 .slider {
@@ -145,6 +149,8 @@ const right = () =>
     width: 10px;
     height: 10px;
     margin: 2px;
+    border: 0;
+    padding: 0;
 
     &--color {
       &_dark { background-color: var(--color-gray-darkest); }
