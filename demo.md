@@ -71,7 +71,7 @@ title: Demo
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
-Lorem ipsum dolor sit amet [consectetur](http://mouseless.codes) adipisicing elit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
 :::
 
 ## Card Layout
@@ -145,3 +145,31 @@ Slide 2
 :::
 
 ::
+
+## Bold Text
+
+Demo **Bold Text**
+
+## Italic Text
+
+Demo *Italic Text*
+
+## Inner Page Link
+
+Demo [Link](#demo)
+
+## External Page Link
+
+Demo [External Link](http://mouseless.codes)
+
+## Image
+
+![](/images/explosion-star.png)
+
+# Head1
+
+## Head2
+
+### Head3
+
+#### Head4
