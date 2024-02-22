@@ -146,29 +146,37 @@ Slide 2
 
 ::
 
-## Bold Text
+## Prose
 
-Demo **Bold Text**
+### Texts
 
-## Italic Text
+\*\*Bold Text\*\* => **Bold Text**
 
-Demo *Italic Text*
+\_\_Bold Text\_\_ => __Bold Text__
 
-## Inner Page Link
+\*Italic Text\* => *Italic Text*
 
-Demo [Link](#demo)
+\_Italic Text\_ => _Italic Text_
 
-## External Page Link
+### Links
 
-Demo [External Link](http://mouseless.codes)
+Inner page link \[link\]\(path\) => [Link](#demo)
 
-## Image
+External page link \[link\]\(http://....\) =>  [External Link](http://mouseless.codes)
 
-![](/images/explosion-star.png)
+### Image
+
+Image !\[image desc.\]\(image path\) => ![](/images/explosion-star.png)
+
+### Head using
 
 # Head1
 
+\# Head1
+
 ## Head2
+
+\## Head2
 
 ### Head3
 
