@@ -8,6 +8,8 @@ title: Mouseless, A Software Development Colletive
 
 ## **We** love to develop software, together.
 
+> content will be revised
+
 :::
 
 ::
