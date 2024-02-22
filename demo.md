@@ -144,39 +144,37 @@ Slide 1
 Slide 2
 :::
 
-::
-
 ## Prose
 
 ### Texts
 
-\*\*Bold Text\*\* => **Bold Text**
+**Bold Text**
 
-\_\_Bold Text\_\_ => __Bold Text__
+__Bold Text__
 
-\*Italic Text\* => *Italic Text*
+*Italic Text*
 
-\_Italic Text\_ => _Italic Text_
+_Italic Text_
+
+### Blockquotes
+
+> Blockquotes
 
 ### Links
 
-Inner page link \[link\]\(path\) => [Link](#demo)
+[Link](#demo)
 
-External page link \[link\]\(http://....\) =>  [External Link](http://mouseless.codes)
+[External Link](http://mouseless.codes)
 
 ### Image
 
-Image !\[image desc.\]\(image path\) => ![](/images/explosion-star.png)
+![](/images/explosion-star.png)
 
 ### Head using
 
 # Head1
 
-\# Head1
-
 ## Head2
-
-\## Head2
 
 ### Head3
 
@@ -185,3 +183,5 @@ Image !\[image desc.\]\(image path\) => ![](/images/explosion-star.png)
 ##### Head5
 
 ###### Head6
+
+::
