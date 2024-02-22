@@ -11,10 +11,6 @@
 </template>
 <script setup>
 const props = defineProps({
-  border: {
-    type: String,
-    default: null
-  },
   height: {
     type: String,
     default: null
@@ -29,14 +25,13 @@ const props = defineProps({
   }
 });
 
-const border = ref(props.border || "1px");
 const height = ref(props.height || "600px");
 const width = ref(props.width || "100%");
 </script>
 <style lang="scss" scoped>
 .frame {
   border-radius: var(--border-radius);
-  border-style: solid;
-  border-width: v-bind(border);
+  border-width: 0;
+  background-color: var(--color-white);
 }
 </style>
