@@ -2,53 +2,87 @@
 title: Mouseless, A Software Development Colletive
 ---
 
-::block
+::block{color=black}
 
 :::banner{:hr=false align=center}
 
-## **We** love to develop software, together.
+## We love to develop software, together.
 
-> content will be revised
+We are a software development collective, connected through our craft. Our
+collective is a team of 3-7 software engineers guided by our people-centric
+philosophy. We prioritize excellence and efficiency, focusing on delivering
+quality work collaboratively.
 
 :::
 
 ::
 
-::block{color=green}
-
-## If you need
-
-custom software development and re-engineering services.
-
-:link-button{to="./services" type="default" text="see more"}
-
-::
-
 ::block
+
+## We are ready to tackle all the tedious work !
 
 :::card-layout{display=flex}
 
 #item 1
+::::card{title="Custom Software Development" image-align="left"}
+---
+image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
+---
 
-## How?
+We provide tailored software solutions, seamlessly integrating custom
+development to prioritize core and auxiliary functionalities while managing the
+entire development process, allowing clients to maintain a relentless focus on
+their business objectives.
 
-We experiment, learn, and progress, open-sourcing the artifacts we create.
-
-:link-button{to="./process" type="default" text="see more"}
+[See More ...](services.md)
+::::
 
 #item 2
+::::card{title="Re-engineering Services" image-align="left"}
+---
+image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
+---
 
-## Who?
+We specialize in revamping outdated custom-developed software, taking full
+responsibility for secondary systems to ensure essential technology upgrades,
+enabling businesses to concentrate on core challenges while we address
+engineering obstacles.
 
-We are a software development collective, connected through our craft.
-
-:link-button{to="./about" type="default" text="see more"}
+[See More ...](services.md)
+::::
 
 :::
 
 ::
 
 ::block{color=black}
+
+## We've built value, together.
+
+:::slider
+
+#slide1
+
+![Inventiv](logo_inventiv.svg)
+
+Inventiv is the technology subsidiary of Multinet | Up, specializing in payment
+technology. They have a strong in-house software development culture, providing
+us with the opportunity to explore innovative ways to develop software. This led
+us to create their backend framework, Gazel, and their service
+framework, Routine, both in .NET.
+
+![Inventiv](inventive_stack.png)
+
+#slide2
+
+### Forward
+
+Slide 2
+:::
+
+::
+
+::block
 
 :::banner{:hr=false align=center}
 
