@@ -3,7 +3,7 @@ import { joinURL } from "ufo";
 export default function() {
   const urlBase = "https://api.github.com";
 
-  async function getActivePullRequests(repository) {
+  async function getPullRequests(repository, state = "all", perPage = "5") {
     return await $fetch(
       joinURL(urlBase, "/repos/mouseless/", repository, "/pulls"),
       {
@@ -12,7 +12,8 @@ export default function() {
           "X-GitHub-Api-Version": "2022-11-28"
         },
         query: {
-          state: "open"
+          state,
+          per_page: perPage
         }
       }
     );
@@ -31,7 +32,7 @@ export default function() {
   };
 
   return {
-    getActivePullRequests,
+    getPullRequests,
     getPeople
   };
 }

@@ -46,7 +46,7 @@ const props = defineProps({
   }
 });
 
-const { getActivePullRequests } = useGitHub();
+const { getPullRequests } = useGitHub();
 
 const color = inject("block-child-color", "dark");
 const repoDetail = ref([]);
@@ -54,18 +54,18 @@ const repoIndex = ref(0);
 const render = ref(false);
 
 onBeforeMount(async() => {
-  repoDetail.value = await getPullRequests();
+  repoDetail.value = await getPullAllRequests();
   render.value = true;
 });
 
 async function changeSlider(index) {
   repoIndex.value = index;
-  repoDetail.value = await getPullRequests();
+  repoDetail.value = await getPullAllRequests();
 }
 
-async function getPullRequests() {
+async function getPullAllRequests() {
   render.value = false;
-  const result = await getActivePullRequests(props.repos[repoIndex.value]);
+  const result = await getPullRequests(props.repos[repoIndex.value]);
   render.value = true;
   return result;
 }
