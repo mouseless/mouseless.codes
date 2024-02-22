@@ -11,7 +11,7 @@
     <div class="slider__content" :class="`slider__content--color_${color}`">
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div v-if="pageNumber != upToDateSlides.length - 1" class="navigation slider__next">
+    <div v-if="pageNumber != upToDateSlides.length - 1 && upToDateSlides.length != 0" class="navigation slider__next">
       <button class="navigation__button" @click="right">
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"

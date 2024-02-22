@@ -18,7 +18,7 @@
     </div>
     <div class="pr-list__prs">
       <div v-if="!render" class="pr-list__loading" />
-      <SliderInner v-if="render" :slides="repoDetails[repoIndex]">
+      <SliderInner v-if="render" :slides="repoDetail">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0">
             <h2>
@@ -49,22 +49,25 @@ const props = defineProps({
 const { getActivePullRequests } = useGitHub();
 
 const color = inject("block-child-color", "dark");
-const repoDetails = ref([]);
+const repoDetail = ref([]);
 const repoIndex = ref(0);
 const render = ref(false);
 
 onBeforeMount(async() => {
-  const results = [];
-  for(const repo of props.repos) {
-    results.push(await getActivePullRequests(repo));
-  }
-
-  repoDetails.value = results;
+  repoDetail.value = await getPullRequests();
   render.value = true;
 });
 
-function changeSlider(index) {
+async function changeSlider(index) {
   repoIndex.value = index;
+  repoDetail.value = await getPullRequests();
+}
+
+async function getPullRequests() {
+  render.value = false;
+  const result = await getActivePullRequests(props.repos[repoIndex.value]);
+  render.value = true;
+  return result;
 }
 </script>
 <style lang="scss">
