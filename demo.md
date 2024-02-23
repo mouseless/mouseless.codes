@@ -146,7 +146,7 @@ Slide 2
 
 ## Prose
 
-### Texts
+Normal Text
 
 **Bold Text**
 
@@ -156,21 +156,13 @@ __Bold Text__
 
 _Italic Text_
 
-### Blockquotes
-
 > Blockquotes
-
-### Links
 
 [Link](#demo)
 
 [External Link](http://mouseless.codes)
 
-### Image
-
 ![](/images/explosion-star.png)
-
-### Head using
 
 # Head1
 

@@ -1,20 +1,31 @@
 <template>
   <div class="pr-list">
     <div class="pr-list__repos">
-      <ul class="repo-list">
-        <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
-          <button
-            class="repo-list__item-link"
-            :class="[
-              `repo-list__item-link--color_${color}`,
-              {'repo-list__item-link--active': index == repoIndex},
-            ]"
-            @click="changeSlider(index)"
-          >
-            {{ repo }}
-          </button>
-        </li>
-      </ul>
+      <div class="repo-list">
+        <ul>
+          <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
+            <button
+              class="repo-list__item-link"
+              :class="[
+                `repo-list__item-link--color_${color}`,
+                {'repo-list__item-link--active': index == repoIndex},
+              ]"
+              @click="changeSlider(index)"
+            >
+              {{ repo }}
+            </button>
+          </li>
+        </ul>
+        <div
+          class="switcher repo-list__switcher"
+          :class="`switcher--status_${prState}`"
+        >
+          <button class="switcher__hand" @click="switcher" />
+          <div class="switcher__text">
+            {{ prState === "all" ? "All" : "Open" }}
+          </div>
+        </div>
+      </div>
     </div>
     <div class="pr-list__prs">
       <div v-if="!render" class="pr-list__loading" />
@@ -52,20 +63,28 @@ const color = inject("block-child-color", "dark");
 const repoDetail = ref([]);
 const repoIndex = ref(0);
 const render = ref(false);
+const prState = ref("all");
 
 onBeforeMount(async() => {
   repoDetail.value = await getPullAllRequests();
   render.value = true;
 });
 
-async function changeSlider(index) {
+watch([repoIndex, prState], async() => {
+  repoDetail.value = await getPullAllRequests(prState.value);
+});
+
+function switcher() {
+  prState.value = prState.value === "all" ? "open" : "all";
+};
+
+function changeSlider(index) {
   repoIndex.value = index;
-  repoDetail.value = await getPullAllRequests();
 }
 
-async function getPullAllRequests() {
+async function getPullAllRequests(state) {
   render.value = false;
-  const result = await getPullRequests(props.repos[repoIndex.value]);
+  const result = await getPullRequests(props.repos[repoIndex.value], state);
   render.value = true;
   return result;
 }
@@ -141,6 +160,59 @@ async function getPullAllRequests() {
     &--active {
       margin-left: 1ch;
     }
+  }
+
+  &__switcher {
+    margin-left: 5em;
+  }
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  border: solid 1px;
+  border-radius: var(--border-radius);
+  color: var(--color-fg-mute);
+  font-weight: bold;
+  position: relative;
+  height: 35px;
+  width: 75px;
+
+  &--status {
+    &_open {
+      background-color: var(--color-green);
+      color: var(--color-bg-soft);
+      justify-content: start;
+
+      .switcher__hand {
+        right: 2px;
+      }
+    }
+
+    &_all {
+      background-color: var(--color-gray);
+      justify-content: end;
+
+      .switcher__hand {
+        left: 2px;
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 7px;
+    margin-right: 8px;
+  }
+
+  &__hand {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    top: 2px;
   }
 }
 </style>
