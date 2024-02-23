@@ -77,7 +77,7 @@ function changeSlide(page) {
     grid-area: content;
     color: var(--color-fg);
     overflow: auto;
-    max-height: 50ch;
+    height: 50ch;
     padding-inline: 1em;
     text-align: start;
 
@@ -86,11 +86,14 @@ function changeSlide(page) {
       text-align: left;
     }
 
+    p {
+      margin-left: 0;
+    }
+
     &--color {
       &_dark {
         color: var(--color-fg);
 
-        a,
         h1,
         h2,
         h3,
@@ -108,7 +111,6 @@ function changeSlide(page) {
       &_light {
         color: var(--color-bg-mute);
 
-        a,
         h1,
         h2,
         h3,
@@ -165,10 +167,6 @@ function changeSlide(page) {
     &--active.slider__dot--color_light {
       background-color: var(--color-bg-mute);
     }
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 

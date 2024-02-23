@@ -3,7 +3,7 @@ import { joinURL } from "ufo";
 export default function() {
   const urlBase = "https://api.github.com";
 
-  async function getPullRequests(repository, state = "all", perPage = "5") {
+  async function getPullRequests(repository, state = "all", perPage = "3") {
     return await $fetch(
       joinURL(urlBase, "/repos/mouseless/", repository, "/pulls"),
       {

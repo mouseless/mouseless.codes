@@ -2,7 +2,7 @@
   <div class="pr-list">
     <div class="pr-list__repos">
       <div class="repo-list">
-        <ul>
+        <ul class="repo-list__items">
           <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
             <button
               class="repo-list__item-link"
@@ -19,8 +19,9 @@
         <div
           class="switcher repo-list__switcher"
           :class="`switcher--status_${prState}`"
+          @click="switcher"
         >
-          <button class="switcher__hand" @click="switcher" />
+          <button class="switcher__btn" />
           <div class="switcher__text">
             {{ prState === "all" ? "All" : "Open" }}
           </div>
@@ -29,11 +30,11 @@
     </div>
     <div class="pr-list__prs">
       <div v-if="!render" class="pr-list__loading" />
-      <SliderInner v-if="render" :slides="repoDetail">
+      <SliderInner v-if="render" :slides="pullRequests">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0 && pageNumber != slides.length - 1">
             <h2 class="title">
-              <NuxtLink :to="slides[pageNumber]?.html_url">
+              <NuxtLink :to="slides[pageNumber]?.html_url" class="title__link">
                 {{ slides[pageNumber]?.title }}
               </NuxtLink>
               <div
@@ -49,14 +50,12 @@
             </h2>
             <MDC :value="slides[pageNumber]?.body" tag="article" />
           </div>
-          <div v-else-if="pageNumber == slides.length - 1">
-            <strong>If you want to see more pull request </strong>
-            <LinkButton :text="slides[0]?.head.repo.name" type="cta" :to="slides[0]?.head.repo.html_url" />
-          </div>
           <div v-else>
-            <h3>
-              There are currently no active pull requests.
-            </h3>
+            <strong>To see more pull requests </strong>
+            <NuxtLink
+              :text="`${repos[repoIndex]}/pulls`"
+              :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls`"
+            />
           </div>
         </template>
       </SliderInner>
@@ -71,23 +70,22 @@ const props = defineProps({
   }
 });
 
-const { getPullRequests } = useGitHub();
+const github = useGitHub();
 
 const color = inject("block-child-color", "dark");
-const repoDetail = ref([]);
+const pullRequests = ref([]);
 const repoIndex = ref(0);
 const render = ref(false);
 const prState = ref("all");
 
 onBeforeMount(async() => {
-  const result = await getPullAllRequests(prState.value);
-  repoDetail.value = result.length > 0 ? [...result, { }] : result;
-  render.value = true;
+  const result = await getPullRequests(prState.value);
+  pullRequests.value = result.length > 0 ? [...result, { }] : result;
 });
 
 watch([repoIndex, prState], async() => {
-  const result = await getPullAllRequests(prState.value);
-  repoDetail.value = result.length > 0 ? [...result, { }] : result;
+  const result = await getPullRequests(prState.value);
+  pullRequests.value = result.length > 0 ? [...result, { }] : result;
 });
 
 function switcher() {
@@ -98,27 +96,20 @@ function changeSlider(index) {
   repoIndex.value = index;
 }
 
-async function getPullAllRequests(state) {
+async function getPullRequests(state) {
   render.value = false;
-  const result = await getPullRequests(props.repos[repoIndex.value], state);
+  const result = await github.getPullRequests(props.repos[repoIndex.value], state);
   render.value = true;
+
   return result;
 }
 
 function getState(object) {
   if(object.state === "closed") {
-    if(object.merged_at != null) {
-      return "merged";
-    }
-
-    return "closed";
+    return object.merged_at !== null ? "merged" : "closed";
   }
 
-  if(object.draft) {
-    return "draft";
-  }
-
-  return "open";
+  return object.draft ? "draft" : "open";
 }
 </script>
 <style lang="scss">
@@ -134,6 +125,7 @@ function getState(object) {
 
   &__prs {
     margin: auto;
+    width: 100%;
   }
 
   &__loading {
@@ -143,6 +135,7 @@ function getState(object) {
     border-radius: 50px;
     height: 50px;
     width: 50px;
+    margin: 0 auto;
   }
 
   @keyframes spin {
@@ -154,6 +147,10 @@ function getState(object) {
 
 .repo-list {
   padding: 0;
+
+  &__items {
+    padding: 0;
+  }
 
   &__item {
     margin-bottom: 1em;
@@ -193,30 +190,28 @@ function getState(object) {
       margin-left: 1ch;
     }
   }
-
-  &__switcher {
-    margin-left: 5em;
-  }
 }
 
 .switcher {
   display: flex;
   align-items: center;
-  border: solid 1px;
   border-radius: var(--border-radius);
   color: var(--color-fg-mute);
+  cursor: pointer;
   font-weight: bold;
+  font-size: smaller;
+  height: 25px;
   position: relative;
-  height: 35px;
-  width: 75px;
+  width: 63px;
+  margin: 0 auto;
 
   &--status {
     &_open {
-      background-color: var(--color-green);
+      background-color: hsl(from var(--color-green) h s calc(l - .2));
       color: var(--color-white);
       justify-content: start;
 
-      .switcher__hand {
+      .switcher__btn {
         right: 2px;
       }
     }
@@ -225,7 +220,7 @@ function getState(object) {
       background-color: var(--color-gray);
       justify-content: end;
 
-      .switcher__hand {
+      .switcher__btn {
         left: 2px;
       }
     }
@@ -236,26 +231,27 @@ function getState(object) {
     margin-right: 8px;
   }
 
-  &__hand {
+  &__btn {
     position: absolute;
-    width: 31px;
-    height: 31px;
+    width: 21px;
+    height: 21px;
     background-color: var(--color-white);
     border-radius: 50%;
-    cursor: pointer;
     border: 0;
+    cursor: pointer;
     top: 2px;
   }
 }
 
 .pr-state {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 0.5em;
   border-radius: var(--border-radius);
   text-transform: capitalize;
-  width: 100px;
-  padding: 0 15px;
+  padding: 0 1em;
+  font-size: 60%;
+  height: 2.5em;
 
   &--draft {
     background-color: var(--color-gray-darker);
@@ -271,18 +267,23 @@ function getState(object) {
   }
 
   &--merged {
-    background-color: #8957e5;
+    background-color: var(--color-blue);
     color: var(--color-white);
   }
 
   &__icon {
-    width: 20px;
-    height: 20px;
+    width: 1em;
+    height: 1em;
   }
 }
 
 .title {
   display: inline-flex;
   gap: 0.5em;
+  align-items: center;
+
+  &__link {
+    text-decoration: none;
+  }
 }
 </style>
