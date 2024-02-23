@@ -80,13 +80,14 @@ const render = ref(false);
 const prState = ref("all");
 
 onBeforeMount(async() => {
-  repoDetail.value = [...await getPullAllRequests(), {}];
+  const result = await getPullAllRequests(prState.value);
+  repoDetail.value = result.length > 0 ? [...result, { }] : result;
   render.value = true;
 });
 
 watch([repoIndex, prState], async() => {
   const result = await getPullAllRequests(prState.value);
-  repoDetail.value = [...result, { }];
+  repoDetail.value = result.length > 0 ? [...result, { }] : result;
 });
 
 function switcher() {
