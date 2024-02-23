@@ -31,7 +31,7 @@
       <div v-if="!render" class="pr-list__loading" />
       <SliderInner v-if="render" :slides="repoDetail">
         <template #default="{pageNumber, slides}">
-          <div v-if="slides.length !== 0">
+          <div v-if="slides.length !== 0 && pageNumber != slides.length - 1">
             <h2 class="title">
               <NuxtLink :to="slides[pageNumber]?.html_url">
                 {{ slides[pageNumber]?.title }}
@@ -48,6 +48,10 @@
               </div>
             </h2>
             <MDC :value="slides[pageNumber]?.body" tag="article" />
+          </div>
+          <div v-else-if="pageNumber == slides.length - 1">
+            <strong>If you want to see more pull request </strong>
+            <LinkButton :text="slides[0]?.head.repo.name" type="cta" :to="slides[0]?.head.repo.html_url" />
           </div>
           <div v-else>
             <h3>
@@ -76,12 +80,13 @@ const render = ref(false);
 const prState = ref("all");
 
 onBeforeMount(async() => {
-  repoDetail.value = await getPullAllRequests();
+  repoDetail.value = [...await getPullAllRequests(), {}];
   render.value = true;
 });
 
 watch([repoIndex, prState], async() => {
-  repoDetail.value = await getPullAllRequests(prState.value);
+  const result = await getPullAllRequests(prState.value);
+  repoDetail.value = [...result, { }];
 });
 
 function switcher() {
