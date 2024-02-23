@@ -32,10 +32,20 @@
       <SliderInner v-if="render" :slides="repoDetail">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0">
-            <h2>
+            <h2 class="title">
               <NuxtLink :to="slides[pageNumber]?.html_url">
                 {{ slides[pageNumber]?.title }}
               </NuxtLink>
+              <div
+                class="pr-state"
+                :class="`pr-state--${getState(slides[pageNumber])}`"
+              >
+                <img
+                  class="pr-state__icon"
+                  :src="`${getState(slides[pageNumber])}.svg`"
+                >
+                {{ getState(slides[pageNumber]) }}
+              </div>
             </h2>
             <MDC :value="slides[pageNumber]?.body" tag="article" />
           </div>
@@ -87,6 +97,22 @@ async function getPullAllRequests(state) {
   const result = await getPullRequests(props.repos[repoIndex.value], state);
   render.value = true;
   return result;
+}
+
+function getState(object) {
+  if(object.state === "closed") {
+    if(object.merged_at != null) {
+      return "merged";
+    }
+
+    return "closed";
+  }
+
+  if(object.draft) {
+    return "draft";
+  }
+
+  return "open";
 }
 </script>
 <style lang="scss">
@@ -181,7 +207,7 @@ async function getPullAllRequests(state) {
   &--status {
     &_open {
       background-color: var(--color-green);
-      color: var(--color-bg-soft);
+      color: var(--color-white);
       justify-content: start;
 
       .switcher__hand {
@@ -214,5 +240,43 @@ async function getPullAllRequests(state) {
     border: 0;
     top: 2px;
   }
+}
+
+.pr-state {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: var(--border-radius);
+  text-transform: capitalize;
+  width: 100px;
+  padding: 0 15px;
+
+  &--draft {
+    background-color: var(--color-gray-darker);
+  }
+
+  &--open {
+    background-color: var(--color-green);
+  }
+
+  &--closed {
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+
+  &--merged {
+    background-color: #8957e5;
+    color: var(--color-white);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.title {
+  display: inline-flex;
+  gap: 0.5em;
 }
 </style>
