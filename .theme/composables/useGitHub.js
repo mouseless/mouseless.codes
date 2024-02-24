@@ -4,7 +4,7 @@ export default function() {
   const urlBase = "https://api.github.com";
 
   async function getPullRequests(repository, state = "all", perPage = "3") {
-    return await $fetch(
+    const result = await $fetch(
       joinURL(urlBase, "/repos/mouseless/", repository, "/pulls"),
       {
         method: "GET",
@@ -13,10 +13,12 @@ export default function() {
         },
         query: {
           state,
-          per_page: perPage
+          per_page: 10
         }
       }
     );
+
+    return result.filter(element => element?.user.type !== "Bot").slice(0, perPage);
   };
 
   async function getPeople() {
