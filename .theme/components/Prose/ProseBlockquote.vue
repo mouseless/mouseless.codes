@@ -11,6 +11,8 @@
     border-bottom-left-radius: 3px;
     margin-bottom: 1.6em;
     margin-top: 1.6em;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 1em;
     border-style: solid;
     text-align: left;
