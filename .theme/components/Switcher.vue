@@ -1,6 +1,6 @@
 <template>
   <div
-    class="switcher repo-list__switcher"
+    class="switcher"
     :class="`switcher--status_${status}`"
     @click="action"
   >

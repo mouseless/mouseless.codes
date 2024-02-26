@@ -23,24 +23,7 @@
       <div v-if="!render" class="pr-list__loading" />
       <SliderInner v-if="render" align="left" :slides="pullRequests">
         <template #default="{pageNumber, slides}">
-          <div v-if="slides.length !== 0 && pageNumber != slides.length - 1">
-            <h2 class="title">
-              <NuxtLink :to="slides[pageNumber]?.html_url" class="title__link">
-                {{ slides[pageNumber]?.title }}
-              </NuxtLink>
-              <div
-                class="pr-state"
-                :class="`pr-state--${getState(slides[pageNumber])}`"
-              >
-                <img
-                  class="pr-state__icon"
-                  :src="`${getState(slides[pageNumber])}.svg`"
-                >
-                {{ getState(slides[pageNumber]) }}
-              </div>
-            </h2>
-            <MarkdownFormat :body="slides[pageNumber]?.body" tag="article" />
-          </div>
+          <Pr v-if="slides.length !== 0 && pageNumber != slides.length - 1" :pr="slides[pageNumber]" />
           <div v-else>
             <strong>To see more pull requests </strong>
             <NuxtLink
@@ -93,14 +76,6 @@ async function getPullRequests(state) {
   render.value = true;
 
   return result;
-}
-
-function getState(object) {
-  if(object.state === "closed") {
-    return object.merged_at !== null ? "merged" : "closed";
-  }
-
-  return object.draft ? "draft" : "open";
 }
 </script>
 <style lang="scss">
@@ -180,50 +155,6 @@ function getState(object) {
     &--active {
       margin-left: 1ch;
     }
-  }
-}
-
-.pr-state {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  border-radius: var(--border-radius);
-  text-transform: capitalize;
-  padding: 0 1em;
-  font-size: 60%;
-  height: 2.5em;
-
-  &--draft {
-    background-color: var(--color-gray-darker);
-  }
-
-  &--open {
-    background-color: var(--color-green);
-  }
-
-  &--closed {
-    background-color: var(--color-red);
-    color: var(--color-white);
-  }
-
-  &--merged {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-  }
-
-  &__icon {
-    width: 1em;
-    height: 1em;
-  }
-}
-
-.title {
-  display: inline-flex;
-  gap: 0.5em;
-  align-items: center;
-
-  &__link {
-    text-decoration: none;
   }
 }
 </style>
