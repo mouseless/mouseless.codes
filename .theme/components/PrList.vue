@@ -30,7 +30,7 @@
     </div>
     <div class="pr-list__prs">
       <div v-if="!render" class="pr-list__loading" />
-      <SliderInner v-if="render" :slides="pullRequests">
+      <SliderInner v-if="render" align="left" :slides="pullRequests">
         <template #default="{pageNumber, slides}">
           <div v-if="slides.length !== 0 && pageNumber != slides.length - 1">
             <h2 class="title">

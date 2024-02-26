@@ -8,7 +8,13 @@
         >
       </button>
     </div>
-    <div class="slider__content" :class="`slider__content--color_${color}`">
+    <div
+      class="slider__content"
+      :class="[
+        `slider__content--color_${color}`,
+        `slider__content--align_${align}`
+      ]"
+    >
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div v-if="pageNumber != upToDateSlides.length - 1 && upToDateSlides.length != 0" class="navigation slider__next">
@@ -38,6 +44,10 @@ const props = defineProps({
   slides: {
     type: Array,
     default: () => []
+  },
+  align: {
+    type: String,
+    default: "center"
   }
 });
 
@@ -79,11 +89,9 @@ function changeSlide(page) {
     overflow: auto;
     height: 50ch;
     padding-inline: 1em;
-    text-align: start;
 
     h2 {
       margin-top: 0;
-      text-align: left;
     }
 
     p {
@@ -124,6 +132,17 @@ function changeSlide(page) {
           background-color: var(--color-fg-mute);
           color: var(--color-bg);
         }
+      }
+    }
+
+    &--align {
+      &_center {
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      &_left {
+        text-align: start;
       }
     }
   }
