@@ -1,7 +1,11 @@
 <template>
   <div>
     <h2 class="title">
-      <NuxtLink :to="pr?.html_url" class="title__link">
+      <NuxtLink
+        :to="pr?.html_url"
+        class="title__link"
+        :class="`title__link--color_${color}`"
+      >
         {{ pr?.title }}
       </NuxtLink>
       <div
@@ -26,6 +30,8 @@ defineProps({
   }
 });
 
+const color = inject("block-child-color", "dark");
+
 function getState(object) {
   if(object.state === "closed") {
     return object.merged_at !== null ? "merged" : "closed";
@@ -44,6 +50,7 @@ function getState(object) {
   padding: 0 1em;
   font-size: 60%;
   height: 2.5em;
+  color: var(--color-fg);
 
   &--draft {
     background-color: var(--color-gray-darker);
@@ -76,6 +83,24 @@ function getState(object) {
 
   &__link {
     text-decoration: none;
+
+    &--color{
+      &_dark {
+        color: var(--color-fg);
+
+        &:hover {
+          color: var(--color-logo-mark);
+        }
+      }
+
+      &_light {
+        color: var(--color-bg-mute);
+
+        &:hover {
+          color: var(--color-green);
+        }
+      }
+    }
   }
 }
 </style>
