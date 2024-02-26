@@ -2,9 +2,7 @@
   <iframe
     class="frame"
     scrolling="no"
-    :height="height"
     :src="source"
-    :width="width"
   >
     <slot />
   </iframe>
@@ -33,5 +31,7 @@ const width = ref(props.width || "100%");
   border-radius: var(--border-radius);
   border-width: 0;
   background-color: var(--color-white);
+  width: v-bind(width);
+  height: v-bind(height);
 }
 </style>
