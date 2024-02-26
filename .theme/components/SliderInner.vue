@@ -94,10 +94,6 @@ function changeSlide(page) {
       margin-top: 0;
     }
 
-    p {
-      margin-left: 0;
-    }
-
     &--color {
       &_dark {
         color: var(--color-fg);
@@ -138,11 +134,14 @@ function changeSlide(page) {
     &--align {
       &_center {
         text-align: center;
-        margin: 0 auto;
       }
 
       &_left {
         text-align: start;
+
+        p {
+          margin-left: 0;
+        }
       }
     }
   }
