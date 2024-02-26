@@ -48,7 +48,7 @@
                 {{ getState(slides[pageNumber]) }}
               </div>
             </h2>
-            <MDC :value="slides[pageNumber]?.body" tag="article" />
+            <MarkdownFormat :body="slides[pageNumber]?.body" tag="article" />
           </div>
           <div v-else>
             <strong>To see more pull requests </strong>
