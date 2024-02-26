@@ -71,11 +71,12 @@ function backgroundChange(color) {
   }
 
   &__color-btn {
-    width: 20px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    border-width: 0px;
     height: 20px;
     margin-bottom: 10px;
-    border-width: 0px;
-    border-radius: var(--border-radius);
+    width: 20px;
   }
 }
 

@@ -71,7 +71,7 @@ title: Demo
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
-Lorem ipsum dolor sit amet [consectetur](#demo) adipisicing elit.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
 :::
 
 ## Card Layout
@@ -114,8 +114,17 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## Inline Frame
 
-:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="800px"}
-:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="750px"}
+:::card-layout{display="stack" align="left"}
+
+#item 1
+
+:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="52ch"}
+
+#item 2
+
+:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="78ch"}
+
+:::
 
 ## People
 
@@ -135,13 +144,51 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ### Slide 1
 
-Slide 1
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum!
 
 #slide2
 
 ### Slide 2
 
-Slide 2
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
 :::
+
+## Prose
+
+Normal Text
+
+**Bold Text**
+
+__Bold Text__
+
+*Italic Text*
+
+_Italic Text_
+
+> Blockquotes
+
+[Link](#demo)
+
+[External Link](http://mouseless.codes)
+
+![](/images/explosion-star.png)
+
+# Head1
+
+## Head2
+
+### Head3
+
+#### Head4
+
+##### Head5
+
+###### Head6
 
 ::

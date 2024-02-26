@@ -3,8 +3,8 @@ import { joinURL } from "ufo";
 export default function() {
   const urlBase = "https://api.github.com";
 
-  async function getActivePullRequests(repository) {
-    return await $fetch(
+  async function getPullRequests(repository, state = "all", perPage = "3") {
+    const result = await $fetch(
       joinURL(urlBase, "/repos/mouseless/", repository, "/pulls"),
       {
         method: "GET",
@@ -12,10 +12,13 @@ export default function() {
           "X-GitHub-Api-Version": "2022-11-28"
         },
         query: {
-          state: "open"
+          state,
+          per_page: 10
         }
       }
     );
+
+    return result.filter(element => element?.user.type !== "Bot").slice(0, perPage);
   };
 
   async function getPeople() {
@@ -31,7 +34,7 @@ export default function() {
   };
 
   return {
-    getActivePullRequests,
+    getPullRequests,
     getPeople
   };
 }

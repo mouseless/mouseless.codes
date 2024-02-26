@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-    <div class="navigation slider__previous">
+    <div v-if="pageNumber != 0" class="navigation slider__previous">
       <button class="navigation__button" @click="left">
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
@@ -8,10 +8,16 @@
         >
       </button>
     </div>
-    <div class="slider__content" :class="`slider__content--color_${color}`">
+    <div
+      class="slider__content"
+      :class="[
+        `slider__content--color_${color}`,
+        `slider__content--align_${align}`
+      ]"
+    >
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div class="navigation slider__next">
+    <div v-if="pageNumber != upToDateSlides.length - 1 && upToDateSlides.length != 0" class="navigation slider__next">
       <button class="navigation__button" @click="right">
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
@@ -20,7 +26,7 @@
       </button>
     </div>
     <div class="slider__thumb">
-      <div
+      <button
         v-for="n in slides.length"
         :key="n"
         :class="[
@@ -28,6 +34,7 @@
           `slider__dot--color_${color}`
         ]"
         class="slider__dot"
+        @click="changeSlide(n - 1)"
       />
     </div>
   </div>
@@ -37,6 +44,10 @@ const props = defineProps({
   slides: {
     type: Array,
     default: () => []
+  },
+  align: {
+    type: String,
+    default: "center"
   }
 });
 
@@ -56,6 +67,9 @@ const right = () =>
   pageNumber.value < upToDateSlides.value.length - 1
     ? (pageNumber.value = pageNumber.value + 1)
     : pageNumber.value;
+function changeSlide(page) {
+  pageNumber.value = page;
+}
 </script>
 <style lang="scss">
 .slider {
@@ -73,20 +87,17 @@ const right = () =>
     grid-area: content;
     color: var(--color-fg);
     overflow: auto;
-    max-height: 50ch;
+    height: 50ch;
     padding-inline: 1em;
-    text-align: start;
 
     h2 {
       margin-top: 0;
-      text-align: left;
     }
 
     &--color {
       &_dark {
         color: var(--color-fg);
 
-        a,
         h1,
         h2,
         h3,
@@ -104,7 +115,6 @@ const right = () =>
       &_light {
         color: var(--color-bg-mute);
 
-        a,
         h1,
         h2,
         h3,
@@ -117,6 +127,20 @@ const right = () =>
         code {
           background-color: var(--color-fg-mute);
           color: var(--color-bg);
+        }
+      }
+    }
+
+    &--align {
+      &_center {
+        text-align: center;
+      }
+
+      &_left {
+        text-align: start;
+
+        p {
+          margin-left: 0;
         }
       }
     }
@@ -141,10 +165,13 @@ const right = () =>
   }
 
   &__dot {
+    border: 0;
     border-radius: 50%;
-    width: 10px;
+    cursor: pointer;
     height: 10px;
     margin: 2px;
+    padding: 0;
+    width: 10px;
 
     &--color {
       &_dark { background-color: var(--color-gray-darkest); }
@@ -158,10 +185,6 @@ const right = () =>
     &--active.slider__dot--color_light {
       background-color: var(--color-bg-mute);
     }
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 
