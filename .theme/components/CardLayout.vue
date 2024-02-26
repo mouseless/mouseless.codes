@@ -54,7 +54,6 @@ const count = computed(() => Object.keys(slots).length);
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 25em;
 
     &--flex {
       width: 100%;

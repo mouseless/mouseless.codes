@@ -1,37 +1,35 @@
 <template>
   <div class="pr-list">
     <div class="pr-list__repos">
-      <ul class="repo-list">
-        <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
-          <button
-            class="repo-list__item-link"
-            :class="[
-              `repo-list__item-link--color_${color}`,
-              {'repo-list__item-link--active': index == repoIndex},
-            ]"
-            @click="changeSlider(index)"
-          >
-            {{ repo }}
-          </button>
-        </li>
-      </ul>
+      <div class="repo-list">
+        <ul class="repo-list__items">
+          <li v-for="(repo, index) in repos" :key="repo" class="repo-list__item">
+            <button
+              class="repo-list__item-link"
+              :class="[
+                `repo-list__item-link--color_${color}`,
+                {'repo-list__item-link--active': index == repoIndex},
+              ]"
+              @click="changeSlider(index)"
+            >
+              {{ repo }}
+            </button>
+          </li>
+        </ul>
+        <Switcher :action="switcher" :status="prState" />
+      </div>
     </div>
     <div class="pr-list__prs">
       <div v-if="!render" class="pr-list__loading" />
-      <SliderInner v-if="render" :slides="repoDetail">
+      <SliderInner v-if="render" align="left" :slides="pullRequests">
         <template #default="{pageNumber, slides}">
-          <div v-if="slides.length !== 0">
-            <h2>
-              <NuxtLink :to="slides[pageNumber]?.html_url">
-                {{ slides[pageNumber]?.title }}
-              </NuxtLink>
-            </h2>
-            <MDC :value="slides[pageNumber]?.body" tag="article" />
-          </div>
+          <Pr v-if="slides.length !== 0 && pageNumber != slides.length - 1" :pr="slides[pageNumber]" />
           <div v-else>
-            <h3>
-              There are currently no active pull requests.
-            </h3>
+            <strong>To see more pull requests </strong>
+            <NuxtLink
+              :text="`${repos[repoIndex]}/pulls`"
+              :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls`"
+            />
           </div>
         </template>
       </SliderInner>
@@ -46,27 +44,37 @@ const props = defineProps({
   }
 });
 
-const { getActivePullRequests } = useGitHub();
+const github = useGitHub();
 
 const color = inject("block-child-color", "dark");
-const repoDetail = ref([]);
+const pullRequests = ref([]);
 const repoIndex = ref(0);
 const render = ref(false);
+const prState = ref("all");
 
 onBeforeMount(async() => {
-  repoDetail.value = await getPullRequests();
-  render.value = true;
+  const result = await getPullRequests(prState.value);
+  pullRequests.value = result.length > 0 ? [...result, { }] : result;
 });
 
-async function changeSlider(index) {
+watch([repoIndex, prState], async() => {
+  const result = await getPullRequests(prState.value);
+  pullRequests.value = result.length > 0 ? [...result, { }] : result;
+});
+
+function switcher() {
+  prState.value = prState.value === "all" ? "open" : "all";
+};
+
+function changeSlider(index) {
   repoIndex.value = index;
-  repoDetail.value = await getPullRequests();
 }
 
-async function getPullRequests() {
+async function getPullRequests(state) {
   render.value = false;
-  const result = await getActivePullRequests(props.repos[repoIndex.value]);
+  const result = await github.getPullRequests(props.repos[repoIndex.value], state);
   render.value = true;
+
   return result;
 }
 </script>
@@ -83,6 +91,7 @@ async function getPullRequests() {
 
   &__prs {
     margin: auto;
+    width: 100%;
   }
 
   &__loading {
@@ -92,6 +101,7 @@ async function getPullRequests() {
     border-radius: 50px;
     height: 50px;
     width: 50px;
+    margin: 0 auto;
   }
 
   @keyframes spin {
@@ -103,6 +113,10 @@ async function getPullRequests() {
 
 .repo-list {
   padding: 0;
+
+  &__items {
+    padding: 0;
+  }
 
   &__item {
     margin-bottom: 1em;

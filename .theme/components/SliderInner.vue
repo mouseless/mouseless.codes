@@ -8,7 +8,13 @@
         >
       </button>
     </div>
-    <div class="slider__content" :class="`slider__content--color_${color}`">
+    <div
+      class="slider__content"
+      :class="[
+        `slider__content--color_${color}`,
+        `slider__content--align_${align}`
+      ]"
+    >
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
     <div v-if="pageNumber != upToDateSlides.length - 1 && upToDateSlides.length != 0" class="navigation slider__next">
@@ -38,6 +44,10 @@ const props = defineProps({
   slides: {
     type: Array,
     default: () => []
+  },
+  align: {
+    type: String,
+    default: "center"
   }
 });
 
@@ -77,20 +87,17 @@ function changeSlide(page) {
     grid-area: content;
     color: var(--color-fg);
     overflow: auto;
-    max-height: 50ch;
+    height: 50ch;
     padding-inline: 1em;
-    text-align: start;
 
     h2 {
       margin-top: 0;
-      text-align: left;
     }
 
     &--color {
       &_dark {
         color: var(--color-fg);
 
-        a,
         h1,
         h2,
         h3,
@@ -108,7 +115,6 @@ function changeSlide(page) {
       &_light {
         color: var(--color-bg-mute);
 
-        a,
         h1,
         h2,
         h3,
@@ -121,6 +127,20 @@ function changeSlide(page) {
         code {
           background-color: var(--color-fg-mute);
           color: var(--color-bg);
+        }
+      }
+    }
+
+    &--align {
+      &_center {
+        text-align: center;
+      }
+
+      &_left {
+        text-align: start;
+
+        p {
+          margin-left: 0;
         }
       }
     }
@@ -165,10 +185,6 @@ function changeSlide(page) {
     &--active.slider__dot--color_light {
       background-color: var(--color-bg-mute);
     }
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 
