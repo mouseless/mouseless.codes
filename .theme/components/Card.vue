@@ -28,6 +28,7 @@ defineProps({
     margin-right: 3px;
     margin-bottom: 3px;
     box-shadow: 3px 3px 0 0 var(--color-bg-mute);
+    transition: 0.1s ease-out;
   }
 
   &__image {
