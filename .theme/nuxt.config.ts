@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   generate: {
     routes: ["/not-found"]
   },
-  modules: ["@nuxt/content", "@nuxtjs/mdc"],
+  modules: ["@nuxt/content", "@nuxtjs/mdc", "@pinia/nuxt"],
   runtimeConfig: {
     public: {
       baseUrl: "",

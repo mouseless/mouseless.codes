@@ -1,5 +1,8 @@
 ---
 title: Demo
+ogTitle: Demo
+ogDescription: This is Demo page
+ogImage: http://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
 ::block{:debug=true}
@@ -57,7 +60,11 @@ title: Demo
 
 ## Box
 
-:box
+:::box{link="https://github.com/mouseless/do/pull/71"}
+An Epic on DO
+
+([for all](https://github.com/mouseless/do/pulls?q=is%3Apr+))
+:::
 
 ## Call To Action
 
