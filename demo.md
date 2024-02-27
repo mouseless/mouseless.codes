@@ -55,6 +55,10 @@ title: Demo
 
 :link-button{to="#buttons" type="cta" text="CTA Button"}
 
+## Box
+
+:box
+
 ## Call To Action
 
 :::call-to-action
