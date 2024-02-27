@@ -6,19 +6,27 @@
   </ContentDoc>
 </template>
 <script setup>
+import { joinURL } from "ufo";
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const route = useRoute();
 const store = usePageMetaStore();
+const runtimeConfig = useRuntimeConfig();
 
 const page = store.pageMeta?.find(page => page._path === route.path);
 
 useSeoMeta({
   ogTitle: `Mouseless - ${page?.title}`,
   ogDescription: page?.ogDescription,
-  ogImage: page?.ogImage,
+  ogImage: fullUrl(page?.ogImage),
   twitterTitle: `Mouseless - ${page?.title}`,
   twitterDescription: page?.ogDescription,
-  twitterImage: page?.ogImage
+  twitterImage: fullUrl(page?.ogImage)
 });
+
+function fullUrl(path) {
+  const { protocol, authority, baseUrl } = runtimeConfig.public;
+
+  return `${protocol}://${joinURL(authority, baseUrl, path)}`;
+}
 </script>

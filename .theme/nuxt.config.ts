@@ -42,6 +42,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxtjs/mdc", "@pinia/nuxt"],
   runtimeConfig: {
     public: {
+      authority: "",
       baseUrl: "",
       mdc: {
         headings: {
@@ -54,7 +55,8 @@ export default defineNuxtConfig({
             h6: false
           }
         }
-      }
+      },
+      protocol: ""
     }
   },
   vite: {

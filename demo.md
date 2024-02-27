@@ -1,7 +1,7 @@
 ---
 title: Demo
 ogDescription: This is Demo page
-ogImage: http://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
+ogImage: /merged.svg
 ---
 
 ::block{:debug=true}
