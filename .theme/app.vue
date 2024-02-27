@@ -15,7 +15,7 @@ if(!process.dev) {
 
 const { data: pageMeta } = await useAsyncData("pageMeta", () => queryContent()
   .where({ _path: { $not: { $in: excludePath } } })
-  .only(["_path", "title", "ogTitle", "ogDescription", "ogImage"])
+  .only(["_path", "title", "ogDescription", "ogImage"])
   .sort({ position: 1, $numeric: true })
   .find()
 );
