@@ -59,10 +59,50 @@ ogImage: http://mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 
 ## Box
 
-:::box{link="https://github.com/mouseless/do/pull/71"}
-An Epic on DO
+:::box{title="Box Header" image-align="left"}
+---
+image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
+---
 
-([for all](https://github.com/mouseless/do/pulls?q=is%3Apr+))
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+:::
+
+## Box Layout
+
+### Box Option 1
+
+:::box-layout{display="stack" align="left"}
+
+#item 1
+
+::::box{title="Box 1"}
+Lorem ipsum dolor sit amet consectetur adipisicing elit
+::::
+
+#item 2
+
+::::box{title="Box 2"}
+Maxime mollitia, molestiae quas vel sint commodi repudiandae
+::::
+
+:::
+
+### Box Option 2
+
+:::box-layout{display="flex" align="center"}
+
+#item 1
+
+::::box{title="Box 1"}
+Lorem ipsum dolor sit amet consectetur adipisicing elit
+::::
+
+#item 2
+
+::::box{title="Box 2"}
+Maxime mollitia, molestiae quas vel sint commodi repudiandae
+::::
+
 :::
 
 ## Call To Action
@@ -72,59 +112,20 @@ An Epic on DO
 ### We value trust
 
 :link-button{to="https://www.mouseless.codes" type="cta" text="Reach out!"}
+
 :::
 
 ## Card
 
-:::card{title="Card Header" image-align="left"}
----
-image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
----
+:::card{image="/merged.svg"}
+## An Epic on DO
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-:::
-
-## Card Layout
-
-### Card Option 1
-
-:::card-layout{display="stack" align="left"}
-
-#item 1
-
-::::card{title="Card 1"}
-Lorem ipsum dolor sit amet consectetur adipisicing elit
-::::
-
-#item 2
-
-::::card{title="Card 2"}
-Maxime mollitia, molestiae quas vel sint commodi repudiandae
-::::
-
-:::
-
-### Card Option 2
-
-:::card-layout{display="flex" align="center"}
-
-#item 1
-
-::::card{title="Card 1"}
-Lorem ipsum dolor sit amet consectetur adipisicing elit
-::::
-
-#item 2
-
-::::card{title="Card 2"}
-Maxime mollitia, molestiae quas vel sint commodi repudiandae
-::::
-
+Completely clear and straightforward
 :::
 
 ## Inline Frame
 
-:::card-layout{display="stack" align="left"}
+:::box-layout{display="stack" align="left"}
 
 #item 1
 

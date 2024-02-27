@@ -1,27 +1,84 @@
 <template>
-  <div class="box" @click="navigateTo(link, { external: true })">
-    <slot />
+  <div
+    :class="[`box--image-align_${imageAlign}`, `box--color_${color}`]"
+    class="box"
+  >
+    <h2
+      v-if="title !== null"
+      class="box__title"
+      :class="`box__title--color_${color}`"
+    >
+      {{ title }}
+    </h2>
+    <div class="box__detail">
+      <slot />
+    </div>
+    <img v-if="image !== null" class="box__img" :src="image">
   </div>
 </template>
 <script setup>
 defineProps({
-  link: {
+  imageAlign: {
+    type: String,
+    default: "right"
+  },
+  title: {
+    type: String,
+    default: null
+  },
+  image: {
     type: String,
     default: null
   }
 });
 
-// const color = inject("block-child-color", "dark");
+const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .box {
-    border: 1px solid;
-    background-color: var(--color-bg-mute);
-    cursor: pointer;
-    width: 23ch;
-    height: 10ch;
-    text-align: left;
-    font-weight: bold;
-    font-size: medium;
+  border-style: solid;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "detail image";
+  padding: 1em;
+  width: 100%;
+
+  &__title {
+    grid-area: title;
+    margin: 0px;
+
+    &--color {
+      &_dark { color: var(--color-fg); }
+      &_light { color: var(--color-bg); }
+    }
+  }
+
+  &__detail {
+    grid-area: detail;
+  }
+
+  &__img {
+    grid-area: image;
+  }
+
+  &--image-align_left {
+    grid-template-areas:
+      "title title"
+      "image detail";
+  }
+
+  &--color {
+    &_dark {
+      border-color: var(--color-fg);
+      color: var(--color-fg);
+    }
+    &_light {
+      border-color: var(--color-bg);
+      color: var(--color-bg);
+    }
+  }
 }
 </style>

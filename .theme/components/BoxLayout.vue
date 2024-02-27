@@ -1,18 +1,18 @@
 <template>
   <div
     :class="[
-      {'card-layout--stack': display == 'stack'},
-      `card-layout--align_${align}`
+      {'box-layout--stack': display == 'stack'},
+      `box-layout--align_${align}`
     ]"
-    class="card-layout"
+    class="box-layout"
   >
     <div
       v-for="i in Array(count)
         .fill(0)
         .map((_, i) => i)"
       :key="i"
-      class="card-layout__item"
-      :class="{'card-layout__item--flex': display == 'flex'}"
+      class="box-layout__item"
+      :class="{'box-layout__item--flex': display == 'flex'}"
     >
       <slot :name="`item ${i + 1}`" />
     </div>
@@ -34,7 +34,7 @@ const slots = useSlots();
 const count = computed(() => Object.keys(slots).length);
 </script>
 <style lang="scss" scoped>
-.card-layout {
+.box-layout {
   display: flex;
 
   &--stack {
