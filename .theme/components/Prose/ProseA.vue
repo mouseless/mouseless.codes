@@ -1,5 +1,10 @@
 <template>
-  <NuxtLink class="anchor" :href="href" :target="target" :class="`anchor--color_${color}`">
+  <NuxtLink
+    class="anchor"
+    :href="href"
+    :target="target"
+    :class="`anchor--color_${color}`"
+  >
     <slot />
     <i
       v-if="href.startsWith('http')"
