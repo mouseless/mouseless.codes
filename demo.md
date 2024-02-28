@@ -184,7 +184,7 @@ Completely clear and straightforward
 
 ## Inline Frame
 
-:::box-layout{display="stack" align="center" :itemWidths='["35%", "65%"]'}
+:::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
 
 #item 1
 
