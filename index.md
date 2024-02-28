@@ -183,3 +183,38 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 :::
 
 ::
+
+::block
+
+:::banner{:hr=true align=center}
+
+## Our Collective
+
+:::
+
+We are a software development collective, connected through our craft. Our
+collective is a team of 3-7 software engineers guided by our people-centric
+philosophy. We prioritize excellence and efficiency, focusing on delivering
+quality work collaboratively.
+
+:link-button{to="/about" text="See More..."}
+
+::
+
+::block{color=gray}
+
+## Contact Us
+
+:::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
+
+#item 1
+
+:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
+
+#item 2
+
+:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0G2olIVXjVOhwpn7vBR69CSYldMlv-HFINOYgiXTSQMMn6hh8KQVi5VyBhBl2YsUSHlR9zIjI2?gv=true" height="900px" width="100%"}
+
+:::
+
+::
