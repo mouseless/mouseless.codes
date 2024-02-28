@@ -95,3 +95,33 @@ Slide 2
 :::
 
 ::
+
+::block
+
+:::box-layout{display=flex}
+
+#item 1
+
+::::card{image="/draft.svg"}
+
+## An Epic on DO
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+
+::::
+
+#item 2
+
+::::card{image="/draft.svg"}
+
+## An Epic on DO
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+
+::::
+
+:::
+
+::
