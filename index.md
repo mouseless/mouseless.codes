@@ -57,7 +57,7 @@ engineering obstacles.
 
 ::
 
-::block{color=black}
+::block{color=gray}
 
 ## We've built value, together.
 
@@ -84,13 +84,49 @@ Slide 2
 
 ::
 
+::block{color=black}
+
+:::banner{:hr=false align=center}
+
+## We value trust
+
+:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
+
+:::
+
+::
+
 ::block
 
 :::banner{:hr=false align=center}
 
-## If you're interested
+## What **you** will get from us
 
-:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
+:::
+
+:::box-layout{display=flex}
+
+#item 1
+
+::::card{image="/draft.svg"}
+
+### Low Cost of Change
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+
+::::
+
+#item 2
+
+::::card{image="/draft.svg"}
+
+### Continuous Delivery
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+
+::::
 
 :::
 
@@ -104,7 +140,7 @@ Slide 2
 
 ::::card{image="/draft.svg"}
 
-## An Epic on DO
+### Progress Visibility
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum
@@ -115,12 +151,34 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ::::card{image="/draft.svg"}
 
-## An Epic on DO
+### Cross Pollunation
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ::::
+
+:::
+
+::
+
+::block
+
+:::banner{:hr=true align=center}
+
+## See Mouseless in Action
+
+:::
+
+:pr-list{:repos='["do", "mouseless.codes" , "learn-nuxt", "learn-dotnet"]'}
+
+::
+
+::block{color=black}
+
+:::banner{:hr=false align=center}
+
+:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
 
 :::
 
