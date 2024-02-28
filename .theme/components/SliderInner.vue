@@ -53,10 +53,7 @@ const props = defineProps({
 
 const color = inject("block-child-color", "dark");
 
-const upToDateSlides = ref(props.slides);
-watch(props, () => {
-  upToDateSlides.value = props.slides;
-});
+const upToDateSlides = computed(() => props.slides);
 
 const pageNumber = ref(0);
 const left = () =>
