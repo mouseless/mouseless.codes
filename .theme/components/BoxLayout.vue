@@ -1,18 +1,19 @@
 <template>
   <div
     :class="[
-      {'card-layout--stack': display == 'stack'},
-      `card-layout--align_${align}`
+      {'box-layout--stack': display == 'stack'},
+      `box-layout--align_${align}`
     ]"
-    class="card-layout"
+    class="box-layout"
   >
     <div
       v-for="i in Array(count)
         .fill(0)
         .map((_, i) => i)"
       :key="i"
-      class="card-layout__item"
-      :class="{'card-layout__item--flex': display == 'flex'}"
+      class="box-layout__item"
+      :class="{'box-layout__item--flex': display == 'flex'}"
+      :style="display !== 'flex' ? `width: ${itemWidths[i] || itemWidth}` : ''"
     >
       <slot :name="`item ${i + 1}`" />
     </div>
@@ -27,6 +28,14 @@ defineProps({
   align: {
     type: String,
     default: "center"
+  },
+  itemWidth: {
+    type: String,
+    default: "40ch"
+  },
+  itemWidths: {
+    type: Array,
+    default: () => []
   }
 });
 const slots = useSlots();
@@ -34,8 +43,10 @@ const slots = useSlots();
 const count = computed(() => Object.keys(slots).length);
 </script>
 <style lang="scss" scoped>
-.card-layout {
+.box-layout {
   display: flex;
+  gap: 2em;
+  margin: 2em 0;
 
   &--stack {
     flex-wrap: wrap;
@@ -53,10 +64,9 @@ const count = computed(() => Object.keys(slots).length);
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 
     &--flex {
-      width: 100%;
+      max-width: 100%;
     }
   }
 }

@@ -1,5 +1,10 @@
 <template>
-  <NuxtLink :href="href" :target="target" :class="`anchor--color_${color}`">
+  <NuxtLink
+    class="anchor"
+    :href="href"
+    :target="target"
+    :class="`anchor--color_${color}`"
+  >
     <slot />
     <i
       v-if="href.startsWith('http')"
@@ -7,7 +12,7 @@
     />
   </NuxtLink>
 </template>
-<script setup lang="ts">
+<script setup>
 defineProps({
   href: {
     type: String,
@@ -25,25 +30,29 @@ const color = inject("block-child-color", "dark");
 <style lang="scss" scoped>
 .anchor {
   &--color {
-      &_dark {
-          color: var(--color-fg);
+    &_dark {
+      color: var(--color-fg);
 
-          &:hover {
-              color: var(--color-logo-mark);
-          }
+      &:hover {
+        color: var(--color-logo-mark);
       }
+    }
 
-      &_light {
-          color: var(--color-bg);
+    &_light {
+      color: var(--color-bg);
 
-          &:hover {
-              color: var(--color-green);
-          }
+      &:hover {
+        color: var(--color-green);
       }
+    }
   }
 
   &__icon {
     margin-left: 0.3em;
+  }
+
+  & > img + &__icon {
+    display: none;
   }
 }
 </style>

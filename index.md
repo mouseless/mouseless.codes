@@ -21,10 +21,11 @@ quality work collaboratively.
 
 ## We are ready to tackle all the tedious work !
 
-:::card-layout{display=flex}
+:::box-layout{display=flex}
 
 #item 1
-::::card{title="Custom Software Development" image-align="left"}
+
+::::box{title="Custom Software Development" image-align="left"}
 ---
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
@@ -38,7 +39,8 @@ their business objectives.
 ::::
 
 #item 2
-::::card{title="Re-engineering Services" image-align="left"}
+
+::::box{title="Re-engineering Services" image-align="left"}
 ---
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---

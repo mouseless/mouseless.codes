@@ -1,5 +1,7 @@
 ---
 title: Demo
+ogDescription: This is Demo page
+ogImage: /merged.svg
 ---
 
 ::block{:debug=true}
@@ -55,18 +57,9 @@ title: Demo
 
 :link-button{to="#buttons" type="cta" text="CTA Button"}
 
-## Call To Action
+## Box
 
-:::call-to-action
-
-### We value trust
-
-:link-button{to="https://www.mouseless.codes" type="cta" text="Reach out!"}
-:::
-
-## Card
-
-:::card{title="Card Header" image-align="left"}
+:::box{title="Box Header" image-align="left"}
 ---
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
@@ -74,55 +67,132 @@ image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 :::
 
-## Card Layout
+## Box Layout
 
-### Card Option 1
+### Box Option 1
 
-:::card-layout{display="stack" align="left"}
+:::box-layout{display="stack" align="left"}
 
 #item 1
 
-::::card{title="Card 1"}
+::::box{title="Box 1"}
 Lorem ipsum dolor sit amet consectetur adipisicing elit
 ::::
 
 #item 2
 
-::::card{title="Card 2"}
+::::box{title="Box 2"}
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
 :::
 
-### Card Option 2
+### Box Option 2
 
-:::card-layout{display="flex" align="center"}
+:::box-layout{display="flex" align="center"}
 
 #item 1
 
-::::card{title="Card 1"}
+::::box{title="Box 1"}
 Lorem ipsum dolor sit amet consectetur adipisicing elit
 ::::
 
 #item 2
 
-::::card{title="Card 2"}
+::::box{title="Box 2"}
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
+:::
+
+## Call To Action
+
+:::call-to-action
+
+### We value trust
+
+:link-button{to="https://www.mouseless.codes" type="cta" text="Reach out!"}
+
+:::
+
+## Card
+
+:::box-layout{display="flex" align="center"}
+
+#item 1
+
+::::card{image="/draft.svg"}
+
+## An Epic on DO
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+::::
+
+#item 2
+
+::::card{image="/card-bg-wall.jpg"}
+
+## An Epic on Learn-Nuxt
+
+Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
+autem.
+::::
+
+:::
+
+:::box-layout{display="stack" align="left" itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
+
+#item 1
+
+::::card
+
+## An Epic on DO
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat
+::::
+
+#item 2
+
+::::card
+
+## An Epic on Learn-Nuxt
+
+Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
+autem.
+::::
+
+#item 3
+
+::::card
+
+## An Epic on Prebuild
+
+Veritatis obcaecati tenetur iure eius earum ut molestias architecto
+::::
+
+:::
+
+:::card{image="/merged.svg"}
+
+## An Epic on Learn-Nuxt
+
+Completely clear and straightforward
 :::
 
 ## Inline Frame
 
-:::card-layout{display="stack" align="left"}
+:::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
 
 #item 1
 
-:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="52ch"}
+:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
 
 #item 2
 
-:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="78ch"}
+:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="100%"}
 
 :::
 

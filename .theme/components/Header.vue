@@ -4,32 +4,23 @@
       <img class="mouseless logo">
     </NuxtLink>
     <nav class="menu header__menu">
-      <ContentQuery
-        v-slot="{ data: menus }"
-        path="/"
-        :only="['_path', 'title', 'position']"
-        :where="{
-          _dir: { $eq: '' },
-          _path: { $not: { $in: excludePath } },
-        }"
-        :sort="{ position: 1, $numeric: true }"
+      <NuxtLink
+        v-for="menu in store.pageMeta"
+        :key="menu.title"
+        :class="{ 'menu__item--active': menu._path === root }"
+        :to="menu._path == $route.path ? '' : menu._path"
+        class="menu__item"
       >
-        <NuxtLink
-          v-for="menu in menus"
-          :key="menu.title"
-          :class="{ 'menu__item--active': menu._path === root }"
-          :to="menu._path == $route.path ? '' : menu._path"
-          class="menu__item"
-        >
-          {{ menu.title }}
-        </NuxtLink>
-      </ContentQuery>
+        {{ menu.title }}
+      </NuxtLink>
     </nav>
   </header>
 </template>
 <script setup>
 import { useRoute } from "#imports";
-const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
+import { usePageMetaStore } from "~/store/pageMetaStore";
+
+const store = usePageMetaStore();
 const route = useRoute();
 const root = computed(() => `/${route.path.split("/")[1]}`);
 </script>

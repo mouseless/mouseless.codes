@@ -1,31 +1,18 @@
 <template>
-  <div
-    :class="[`card--image-align_${imageAlign}`, `card--color_${color}`]"
-    class="card"
-  >
-    <h2
-      v-if="title !== null"
-      class="card__title"
-      :class="`card__title--color_${color}`"
+  <div class="card" :class="`bordered bordered--color_${color}`">
+    <img
+      v-if="image !== null"
+      :src="image"
+      class="card__image"
+      :class="`bordered bordered--color_${color}`"
     >
-      {{ title }}
-    </h2>
-    <div class="card__detail">
+    <div class="card__slot">
       <slot />
     </div>
-    <img v-if="image !== null" class="card__img" :src="image">
   </div>
 </template>
 <script setup>
 defineProps({
-  imageAlign: {
-    type: String,
-    default: "right"
-  },
-  title: {
-    type: String,
-    default: null
-  },
   image: {
     type: String,
     default: null
@@ -36,48 +23,33 @@ const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .card {
-  border-style: solid;
+  border: 1px solid;
   border-radius: var(--border-radius);
-  box-sizing: border-box;
-  display: grid;
-  grid-template-areas:
-    "title title"
-    "detail image";
-  padding: 1em;
   width: 100%;
+  max-width: var(--width-content);
+  height: 100%;
 
-  &__title {
-    grid-area: title;
-    margin: 0px;
-
-    &--color {
-      &_dark { color: var(--color-fg); }
-      &_light { color: var(--color-bg); }
-    }
+  &__image {
+    width: 100%;
+    max-height: 30ch;
+    border-bottom: 1px solid;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
   }
 
-  &__detail {
-    grid-area: detail;
+  &__slot {
+    padding: 1em;
   }
+}
 
-  &__img {
-    grid-area: image;
-  }
-
-  &--image-align_left {
-    grid-template-areas:
-      "title title"
-      "image detail";
-  }
-
+.bordered {
   &--color {
     &_dark {
-      border-color: var(--color-fg);
-      color: var(--color-fg);
+      border-color: var(--color-gray-darkest);
     }
+
     &_light {
-      border-color: var(--color-bg);
-      color: var(--color-bg);
+      border-color: var(--color-gray);
     }
   }
 }
