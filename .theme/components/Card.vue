@@ -1,7 +1,12 @@
 <template>
-  <div class="card">
-    <img v-if="image !== null" :src="image" class="card__image">
-    <div>
+  <div class="card" :class="`bordered bordered--color_${color}`">
+    <img
+      v-if="image !== null"
+      :src="image"
+      class="card__image"
+      :class="`bordered bordered--color_${color}`"
+    >
+    <div class="card__slot">
       <slot />
     </div>
   </div>
@@ -13,27 +18,39 @@ defineProps({
     default: null
   }
 });
+
+const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .card {
   border: 1px solid;
-  background-color: var(--color-white);
-  padding: 1em;
-  display: inline-flex;
-  flex-direction: column;
-
-  &:hover {
-    margin-top: -3px;
-    margin-left: -3px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    box-shadow: 3px 3px 0 0 var(--color-bg-mute);
-    transition: 0.1s ease-out;
-  }
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: var(--width-content);
+  height: 100%;
 
   &__image {
-    max-height: 300px;
-    width: auto;
+    width: 100%;
+    max-height: 30ch;
+    border-bottom: 1px solid;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+  }
+
+  &__slot {
+    padding: 1em;
+  }
+}
+
+.bordered {
+  &--color {
+    &_dark {
+      border-color: var(--color-gray-darkest);
+    }
+
+    &_light {
+      border-color: var(--color-gray);
+    }
   }
 }
 </style>

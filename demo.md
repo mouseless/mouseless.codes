@@ -117,23 +117,82 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## Card
 
-:::card{image="/merged.svg"}
+:::box-layout{display="flex" align="center"}
+
+#item 1
+
+::::card{image="/draft.svg"}
+
 ## An Epic on DO
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+::::
+
+#item 2
+
+::::card{image="/card-bg-wall.jpg"}
+
+## An Epic on Learn-Nuxt
+
+Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
+autem.
+::::
+
+:::
+
+:::box-layout{display="stack" align="left" itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
+
+#item 1
+
+::::card
+
+## An Epic on DO
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat
+::::
+
+#item 2
+
+::::card
+
+## An Epic on Learn-Nuxt
+
+Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
+autem.
+::::
+
+#item 3
+
+::::card
+
+## An Epic on Prebuild
+
+Veritatis obcaecati tenetur iure eius earum ut molestias architecto
+::::
+
+:::
+
+:::card{image="/merged.svg"}
+
+## An Epic on Learn-Nuxt
 
 Completely clear and straightforward
 :::
 
 ## Inline Frame
 
-:::box-layout{display="stack" align="left"}
+:::box-layout{display="stack" align="center" :itemWidths='["35%", "65%"]'}
 
 #item 1
 
-:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="52ch"}
+:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
 
 #item 2
 
-:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="78ch"}
+:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="100%"}
 
 :::
 

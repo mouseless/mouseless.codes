@@ -175,7 +175,7 @@ function changeSlide(page) {
 
     &--color {
       &_dark { background-color: var(--color-gray-darkest); }
-      &_light { background-color: var(--color-fg-mute); }
+      &_light { background-color: var(--color-gray-darkest); }
     }
 
     &--active.slider__dot--color_dark {
@@ -183,7 +183,7 @@ function changeSlide(page) {
     }
 
     &--active.slider__dot--color_light {
-      background-color: var(--color-bg-mute);
+      background-color: var(--color-bg);
     }
   }
 }
