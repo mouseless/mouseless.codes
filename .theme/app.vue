@@ -7,7 +7,7 @@
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
-const excludePath = ["/footer", "/header", "/", "/not-found", "/readme"];
+const excludePath = ["/footer", "/header", "/not-found", "/readme"];
 
 if(!process.dev) {
   excludePath.push("/demo");
