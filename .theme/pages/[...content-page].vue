@@ -16,12 +16,12 @@ const runtimeConfig = useRuntimeConfig();
 const page = store.pageMeta?.find(page => page._path === route.path);
 
 useSeoMeta({
-  ogTitle: page?.title,
-  ogDescription: page?.ogDescription,
-  ogImage: fullUrl(page?.ogImage),
-  twitterTitle: page?.title,
-  twitterDescription: page?.ogDescription,
-  twitterImage: fullUrl(page?.ogImage)
+  ogTitle: page["seo-title"] ?? page.title,
+  ogDescription: page["seo-description"],
+  ogImage: fullUrl(page["seo-image"]),
+  twitterTitle: page["seo-title"] ?? page.title,
+  twitterDescription: page["seo-description"],
+  twitterImage: fullUrl(page["seo-image"])
 });
 
 function fullUrl(path) {

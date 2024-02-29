@@ -1,7 +1,8 @@
 ---
 title: Demo
-ogDescription: This is Demo page
-ogImage: /merged.svg
+seo-title: Mouseless Demo
+seo-description: This is Demo page
+seo-image: merged.svg
 ---
 
 ::block{:debug=true}
