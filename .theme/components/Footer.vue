@@ -38,7 +38,7 @@
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
-const menus = store.pageMeta.filter(m => m._path !== "/");
+const menus = store.pageMeta.filter(m => !!m.position);
 </script>
 <style lang="scss" scoped>
 .footer {

@@ -21,7 +21,7 @@ import { useRoute } from "#imports";
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
-const menus = store.pageMeta.filter(m => m._path !== "/");
+const menus = store.pageMeta.filter(m => !!m.position);
 const route = useRoute();
 const root = computed(() => `/${route.path.split("/")[1]}`);
 </script>
