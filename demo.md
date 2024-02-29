@@ -230,6 +230,50 @@ nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
 tenetur error, harum nesciunt ipsum debitis quas aliquid.
 :::
 
+## Steps
+
+:::steps{:stepsName='["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"]'}
+
+#step1
+
+::::card
+# Step 1
+
+Step 1 body
+::::
+
+#step2
+
+::::card
+# Step 2
+
+Step 2 body
+::::
+
+#step3
+
+::::card
+# Step 3
+
+Step 3 body
+::::
+
+#step4
+
+::::card
+# Step 4
+
+Step 4 body
+::::
+
+#step5
+
+# Step 5
+
+Step 5 body
+
+:::
+
 ## Prose
 
 Normal Text
