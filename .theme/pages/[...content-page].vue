@@ -16,10 +16,10 @@ const runtimeConfig = useRuntimeConfig();
 const page = store.pageMeta?.find(page => page._path === route.path);
 
 useSeoMeta({
-  ogTitle: `Mouseless - ${page?.title}`,
+  ogTitle: page?.title,
   ogDescription: page?.ogDescription,
   ogImage: fullUrl(page?.ogImage),
-  twitterTitle: `Mouseless - ${page?.title}`,
+  twitterTitle: page?.title,
   twitterDescription: page?.ogDescription,
   twitterImage: fullUrl(page?.ogImage)
 });
