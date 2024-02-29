@@ -24,7 +24,7 @@ custom software development and re-engineering services.
 
 ::block
 
-:::card-layout{display=flex}
+:::box-layout{display=flex}
 
 #item 1
 

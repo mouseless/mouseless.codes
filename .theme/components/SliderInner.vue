@@ -53,10 +53,7 @@ const props = defineProps({
 
 const color = inject("block-child-color", "dark");
 
-const upToDateSlides = ref(props.slides);
-watch(props, () => {
-  upToDateSlides.value = props.slides;
-});
+const upToDateSlides = computed(() => props.slides);
 
 const pageNumber = ref(0);
 const left = () =>
@@ -175,7 +172,7 @@ function changeSlide(page) {
 
     &--color {
       &_dark { background-color: var(--color-gray-darkest); }
-      &_light { background-color: var(--color-fg-mute); }
+      &_light { background-color: var(--color-gray-darkest); }
     }
 
     &--active.slider__dot--color_dark {
@@ -183,7 +180,7 @@ function changeSlide(page) {
     }
 
     &--active.slider__dot--color_light {
-      background-color: var(--color-bg-mute);
+      background-color: var(--color-bg);
     }
   }
 }

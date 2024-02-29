@@ -17,25 +17,15 @@
             <ContentRendererMarkdown :value="footer" />
           </ContentRenderer>
         </div>
-        <ContentQuery
-          v-slot="{ data: menus }"
-          path="/"
-          :where="{
-            _dir: { $eq: '' },
-            _path: { $not: { $in: excludePath } },
-          }"
-          :sort="{ position: 1, $numeric: true }"
-        >
-          <div class="footer__menu">
-            <ul>
-              <li v-for="menu in menus" :key="menu.title">
-                <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
-                  {{ menu.title }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </div>
-        </ContentQuery>
+        <div class="footer__menu">
+          <ul>
+            <li v-for="menu in store.pageMeta" :key="menu.title">
+              <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
+                {{ menu.title }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="copyright">
         <br>
@@ -45,7 +35,9 @@
   </footer>
 </template>
 <script setup>
-const excludePath = ["/footer", "/header", "/", "/not-found", "/demo", "/readme"];
+import { usePageMetaStore } from "~/store/pageMetaStore";
+
+const store = usePageMetaStore();
 </script>
 <style lang="scss" scoped>
 .footer {
