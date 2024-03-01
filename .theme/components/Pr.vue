@@ -14,7 +14,7 @@
       >
         <img
           class="pr-state__icon"
-          :src="`${getState(pr)}.svg`"
+          :src="`/components/pr/${getState(pr)}.svg`"
         >
         {{ getState(pr) }}
       </div>

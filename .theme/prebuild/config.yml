@@ -25,6 +25,10 @@ tasks:
       extension: .jpg
       source: ./
       target: ./.theme/.public
+  - copy:
+      extension: .svg
+      source: ./
+      target: ./.theme/.public
   # Copy all files in public to .public
   - copy:
       source: ./.theme/public

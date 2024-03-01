@@ -30,7 +30,7 @@
           v-if="index !== stepCount"
           class="flow__arrow"
           :class="`arrow--color_${color}`"
-          :src="`/step-arrow-${color}.svg`"
+          :src="`/components/steps/step-arrow-${color}.svg`"
         >
       </div>
     </div>

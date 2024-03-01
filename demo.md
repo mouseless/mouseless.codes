@@ -2,7 +2,7 @@
 title: Demo
 seo-title: Mouseless Demo
 seo-description: This is Demo page
-seo-image: merged.svg
+seo-image: images/card-bg-wall.jpg
 ---
 
 ::block{:debug=true}
@@ -122,7 +122,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 #item-1
 
-::::card{image="/draft.svg"}
+::::card{image="images/card-bg-wall.jpg"}
 
 ## An Epic on DO
 
@@ -132,7 +132,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 #item-2
 
-::::card{image="/card-bg-wall.jpg"}
+::::card{image="images/card-bg-wall.jpg"}
 
 ## An Epic on Learn-Nuxt
 
@@ -177,7 +177,7 @@ Veritatis obcaecati tenetur iure eius earum ut molestias architecto
 
 :::
 
-:::card{image="/merged.svg"}
+:::card{image="images/card-bg-wall.jpg"}
 
 ## An Epic on Learn-Nuxt
 
@@ -298,7 +298,7 @@ _Italic Text_
 
 [External Link](http://mouseless.codes)
 
-![](/images/explosion-star.png)
+![](images/card-bg-wall.jpg)
 
 # Head1
 
