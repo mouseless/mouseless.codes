@@ -15,7 +15,7 @@
       :class="{'box-layout__item--flex': display == 'flex'}"
       :style="display !== 'flex' ? `width: ${itemWidths[i] || itemWidth}` : ''"
     >
-      <slot :name="`item ${i + 1}`" />
+      <slot :name="items[i]" />
     </div>
   </div>
 </template>
@@ -40,7 +40,8 @@ defineProps({
 });
 const slots = useSlots();
 
-const count = computed(() => Object.keys(slots).length);
+const items = Object.keys(slots);
+const count = computed(() => items.length);
 </script>
 <style lang="scss" scoped>
 .box-layout {

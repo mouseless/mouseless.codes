@@ -3,8 +3,8 @@
     <div class="steps__content">
       <slot :name="steps[currentIndex]" />
     </div>
-    <div class="steps__flow">
-      <div v-for="index in stepCount" :key="index" class="steps__step">
+    <div class="flow steps__flow">
+      <div v-for="index in stepCount" :key="index" class="flow__step">
         <div
           class="step"
           :class="[
@@ -13,18 +13,24 @@
           ]"
           @click="changeContent(index - 1)"
         >
-          <div class="step__number" :class="`step__number--color_${color}`">
+          <div
+            class="step__number"
+            :class="[
+              `step__number--color_${color}`,
+              {'step__number--active': currentIndex == index - 1}
+            ]"
+          >
             {{ index }}
           </div>
           <div class="step__name">
-            {{ stepsName[index - 1] }}
+            {{ titles[index - 1] }}
           </div>
         </div>
         <img
           v-if="index !== stepCount"
-          class="arrow"
+          class="flow__arrow"
           :class="`arrow--color_${color}`"
-          src="/step-arrow.svg"
+          :src="`/step-arrow-${color}.svg`"
         >
       </div>
     </div>
@@ -33,7 +39,7 @@
 </template>
 <script setup>
 defineProps({
-  stepsName: {
+  titles: {
     type: Array,
     default: () => []
   }
@@ -51,19 +57,11 @@ function changeContent(index) {
 </script>
 <style lang="scss">
 .steps {
-  border: 1px solid;
   border-radius: var(--border-radius);
   padding: var(--border-radius);
 
   &__flow {
-    display: flex;
-    flex-direction: row;
-    padding-top: 40px;
-  }
-
-  &__step {
-    display: flex;
-    flex-direction: row;
+    margin-top: 2em;
   }
 
   &__content {
@@ -75,32 +73,48 @@ function changeContent(index) {
   }
 }
 
+.flow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__step {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__arrow {
+    width: 80px;
+    height: 50px;
+  }
+}
+
 .step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: var(--border-radius);
-  padding: 2em;
+  padding: 1.5em;
   cursor: pointer;
   width: 100px;
+  margin-top: 2em;
 
   &--color {
     &_dark {
       color: var(--color-white);
       background-color: var(--color-fg);
-
-      &.step--active,
-      &:hover {
-        background-color: var(--color-fg-mute);
-      }
     }
 
     &_light {
       color: var(--color-fg);
       background-color: var(--color-bg-soft);
-
-      &.step--active,
-      &:hover {
-        background-color: var(--color-bg-mute);
-      }
     }
+  }
+
+  &:hover, &--active {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   &__number {
@@ -108,31 +122,38 @@ function changeContent(index) {
     width: 7ch;
     height: 3ch;
     font-size: medium;
+    margin-top: -2em;
 
     &--color {
       &_dark {
-        color: var(--color-fg);
-        background-color: var(--color-bg);
+        color: var(--color-bg);
+        background-color: var(--color-black-lightest);
+
+        &.step__number--active {
+          color: var(--color-bg);
+          background-color: var(--color-logo-mark);
+        }
       }
 
       &_light {
-        color: var(--color-fg);
+        color: var(--color-bg);
         background-color: var(--color-gray-darkest);
+
+        &.step__number--active {
+          color: var(--color-bg);
+          background-color: var(--color-logo-mark);
+        }
       }
     }
   }
 
   &__name {
-    text-align: left;
-    font-size: x-large;
+    display: flex;
+    align-items: center;
+    font-size: large;
     font-weight: bold;
+    height: 100%;
   }
 
-}
-
-.arrow {
-  width: 80px;
-  height: 50px;
-  margin-top: -40px;
 }
 </style>

@@ -74,13 +74,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 :::box-layout{display="stack" align="left"}
 
-#item 1
+#item-1
 
 ::::box{title="Box 1"}
 Lorem ipsum dolor sit amet consectetur adipisicing elit
 ::::
 
-#item 2
+#item-2
 
 ::::box{title="Box 2"}
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
@@ -92,13 +92,13 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 :::box-layout{display="flex" align="center"}
 
-#item 1
+#item-1
 
 ::::box{title="Box 1"}
 Lorem ipsum dolor sit amet consectetur adipisicing elit
 ::::
 
-#item 2
+#item-2
 
 ::::box{title="Box 2"}
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
@@ -120,7 +120,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 :::box-layout{display="flex" align="center"}
 
-#item 1
+#item-1
 
 ::::card{image="/draft.svg"}
 
@@ -130,7 +130,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 ::::
 
-#item 2
+#item-2
 
 ::::card{image="/card-bg-wall.jpg"}
 
@@ -144,7 +144,7 @@ autem.
 
 :::box-layout{display="stack" align="left" itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
 
-#item 1
+#item-1
 
 ::::card
 
@@ -155,7 +155,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat
 ::::
 
-#item 2
+#item-2
 
 ::::card
 
@@ -165,13 +165,14 @@ Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
 autem.
 ::::
 
-#item 3
+#item-3
 
 ::::card
 
 ## An Epic on Prebuild
 
 Veritatis obcaecati tenetur iure eius earum ut molestias architecto
+
 ::::
 
 :::
@@ -181,17 +182,18 @@ Veritatis obcaecati tenetur iure eius earum ut molestias architecto
 ## An Epic on Learn-Nuxt
 
 Completely clear and straightforward
+
 :::
 
 ## Inline Frame
 
 :::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
 
-#item 1
+#item-1
 
 :inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
 
-#item 2
+#item-2
 
 :inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="100%"}
 
@@ -211,7 +213,7 @@ Completely clear and straightforward
 
 :::slider
 
-#slide1
+#slide-1
 
 ### Slide 1
 
@@ -220,7 +222,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
 optio, eaque rerum!
 
-#slide2
+#slide-2
 
 ### Slide 2
 
@@ -228,49 +230,53 @@ Provident similique accusantium nemo autem. Veritatis
 obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
 nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
 tenetur error, harum nesciunt ipsum debitis quas aliquid.
+
 :::
 
 ## Steps
 
-:::steps{:stepsName='["Step 1", "Step 2 Long Text", "Step 3", "Step 4", "Step 5"]'}
+:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]'}
 
-#step1
+#step-1
 
 ::::card
-# Step 1
+
+### Step 1
 
 Step 1 body
+
 ::::
 
-#step2
+#step-2
 
 ::::card
-# Step 2
 
-Step 2 body
+### Step 2
+
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
+Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid.
+
 ::::
 
-#step3
+#step-3
 
-::::card
-# Step 3
+### Step 3
 
 Step 3 body
-::::
-
-#step4
-
-::::card
-# Step 4
-
-Step 4 body
-::::
-
-#step5
-
-# Step 5
-
-Step 5 body
 
 :::
 
