@@ -232,7 +232,7 @@ tenetur error, harum nesciunt ipsum debitis quas aliquid.
 
 ## Steps
 
-:::steps{:stepsName='["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"]'}
+:::steps{:stepsName='["Step 1", "Step 2 Long Text", "Step 3", "Step 4", "Step 5"]'}
 
 #step1
 

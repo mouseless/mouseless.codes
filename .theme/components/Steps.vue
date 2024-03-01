@@ -4,13 +4,16 @@
       <slot :name="steps[currentIndex]" />
     </div>
     <div class="steps__flow">
-      <div
-        v-for="index in stepCount"
-        :key="index"
-        class="steps__step"
-      >
-        <div class="step" @click="changeContent(index - 1)">
-          <div class="step__number">
+      <div v-for="index in stepCount" :key="index" class="steps__step">
+        <div
+          class="step"
+          :class="[
+            { 'step--active': currentIndex == index - 1 },
+            `step--color_${color}`,
+          ]"
+          @click="changeContent(index - 1)"
+        >
+          <div class="step__number" :class="`step__number--color_${color}`">
             {{ index }}
           </div>
           <div class="step__name">
@@ -20,6 +23,7 @@
         <img
           v-if="index !== stepCount"
           class="arrow"
+          :class="`arrow--color_${color}`"
           src="/step-arrow.svg"
         >
       </div>
@@ -39,6 +43,7 @@ const slots = useSlots();
 const steps = Object.keys(slots);
 const stepCount = steps.length;
 const currentIndex = ref(0);
+const color = inject("block-child-color", "dark");
 
 function changeContent(index) {
   currentIndex.value = index;
@@ -46,10 +51,13 @@ function changeContent(index) {
 </script>
 <style lang="scss">
 .steps {
+  border: 1px solid;
+  border-radius: var(--border-radius);
+  padding: var(--border-radius);
+
   &__flow {
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding-top: 40px;
   }
 
@@ -57,27 +65,61 @@ function changeContent(index) {
     display: flex;
     flex-direction: row;
   }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+  }
 }
 
 .step {
-  color: var(--color-white);
-  background-color: var(--color-fg);
-  display: grid;
-  grid-template-columns:
-    "row"
-    "row";
+  border-radius: var(--border-radius);
   padding: 2em;
-  align-items: center;
   cursor: pointer;
   width: 100px;
 
+  &--color {
+    &_dark {
+      color: var(--color-white);
+      background-color: var(--color-fg);
+
+      &.step--active,
+      &:hover {
+        background-color: var(--color-fg-mute);
+      }
+    }
+
+    &_light {
+      color: var(--color-fg);
+      background-color: var(--color-bg-soft);
+
+      &.step--active,
+      &:hover {
+        background-color: var(--color-bg-mute);
+      }
+    }
+  }
+
   &__number {
-    background-color: var(--color-bg);
     border-radius: var(--border-radius);
-    color: var(--color-fg);
     width: 7ch;
     height: 3ch;
     font-size: medium;
+
+    &--color {
+      &_dark {
+        color: var(--color-fg);
+        background-color: var(--color-bg);
+      }
+
+      &_light {
+        color: var(--color-fg);
+        background-color: var(--color-gray-darkest);
+      }
+    }
   }
 
   &__name {
@@ -85,6 +127,7 @@ function changeContent(index) {
     font-size: x-large;
     font-weight: bold;
   }
+
 }
 
 .arrow {
