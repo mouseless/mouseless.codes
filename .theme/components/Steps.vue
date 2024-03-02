@@ -123,27 +123,20 @@ function changeContent(index) {
     height: 3ch;
     font-size: medium;
     margin-top: -2em;
+    color: var(--color-bg);
 
     &--color {
       &_dark {
-        color: var(--color-bg);
         background-color: var(--color-black-lightest);
-
-        &.step__number--active {
-          color: var(--color-bg);
-          background-color: var(--color-logo-mark);
-        }
       }
 
       &_light {
-        color: var(--color-bg);
         background-color: var(--color-gray-darkest);
-
-        &.step__number--active {
-          color: var(--color-bg);
-          background-color: var(--color-logo-mark);
-        }
       }
+    }
+
+    &--active {
+      background-color: var(--color-logo-mark);
     }
   }
 
@@ -154,6 +147,5 @@ function changeContent(index) {
     font-weight: bold;
     height: 100%;
   }
-
 }
 </style>
