@@ -186,16 +186,32 @@ Completely clear and straightforward
 
 :::
 
-## Diagram
+## Diagrams
+
+### Vertical
 
 ```mermaid
 flowchart TB
-    subgraph prepare[prepare]
-        direction LR
-        E(eslint) --> P(prebuild)
+    subgraph C
+      D
+      E
     end
-    prepare -->|nuxt generate| SWS(static web site)
-    prepare -->|nuxt dev| OS(running on server)
+
+    A --> B --> D
+    B --> E
+```
+
+### Horizontal
+
+```mermaid
+flowchart LR
+    subgraph C
+      D
+      E
+    end
+
+    A --> B --> D
+    B --> E
 ```
 
 ## Inline Frame
