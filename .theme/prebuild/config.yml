@@ -40,6 +40,7 @@ tasks:
       target: ./.theme/.temp
       config:
         backgroundColor: '#092122'
+        outputFormat: svg
         theme: base
         deviceScaleFactor: 1
         headless: new
@@ -56,7 +57,7 @@ tasks:
           tertiaryColor: '#163738'
           activationBkgColor: '#fa465b'
   - move:
-      extension: .png
+      extension: .svg
       source: ./.theme/.temp
       target: ./.theme/.public
   - move:

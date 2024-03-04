@@ -4,6 +4,7 @@
     :alt="alt"
     :width="width"
     :height="height"
+    :class="[ alt ]"
   >
 </template>
 <script setup lang="ts">

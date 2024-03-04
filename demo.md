@@ -124,7 +124,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ::::card{image="images/card-bg-wall.jpg"}
 
-## An Epic on DO
+### An Epic on DO
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum
@@ -134,7 +134,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ::::card{image="images/card-bg-wall.jpg"}
 
-## An Epic on Learn-Nuxt
+### An Epic on Learn-Nuxt
 
 Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
 autem.
@@ -148,7 +148,7 @@ autem.
 
 ::::card
 
-## An Epic on DO
+### An Epic on DO
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -159,7 +159,7 @@ numquam blanditiis harum quisquam eius sed odit fugiat
 
 ::::card
 
-## An Epic on Learn-Nuxt
+### An Epic on Learn-Nuxt
 
 Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
 autem.
@@ -169,7 +169,7 @@ autem.
 
 ::::card
 
-## An Epic on Prebuild
+### An Epic on Prebuild
 
 Veritatis obcaecati tenetur iure eius earum ut molestias architecto
 
@@ -179,11 +179,23 @@ Veritatis obcaecati tenetur iure eius earum ut molestias architecto
 
 :::card{image="images/card-bg-wall.jpg"}
 
-## An Epic on Learn-Nuxt
+### An Epic on Learn-Nuxt
 
 Completely clear and straightforward
 
 :::
+
+## Diagram
+
+```mermaid
+flowchart TB
+    subgraph prepare[prepare]
+        direction LR
+        E(eslint) --> P(prebuild)
+    end
+    prepare -->|nuxt generate| SWS(static web site)
+    prepare -->|nuxt dev| OS(running on server)
+```
 
 ## Inline Frame
 
