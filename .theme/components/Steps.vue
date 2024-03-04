@@ -1,7 +1,9 @@
 <template>
   <div class="steps">
-    <div class="steps__content">
-      <slot :name="steps[currentIndex]" />
+    <div class="steps__scroll">
+      <div class="steps__content">
+        <slot :name="steps[currentIndex]" />
+      </div>
     </div>
     <div class="flow steps__flow">
       <div v-for="index in stepCount" :key="index" class="flow__step">
@@ -42,6 +44,10 @@ defineProps({
   titles: {
     type: Array,
     default: () => []
+  },
+  height: {
+    type: String,
+    default: "50ch"
   }
 });
 const slots = useSlots();
@@ -64,12 +70,15 @@ function changeContent(index) {
     margin-top: 2em;
   }
 
+  &__scroll {
+    height: v-bind(height);
+    overflow: auto;
+  }
+
   &__content {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 300px;
   }
 }
 

@@ -240,7 +240,7 @@ flowchart LR
 
 ## Slider
 
-:::slider
+:::slider{height="50ch"}
 
 #slide-1
 
@@ -264,7 +264,7 @@ tenetur error, harum nesciunt ipsum debitis quas aliquid.
 
 ## Steps
 
-:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]'}
+:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]' height="40ch"}
 
 #step-1
 
