@@ -13,7 +13,7 @@
     <div class="box__detail">
       <slot />
     </div>
-    <img v-if="image !== null" class="box__img" :src="image">
+    <Image v-if="image !== null" class="box__img" :image="image" />
   </div>
 </template>
 <script setup>
@@ -62,6 +62,7 @@ const color = inject("block-child-color", "dark");
 
   &__img {
     grid-area: image;
+    width: 100%;
   }
 
   &--image-align_left {

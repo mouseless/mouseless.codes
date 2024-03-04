@@ -63,7 +63,7 @@ seo-image: images/card-bg-wall.jpg
 
 :::box{title="Box Header" image-align="left"}
 ---
-image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
+image: images/card-bg-wall.jpg
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -188,7 +188,9 @@ Completely clear and straightforward
 
 ## Diagrams
 
-### Vertical
+:::box-layout{display="stack" align="left" :itemWidths='["30%", "65%"]'}
+
+#diagram-1
 
 ```mermaid
 flowchart TB
@@ -201,7 +203,7 @@ flowchart TB
     B --> E
 ```
 
-### Horizontal
+#diagram-2
 
 ```mermaid
 flowchart LR
@@ -213,6 +215,8 @@ flowchart LR
     A --> B --> D
     B --> E
 ```
+
+:::
 
 ## Inline Frame
 
@@ -240,7 +244,7 @@ flowchart LR
 
 ## Slider
 
-:::slider{height="50ch"}
+:::slider{height="15ch"}
 
 #slide-1
 
@@ -257,8 +261,7 @@ optio, eaque rerum!
 
 Provident similique accusantium nemo autem. Veritatis
 obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-tenetur error, harum nesciunt ipsum debitis quas aliquid.
+nihil, eveniet aliquid
 
 :::
 
