@@ -1,5 +1,6 @@
 ---
 title: Demo
+position: 5
 seo-title: Mouseless Demo
 seo-description: This is Demo page
 seo-image: images/card-bg-wall.jpg
