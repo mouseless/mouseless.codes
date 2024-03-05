@@ -13,10 +13,9 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ## We love to develop software, together.
 
-We are a software development collective, connected through our craft. Our
-collective is a team of 3-7 software engineers guided by our people-centric
-philosophy. We prioritize excellence and efficiency, focusing on delivering
-quality work collaboratively.
+United by Craft, Driven by Community: Discover Mouseless, where our collective
+passion for Software Craftsmanship and a people-first philosophy shapes every
+project. Dive into a world where excellence and collaboration meet.
 
 :::
 
@@ -117,8 +116,8 @@ Slide 2
 
 ### Low Cost of Change
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+Our approach minimizes change costs through automated testing and continuous
+refactoring, ensuring adaptability without additional expenses.
 
 ::::
 
@@ -128,8 +127,8 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ### Continuous Delivery
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
+setup, prioritizing efficiency and reliability.
 
 ::::
 
@@ -147,8 +146,8 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ### Progress Visibility
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+Through draft PRs from project inception, detailed task management, and clear
+communication, we maintain transparency at every development stage.
 
 ::::
 
@@ -158,8 +157,8 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ### Cross Pollunation
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+Our commitment to open source and diverse project engagement promotes knowledge
+exchange, enhancing innovation across the community.
 
 ::::
 
