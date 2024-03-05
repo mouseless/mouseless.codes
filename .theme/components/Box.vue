@@ -1,6 +1,9 @@
 <template>
   <div
-    :class="[`box--image-align_${imageAlign}`, `box--color_${color}`]"
+    :class="[
+      image !== null ? `box--image-align_${imageAlign}` : '',
+      `box--color_${color}`
+    ]"
     class="box"
   >
     <h2
@@ -41,8 +44,8 @@ const color = inject("block-child-color", "dark");
   box-sizing: border-box;
   display: grid;
   grid-template-areas:
-    "title title"
-    "detail image";
+    "title"
+    "detail";
   padding: 1em;
   width: 100%;
 
@@ -65,10 +68,20 @@ const color = inject("block-child-color", "dark");
     width: 100%;
   }
 
-  &--image-align_left {
-    grid-template-areas:
-      "title title"
-      "image detail";
+  &--image-align {
+    &_left {
+      grid-template-areas:
+        "title title"
+        "image detail";
+      grid-template-columns: 33% 67%;
+    }
+
+    &_right {
+      grid-template-areas:
+        "title title"
+        "detail image";
+      grid-template-columns: 67% 33%;
+    }
   }
 
   &--color {

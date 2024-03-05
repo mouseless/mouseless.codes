@@ -28,6 +28,7 @@ const { getPeople } = useGitHub();
 const members = ref([]);
 const render = ref(false);
 
+onServerPrefetch(async() => members.value = await getPeople());
 onBeforeMount(async() => {
   members.value = await getPeople();
   render.value = true;
