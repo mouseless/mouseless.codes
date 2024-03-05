@@ -48,6 +48,7 @@ const count = computed(() => items.length);
   display: flex;
   gap: 2em;
   margin: 2em 0;
+  align-items: flex-start;
 
   &--stack {
     flex-wrap: wrap;

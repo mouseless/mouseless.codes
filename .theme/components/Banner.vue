@@ -36,6 +36,7 @@ const color = inject("block-child-color", "dark");
 .banner {
   align-items: center;
   display: flex;
+  width: 100%;
 
   &--align {
     &_center { justify-content: center; }
