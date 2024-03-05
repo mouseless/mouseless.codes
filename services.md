@@ -1,6 +1,13 @@
 ---
-title: Services
+title: mouseless -- services
+menu-title: services
 position: 1
+seo-title: >
+  > mouseless -- services_
+seo-description: >
+  a staff augmentation service provider, offering full responsibility for
+  software systems that you'd rather outsource.
+seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
 ::block
@@ -17,7 +24,7 @@ allows you to maintain your focus on your core business concerns.
 
 ::
 
-::block{color=yellow}
+::block{color=green}
 
 ## Custom Software Development
 
@@ -72,7 +79,7 @@ how we can assist you.
 
 ::
 
-::block{color=green}
+::block{color=black}
 
 ## Long-term Partnership
 

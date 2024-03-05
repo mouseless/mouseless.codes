@@ -13,7 +13,7 @@ const route = useRoute();
 const store = usePageMetaStore();
 const runtimeConfig = useRuntimeConfig();
 
-const page = store.pageMeta?.find(page => page._path === route.path);
+const page = store.pageMeta?.find(page => page._path === route.path) ?? { };
 
 useSeoMeta({
   ogTitle: page["seo-title"] ?? page.title,

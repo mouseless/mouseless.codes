@@ -48,6 +48,10 @@ const props = defineProps({
   align: {
     type: String,
     default: "center"
+  },
+  height: {
+    type: String,
+    default: "50ch"
   }
 });
 
@@ -84,7 +88,7 @@ function changeSlide(page) {
     grid-area: content;
     color: var(--color-fg);
     overflow: auto;
-    height: 50ch;
+    height: v-bind(height);
     padding-inline: 1em;
 
     h2 {

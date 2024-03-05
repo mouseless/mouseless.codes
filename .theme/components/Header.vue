@@ -5,13 +5,13 @@
     </NuxtLink>
     <nav class="menu header__menu">
       <NuxtLink
-        v-for="menu in store.pageMeta"
-        :key="menu.title"
+        v-for="menu in menus"
+        :key="menu['menu-title']"
         :class="{ 'menu__item--active': menu._path === root }"
         :to="menu._path == $route.path ? '' : menu._path"
         class="menu__item"
       >
-        {{ menu.title }}
+        {{ menu['menu-title'] }}
       </NuxtLink>
     </nav>
   </header>
@@ -21,6 +21,7 @@ import { useRoute } from "#imports";
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
+const menus = store.pageMeta.filter(m => !!m.position);
 const route = useRoute();
 const root = computed(() => `/${route.path.split("/")[1]}`);
 </script>

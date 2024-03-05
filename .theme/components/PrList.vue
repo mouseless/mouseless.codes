@@ -21,7 +21,7 @@
     </div>
     <div class="pr-list__prs">
       <div v-if="!render" class="pr-list__loading" />
-      <SliderInner v-if="render" align="left" :slides="pullRequests">
+      <SliderInner v-if="render" :align="'left'" :height="height" :slides="pullRequests">
         <template #default="{pageNumber, slides}">
           <Pr v-if="slides.length !== 0 && pageNumber != slides.length - 1" :pr="slides[pageNumber]" />
           <div v-else>
@@ -38,6 +38,10 @@
 </template>
 <script setup>
 const props = defineProps({
+  height: {
+    type: String,
+    default: "50ch"
+  },
   repos: {
     type: Array,
     default: () => []
