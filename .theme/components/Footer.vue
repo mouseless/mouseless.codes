@@ -19,9 +19,9 @@
         </div>
         <div class="footer__menu">
           <ul>
-            <li v-for="menu in store.pageMeta" :key="menu.title">
+            <li v-for="menu in menus" :key="menu['menu-title']">
               <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
-                {{ menu.title }}
+                {{ menu['menu-title'] }}
               </NuxtLink>
             </li>
           </ul>
@@ -38,6 +38,7 @@
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
+const menus = store.pageMeta.filter(m => !!m.position);
 </script>
 <style lang="scss" scoped>
 .footer {

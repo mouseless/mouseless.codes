@@ -1,6 +1,9 @@
 <template>
   <div
-    :class="[`box--image-align_${imageAlign}`, `box--color_${color}`]"
+    :class="[
+      image !== null ? `box--image-align_${imageAlign}` : '',
+      `box--color_${color}`
+    ]"
     class="box"
   >
     <h2
@@ -13,7 +16,7 @@
     <div class="box__detail">
       <slot />
     </div>
-    <img v-if="image !== null" class="box__img" :src="image">
+    <Image v-if="image !== null" class="box__img" :src="image" />
   </div>
 </template>
 <script setup>
@@ -37,12 +40,13 @@ const color = inject("block-child-color", "dark");
 <style lang="scss">
 .box {
   border-style: solid;
+  border-width: 1px;
   border-radius: var(--border-radius);
   box-sizing: border-box;
   display: grid;
   grid-template-areas:
-    "title title"
-    "detail image";
+    "title"
+    "detail";
   padding: 1em;
   width: 100%;
 
@@ -62,21 +66,32 @@ const color = inject("block-child-color", "dark");
 
   &__img {
     grid-area: image;
+    width: 100%;
   }
 
-  &--image-align_left {
-    grid-template-areas:
-      "title title"
-      "image detail";
+  &--image-align {
+    &_left {
+      grid-template-areas:
+        "title title"
+        "image detail";
+      grid-template-columns: 33% 67%;
+    }
+
+    &_right {
+      grid-template-areas:
+        "title title"
+        "detail image";
+      grid-template-columns: 67% 33%;
+    }
   }
 
   &--color {
     &_dark {
-      border-color: var(--color-fg);
+      border-color: var(--color-gray-darkest);
       color: var(--color-fg);
     }
     &_light {
-      border-color: var(--color-bg);
+      border-color: var(--color-gray-darkest);
       color: var(--color-bg);
     }
   }

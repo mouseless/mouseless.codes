@@ -1,5 +1,10 @@
 ---
-title: Mouseless, A Software Development Colletive
+title: mouseless -- a software development collective
+seo-title: >
+  > mouseless -- a software development collective_
+seo-description: >
+  we love to develop software, together.
+seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
 ::block{color=black}
@@ -23,7 +28,7 @@ quality work collaboratively.
 
 :::box-layout{display=flex}
 
-#item 1
+#item-1
 
 ::::box{title="Custom Software Development" image-align="left"}
 ---
@@ -38,7 +43,7 @@ their business objectives.
 [See More ...](services.md)
 ::::
 
-#item 2
+#item-2
 
 ::::box{title="Re-engineering Services" image-align="left"}
 ---
@@ -90,7 +95,7 @@ Slide 2
 
 ## We value trust
 
-:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
+:link-button{to="#contact-us" type="cta" text="Reach Out"}
 
 :::
 
@@ -106,7 +111,7 @@ Slide 2
 
 :::box-layout{display=flex}
 
-#item 1
+#item-1
 
 ::::card{image="/draft.svg"}
 
@@ -117,7 +122,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ::::
 
-#item 2
+#item-2
 
 ::::card{image="/draft.svg"}
 
@@ -136,7 +141,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 :::box-layout{display=flex}
 
-#item 1
+#item-1
 
 ::::card{image="/draft.svg"}
 
@@ -147,7 +152,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 ::::
 
-#item 2
+#item-2
 
 ::::card{image="/draft.svg"}
 
@@ -178,7 +183,7 @@ molestiae quas vel sint commodi repudiandae consequuntur voluptatum
 
 :::banner{:hr=false align=center}
 
-:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
+:link-button{to="#contact-us" type="cta" text="Reach Out"}
 
 :::
 
@@ -207,11 +212,11 @@ quality work collaboratively.
 
 :::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
 
-#item 1
+#item-1
 
 :inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
 
-#item 2
+#item-2
 
 :inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0G2olIVXjVOhwpn7vBR69CSYldMlv-HFINOYgiXTSQMMn6hh8KQVi5VyBhBl2YsUSHlR9zIjI2?gv=true" height="900px" width="100%"}
 

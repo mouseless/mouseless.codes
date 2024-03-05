@@ -48,15 +48,16 @@ const props = defineProps({
   align: {
     type: String,
     default: "center"
+  },
+  height: {
+    type: String,
+    default: "50ch"
   }
 });
 
 const color = inject("block-child-color", "dark");
 
-const upToDateSlides = ref(props.slides);
-watch(props, () => {
-  upToDateSlides.value = props.slides;
-});
+const upToDateSlides = computed(() => props.slides);
 
 const pageNumber = ref(0);
 const left = () =>
@@ -87,7 +88,7 @@ function changeSlide(page) {
     grid-area: content;
     color: var(--color-fg);
     overflow: auto;
-    height: 50ch;
+    height: v-bind(height);
     padding-inline: 1em;
 
     h2 {

@@ -53,7 +53,7 @@ const color = inject("block-child-color", "dark");
     }
 
     &::before {
-      content: url("/images/explosion-star.png");
+      content: url("/components/bullet-list/explosion-star.png");
       margin-right: 1em;
       vertical-align: middle;
     }
