@@ -6,12 +6,18 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           type: "text/css",
-          href: "https://mouseless.github.io/brand/assets/css/default.css"
+          href: "https://mouseless.github.io/brand/assets/css/secondary.css"
+        },
+        {
+          rel: "stylesheet",
+          type: "text/css",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         }
       ]
     }
   },
   components: {
+    global: true,
     dirs: [
       {
         global: true,
@@ -20,6 +26,7 @@ export default defineNuxtConfig({
       "~/components"
     ]
   },
+  css: ["~/assets/styles.scss"],
   devtools: {
     enabled: false
   },
@@ -32,9 +39,10 @@ export default defineNuxtConfig({
   generate: {
     routes: ["/not-found"]
   },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/mdc", "@pinia/nuxt"],
   runtimeConfig: {
     public: {
+      authority: "",
       baseUrl: "",
       mdc: {
         headings: {
@@ -46,6 +54,16 @@ export default defineNuxtConfig({
             h5: false,
             h6: false
           }
+        }
+      },
+      protocol: ""
+    }
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: "@import \"@/assets/_variables.scss\"; @import \"@/assets/_mixins.scss\";"
         }
       }
     }

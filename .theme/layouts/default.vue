@@ -1,30 +1,24 @@
 <template>
   <div>
-    <header>
-      <a href="/"><img class="mouseless logo"></a>
-    </header>
-    <article>
+    <Header class="content" />
+    <article class="article">
       <slot />
     </article>
+    <Footer class="content" />
   </div>
 </template>
-<style lang="scss" scoped>
-header, article {
-  max-width: var(--width-content);
-  width: 100%;
-  margin: 0 auto;
-}
-
-header {
-  text-align: left;
-
-  img.logo {
-    margin: 2em 0;
-  }
-}
-</style>
 <style lang="scss">
-p img {
-  max-width: 100%;
+.article {
+  width: 100%;
+  text-align: center;
+
+  > div > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    max-width: var(--width-content);
+  }
 }
 </style>
