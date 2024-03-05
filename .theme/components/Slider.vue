@@ -11,10 +11,6 @@ defineProps({
     type: String,
     default: "center"
   },
-  titles: {
-    type: Array,
-    default: () => []
-  },
   height: {
     type: String,
     default: "50ch"

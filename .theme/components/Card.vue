@@ -1,11 +1,11 @@
 <template>
   <div class="card" :class="`bordered bordered--color_${color}`">
-    <img
+    <Image
       v-if="image !== null"
       :src="image"
       class="card__image"
       :class="`bordered bordered--color_${color}`"
-    >
+    />
     <div class="card__slot">
       <slot />
     </div>

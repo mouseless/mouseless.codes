@@ -13,7 +13,7 @@
     <div class="box__detail">
       <slot />
     </div>
-    <Image v-if="image !== null" class="box__img" :image="image" />
+    <Image v-if="image !== null" class="box__img" :src="image" />
   </div>
 </template>
 <script setup>
