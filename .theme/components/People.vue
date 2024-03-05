@@ -3,10 +3,7 @@
     class="people"
     :class="`people--align_${align}`"
   >
-    <div
-      v-if="render"
-      class="members people__members"
-    >
+    <div class="members people__members">
       <div v-for="member in members" :key="member.login">
         <a :href="member.html_url" target="_blank">
           <img :src="member.avatar_url" class="members__image">
@@ -26,13 +23,9 @@ defineProps({
 const { getPeople } = useGitHub();
 
 const members = ref([]);
-const render = ref(false);
 
 onServerPrefetch(async() => members.value = await getPeople());
-onBeforeMount(async() => {
-  members.value = await getPeople();
-  render.value = true;
-});
+onBeforeMount(async() => members.value = await getPeople());
 </script>
 <style lang="scss" scoped>
 .people {
