@@ -1,9 +1,12 @@
 ---
-title: Demo
+title: mouseless -- demo
+menu-title: demo
 position: 5
-seo-title: Mouseless Demo
-seo-description: This is Demo page
-seo-image: images/card-bg-wall.jpg
+seo-title: >
+  > mouseless -- demo_
+seo-description: >
+  demo page to find out how to use components.
+seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
 ::block{:debug=true}

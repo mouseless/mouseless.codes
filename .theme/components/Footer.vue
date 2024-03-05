@@ -19,9 +19,9 @@
         </div>
         <div class="footer__menu">
           <ul>
-            <li v-for="menu in menus" :key="menu.title">
+            <li v-for="menu in menus" :key="menu['menu-title']">
               <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
-                {{ menu.title }}
+                {{ menu['menu-title'] }}
               </NuxtLink>
             </li>
           </ul>

@@ -1,6 +1,12 @@
 ---
-title: How We Work
+title: mouseless -- process
+menu-title: how we work
 position: 2
+seo-title: >
+  > mouseless -- process_
+seo-description: >
+  run on a flexible, pay-as-you-go model.
+seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
 ::block
@@ -17,7 +23,7 @@ without extra cost.
 
 ::
 
-::block{color=red}
+::block{color=green}
 
 :::banner{:hr=false align=center}
 
@@ -67,7 +73,7 @@ To keep our clients informed, **we** maintain;
 
 ::
 
-::block{color=yellow}
+::block{color=blue}
 
 ## Open Source
 

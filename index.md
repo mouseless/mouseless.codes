@@ -1,5 +1,10 @@
 ---
-title: Mouseless, A Software Development Colletive
+title: mouseless -- a software development collective
+seo-title: >
+  > mouseless -- a software development collective_
+seo-description: >
+  we love to develop software, together.
+seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
 ::block
@@ -12,7 +17,7 @@ title: Mouseless, A Software Development Colletive
 
 ::
 
-::block{color=green}
+::block{color=gray}
 
 ## If you need
 
@@ -26,7 +31,9 @@ custom software development and re-engineering services.
 
 :::box-layout{display=flex}
 
-#item 1
+#item-1
+
+::::box
 
 ## How?
 
@@ -34,13 +41,19 @@ We experiment, learn, and progress, open-sourcing the artifacts we create.
 
 :link-button{to="./process" type="default" text="see more"}
 
-#item 2
+::::
+
+#item-2
+
+::::box
 
 ## Who?
 
 We are a software development collective, connected through our craft.
 
 :link-button{to="./about" type="default" text="see more"}
+
+::::
 
 :::
 

@@ -1,6 +1,12 @@
 ---
-title: Our Collective
+title: mouseless -- about
+menu-title: our collective
 position: 4
+seo-title: >
+  > mouseless -- about_
+seo-description: >
+  a software development collective, connected through our craft.
+seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
 ::block
@@ -113,17 +119,19 @@ Recognizing this, we've chosen to be a collective.
 
 We are exclusive in expertise, inclusive in participation.
 
-Our [people][github-people] consists of independent engineers who are committed
-to work in accordance with our [process](./process.md). Each engineer's
-contribution aligns with their level of experience in the field.
+:people
+
+Our people consists of independent engineers who are committed to work in
+accordance with our [process](./process.md). Each engineer's contribution aligns
+with their level of experience in the field.
 
 ```mermaid
 flowchart LR
-    1([x0.5])
-    2([x1])
-    3([x1.5])
-    4([x2])
-    5([x3])
+    1([ ])
+    2([ ])
+    3([ ])
+    4([ ])
+    5([ ])
 
     1 --Junior--> 2
     2 --Senior--> 3
@@ -156,6 +164,5 @@ Interested in learning more? Explore [our services](./services.md) and discover
 
 ::
 
-[github-people]: https://github.com/orgs/mouseless/people
 [github]: https://github.com/mouseless
 [mail]: mailto:connect@mouseless.codes

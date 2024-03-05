@@ -40,6 +40,7 @@ const color = inject("block-child-color", "dark");
 <style lang="scss">
 .box {
   border-style: solid;
+  border-width: 1px;
   border-radius: var(--border-radius);
   box-sizing: border-box;
   display: grid;
@@ -86,11 +87,11 @@ const color = inject("block-child-color", "dark");
 
   &--color {
     &_dark {
-      border-color: var(--color-fg);
+      border-color: var(--color-gray-darkest);
       color: var(--color-fg);
     }
     &_light {
-      border-color: var(--color-bg);
+      border-color: var(--color-gray-darkest);
       color: var(--color-bg);
     }
   }

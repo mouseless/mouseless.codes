@@ -6,12 +6,12 @@
     <nav class="menu header__menu">
       <NuxtLink
         v-for="menu in menus"
-        :key="menu.title"
+        :key="menu['menu-title']"
         :class="{ 'menu__item--active': menu._path === root }"
         :to="menu._path == $route.path ? '' : menu._path"
         class="menu__item"
       >
-        {{ menu.title }}
+        {{ menu['menu-title'] }}
       </NuxtLink>
     </nav>
   </header>
