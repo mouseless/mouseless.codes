@@ -27,7 +27,7 @@ project. Dive into a world where excellence and collaboration meet.
 
 :::box-layout{display=flex}
 
-#item-1
+#csd
 
 ::::box{title="Custom Software Development" image-align="left"}
 ---
@@ -42,7 +42,7 @@ their business objectives.
 [See More ...](services.md)
 ::::
 
-#item-2
+#rs
 
 ::::box{title="Re-engineering Services" image-align="left"}
 ---
@@ -61,32 +61,7 @@ engineering obstacles.
 
 ::
 
-::block{color=gray}
-
-## We've built value, together.
-
-:::slider
-
-#slide1
-
-![Inventiv](logo_inventiv.svg)
-
-Inventiv is the technology subsidiary of Multinet | Up, specializing in payment
-technology. They have a strong in-house software development culture, providing
-us with the opportunity to explore innovative ways to develop software. This led
-us to create their backend framework, Gazel, and their service
-framework, Routine, both in .NET.
-
-![Inventiv](inventive_stack.png)
-
-#slide2
-
-### Forward
-
-Slide 2
-:::
-
-::
+:block{content="contents/built-value.md" color=gray}
 
 ::block{color=black}
 
@@ -110,7 +85,7 @@ Slide 2
 
 :::box-layout{display=flex}
 
-#item-1
+#lcoc
 
 ::::card{image="/draft.svg"}
 
@@ -121,7 +96,7 @@ refactoring, ensuring adaptability without additional expenses.
 
 ::::
 
-#item-2
+#cd
 
 ::::card{image="/draft.svg"}
 
@@ -140,7 +115,7 @@ setup, prioritizing efficiency and reliability.
 
 :::box-layout{display=flex}
 
-#item-1
+#pv
 
 ::::card{image="/draft.svg"}
 
@@ -151,7 +126,7 @@ communication, we maintain transparency at every development stage.
 
 ::::
 
-#item-2
+#cp
 
 ::::card{image="/draft.svg"}
 
@@ -188,37 +163,5 @@ exchange, enhancing innovation across the community.
 
 ::
 
-::block
-
-:::banner{:hr=true align=center}
-
-## Our Collective
-
-:::
-
-We are a software development collective, connected through our craft. Our
-collective is a team of 3-7 software engineers guided by our people-centric
-philosophy. We prioritize excellence and efficiency, focusing on delivering
-quality work collaboratively.
-
-:link-button{to="/about" text="See More..."}
-
-::
-
-::block{color=gray}
-
-## Contact Us
-
-:::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
-
-#item-1
-
-:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
-
-#item-2
-
-:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0G2olIVXjVOhwpn7vBR69CSYldMlv-HFINOYgiXTSQMMn6hh8KQVi5VyBhBl2YsUSHlR9zIjI2?gv=true" height="900px" width="100%"}
-
-:::
-
-::
+:block{content="contents/our-collective.md"}
+:block{content="contents/contact-us.md" color=gray}
