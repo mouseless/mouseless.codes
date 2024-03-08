@@ -8,7 +8,7 @@
   >
     <div class="content">
       <Include v-if="content !== null" :content="content" />
-      <slot />
+      <slot v-else />
     </div>
     <div v-if="debug" class="block__colors">
       <button
