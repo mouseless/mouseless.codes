@@ -221,6 +221,11 @@ flowchart LR
 
 :::
 
+## Include
+
+:include{content="contents/demo.md"}
+:block{color="red" content="contents/demo.md"}
+
 ## Inline Frame
 
 :::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
