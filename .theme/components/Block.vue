@@ -7,6 +7,7 @@
     ]"
   >
     <div class="content">
+      <Include v-if="content !== null" :content="content" />
       <slot />
     </div>
     <div v-if="debug" class="block__colors">
@@ -25,6 +26,10 @@ const props = defineProps({
   color: {
     type: String,
     default: "default"
+  },
+  content: {
+    type: String,
+    default: null
   },
   debug: {
     type: Boolean,

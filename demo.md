@@ -223,7 +223,8 @@ flowchart LR
 
 ## Include
 
-:include{file="include/include.md"}
+:include{content="contents/demo.md"}
+:block{color="red" content="contents/demo.md"}
 
 ## Inline Frame
 

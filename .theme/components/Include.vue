@@ -3,11 +3,12 @@
 </template>
 <script setup>
 const props = defineProps({
-  file: {
+  content: {
     type: String,
     default: null
   }
 });
-// TODO - 'page-data' may not be best practice
-const { data } = await useAsyncData("page-data", () => queryContent(props.file.replace(/\.md$/, "")).findOne());
+
+const path = props.content.replace(/\.md$/, "");
+const { data } = await useAsyncData(path, () => queryContent(path).findOne());
 </script>

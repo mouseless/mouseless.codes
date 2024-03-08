@@ -30,7 +30,7 @@ export default function() {
           "X-GitHub-Api-Version": "2022-11-28"
         }
       }
-    );
+    ).catch(() => null);
   };
 
   return {
