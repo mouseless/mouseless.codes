@@ -189,10 +189,6 @@ Completely clear and straightforward
 
 :::
 
-## Content
-
-:content{file="content/content.md"}
-
 ## Diagrams
 
 :::box-layout{display="stack" align="left" :itemWidths='["30%", "65%"]'}
@@ -224,6 +220,10 @@ flowchart LR
 ```
 
 :::
+
+## Include
+
+:include{file="include/include.md"}
 
 ## Inline Frame
 

@@ -1,8 +1,8 @@
-# Content
+# Include
 
 ::card
 
-## Content Card
+## Include Card
 
 Veritatis obcaecati tenetur iure eius earum ut molestias architecto
 
