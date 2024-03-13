@@ -1,4 +1,4 @@
-:::banner{:hr=true align=center}
+:::banner
 
 ## Our Collective
 

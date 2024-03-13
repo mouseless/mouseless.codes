@@ -181,7 +181,7 @@ to take bold steps in forming our collective.
 
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
 :link-button{to="#contact-us" type="cta" text="Reach Out"}
 

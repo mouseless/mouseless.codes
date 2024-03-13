@@ -11,7 +11,7 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::banner{:hr=false align=center}
+:::banner
 
 ## **We** experiment, learn and progress
 
@@ -25,7 +25,7 @@ without extra cost.
 
 ::block{color=green}
 
-:::banner{:hr=false align=center}
+:::banner
 
 ## How **We** Work
 
@@ -54,7 +54,7 @@ Our efficiency relies on;
 
 ## Transparency Matters
 
-:::banner{:hr=false align=center}
+:::banner
 
 **We** value transparency.
 
@@ -77,7 +77,7 @@ To keep our clients informed, **we** maintain;
 
 ## Open Source
 
-:::banner{:hr=false align=center}
+:::banner
 
 **We** are open.
 
@@ -97,7 +97,7 @@ Explore our [open sourced projects][github-repos].
 
 ## Continuous Learning
 
-:::banner{:hr=false align=center}
+:::banner
 
 **We** are eager.
 
@@ -113,7 +113,7 @@ Discover what we've been [learning][github-learn].
 
 ::block{color=red}
 
-:::banner{align=center}
+:::banner
 
 Interested in learning more? Explore [our services](./services.md) and discover
 [more about us](./about.md).

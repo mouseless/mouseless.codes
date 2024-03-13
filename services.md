@@ -40,7 +40,7 @@ allows you to maintain your focus on your core business concerns.
 
 ::block{color=black}
 
-:::banner{:hr=false align="center"}
+:::banner
 
 ## WHAT DO **YOU** NEED?
 
@@ -112,7 +112,7 @@ how we can assist you.
 
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
 :link-button{to="#contact-us" type="cta" text="Reach Out"}
 
@@ -167,7 +167,7 @@ flowchart TB
 
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
 :link-button{to="#contact-us" type="cta" text="Reach Out"}
 

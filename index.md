@@ -9,7 +9,7 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
 ## Crafting Software, Elevating technology : Where Your Vision Meets Our Passion.
 
@@ -28,7 +28,7 @@ success.
 
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
 ## We value trust
 
@@ -40,7 +40,7 @@ success.
 
 ::block
 
-:::banner{:hr=false align=center}
+:::banner
 
 ## How we maintain excellence
 
@@ -106,7 +106,7 @@ exchange, enhancing innovation across the community.
 
 ::block
 
-:::banner{:hr=true align=center}
+:::banner
 
 ## See Mouseless in Action
 
@@ -118,7 +118,7 @@ exchange, enhancing innovation across the community.
 
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
 :link-button{to="#contact-us" type="cta" text="Reach Out"}
 

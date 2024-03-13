@@ -15,7 +15,7 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ### Banner Option 1
 
-:::banner{:hr=true}
+:::banner
 
 #### Our Collective
 
@@ -23,7 +23,7 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ### Banner Option 2
 
-:::banner{:hr="false" align="right"}
+:::banner{align="right"}
 
 **We** Offer
 
