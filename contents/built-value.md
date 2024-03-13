@@ -4,19 +4,25 @@
 
 #inventiv
 
-![Inventiv](logo_inventiv.svg)
+![Inventiv](images/logos/inventiv.svg)
 
-Inventiv is the technology subsidiary of Multinet | Up, specializing in payment
-technology. They have a strong in-house software development culture, providing
-us with the opportunity to explore innovative ways to develop software. This led
-us to create their backend framework, Gazel, and their service
-framework, Routine, both in .NET.
+We've built [Inventiv][]'s internal software development framework [Gazel][] and
+an open source service framework [Routine][] for the customer.
 
-![Inventiv](inventive_stack.png)
+:include{content="contents/tech-stacks/inventiv.md"}
 
 #forward
 
-### Forward
+![Forward](images/logos/forward.png)
 
-Slide 2
+We're building integration gateway server for [Forward][]'s web app to allow
+their customers integrate with CRM and more.
+
+:include{content="contents/tech-stacks/forward.md"}
+
 :::
+
+[Forward]: https://dealforward.com/
+[Gazel]: https://gazel.io/
+[Inventiv]: https://inventiv.com.tr/en/home
+[Routine]: https://github.com/multinetinventiv/routine
