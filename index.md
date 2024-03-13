@@ -11,11 +11,13 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::banner{:hr=false align=center}
 
-## We love to develop software, together.
+## Crafting Software, Elevating technology : Where Your Vision Meets Our Passion.
 
-United by Craft, Driven by Community: Discover Mouseless, where our collective
-passion for Software Craftsmanship and a people-first philosophy shapes every
-project. Dive into a world where excellence and collaboration meet.
+At Mouseless, our love for software development merge with your vision to
+create exceptional projects. We foster an environment where shared passion and
+expertise bring mutual benefits to every challenge. Explore the potential of
+working together, where community values and craftsmanship lead to shared
+success.
 
 :::
 
@@ -40,7 +42,7 @@ project. Dive into a world where excellence and collaboration meet.
 
 :::banner{:hr=false align=center}
 
-## What **you** will get from us
+## How we maintain excellence
 
 :::
 
