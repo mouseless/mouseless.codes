@@ -30,7 +30,6 @@ success.
 
 :::banner
 
-## We value trust
 
 :link-button{to="#contact-us" type="cta" text="Reach Out"}
 
@@ -42,7 +41,7 @@ success.
 
 :::banner
 
-## How we maintain excellence
+## Balancing quality and productivity with our unique approach!
 
 :::
 
@@ -57,6 +56,8 @@ success.
 Our approach minimizes change costs through automated testing and continuous
 refactoring, ensuring adaptability without additional expenses.
 
+:link-button{to="/process" text="See More..."}
+
 ::::
 
 #cd
@@ -67,6 +68,8 @@ refactoring, ensuring adaptability without additional expenses.
 
 We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
 setup, prioritizing efficiency and reliability.
+
+:link-button{to="/process" text="See More..."}
 
 ::::
 
@@ -87,6 +90,8 @@ setup, prioritizing efficiency and reliability.
 Through draft PRs from project inception, detailed task management, and clear
 communication, we maintain transparency at every development stage.
 
+:link-button{to="/process" text="See More..."}
+
 ::::
 
 #cp
@@ -97,6 +102,8 @@ communication, we maintain transparency at every development stage.
 
 Our commitment to open source and diverse project engagement promotes knowledge
 exchange, enhancing innovation across the community.
+
+:link-button{to="/process" text="See More..."}
 
 ::::
 
@@ -119,6 +126,7 @@ exchange, enhancing innovation across the community.
 ::block{color=black}
 
 :::banner
+
 
 :link-button{to="#contact-us" type="cta" text="Reach Out"}
 
