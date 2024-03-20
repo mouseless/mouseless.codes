@@ -35,7 +35,7 @@ success.
 
 :::
 
-:::box-layout{display=flex}
+:::box-layout
 
 #lcoc
 
@@ -69,7 +69,7 @@ setup, prioritizing efficiency and reliability.
 
 ::block
 
-:::box-layout{display=flex}
+:::box-layout
 
 #pv
 

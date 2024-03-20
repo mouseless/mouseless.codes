@@ -11,9 +11,9 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::box-layout{display=flex}
+:::box-layout
 
-::::card
+::::box
 
 ## **We** love to develop software, together
 
@@ -140,7 +140,7 @@ which eventually leads to excellence.
 
 ## Our Structure
 
-:::box-layout{display=flex :itemWidths='["30ch", "100%"]'}
+:::box-layout{:itemWidths='["30ch", "100%"]'}
 
 #chart
 
@@ -184,7 +184,7 @@ Recognizing this, we've chosen to be a collective.
 
 ## Our People
 
-:::box-layout{display=flex :itemWidths='["30ch", "100%"]'}
+:::box-layout{:itemWidths='["30ch", "100%"]'}
 
 #chart
 

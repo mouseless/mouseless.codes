@@ -12,21 +12,11 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::box-layout{display="stack" itemWidth="30%"}
-
-#left
-
-::::banner{:hr=false align=right}
-
-## **WE** OFFER _
-
-::::
-
-#right
+:::box-layout
 
 ::::box
 
-### Staff Augmentation
+### We Offer Staff Augmentation
 
 We position ourselves as a __staff augmentation__ service provider, offering
 full responsibility for software systems that you'd rather outsource. This
@@ -62,7 +52,7 @@ flowchart TD
 
 ::block
 
-:::box-layout{display="flex"}
+:::box-layout
 
 #left
 

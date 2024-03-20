@@ -11,9 +11,9 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::box-layout{display=flex}
+:::box-layout
 
-::::card
+::::box
 
 ## **We** experiment, learn and progress
 
