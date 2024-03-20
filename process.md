@@ -143,7 +143,7 @@ sollicitudin magna.
 
 :::box-layout{display="stack" align=left}
 
-#do-releases
+#freq-releases
 
 ::::box{align=left}
 
@@ -155,7 +155,7 @@ Check out DO releases to see frequency of our delivery cycle;
 
 ::::
 
-#net-upgrade
+#lead-time
 
 ::::box{align=left}
 
@@ -171,40 +171,66 @@ See how we build software incrementally;
 
 ::
 
-::block{color=green}
+::block{color=black}
 
-:::banner
+:::box-layout{align=left}
 
-## How **We** Work
+#text
 
-**We** are self-organized.
+### Progress Visibility
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+#bullet
+
+::::bullet-list
+
+- __Draft PRs__ right from beginning
+- Well detailed __task lists__
+- Clear __commit messages__
+
+::::
 
 :::
-
-We are a __self-managing__ team with a single point of contact assigned per
-client. We operate on a __time & materials__ basis without requiring a
-fixed-budget or a fixed-plan thanks to our fast response time.
 
 ::
 
-::block
+::block{color=black}
 
-## Transparency Matters
+:::banner{align=left}
 
-:::banner
-
-**We** value transparency.
-
-To keep our clients informed, **we** maintain;
+#### See in action
 
 :::
 
-:::bullet-list
+:::box-layout{display="stack" align=left}
 
-- __Draft pull requests__ that are opened as soon as a work begins.
-- Well detailed __task lists__.
-- Open discussions in __GitHub__.
-- Clear __commit messages__.
+#do-epic
+
+::::box{align=left}
+
+##### PRs
+
+Check out our live work right from GitHub;
+
+:link-button{to="//github.com/mouseless/do/pulls" text="See in GitHub"}
+
+::::
+
+#learn-task
+
+::::box{align=left}
+
+##### Tasks
+
+See how we care work descriptions and tasks;
+
+:link-button{to="//github.com/mouseless/learn-css/pull/2" text="See in GitHub"}
+
+::::
 
 :::
 
@@ -245,6 +271,24 @@ our learning hats and create a pull request in the corresponding `learn-`
 repository.
 
 Discover what we've been [learning][github-learn].
+
+::
+
+:block{content="contents/reach-out.md" color=black}
+
+::block
+
+:::banner
+
+## Engagement Model
+
+**We** are self-organized.
+
+:::
+
+We are a __self-managing__ team with a single point of contact assigned per
+client. We operate on a __time & materials__ basis without requiring a
+fixed-budget or a fixed-plan thanks to our fast response time.
 
 ::
 
