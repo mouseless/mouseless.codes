@@ -32,20 +32,18 @@ allows you to maintain your focus on your core business concerns.
 
 :::banner
 
-## WHAT DO **YOU** NEED?
+## **Our** Services
 
 :::
 
 ```mermaid
 flowchart TD
-    SS{Side\nSystems?}
-    SL{Solution?}
-    RE[Reengineering\n&nbsp;]
+    Q[When you need\nsenior\ndevelopers]
     CSD[Custom Software\nDevelopment]
+    RE[Software\nReengineering]
 
-    SS --> SL
-    SL -->|YES| RE
-    SL -->|NO| CSD
+    Q -->|to develop\na unique software| CSD
+    Q -->|to improve\nan existing solution| RE
 ```
 
 ::
@@ -54,26 +52,7 @@ flowchart TD
 
 :::box-layout
 
-#left
-
-::::box
-
-# Re-engineering
-
-If you have custom-developed software serving as a secondary system, it's
-probable that this software may eventually become outdated and miss out on
-essential technology upgrades. This occurs because organizations naturally
-prioritize their core business challenges over technical needs of auxiliary
-systems. This creates a persistent problem that requires professional attention.
-
-We're more than willing to offer our expertise to take the full responsibility
-for such systems. Through this approach, we aim to create a win-win scenario. It
-enables your workforce to focus on core business concerns while granting us an
-opportunity to address engineering challenges.
-
-::::
-
-#right
+#csd
 
 ::::box
 
@@ -96,6 +75,25 @@ how we can assist you.
 
 ::::
 
+#re
+
+::::box
+
+# Re-engineering
+
+If you have custom-developed software serving as a secondary system, it's
+probable that this software may eventually become outdated and miss out on
+essential technology upgrades. This occurs because organizations naturally
+prioritize their core business challenges over technical needs of auxiliary
+systems. This creates a persistent problem that requires professional attention.
+
+We're more than willing to offer our expertise to take the full responsibility
+for such systems. Through this approach, we aim to create a win-win scenario. It
+enables your workforce to focus on core business concerns while granting us an
+opportunity to address engineering challenges.
+
+::::
+
 :::
 
 ::
@@ -106,7 +104,7 @@ how we can assist you.
 
 :::banner{:hr=false align=left}
 
-## **OUR** APPROACH _
+## **Our** Approach
 
 :::
 
@@ -131,19 +129,11 @@ how we can assist you.
 
 :::banner{:hr=false align=left}
 
-## WHAT'S NEXT _
+## What's Next
 
 :::
 
-```mermaid
-flowchart TB
-  subgraph BP[Become Partner]
-    M[Meet Us] --> C[Check if we fit] --> P[Proposal] --> S[Sign Contract]
-  end
-
-  BP --Kickoff--> D[Plan, Develop\nand Deliver] --> R[Monthly Report\nand Review Budget]
-  R --> D
-```
+:include{content="contents/become-partner.md"}
 
 ::
 
