@@ -1,5 +1,12 @@
 ## We are ready to tackle all the tedious work !
 
+At Mouseless, we don't just face complex software challenges; we welcome them
+with enthusiasm. Our strategy transforms the seemingly tedious into gateways for
+innovation and advancement. Specializing in custom software development, we
+craft bespoke solutions that align perfectly with your business objectives. Let
+us empower your digital infrastructure to not just meet the curve but redefine
+it.
+
 ::box-layout{display=flex}
 
 #csd

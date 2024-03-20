@@ -11,7 +11,7 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::banner
 
-## Crafting Software, Elevating technology : Where Your Vision Meets Our Passion.
+## Crafting Software, Elevating Technology : Where Your Vision Meets Our Passion.
 
 At Mouseless, our love for software development merge with your vision to
 create exceptional projects. We foster an environment where shared passion and
