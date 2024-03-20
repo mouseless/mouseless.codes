@@ -106,6 +106,71 @@ customer projects.
 
 ::
 
+::block
+
+:::box-layout{align=left}
+
+#text
+
+### Continuous Delivery
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+#bullet
+
+::::bullet-list
+
+- 3 days of average lead-time
+- no estimation -> continuous planning
+- end to end CI/CD setup
+
+::::
+
+:::
+
+::
+
+::block
+
+:::banner{align=left}
+
+#### See in action
+
+:::
+
+:::box-layout{display="stack" align=left}
+
+#do-releases
+
+::::box{align=left}
+
+##### Frequent Releases
+
+Check out DO releases to see frequency of our delivery cycle;
+
+:link-button{to="//github.com/mouseless/do/releases" text="See in GitHub"}
+
+::::
+
+#net-upgrade
+
+::::box{align=left}
+
+##### Lead-Time
+
+See how we build software incrementally;
+
+:link-button{to="//github.com/mouseless/do/pulls?q=is%3Apr+is%3Aclosed" text="See in GitHub"}
+
+::::
+
+:::
+
+::
+
 ::block{color=green}
 
 :::banner
@@ -119,17 +184,6 @@ customer projects.
 We are a __self-managing__ team with a single point of contact assigned per
 client. We operate on a __time & materials__ basis without requiring a
 fixed-budget or a fixed-plan thanks to our fast response time.
-
-Our efficiency relies on;
-
-:::bullet-list
-
-- Delivering features with an average lead time of __3 days__.
-- Employing __automated tests__ for robustness.
-- Engaging in __constant refactoring__ to maintain code quality.
-- Keeping our technology up to date __at no extra cost__ to our clients.
-
-:::
 
 ::
 
