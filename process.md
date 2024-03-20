@@ -27,6 +27,75 @@ without extra cost.
 
 ::
 
+::block{color=black}
+
+:::box-layout
+
+#text
+
+### Low Cost of Change
+
+We employ __automated tests__ for robustness, engage in __constant refactoring__
+to maintain code quality. We keep our technology up to date __at no extra cost__
+to our clients.
+
+#bullet
+
+::::bullet-list
+
+- test automation
+- refactoring
+- tech-stack update
+
+::::
+
+:::
+
+::
+
+::block{color=black}
+
+#### See in action
+
+:::box-layout{display="stack"}
+
+#do-builds
+
+::::box
+
+Check out one of our open source project, DO, to see how we utilize test
+automation;
+
+:link-button{to="//github.com/mouseless/do/actions/runs/8344718124" text="See in GitHub"}
+
+::::
+
+#net-upgrade
+
+::::box
+
+We provide our customers with technology upgrades out of the box. Check out how
+we manage tech upgrades.
+
+:link-button{to="//github.com/mouseless/learn-dotnet/pull/17" text="See in GitHub"}
+
+::::
+
+#do-net-upgrade
+
+::::box
+
+Using our headless opinionated .NET framework we manage to easily upgrade
+customer projects.
+
+:link-button{to="//do.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in DO"}
+
+::::
+
+:::
+
+::
+
 ::block{color=green}
 
 :::banner
@@ -46,9 +115,6 @@ Our efficiency relies on;
 :::bullet-list
 
 - Delivering features with an average lead time of __3 days__.
-- Employing __automated tests__ for robustness.
-- Engaging in __constant refactoring__ to maintain code quality.
-- Keeping our technology up to date __at no extra cost__ to our clients.
 
 :::
 
