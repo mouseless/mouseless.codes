@@ -29,7 +29,7 @@ without extra cost.
 
 ::block{color=black}
 
-:::box-layout
+:::box-layout{align=left}
 
 #text
 
@@ -55,13 +55,19 @@ to our clients.
 
 ::block{color=black}
 
+:::banner{align=left}
+
 #### See in action
 
-:::box-layout{display="stack"}
+:::
+
+:::box-layout{display="stack" align=left}
 
 #do-builds
 
-::::box
+::::box{align=left}
+
+##### Tests and Coverage
 
 Check out one of our open source project, DO, to see how we utilize test
 automation;
@@ -72,7 +78,9 @@ automation;
 
 #net-upgrade
 
-::::box
+::::box{align=left}
+
+##### Research Upgrades
 
 We provide our customers with technology upgrades out of the box. Check out how
 we manage tech upgrades.
@@ -83,7 +91,9 @@ we manage tech upgrades.
 
 #do-net-upgrade
 
-::::box
+::::box{align=left}
+
+##### Apply Upgrades
 
 Using our headless opinionated .NET framework we manage to easily upgrade
 customer projects.
@@ -115,6 +125,9 @@ Our efficiency relies on;
 :::bullet-list
 
 - Delivering features with an average lead time of __3 days__.
+- Employing __automated tests__ for robustness.
+- Engaging in __constant refactoring__ to maintain code quality.
+- Keeping our technology up to date __at no extra cost__ to our clients.
 
 :::
 
