@@ -72,7 +72,7 @@ to our clients.
 Check out one of our open source project, DO, to see how we utilize test
 automation;
 
-:link-button{to="//github.com/mouseless/do/actions/runs/8344718124" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/do/actions/runs/8344718124" text="See in GitHub"}
 
 ::::
 
@@ -85,7 +85,7 @@ automation;
 We provide our customers with technology upgrades out of the box. Check out how
 we manage tech upgrades.
 
-:link-button{to="//github.com/mouseless/learn-dotnet/pull/17" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/learn-dotnet/pull/17" text="See in GitHub"}
 
 ::::
 
@@ -98,7 +98,7 @@ we manage tech upgrades.
 Using our headless opinionated .NET framework we manage to easily upgrade
 customer projects.
 
-:link-button{to="//do.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in DO"}
+:link-button{to="https://do.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in DO"}
 
 ::::
 
@@ -151,7 +151,7 @@ sollicitudin magna.
 
 Check out DO releases to see frequency of our delivery cycle;
 
-:link-button{to="//github.com/mouseless/do/releases" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/do/releases" text="See in GitHub"}
 
 ::::
 
@@ -163,7 +163,7 @@ Check out DO releases to see frequency of our delivery cycle;
 
 See how we build software incrementally;
 
-:link-button{to="//github.com/mouseless/do/pulls?q=is%3Apr+is%3Aclosed" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/do/pulls?q=is%3Apr+is%3Aclosed" text="See in GitHub"}
 
 ::::
 
@@ -216,7 +216,7 @@ sollicitudin magna.
 
 Check out our live work right from GitHub;
 
-:link-button{to="//github.com/mouseless/do/pulls" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/do/pulls" text="See in GitHub"}
 
 ::::
 
@@ -228,7 +228,7 @@ Check out our live work right from GitHub;
 
 See how we care work descriptions and tasks;
 
-:link-button{to="//github.com/mouseless/learn-css/pull/2" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/learn-css/pull/2" text="See in GitHub"}
 
 ::::
 
