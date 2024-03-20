@@ -110,15 +110,7 @@ how we can assist you.
 
 ::
 
-::block{color=black}
-
-:::banner
-
-:link-button{to="#contact-us" type="cta" text="Reach Out"}
-
-:::
-
-::
+:block{content="contents/reach-out.md" color=black}
 
 ::block
 
@@ -165,16 +157,7 @@ flowchart TB
 
 ::
 
-::block{color=black}
-
-:::banner
-
-:link-button{to="#contact-us" type="cta" text="Reach Out"}
-
-:::
-
-::
-
+:block{content="contents/reach-out.md" color=black}
 :block{content="contents/built-value.md"}
 :block{content="contents/our-collective.md"}
 :block{content="contents/contact-us.md" color=gray}

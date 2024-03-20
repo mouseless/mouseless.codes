@@ -1,9 +1,6 @@
 ## Explore our long-term partnerships
 
-
-
-
-:::slider
+::slider
 
 #inventiv
 
@@ -23,7 +20,7 @@ their customers integrate with CRM and more.
 
 :include{content="contents/tech-stacks/forward.md"}
 
-:::
+::
 
 [Forward]: https://dealforward.com/
 [Gazel]: https://gazel.io/

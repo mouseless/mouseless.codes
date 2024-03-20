@@ -11,15 +11,19 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::banner
+:::box-layout{display=flex}
+
+::::card
 
 ## **We** experiment, learn and progress
-
-:::
 
 We run on a flexible, pay-as-you-go model. We prioritize timely feature
 delivery, automated testing, code refactoring, and keeping technology up to date
 without extra cost.
+
+::::
+
+:::
 
 ::
 
@@ -111,16 +115,10 @@ Discover what we've been [learning][github-learn].
 
 ::
 
-::block{color=red}
-
-:::banner
-
-Interested in learning more? Explore [our services](./services.md) and discover
-[more about us](./about.md).
-
-:::
-
-::
+:block{content="contents/reach-out.md" color=black}
+:block{content="contents/tedious-work.md"}
+:block{content="contents/our-collective.md"}
+:block{content="contents/contact-us.md" color=gray}
 
 [github-repos]: https://github.com/mouseless?type=public
 [github-learn]: https://github.com/orgs/mouseless/repositories?q=learn-&type=public

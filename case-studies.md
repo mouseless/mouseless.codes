@@ -179,16 +179,7 @@ to take bold steps in forming our collective.
 
 ::
 
-::block{color=black}
-
-:::banner
-
-:link-button{to="#contact-us" type="cta" text="Reach Out"}
-
-:::
-
-::
-
+:block{content="contents/reach-out.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/our-collective.md"}
 :block{content="contents/contact-us.md" color=gray}

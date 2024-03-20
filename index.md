@@ -25,17 +25,7 @@ success.
 
 :block{content="contents/tedious-work.md"}
 :block{content="contents/built-value.md" color=gray}
-
-::block{color=black}
-
-:::banner
-
-
-:link-button{to="#contact-us" type="cta" text="Reach Out"}
-
-:::
-
-::
+:block{content="contents/reach-out.md" color=black}
 
 ::block
 
@@ -123,16 +113,6 @@ exchange, enhancing innovation across the community.
 
 ::
 
-::block{color=black}
-
-:::banner
-
-
-:link-button{to="#contact-us" type="cta" text="Reach Out"}
-
-:::
-
-::
-
+:block{content="contents/reach-out.md" color=black}
 :block{content="contents/our-collective.md"}
 :block{content="contents/contact-us.md" color=gray}
