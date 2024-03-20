@@ -331,6 +331,98 @@ fixed-budget or a fixed-plan thanks to our fast response time.
 
 ::
 
+::block{color=gray}
+
+### Become Partner
+
+:::steps{:titles='["Meet Us", "Check if we fit", "Proposal", "Sign Contract", "Start Delivering", "Monthly Report"]' height="30ch"}
+
+#meet-us
+
+#### Meet Us
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+#we-fit
+
+#### Check if we fit
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+#proposal
+
+#### Proposal
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+#sign
+
+#### Sign Contract
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+#start
+
+#### Start Delivering
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+#report
+
+#### Monthly Report
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
+sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
+elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
+sollicitudin magna.
+
+:::
+
+::
+
+::block
+
+### Delivery Process
+
+```mermaid
+flowchart TB
+    R[Requirement\nEmerges]
+
+    subgraph LC[Done in 3 days]
+        W[Work starts\nwith Draft PR]
+        S[Write specs\nas automated\ntests]
+        DR[Develop &\nCode Review]
+        C[Customer\nReviews]
+
+        W --> S
+        S --> DR
+        DR --> C
+        C --> S
+    end
+
+    D[Deliver]
+
+    R --> LC
+    LC --> D
+```
+
+::
+
 :block{content="contents/reach-out.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/our-collective.md"}
