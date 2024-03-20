@@ -236,15 +236,13 @@ See how we care work descriptions and tasks;
 
 ::
 
-::block{color=blue}
+::block
 
-## Open Source
+:::box-layout{align=left}
 
-:::banner
+#text
 
-**We** are open.
-
-:::
+### Cross Pollination
 
 Our development style produces high-quality software which requires considerable
 effort. To provide top-tier services that are also cost-effective, we follow a
@@ -252,25 +250,66 @@ philosophy of cross-pollination by open sourcing everything we own. This
 approach ensures our clients avoid potential risks of depending on a service
 provider and allows them to benefit from our total experience.
 
-Explore our [open sourced projects][github-repos].
+#bullet
+
+::::bullet-list
+
+- Open Source
+- Continuous Learning
+
+::::
+
+:::
 
 ::
 
 ::block
 
-## Continuous Learning
+:::banner{align=left}
 
-:::banner
-
-**We** are eager.
+#### See in action
 
 :::
 
-When we encounter something new, we pause our active work-in-progress, put on
-our learning hats and create a pull request in the corresponding `learn-`
-repository.
+:::box-layout{display="stack" align=left}
 
-Discover what we've been [learning][github-learn].
+#do-docs
+
+::::box{align=left}
+
+##### DO
+
+Check out DO, our opinionated framework for .NET;
+
+:link-button{to="https://do.mouseless.codes" text="See DO"}
+
+::::
+
+#learn-nuxt
+
+::::box{align=left}
+
+##### Learn
+
+See how we learned, documented and use Nuxt;
+
+:link-button{to="https://mouseless.github.io/learn-nuxt" text="Learn Nuxt"}
+
+::::
+
+#all-open-source
+
+::::box{align=left}
+
+##### Open Source
+
+See what we've open sourced so far;
+
+:link-button{to="https://github.com/mouseless?type=public" text="See in GitHub"}
+
+::::
+
+:::
 
 ::
 
@@ -296,6 +335,3 @@ fixed-budget or a fixed-plan thanks to our fast response time.
 :block{content="contents/tedious-work.md"}
 :block{content="contents/our-collective.md"}
 :block{content="contents/contact-us.md" color=gray}
-
-[github-repos]: https://github.com/mouseless?type=public
-[github-learn]: https://github.com/orgs/mouseless/repositories?q=learn-&type=public
