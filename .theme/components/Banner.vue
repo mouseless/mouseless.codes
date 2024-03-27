@@ -17,7 +17,7 @@
 defineProps({
   align: {
     type: String,
-    default: "center"
+    default: "left"
   }
 });
 
@@ -25,8 +25,10 @@ const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .banner {
-  align-items: center;
+  align-items: left;
   width: 100%;
+  margin: 5em 0;
+  font-size: 1.5em;
 
   &__line {
     border: none;

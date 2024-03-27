@@ -18,7 +18,7 @@
   }
 
   p {
-    max-width: var(--width-content);
+    max-width: 100%;
   }
 }
 </style>

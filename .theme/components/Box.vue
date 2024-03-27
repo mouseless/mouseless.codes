@@ -39,10 +39,6 @@ const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .box {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: var(--border-radius);
-  box-sizing: border-box;
   display: grid;
   grid-template-areas:
     "title"

@@ -13,7 +13,7 @@
       :key="i"
       class="box-layout__item"
       :class="{'box-layout__item--flex': display == 'flex'}"
-      :style="display !== 'flex' ? `width: ${itemWidths[i] || itemWidth}` : ''"
+      :style="`width: ${itemWidths[i] || itemWidth}`"
     >
       <slot :name="items[i]" />
     </div>
@@ -27,11 +27,11 @@ defineProps({
   },
   align: {
     type: String,
-    default: "center"
+    default: "left"
   },
   itemWidth: {
     type: String,
-    default: "40ch"
+    default: "100%"
   },
   itemWidths: {
     type: Array,
@@ -65,7 +65,7 @@ const count = computed(() => items.length);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 
     &--flex {
       max-width: 100%;

@@ -3,7 +3,7 @@ title: mouseless -- a software development collective
 seo-title: >
   > mouseless -- a software development collective_
 seo-description: >
-  we love to develop software, together.
+  Crafting Software: Where Your Vision Meets Our Passion.
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
@@ -11,7 +11,9 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::banner
 
-## Crafting Software, Elevating Technology : Where Your Vision Meets Our Passion.
+### Crafting software;
+
+## Where your vision meets our passion
 
 At Mouseless, our love for software development merge with your vision to
 create exceptional projects. We foster an environment where shared passion and
@@ -64,10 +66,6 @@ setup, prioritizing efficiency and reliability.
 ::::
 
 :::
-
-::
-
-::block
 
 :::box-layout
 
