@@ -44,6 +44,8 @@ tasks:
         theme: base
         deviceScaleFactor: 1
         headless: new
+        flowchart:
+          useMaxWidth: false
         themeVariables:
           fontFamily: '"Roboto Mono", monospace'
           fontSize: '16px'

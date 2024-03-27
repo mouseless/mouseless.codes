@@ -3,70 +3,112 @@ title: mouseless -- a software development collective
 seo-title: >
   > mouseless -- a software development collective_
 seo-description: >
-  we love to develop software, together.
+  Crafting Software: Where Your Vision Meets Our Passion.
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
-::block
-
-:::banner{:hr=false align=center}
-
-## **We** love to develop software, together.
-
-:::
-
-::
-
-::block{color=gray}
-
-## If you need
-
-custom software development and re-engineering services.
-
-:link-button{to="./services" type="default" text="see more"}
-
-::
-
-::block
-
-:::box-layout{display=flex}
-
-#item-1
-
-::::box
-
-## How?
-
-We experiment, learn, and progress, open-sourcing the artifacts we create.
-
-:link-button{to="./process" type="default" text="see more"}
-
-::::
-
-#item-2
-
-::::box
-
-## Who?
-
-We are a software development collective, connected through our craft.
-
-:link-button{to="./about" type="default" text="see more"}
-
-::::
-
-:::
-
-::
-
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
-## If you're interested
+### Crafting software;
 
-:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
+## Where your vision meets our passion
+
+Our love for software development merge with your needs to create exceptional
+projects. We foster an approach where shared passion and expertise bring mutual
+benefits to every challenge.
 
 :::
 
 ::
+
+:block{content="contents/tedious-work.md"}
+:block{content="contents/built-value.md" color=black}
+:block{content="contents/reach-out.md" color=black}
+
+::block
+
+:::banner
+
+## Balancing quality and productivity with our unique approach!
+
+:::
+
+:::box-layout
+
+#lcoc
+
+::::card{image="/draft.svg"}
+
+### Low Cost of Change
+
+Our approach minimizes change costs through automated testing and continuous
+refactoring, ensuring adaptability without additional expenses.
+
+:link-button{to="/process" text="See More..."}
+
+::::
+
+#cd
+
+::::card{image="/draft.svg"}
+
+### Continuous Delivery
+
+We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
+setup, prioritizing efficiency and reliability.
+
+:link-button{to="/process" text="See More..."}
+
+::::
+
+:::
+
+:::box-layout
+
+#pv
+
+::::card{image="/draft.svg"}
+
+### Progress Visibility
+
+Through draft PRs from project inception, detailed task management, and clear
+communication, we maintain transparency at every development stage.
+
+:link-button{to="/process" text="See More..."}
+
+::::
+
+#cp
+
+::::card{image="/draft.svg"}
+
+### Cross Pollunation
+
+Our commitment to open source and diverse project engagement promotes knowledge
+exchange, enhancing innovation across the community.
+
+:link-button{to="/process" text="See More..."}
+
+::::
+
+:::
+
+::
+
+::block
+
+:::banner
+
+## See Mouseless in Action
+
+:::
+
+:pr-list{:repos='["do", "mouseless.codes" , "learn-nuxt", "learn-dotnet"]'}
+
+::
+
+:block{content="contents/reach-out.md" color=black}
+:block{content="contents/our-collective.md"}
+:block{content="contents/contact-us.md" color=gray}

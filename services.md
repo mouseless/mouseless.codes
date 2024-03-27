@@ -12,27 +12,51 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::banner{:hr=false align=center}
+:::box-layout
 
-## **We** offer our expertise through the software increments we develop.
+::::box
 
-:::
+### We Offer Staff Augmentation
 
 We position ourselves as a __staff augmentation__ service provider, offering
 full responsibility for software systems that you'd rather outsource. This
 allows you to maintain your focus on your core business concerns.
 
-::
-
-::block{color=green}
-
-## Custom Software Development
-
-:::banner{:hr=false align=center}
-
-**We** help you progress.
+::::
 
 :::
+
+::
+
+::block{color=black}
+
+:::banner
+
+## **Our** Services
+
+:::
+
+```mermaid
+flowchart TD
+    Q[When you need\nsenior\ndevelopers]
+    CSD[Custom Software\nDevelopment]
+    RE[Software\nReengineering]
+
+    Q -->|to develop\na unique software| CSD
+    Q -->|to improve\nan existing solution| RE
+```
+
+::
+
+::block
+
+:::box-layout
+
+#csd
+
+::::box
+
+### Custom Software Development
 
 We advise our clients to prioritize core product features and leverage pre-built
 software solutions for non-core needs. While this approach suits startups and
@@ -47,21 +71,15 @@ We function as a self-managing software engineering team, handling the entire
 development process from design and planning to implementation, with all
 technical aspects, including maintenance and upgrades, professionally managed
 out of the box to ensure a seamless experience for you.
-
-Explore our [case studies](./case-studies.md) to have a better understanding of
 how we can assist you.
 
-::
+::::
 
-::block
+#re
 
-## Re-engineering
+::::box
 
-:::banner{:hr=false align=center}
-
-**We** help you maintain focus.
-
-:::
+# Re-engineering
 
 If you have custom-developed software serving as a secondary system, it's
 probable that this software may eventually become outdated and miss out on
@@ -74,42 +92,52 @@ for such systems. Through this approach, we aim to create a win-win scenario. It
 enables your workforce to focus on core business concerns while granting us an
 opportunity to address engineering challenges.
 
-Explore our [case studies](./case-studies.md) to have a better understanding of
-how we can assist you.
-
-::
-
-::block{color=black}
-
-## Long-term Partnership
-
-:::banner{:hr=false align=center}
-
-**We** value trust.
-
-:::
-
-Software development requires a keen focus. It's not something achievable
-through a short-term deal. At Mouseless, we consider trust-building a
-fundamental step to have a high-performing team. Let's connect, establish a
-long-term partnership, and explore the possibilities together.
-
-Reach out.
-
-We are [here][github] and [here][mail].
-
-::
-
-::block{color=red}
-
-:::banner
-
-Interested in learning more? Explore [our process](./process.md) and discover
-[more about us](./about.md).
+::::
 
 :::
 
 ::
 
-[github]: https://github.com/mouseless
-[mail]: mailto:connect@mouseless.codes
+:block{content="contents/reach-out.md" color=black}
+
+::block
+
+:::banner{:hr=false align=left}
+
+## **Our** Approach
+
+:::
+
+:::box
+
+::::bullet-list
+
+- Low Cost of Change
+- Continuous Delivery
+- Progress Visibility
+- Cross Pollination
+
+::::
+
+:::
+
+::
+
+---
+
+::block
+
+:::banner{:hr=false align=left}
+
+## What's Next
+
+:::
+
+:include{content="contents/become-partner.md"}
+
+::
+
+:block{content="contents/reach-out.md" color=black}
+:block{content="contents/built-value.md"}
+:block{content="contents/our-collective.md"}
+:block{content="contents/contact-us.md" color=gray}

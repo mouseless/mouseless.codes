@@ -1,32 +1,23 @@
 <template>
   <div
     class="banner"
-    :class="`banner--align_${align}`"
   >
-    <hr
-      v-if="hr"
-      class="banner__line"
-      :class="`banner__line--color_${color}`"
+    <div
+      class="banner__text"
+      :class="[
+        `banner__text--color_${color}`,
+        `banner__text--align_${align}`
+      ]"
     >
-    <div class="banner__text" :class="`banner__text--color_${color}`">
       <slot />
     </div>
-    <hr
-      v-if="hr"
-      class="banner__line"
-      :class="`banner__line--color_${color}`"
-    >
   </div>
 </template>
 <script setup>
 defineProps({
-  hr: {
-    type: Boolean,
-    default: true
-  },
   align: {
     type: String,
-    default: null
+    default: "left"
   }
 });
 
@@ -34,14 +25,10 @@ const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .banner {
-  align-items: center;
-  display: flex;
-
-  &--align {
-    &_center { justify-content: center; }
-    &_left { justify-content: flex-start; }
-    &_right { justify-content: flex-end; }
-  }
+  align-items: left;
+  width: 100%;
+  margin: 5em 0;
+  font-size: 1.5em;
 
   &__line {
     border: none;
@@ -57,12 +44,14 @@ const color = inject("block-child-color", "dark");
   }
 
   &__text {
-    flex: 0 0 auto;
-    margin: 0 10px;
-    text-align: center;
-
     strong {
       color: var(--color-logo-mark);
+    }
+
+    &--align {
+      &_center { text-align: center; }
+      &_left { text-align: left; }
+      &_right { text-align: right; }
     }
 
     &--color {
