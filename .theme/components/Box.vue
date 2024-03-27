@@ -6,13 +6,13 @@
     ]"
     class="box"
   >
-    <h2
+    <h4
       v-if="title !== null"
       class="box__title"
       :class="`box__title--color_${color}`"
     >
       {{ title }}
-    </h2>
+    </h4>
     <div class="box__detail">
       <slot />
     </div>
@@ -38,13 +38,16 @@ defineProps({
 const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
+$column-gap: 3em;
+
 .box {
   display: grid;
   grid-template-areas:
     "title"
     "detail";
-  padding: 1em;
   width: 100%;
+  align-items: top;
+  column-gap: $column-gap;
 
   &__title {
     grid-area: title;
@@ -68,16 +71,16 @@ const color = inject("block-child-color", "dark");
   &--image-align {
     &_left {
       grid-template-areas:
-        "title title"
+        "image title"
         "image detail";
-      grid-template-columns: 33% 67%;
+      grid-template-columns: calc(25% - $column-gap) 75%;
     }
 
     &_right {
       grid-template-areas:
-        "title title"
+        "title image"
         "detail image";
-      grid-template-columns: 67% 33%;
+      grid-template-columns: 75% calc(25% - $column-gap);
     }
   }
 

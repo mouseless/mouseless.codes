@@ -15,11 +15,9 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ## Where your vision meets our passion
 
-At Mouseless, our love for software development merge with your vision to
-create exceptional projects. We foster an environment where shared passion and
-expertise bring mutual benefits to every challenge. Explore the potential of
-working together, where community values and craftsmanship lead to shared
-success.
+Our love for software development merge with your needs to create exceptional
+projects. We foster an approach where shared passion and expertise bring mutual
+benefits to every challenge.
 
 :::
 

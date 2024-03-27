@@ -66,7 +66,15 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::box{title="Box Header" image-align="left"}
 ---
-image: images/card-bg-wall.jpg
+image: images/services/rs.png
+---
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+:::
+
+:::box{title="Box Header" image-align="right"}
+---
+image: images/services/csd.png
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -74,7 +82,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Box Layout
 
-### Box Option 1
+### Option 1
 
 :::box-layout{display="stack" align="left"}
 
@@ -92,7 +100,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 :::
 
-### Box Option 2
+### Option 2
 
 :::box-layout{display="flex" align="center"}
 

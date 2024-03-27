@@ -46,7 +46,7 @@ const count = computed(() => items.length);
 <style lang="scss" scoped>
 .box-layout {
   display: flex;
-  gap: 2em;
+  gap: 3em;
   margin: 2em 0;
   align-items: flex-start;
 
@@ -65,7 +65,6 @@ const count = computed(() => items.length);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: left;
 
     &--flex {
       max-width: 100%;
