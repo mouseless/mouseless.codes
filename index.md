@@ -24,7 +24,7 @@ benefits to every challenge.
 ::
 
 :block{content="contents/tedious-work.md"}
-:block{content="contents/built-value.md" color=gray}
+:block{content="contents/built-value.md" color=black}
 :block{content="contents/reach-out.md" color=black}
 
 ::block
