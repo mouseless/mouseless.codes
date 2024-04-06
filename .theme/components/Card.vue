@@ -20,20 +20,14 @@ defineProps({
 </script>
 <style lang="scss">
 .card {
-  border-radius: var(--border-radius);
   width: 100%;
   max-width: var(--width-content);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
 
-  &__image {
-    width: 100%;
-    max-height: 30ch;
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-  }
-
-  &__slot {
-    padding: 2em;
-  }
+  &__image { width: 50%; }
 }
 </style>

@@ -47,9 +47,9 @@ without extra cost.
 
 #lcoc
 
-::::card{image="images/card-bg-wall.jpg"}
+::::card{image="images/process/cost_of_change.png"}
 
-#### Low Cost of Change
+##### Low Cost of Change
 
 Our approach minimizes change costs through automated testing and continuous
 refactoring, ensuring adaptability without additional expenses.
@@ -60,9 +60,9 @@ refactoring, ensuring adaptability without additional expenses.
 
 #cd
 
-::::card{image="images/card-bg-wall.jpg"}
+::::card{image="images/process/delivery.png"}
 
-#### Continuous Delivery
+##### Continuous Delivery
 
 We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
 setup, prioritizing efficiency and reliability.
@@ -71,15 +71,11 @@ setup, prioritizing efficiency and reliability.
 
 ::::
 
-:::
-
-:::box-layout
-
 #pv
 
-::::card{image="images/card-bg-wall.jpg"}
+::::card{image="images/process/visibility.png"}
 
-#### Progress Visibility
+##### Progress Visibility
 
 Through draft PRs from project inception, detailed task management, and clear
 communication, we maintain transparency at every development stage.
@@ -90,9 +86,9 @@ communication, we maintain transparency at every development stage.
 
 #cp
 
-::::card{image="images/card-bg-wall.jpg"}
+::::card{image="images/process/pollination.png"}
 
-#### Cross Pollination
+##### Cross Pollination
 
 Our commitment to open source and diverse project engagement promotes knowledge
 exchange, enhancing innovation across the community.
