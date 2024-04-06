@@ -13,7 +13,7 @@
 
 :include{content="contents/tech-stacks/inventiv.md"}
 
-### Multinet Up / Inventiv
+#### Multinet Up / Inventiv
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
 an open source service framework [Routine][] for the customer.
@@ -36,7 +36,7 @@ an open source service framework [Routine][] for the customer.
 
 :include{content="contents/tech-stacks/forward.md"}
 
-### Forward
+#### Forward
 
 We're building integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.

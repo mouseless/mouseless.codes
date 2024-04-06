@@ -27,8 +27,10 @@ const color = inject("block-child-color", "dark");
 .banner {
   align-items: left;
   width: 100%;
-  margin: 5em 0;
+  margin: 3em 0;
   font-size: 1.5em;
+
+  h1+h1, h2+h2 { margin-top: -0.5em; }
 
   &__line {
     border: none;

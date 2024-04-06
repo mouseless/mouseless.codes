@@ -13,7 +13,10 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ### Crafting software;
 
-## Where your vision meets our passion
+# Where your vision,
+# meets our passion
+
+:br
 
 Our love for software development merge with your needs to create exceptional
 projects. We foster an approach where shared passion and expertise bring mutual
@@ -31,7 +34,8 @@ benefits to every challenge.
 
 :::banner
 
-## Balancing quality and productivity with our unique approach!
+## Balancing quality and productivity
+## with our unique approach!
 
 :::
 
