@@ -9,7 +9,7 @@
 defineProps({
   align: {
     type: String,
-    default: "center"
+    default: "left"
   },
   height: {
     type: String,

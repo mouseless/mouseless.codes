@@ -1,7 +1,11 @@
 <template>
   <div class="slider">
-    <div v-if="pageNumber != 0" class="navigation slider__previous">
-      <button class="navigation__button" @click="left">
+    <div class="navigation slider__previous">
+      <button
+        class="navigation__button"
+        :class="{ 'navigation__button--disabled': pageNumber == 0}"
+        @click="left"
+      >
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
           class="navigation__image navigation__image--reverse"
@@ -17,8 +21,12 @@
     >
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div v-if="pageNumber != upToDateSlides.length - 1 && upToDateSlides.length != 0" class="navigation slider__next">
-      <button class="navigation__button" @click="right">
+    <div class="navigation slider__next">
+      <button
+        class="navigation__button"
+        :class="{ 'navigation__button--disabled': pageNumber == upToDateSlides.length - 1 || upToDateSlides.length == 0}"
+        @click="right"
+      >
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
           class="navigation__image"
@@ -163,6 +171,7 @@ function changeSlide(page) {
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    gap: 3px;
   }
 
   &__dot {
@@ -175,8 +184,8 @@ function changeSlide(page) {
     width: 10px;
 
     &--color {
-      &_dark { background-color: var(--color-gray-darkest); }
-      &_light { background-color: var(--color-gray-darkest); }
+      &_dark { background-color: var(--color-black-lightest); }
+      &_light { background-color: var(--color-black-lightest); }
     }
 
     &--active.slider__dot--color_dark {
@@ -194,10 +203,15 @@ function changeSlide(page) {
     background-color: transparent;
     border: 0;
     padding: 0;
+    cursor: pointer;
+
+    &--disabled {
+      opacity: 0.25;
+      cursor: default;
+    }
   }
 
   &__image {
-    cursor: pointer;
     height: 25px;
     object-fit: cover;
     padding-inline: 2em 0;

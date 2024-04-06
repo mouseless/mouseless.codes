@@ -1,24 +1,55 @@
-## Explore our long-term partnerships
+# Explore our long-term partnerships
 
-::slider
+:br
+:br
+
+::slider{height="45ch"}
 
 #inventiv
 
-![Inventiv](images/logos/inventiv.svg)
+:::box-layout{:itemWidths='["52%","48%"]'}
+
+#text
+
+:include{content="contents/tech-stacks/inventiv.md"}
+
+### Multinet Up / Inventiv
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
 an open source service framework [Routine][] for the customer.
 
-:include{content="contents/tech-stacks/inventiv.md"}
+:br
+
+:link-button{to="case-studies.md" text="See more"}
+
+#image
+
+![Gazel](images/case-studies/gazel-running.png)
+
+:::
 
 #forward
 
-![Forward](images/logos/forward.png)
+:::box-layout{:itemWidths='["58%","42%"]'}
+
+#text
+
+:include{content="contents/tech-stacks/forward.md"}
+
+### Forward
 
 We're building integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
 
-:include{content="contents/tech-stacks/forward.md"}
+:br
+
+:link-button{to="case-studies.md" text="See more"}
+
+#image
+
+![Forward](images/case-studies/forward-hubspot-app.png)
+
+:::
 
 ::
 

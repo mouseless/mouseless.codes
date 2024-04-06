@@ -130,53 +130,6 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 :::
 
-:::box{align="left" imageAlign="right" image="images/logos/flopal.png"}
-
-## Flopal
-
-We're providing them with a well-structured backend framework and a robust
-runtime admin UI generation tool, enhancing their productivity and
-responsiveness to their custom software needs.
-
-::::bullet-list
-
-- __Industry__: Construction
-- __Integrated Systems__: Logo
-- __Project Management__: GitHub, Discord
-
-::::
-
-:include{content="contents/tech-stacks/flopal.md"}
-
-::::details
-
-:::::summary
-
-:link-button{text="Read more..."}
-
-:::::
-
-## Customer
-
-[Flopal][] is a manufacturer of raised floor systems, operating since the early
-'90s. In 2014, they initiated the modernization of their internal business
-processes and decided to create a custom software solution for their production,
-procurement and sales operations.
-
-We're providing them with a well-structured backend framework and a robust
-runtime admin UI generation tool, enhancing their productivity and
-responsiveness to their custom software needs.
-
-### History
-
-Flopal has always been an enabler for us in shaping our unique approach to
-software development. Our lasting partnership, dating back to 2011, empowered us
-to take bold steps in forming our collective.
-
-::::
-
-:::
-
 ::
 
 :block{content="contents/reach-out.md" color=black}

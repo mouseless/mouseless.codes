@@ -1,6 +1,4 @@
-[![C#][logo-csharp]][csharp][![.NET][logo-dotnet]][dotnet]
-[![Postgres][logo-postgres]][postgres][![RabbitMQ][logo-rabbitmq]][rabbitmq]
-[![SQL Server][logo-sqlserver]][sqlserver][![Vue.js][logo-vue]][vue]
+[![C#][logo-csharp]][csharp] [![.NET][logo-dotnet]][dotnet] [![Postgres][logo-postgres]][postgres] [![RabbitMQ][logo-rabbitmq]][rabbitmq] [![SQL Server][logo-sqlserver]][sqlserver] [![Vue.js][logo-vue]][vue]
 
 [csharp]: https://dotnet.microsoft.com/en-us/languages/csharp
 [dotnet]: https://dotnet.microsoft.com/

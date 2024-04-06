@@ -62,10 +62,6 @@ const count = computed(() => items.length);
   }
 
   &__item {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
     &--flex {
       max-width: 100%;
     }
