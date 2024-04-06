@@ -16,7 +16,7 @@
 #### Multinet Up / Inventiv
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
-an open source service framework [Routine][] for the customer.
+an open source service framework [Routine][].
 
 :br
 
