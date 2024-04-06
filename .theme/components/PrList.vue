@@ -139,6 +139,9 @@ async function getPullRequests(state) {
     height: 50px;
     padding: 0 var(--border-radius);
     text-align: left;
+    font-family: var(--font-default);
+    font-size: 1em;
+    opacity: 0.70;
 
     &--color{
       &_dark {
@@ -153,11 +156,11 @@ async function getPullRequests(state) {
     }
 
     &:hover {
-      margin-left: 2ch;
+      opacity: 0.85;
     }
 
-    &--active {
-      margin-left: 1ch;
+    &--active, &--active:hover {
+      opacity: 1;
     }
   }
 }

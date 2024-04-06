@@ -29,7 +29,7 @@ without extra cost.
 
 ::block{color=black}
 
-:::box-layout{align=left}
+:::box-layout
 
 #text
 
@@ -55,17 +55,17 @@ to our clients.
 
 ::block{color=black}
 
-:::banner{align=left}
+:::banner
 
 #### See in action
 
 :::
 
-:::box-layout{display="stack" align=left}
+:::box-layout{display="stack"}
 
 #do-builds
 
-::::box{align=left}
+::::box
 
 ##### Tests and Coverage
 
@@ -78,7 +78,7 @@ automation;
 
 #net-upgrade
 
-::::box{align=left}
+::::box
 
 ##### Research Upgrades
 
@@ -91,7 +91,7 @@ we manage tech upgrades.
 
 #do-net-upgrade
 
-::::box{align=left}
+::::box
 
 ##### Apply Upgrades
 
@@ -108,7 +108,7 @@ customer projects.
 
 ::block
 
-:::box-layout{align=left}
+:::box-layout
 
 #text
 
@@ -135,17 +135,17 @@ sollicitudin magna.
 
 ::block
 
-:::banner{align=left}
+:::banner
 
 #### See in action
 
 :::
 
-:::box-layout{display="stack" align=left}
+:::box-layout{display="stack"}
 
 #freq-releases
 
-::::box{align=left}
+::::box
 
 ##### Frequent Releases
 
@@ -157,7 +157,7 @@ Check out DO releases to see frequency of our delivery cycle;
 
 #lead-time
 
-::::box{align=left}
+::::box
 
 ##### Lead-Time
 
@@ -173,7 +173,7 @@ See how we build software incrementally;
 
 ::block{color=black}
 
-:::box-layout{align=left}
+:::box-layout
 
 #text
 
@@ -200,17 +200,17 @@ sollicitudin magna.
 
 ::block{color=black}
 
-:::banner{align=left}
+:::banner
 
 #### See in action
 
 :::
 
-:::box-layout{display="stack" align=left}
+:::box-layout{display="stack"}
 
 #do-epic
 
-::::box{align=left}
+::::box
 
 ##### PRs
 
@@ -222,7 +222,7 @@ Check out our live work right from GitHub;
 
 #learn-task
 
-::::box{align=left}
+::::box
 
 ##### Tasks
 
@@ -238,7 +238,7 @@ See how we care work descriptions and tasks;
 
 ::block
 
-:::box-layout{align=left}
+:::box-layout
 
 #text
 
@@ -265,17 +265,17 @@ provider and allows them to benefit from our total experience.
 
 ::block
 
-:::banner{align=left}
+:::banner
 
 #### See in action
 
 :::
 
-:::box-layout{display="stack" align=left}
+:::box-layout{display="stack"}
 
 #do-docs
 
-::::box{align=left}
+::::box
 
 ##### DO
 
@@ -287,7 +287,7 @@ Check out DO, our opinionated framework for .NET;
 
 #learn-nuxt
 
-::::box{align=left}
+::::box
 
 ##### Learn
 
@@ -299,7 +299,7 @@ See how we learned, documented and use Nuxt;
 
 #all-open-source
 
-::::box{align=left}
+::::box
 
 ##### Open Source
 

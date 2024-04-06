@@ -23,7 +23,7 @@ development to prioritize core and auxiliary functionalities while managing the
 entire development process, allowing clients to maintain a relentless focus on
 their business objectives.
 
-:link-button{text="See more" to="services.md"}
+[See more](services.md)
 
 :::
 
@@ -39,7 +39,7 @@ responsibility for secondary systems to ensure essential technology upgrades,
 enabling businesses to concentrate on core challenges while we address
 engineering obstacles.
 
-:link-button{text="See more" to="services.md"}
+[See more](services.md)
 
 :::
 

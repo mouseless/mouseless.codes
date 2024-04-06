@@ -102,7 +102,7 @@ opportunity to address engineering challenges.
 
 ::block
 
-:::banner{:hr=false align=left}
+:::banner{:hr=false}
 
 ## **Our** Approach
 
@@ -127,7 +127,7 @@ opportunity to address engineering challenges.
 
 ::block
 
-:::banner{:hr=false align=left}
+:::banner{:hr=false}
 
 ## What's Next
 

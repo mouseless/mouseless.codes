@@ -1,6 +1,6 @@
 ## Contact Us
 
-::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
+::box-layout{display="stack" :itemWidths='["37%", "60%"]'}
 
 #item-1
 

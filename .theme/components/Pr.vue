@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="title">
+    <h3 class="title">
       <NuxtLink
         :to="pr?.html_url"
         class="title__link"
@@ -18,8 +18,8 @@
         >
         {{ getState(pr) }}
       </div>
-    </h2>
-    <MarkdownFormat :body="pr?.body" tag="article" />
+    </h3>
+    <MarkdownFormat :body="pr?.body" tag="article" class="pr-body" />
   </div>
 </template>
 <script setup>
@@ -48,27 +48,14 @@ function getState(object) {
   border-radius: var(--border-radius);
   text-transform: capitalize;
   padding: 0 1em;
-  font-size: 60%;
-  height: 2.5em;
+  font-size: 40%;
+  height: 2em;
   color: var(--color-fg);
 
-  &--draft {
-    background-color: var(--color-gray-darker);
-  }
-
-  &--open {
-    background-color: var(--color-green);
-  }
-
-  &--closed {
-    background-color: var(--color-red);
-    color: var(--color-white);
-  }
-
-  &--merged {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-  }
+  &--draft { background-color: var(--color-gray-darker); }
+  &--open { background-color: var(--color-green); }
+  &--closed { background-color: var(--color-red); color: var(--color-white); }
+  &--merged { background-color: var(--color-blue); color: var(--color-white); }
 
   &__icon {
     width: 1em;
@@ -78,8 +65,10 @@ function getState(object) {
 
 .title {
   display: inline-flex;
-  gap: 0.5em;
-  align-items: center;
+  align-items: flex-start;
+  gap: 0.25em;
+  flex-direction: column;
+  margin-bottom: 0.5em;
 
   &__link {
     text-decoration: none;
@@ -102,5 +91,15 @@ function getState(object) {
       }
     }
   }
+}
+</style>
+<style lang="scss">
+.pr-body {
+  h1 { font-size: 3em; }
+  h2 { font-size: 2.5em; }
+  h3 { font-size: 2em; }
+  h4 { font-size: 1.7em; }
+  h5 { font-size: 1.5em; }
+  h6 { font-size: 1.25em; }
 }
 </style>

@@ -30,5 +30,6 @@ defineProps({
 <style lang="scss" scoped>
 img {
   max-width: 100%;
+  border-radius: var(--border-radius);
 }
 </style>

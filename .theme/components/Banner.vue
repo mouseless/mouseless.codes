@@ -4,23 +4,13 @@
   >
     <div
       class="banner__text"
-      :class="[
-        `banner__text--color_${color}`,
-        `banner__text--align_${align}`
-      ]"
+      :class="`banner__text--color_${color}`"
     >
       <slot />
     </div>
   </div>
 </template>
 <script setup>
-defineProps({
-  align: {
-    type: String,
-    default: "left"
-  }
-});
-
 const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
@@ -29,8 +19,6 @@ const color = inject("block-child-color", "dark");
   width: 100%;
   margin: 3em 0;
   font-size: 1.5em;
-
-  h1+h1, h2+h2 { margin-top: -0.5em; }
 
   &__line {
     border: none;
@@ -48,12 +36,6 @@ const color = inject("block-child-color", "dark");
   &__text {
     strong {
       color: var(--color-logo-mark);
-    }
-
-    &--align {
-      &_center { text-align: center; }
-      &_left { text-align: left; }
-      &_right { text-align: right; }
     }
 
     &--color {

@@ -13,19 +13,11 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ## Banner
 
-### Banner Option 1
-
 :::banner
 
-#### Our Collective
+### Our Collective
 
-:::
-
-### Banner Option 2
-
-:::banner{align="right"}
-
-**We** Offer
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 :::
 
@@ -82,27 +74,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Box Layout
 
-### Option 1
-
-:::box-layout{display="stack" align="left"}
-
-#item-1
-
-::::box{title="Box 1"}
-Lorem ipsum dolor sit amet consectetur adipisicing elit
-::::
-
-#item-2
-
-::::box{title="Box 2"}
-Maxime mollitia, molestiae quas vel sint commodi repudiandae
-::::
-
-:::
-
-### Option 2
-
-:::box-layout{display="flex" align="center"}
+:::box-layout{display="stack"}
 
 #item-1
 
@@ -130,7 +102,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## Card
 
-:::box-layout{display="flex" align="center"}
+:::box-layout{display="flex"}
 
 #item-1
 
@@ -154,7 +126,7 @@ autem.
 
 :::
 
-:::box-layout{display="stack" align="left" itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
+:::box-layout{display="stack" itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
 
 #item-1
 
@@ -199,7 +171,7 @@ Completely clear and straightforward
 
 ## Diagrams
 
-:::box-layout{display="stack" align="left" :itemWidths='["30%", "65%"]'}
+:::box-layout{display="stack" :itemWidths='["30%", "65%"]'}
 
 #diagram-1
 
@@ -236,7 +208,7 @@ flowchart LR
 
 ## Inline Frame
 
-:::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
+:::box-layout{display="stack" :itemWidths='["37%", "60%"]'}
 
 #item-1
 

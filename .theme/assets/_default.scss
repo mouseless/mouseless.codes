@@ -11,6 +11,10 @@ h4 { font-size: 2em; }
 h5 { font-size: 1.7em; }
 h6 { font-size: 1.5em; }
 
+h1+h1, h2+h2, h3+h3, h4+h4, h5+h5, h6+h6 {
+  margin-top: -0.5em !important;
+}
+
 .content {
   width: 100%;
   margin-left: auto;
@@ -31,6 +35,7 @@ h6 { font-size: 1.5em; }
 
 code {
   border-radius: var(--border-radius);
+  background-color: transparent;
 }
 
 img.mouseless {
@@ -44,11 +49,5 @@ img.mouseless {
         }
       }
     }
-  }
-}
-
-.article {
-  img {
-    border-radius: var(--border-radius);
   }
 }

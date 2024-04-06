@@ -115,10 +115,6 @@ function changeSlide(page) {
         h6 {
           color: var(--color-fg-mute);
         }
-
-        code {
-          background-color: var(--color-bg-mute);
-        }
       }
 
       &_light {
@@ -130,11 +126,6 @@ function changeSlide(page) {
         h4,
         h5,
         h6 {
-          color: var(--color-bg);
-        }
-
-        code {
-          background-color: var(--color-fg-mute);
           color: var(--color-bg);
         }
       }
@@ -184,7 +175,7 @@ function changeSlide(page) {
     width: 10px;
 
     &--color {
-      &_dark { background-color: var(--color-black-lightest); }
+      &_dark { background-color: var(--color-gray); }
       &_light { background-color: var(--color-black-lightest); }
     }
 

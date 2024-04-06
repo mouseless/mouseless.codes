@@ -1,9 +1,6 @@
 <template>
   <div
-    :class="[
-      {'box-layout--stack': display == 'stack'},
-      `box-layout--align_${align}`
-    ]"
+    :class="{'box-layout--stack': display == 'stack'}"
     class="box-layout"
   >
     <div
@@ -24,10 +21,6 @@ defineProps({
   display: {
     type: String,
     default: "flex"
-  },
-  align: {
-    type: String,
-    default: "left"
   },
   itemWidth: {
     type: String,
@@ -52,13 +45,6 @@ const count = computed(() => items.length);
 
   &--stack {
     flex-wrap: wrap;
-  }
-
-  &--align {
-    &_center { justify-content: center; }
-    &_left { justify-content: flex-start; }
-    &_right { justify-content: flex-end; }
-    &_evenly { justify-content: space-evenly; }
   }
 
   &__item {

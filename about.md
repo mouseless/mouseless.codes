@@ -36,16 +36,16 @@ quality work collaboratively.
 
 :::
 
-:::box-layout{display=stack align=left itemWidth="48%"}
+:::box-layout{display=stack itemWidth="48%"}
 
 #excellence
 
-::::box{align="left" imageAlign="left"}
+::::box{imageAlign="left"}
 ---
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
-:::::banner{align=left}
+:::::banner
 
 ### **We** strive for excellence
 
@@ -83,7 +83,7 @@ with stepping out of the comfort zone, inviting the unconventional.
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
-:::::banner{align=left}
+:::::banner
 
 ### **We** love our craft
 
@@ -103,7 +103,7 @@ engaged.
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
-:::::banner{align=left}
+:::::banner
 
 ### **We** are efficient
 
@@ -122,7 +122,7 @@ effective scope management and incremental delivery.
 image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
 ---
 
-:::::banner{align=left}
+:::::banner
 
 ### **We** are people-centric
 

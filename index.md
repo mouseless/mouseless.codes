@@ -16,8 +16,6 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 # Where your vision,
 # meets our passion
 
-:br
-
 Our love for software development merge with your needs to create exceptional
 projects. We foster an approach where shared passion and expertise bring mutual
 benefits to every challenge.
@@ -28,42 +26,48 @@ benefits to every challenge.
 
 :block{content="contents/tedious-work.md"}
 :block{content="contents/built-value.md" color=black}
-:block{content="contents/reach-out.md" color=black}
+:block{content="contents/reach-out.md"}
 
-::block
+::block{color=black}
 
 :::banner
 
 ## Balancing quality and productivity
 ## with our unique approach!
 
+We run on a flexible, pay-as-you-go model. We prioritize timely feature
+delivery, automated testing, code refactoring, and keeping technology up to date
+without extra cost.
+
 :::
+
+:br
 
 :::box-layout
 
 #lcoc
 
-::::card{image="/draft.svg"}
+::::card{image="images/card-bg-wall.jpg"}
 
-### Low Cost of Change
+#### Low Cost of Change
 
 Our approach minimizes change costs through automated testing and continuous
 refactoring, ensuring adaptability without additional expenses.
 
-:link-button{to="/process" text="See More..."}
+[See more](process.md)
 
 ::::
 
 #cd
 
-::::card{image="/draft.svg"}
+::::card{image="images/card-bg-wall.jpg"}
 
-### Continuous Delivery
+#### Continuous Delivery
 
 We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
 setup, prioritizing efficiency and reliability.
 
-:link-button{to="/process" text="See More..."}
+[See more](process.md)
 
 ::::
 
@@ -73,27 +77,27 @@ setup, prioritizing efficiency and reliability.
 
 #pv
 
-::::card{image="/draft.svg"}
+::::card{image="images/card-bg-wall.jpg"}
 
-### Progress Visibility
+#### Progress Visibility
 
 Through draft PRs from project inception, detailed task management, and clear
 communication, we maintain transparency at every development stage.
 
-:link-button{to="/process" text="See More..."}
+[See more](process.md)
 
 ::::
 
 #cp
 
-::::card{image="/draft.svg"}
+::::card{image="images/card-bg-wall.jpg"}
 
-### Cross Pollunation
+#### Cross Pollination
 
 Our commitment to open source and diverse project engagement promotes knowledge
 exchange, enhancing innovation across the community.
 
-:link-button{to="/process" text="See More..."}
+[See more](process.md)
 
 ::::
 
@@ -107,9 +111,14 @@ exchange, enhancing innovation across the community.
 
 ## See Mouseless in Action
 
+Explore our live work through pull requests of public repositories in
+[github/mouseless](https://github.com/mouseless).
+
 :::
 
-:pr-list{:repos='["do", "mouseless.codes" , "learn-nuxt", "learn-dotnet"]'}
+:br
+
+:pr-list{:repos='["do", "learn-nuxt", "learn-dotnet", "mouseless.codes"]'}
 
 ::
 

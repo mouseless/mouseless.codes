@@ -31,7 +31,7 @@ overcome challenges and achieve their goals.
 
 ::block
 
-:::box{align="left" imageAlign="right" image="images/logos/inventiv.svg"}
+:::box{imageAlign="right" image="images/logos/inventiv.svg"}
 
 ## Inventiv - Multinet | Up
 
@@ -85,7 +85,7 @@ grateful.
 
 :::
 
-:::box{align="left" imageAlign="left" image="images/logos/forward.png"}
+:::box{imageAlign="left" image="images/logos/forward.png"}
 
 ## Forward
 
