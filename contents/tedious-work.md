@@ -1,4 +1,4 @@
-# We are ready to tackle all the tedious work !
+# We are ready to tackle all the tedious work!
 
 We don't just face complex software challenges; we welcome them with enthusiasm.
 

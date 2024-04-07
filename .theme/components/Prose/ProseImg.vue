@@ -42,9 +42,9 @@ p {
     width: 100%;
     text-align: center;
   }
-}
 
-.banner .diagram {
-  width: 50%;
+  .diagram {
+    min-width: 50%;
+  }
 }
 </style>

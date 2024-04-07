@@ -12,27 +12,20 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::box-layout
+:::banner
 
-::::box
+### We Offer;
+# Staff Augmentation
 
-### We Offer Staff Augmentation
-
-We position ourselves as a __staff augmentation__ service provider, offering
-full responsibility for software systems that you'd rather outsource. This
-allows you to maintain your focus on your core business concerns.
-
-::::
+We take __full responsibility__ for software systems that you'd rather
+outsource. This allows you to maintain your focus on your core business
+concerns.
 
 :::
 
 ::
 
 ::block{color=black}
-
-:::banner
-
-## **Our** Services
 
 ```mermaid
 flowchart TD
@@ -43,8 +36,6 @@ flowchart TD
     Q -->|to develop\na unique software| CSD
     Q -->|to improve\nan existing solution| RE
 ```
-
-:::
 
 ::
 
@@ -99,45 +90,17 @@ opportunity to address engineering challenges.
 ::
 
 :block{content="contents/reach-out.md" color=black}
+:block{content="contents/balancing-quality.md"}
 
-::block
-
-:::banner{:hr=false}
-
-## **Our** Approach
-
-:::
-
-:::box
-
-::::bullet-list
-
-- Low Cost of Change
-- Continuous Delivery
-- Progress Visibility
-- Cross Pollination
-
-::::
-
-:::
-
-::
-
----
-
-::block
-
-:::banner{:hr=false}
+::block{color=black}
 
 ## What's Next
-
-:::
 
 :include{content="contents/become-partner.md"}
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
-:block{content="contents/built-value.md"}
+:block{content="contents/reach-out.md"}
+:block{content="contents/built-value.md" color=black}
 :block{content="contents/our-collective.md"}
 :block{content="contents/contact-us.md" color=gray}

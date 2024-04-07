@@ -12,13 +12,12 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 :::banner
 
 ### Crafting software;
-
 # Where your vision,
 # meets our passion
 
-Our love for software development merge with your needs to create exceptional
-projects. We foster an approach where shared passion and expertise bring mutual
-benefits to every challenge.
+Our love for __software development__ merge with your needs to create
+exceptional projects. We foster an approach where shared passion and expertise
+bring mutual benefits to every challenge.
 
 :::
 
@@ -27,79 +26,7 @@ benefits to every challenge.
 :block{content="contents/tedious-work.md"}
 :block{content="contents/built-value.md" color=black}
 :block{content="contents/reach-out.md"}
-
-::block{color=black}
-
-:::banner
-
-## Balancing quality and productivity
-## with our unique approach!
-
-We run on a flexible, pay-as-you-go model. We prioritize timely feature
-delivery, automated testing, code refactoring, and keeping technology up to date
-without extra cost.
-
-:::
-
-:br
-
-:::box-layout
-
-#lcoc
-
-::::card{image="/images/process/lcoc.png"}
-
-##### Low Cost of Change
-
-Our approach minimizes change costs through automated testing and continuous
-refactoring, ensuring adaptability without additional expenses.
-
-[See more](process.md)
-
-::::
-
-#cd
-
-::::card{image="/images/process/cd.png"}
-
-##### Continuous Delivery
-
-We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
-setup, prioritizing efficiency and reliability.
-
-[See more](process.md)
-
-::::
-
-#pv
-
-::::card{image="/images/process/pv.png"}
-
-##### Progress Visibility
-
-Through draft PRs from project inception, detailed task management, and clear
-communication, we maintain transparency at every development stage.
-
-[See more](process.md)
-
-::::
-
-#cp
-
-::::card{image="/images/process/cp.png"}
-
-##### Cross Pollination
-
-Our commitment to open source and diverse project engagement promotes knowledge
-exchange, enhancing innovation across the community.
-
-[See more](process.md)
-
-::::
-
-:::
-
-::
+:block{content="contents/balancing-quality.md" color=black}
 
 ::block
 
