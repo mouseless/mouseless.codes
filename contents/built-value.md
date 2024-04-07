@@ -11,7 +11,7 @@
 
 #text
 
-:include{content="contents/tech-stacks/inventiv.md"}
+:include{content="/contents/tech-stacks/inventiv.md"}
 
 #### Multinet Up / Inventiv
 
@@ -20,11 +20,11 @@ an open source service framework [Routine][].
 
 :br
 
-:link-button{to="case-studies.md" text="See more"}
+:link-button{to="/case-studies" text="See more"}
 
 #image
 
-![Gazel](images/case-studies/gazel-running.png)
+![Gazel](/images/case-studies/gazel-running.png)
 
 :::
 
@@ -43,11 +43,11 @@ their customers integrate with CRM and more.
 
 :br
 
-:link-button{to="case-studies.md" text="See more"}
+:link-button{to="/case-studies" text="See more"}
 
 #image
 
-![Forward](images/case-studies/forward-hubspot-app.png)
+![Forward](/images/case-studies/forward-hubspot-app.png)
 
 :::
 

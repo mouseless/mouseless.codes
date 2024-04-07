@@ -28,7 +28,7 @@
             <strong>To see more pull requests </strong>
             <NuxtLink
               :text="`${repos[repoIndex]}/pulls`"
-              :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls`"
+              :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
             />
           </div>
         </template>

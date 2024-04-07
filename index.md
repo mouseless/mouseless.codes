@@ -47,7 +47,7 @@ without extra cost.
 
 #lcoc
 
-::::card{image="images/process/cost_of_change.png"}
+::::card{image="/images/process/lcoc.png"}
 
 ##### Low Cost of Change
 
@@ -60,7 +60,7 @@ refactoring, ensuring adaptability without additional expenses.
 
 #cd
 
-::::card{image="images/process/delivery.png"}
+::::card{image="/images/process/cd.png"}
 
 ##### Continuous Delivery
 
@@ -73,7 +73,7 @@ setup, prioritizing efficiency and reliability.
 
 #pv
 
-::::card{image="images/process/visibility.png"}
+::::card{image="/images/process/pv.png"}
 
 ##### Progress Visibility
 
@@ -86,7 +86,7 @@ communication, we maintain transparency at every development stage.
 
 #cp
 
-::::card{image="images/process/pollination.png"}
+::::card{image="/images/process/cp.png"}
 
 ##### Cross Pollination
 

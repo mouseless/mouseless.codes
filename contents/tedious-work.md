@@ -15,7 +15,7 @@ your digital infrastructure to not just meet the curve but redefine it.
 
 :::box{title="Custom Software Development" image-align="left"}
 ---
-image: images/services/csd.png
+image: /images/services/csd.png
 ---
 
 We provide tailored software solutions, seamlessly integrating custom
@@ -31,7 +31,7 @@ their business objectives.
 
 :::box{title="Re-engineering Services" image-align="left"}
 ---
-image: images/services/rs.png
+image: /images/services/rs.png
 ---
 
 We specialize in revamping outdated custom-developed software, taking full

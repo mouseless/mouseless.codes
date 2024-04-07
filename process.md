@@ -163,7 +163,7 @@ Check out DO releases to see frequency of our delivery cycle;
 
 See how we build software incrementally;
 
-:link-button{to="https://github.com/mouseless/do/pulls?q=is%3Apr+is%3Aclosed" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/do/pulls?q=label%3APublish+is%3Aclosed" text="See in GitHub"}
 
 ::::
 
