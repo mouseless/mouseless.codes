@@ -95,8 +95,7 @@ function changeSlide(page) {
   &__content {
     grid-area: content;
     color: var(--color-fg);
-    overflow: auto;
-    height: v-bind(height);
+    min-height: v-bind(height);
     padding-inline: 1em;
 
     h2 {
@@ -107,12 +106,7 @@ function changeSlide(page) {
       &_dark {
         color: var(--color-fg);
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
           color: var(--color-fg-mute);
         }
       }
@@ -120,12 +114,7 @@ function changeSlide(page) {
       &_light {
         color: var(--color-bg-mute);
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
           color: var(--color-bg);
         }
       }

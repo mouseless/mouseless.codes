@@ -21,9 +21,13 @@
     </div>
     <div class="pr-list__prs">
       <div v-if="!render" class="pr-list__loading" />
-      <SliderInner v-if="render" :align="'left'" :height="height" :slides="pullRequests">
+      <SliderInner v-if="render" :align="'left'" :slides="pullRequests">
         <template #default="{pageNumber, slides}">
-          <Pr v-if="slides.length !== 0 && pageNumber != slides.length - 1" :pr="slides[pageNumber]" />
+          <Pr
+            v-if="slides.length !== 0 && pageNumber != slides.length - 1"
+            :pr="slides[pageNumber]"
+            :height="height"
+          />
           <div v-else>
             <strong>To see more pull requests </strong>
             <NuxtLink
@@ -40,7 +44,7 @@
 const props = defineProps({
   height: {
     type: String,
-    default: "50ch"
+    default: "30ch"
   },
   repos: {
     type: Array,
