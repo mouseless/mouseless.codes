@@ -13,7 +13,7 @@
 
 :include{content="/contents/tech-stacks/inventiv.md"}
 
-#### Multinet Up / Inventiv
+#### Inventiv - Multinet Up
 
 We've built [Inventiv][]'s internal software development framework [Gazel][] and
 an open source service framework [Routine][].

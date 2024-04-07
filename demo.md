@@ -201,24 +201,11 @@ flowchart LR
 
 :::
 
-## Include
-
 :include{content="contents/demo.md"}
-:block{color="red" content="contents/demo.md"}
 
 ## Inline Frame
 
-:::box-layout{display="stack" :itemWidths='["37%", "60%"]'}
-
-#item-1
-
 :inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
-
-#item-2
-
-:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="100%"}
-
-:::
 
 ## People
 
@@ -255,7 +242,7 @@ nihil, eveniet aliquid
 
 ## Steps
 
-:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]' height="40ch"}
+:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]' height="20ch"}
 
 #step-1
 
@@ -333,3 +320,5 @@ _Italic Text_
 ###### Head6
 
 ::
+
+:block{debug="true" content="contents/demo.md"}

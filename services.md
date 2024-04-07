@@ -34,17 +34,17 @@ allows you to maintain your focus on your core business concerns.
 
 ## **Our** Services
 
-:::
-
 ```mermaid
 flowchart TD
     Q[When you need\nsenior\ndevelopers]
     CSD[Custom Software\nDevelopment]
-    RE[Software\nReengineering]
+    RE[Software\nRe-engineering]
 
     Q -->|to develop\na unique software| CSD
     Q -->|to improve\nan existing solution| RE
 ```
+
+:::
 
 ::
 
@@ -79,7 +79,7 @@ how we can assist you.
 
 ::::box
 
-# Re-engineering
+### Software Re-engineering
 
 If you have custom-developed software serving as a secondary system, it's
 probable that this software may eventually become outdated and miss out on

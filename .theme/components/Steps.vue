@@ -74,12 +74,6 @@ function changeContent(index) {
     height: v-bind(height);
     overflow: auto;
   }
-
-  &__content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .flow {
@@ -133,6 +127,7 @@ function changeContent(index) {
     font-size: medium;
     margin-top: -2em;
     color: var(--color-bg);
+    text-align: center;
 
     &--color {
       &_dark {

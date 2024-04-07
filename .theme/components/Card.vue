@@ -21,8 +21,6 @@ defineProps({
 <style lang="scss">
 .card {
   width: 100%;
-  max-width: var(--width-content);
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

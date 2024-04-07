@@ -6,10 +6,6 @@
       `color--${colors[currentColor]}`
     ]"
   >
-    <div class="content">
-      <Include v-if="content !== null" :content="content" />
-      <slot v-else />
-    </div>
     <div v-if="debug" class="block__colors">
       <button
         v-for="(_, item) in colors"
@@ -18,6 +14,10 @@
         :class="`color--${item}`"
         @click="backgroundChange(item)"
       />
+    </div>
+    <div class="content">
+      <Include v-if="content !== null" :content="content" />
+      <slot v-else />
     </div>
   </div>
 </template>
@@ -69,10 +69,12 @@ function backgroundChange(color) {
   h1, h2, h3, h4, h5, h6 { margin: 0; }
 
   &__colors {
-    position: fixed;
-    left: 20px;
-    top: 100px;
+    position: sticky;
+    left: 2em;
+    top: 2em;
     width: 20px;
+    height: 0;
+    margin-top: -3em;
   }
 
   &__color-btn {
