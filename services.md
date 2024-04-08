@@ -37,10 +37,6 @@ flowchart TD
     Q -->|to improve\nan existing solution| RE
 ```
 
-::
-
-::block
-
 :::box-layout
 
 #csd
@@ -89,10 +85,7 @@ opportunity to address engineering challenges.
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
-:block{content="contents/balancing-quality.md"}
-
-::block{color=black}
+::block
 
 ## What's Next
 
@@ -100,7 +93,8 @@ opportunity to address engineering challenges.
 
 ::
 
-:block{content="contents/reach-out.md"}
-:block{content="contents/built-value.md" color=black}
+:block{content="contents/reach-out.md" color=black}
+:block{content="contents/built-value.md"}
+:block{content="contents/balancing-quality.md" color=black}
 :block{content="contents/our-collective.md"}
-:block{content="contents/contact-us.md" color=gray}
+:block{content="contents/contact-us.md" color=black}

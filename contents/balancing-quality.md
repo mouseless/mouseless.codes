@@ -22,7 +22,7 @@ without extra cost.
 Our approach minimizes change costs through automated testing and continuous
 refactoring, ensuring adaptability without additional expenses.
 
-[See more](process.md)
+[See more](process.md#low-cost-of-change)
 
 :::
 
@@ -35,7 +35,7 @@ refactoring, ensuring adaptability without additional expenses.
 We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
 setup, prioritizing efficiency and reliability.
 
-[See more](process.md)
+[See more](process.md#continuous-delivery)
 
 :::
 
@@ -48,7 +48,7 @@ setup, prioritizing efficiency and reliability.
 Through draft PRs from project inception, detailed task management, and clear
 communication, we maintain transparency at every development stage.
 
-[See more](process.md)
+[See more](process.md#progress-visibility)
 
 :::
 
@@ -61,7 +61,7 @@ communication, we maintain transparency at every development stage.
 Our commitment to open source and diverse project engagement promotes knowledge
 exchange, enhancing innovation across the community.
 
-[See more](process.md)
+[See more](process.md#cross-pollination)
 
 :::
 
