@@ -30,14 +30,10 @@ bring mutual benefits to every challenge.
 
 ::block
 
-:::banner
-
 ## See Mouseless in Action
 
 Explore our live work through pull requests of public repositories in
 [github/mouseless](https://github.com/mouseless).
-
-:::
 
 :br
 
@@ -45,6 +41,5 @@ Explore our live work through pull requests of public repositories in
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
-:block{content="contents/our-collective.md"}
-:block{content="contents/contact-us.md" color=gray}
+:block{content="contents/our-collective.md" color=black}
+:block{content="contents/contact-us.md"}

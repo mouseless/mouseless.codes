@@ -7,6 +7,6 @@ people anytime anywhere.
 
 :br
 
-:link-button{to="#contact-us" type="cta" text="Reach Out"}
+:link-button{to="#contact-us" type="cta" text="Reach out"}
 
 ::

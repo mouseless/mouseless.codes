@@ -1,7 +1,4 @@
-# Explore our long-term partnerships
-
-:br
-:br
+## Explore our long-term partnerships
 
 ::slider{height="45ch"}
 

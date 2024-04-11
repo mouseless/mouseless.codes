@@ -14,10 +14,13 @@
 const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
+.block:has(.banner) {
+  padding: 8em 0;
+}
+
 .banner {
   align-items: left;
   width: 100%;
-  margin: 3em 0;
   font-size: 1.5em;
 
   &__line {

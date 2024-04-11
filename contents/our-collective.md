@@ -1,12 +1,20 @@
 ::banner
 
-## Our Collective
+## A software development collective,
+## connected through the craft
+
+Our collective is a team of 3-7 software engineers guided by;
+
+:::bullet-list
+
+- Striving for excellence
+- Welcoming the unconventional
+- Love for the craft
+- Efficiency
+- People-centricity
+
+:::
+
+[See more](about.md)
 
 ::
-
-We are a software development collective, connected through our craft. Our
-collective is a team of 3-7 software engineers guided by our people-centric
-philosophy. We prioritize excellence and efficiency, focusing on delivering
-quality work collaboratively.
-
-:link-button{to="/about" text="See More..."}

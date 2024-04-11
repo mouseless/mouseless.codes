@@ -111,7 +111,7 @@ function getState(object) {
     h6 { font-size: 1.125em; }
 
     h1, h2, h3, h4, h5, h6 {
-      color: var(--color-bg);
+      color: var(--color-bg) !important;
     }
   }
 }
