@@ -21,39 +21,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 :::
 
-## Bullet List
-
-:::bullet-list{align=left}
-
-- task 1
-- task 2
-
-:::
-
-:::bullet-list{align=center}
-
-- task 1
-- task 2
-
-:::
-
-:::bullet-list{align=right}
-
-- task 1
-- task 2
-
-:::
-
-## Buttons
-
-### Default
-
-:link-button{to="#buttons" type="default" text="Default Button"}
-
-### CTA
-
-:link-button{to="#buttons" type="cta" text="CTA Button"}
-
 ## Box
 
 :::box{title="Box Header" image-align="left"}
@@ -89,6 +56,39 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 ::::
 
 :::
+
+## Bullet List
+
+:::bullet-list{align=left}
+
+- task 1
+- task 2
+
+:::
+
+:::bullet-list{align=center}
+
+- task 1
+- task 2
+
+:::
+
+:::bullet-list{align=right}
+
+- task 1
+- task 2
+
+:::
+
+## Buttons
+
+### Default
+
+:link-button{to="#buttons" type="default" text="Default Button"}
+
+### CTA
+
+:link-button{to="#buttons" type="cta" text="CTA Button"}
 
 ## Call To Action
 
@@ -169,6 +169,10 @@ Completely clear and straightforward
 
 :::
 
+## Contact Form
+
+:contact-form
+
 ## Diagrams
 
 :::box-layout{display="stack" :itemWidths='["30%", "65%"]'}
@@ -202,10 +206,6 @@ flowchart LR
 :::
 
 :include{content="contents/demo.md"}
-
-## Inline Frame
-
-:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
 
 ## People
 
