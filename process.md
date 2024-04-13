@@ -370,4 +370,3 @@ flowchart TB
 :block{content="contents/reach-out.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/our-collective.md"}
-:block{content="contents/contact-us.md" color=gray}

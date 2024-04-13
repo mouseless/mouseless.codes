@@ -226,7 +226,5 @@ principles and appreciate what you've seen on our [GitHub][github], let us know.
 
 ::
 
-:block{content="contents/contact-us.md" color=gray}
-
 [github]: https://github.com/mouseless
 [mail]: mailto:connect@mouseless.codes

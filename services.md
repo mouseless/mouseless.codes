@@ -97,4 +97,3 @@ opportunity to address engineering challenges.
 :block{content="contents/built-value.md"}
 :block{content="contents/balancing-quality.md" color=black}
 :block{content="contents/our-collective.md"}
-:block{content="contents/contact-us.md" color=black}

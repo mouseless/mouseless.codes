@@ -42,4 +42,3 @@ Explore our live work through pull requests of public repositories in
 ::
 
 :block{content="contents/our-collective.md" color=black}
-:block{content="contents/contact-us.md"}

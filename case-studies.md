@@ -135,7 +135,6 @@ relationship, we are happy to support Forwardians in achieving their goals.
 :block{content="contents/reach-out.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/our-collective.md"}
-:block{content="contents/contact-us.md" color=gray}
 
 [Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/
