@@ -29,21 +29,19 @@ concerns.
 
 ```mermaid
 flowchart TD
-    Q[When you need\nsenior\ndevelopers]
-    CSD[Custom Software\nDevelopment]
-    RE[Software\nRe-engineering]
+    Q(When you need\nsenior\ndevelopers&nbsp;)
+    CSD(Custom Software\nDevelopment)
+    RE(Software\nRe-engineering)
 
     Q -->|to develop\na unique software| CSD
     Q -->|to improve\nan existing solution| RE
 ```
 
-:::box-layout
+::
 
-#csd
+::block
 
-::::box
-
-### Custom Software Development
+## Custom Software Development
 
 We advise our clients to prioritize core product features and leverage pre-built
 software solutions for non-core needs. While this approach suits startups and
@@ -60,13 +58,7 @@ technical aspects, including maintenance and upgrades, professionally managed
 out of the box to ensure a seamless experience for you.
 how we can assist you.
 
-::::
-
-#re
-
-::::box
-
-### Software Re-engineering
+## Software Re-engineering
 
 If you have custom-developed software serving as a secondary system, it's
 probable that this software may eventually become outdated and miss out on
@@ -79,13 +71,9 @@ for such systems. Through this approach, we aim to create a win-win scenario. It
 enables your workforce to focus on core business concerns while granting us an
 opportunity to address engineering challenges.
 
-::::
-
-:::
-
 ::
 
-::block
+::block{color=black}
 
 ## What's Next
 
@@ -93,7 +81,7 @@ opportunity to address engineering challenges.
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
-:block{content="contents/built-value.md"}
-:block{content="contents/balancing-quality.md" color=black}
-:block{content="contents/our-collective.md"}
+:block{content="contents/reach-out.md"}
+:block{content="contents/built-value.md" color=black}
+:block{content="contents/balancing-quality.md"}
+:block{content="contents/our-collective.md" color=black}
