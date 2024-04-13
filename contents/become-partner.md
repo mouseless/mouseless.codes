@@ -4,37 +4,28 @@
 
 ### Meet Us
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
-
-#we-fit
-
-### Check if we fit
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
+Reach out and tell us about your need and let us tell about our collective and
+how we work
 
 #proposal
 
+
 ### Proposal
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
+We provide the details of how we approach your need
+#we-fit
+
+
+
+### Check if we fit
+
+Assess our proposal and check if we are the best fit for your need
 
 #sign
 
 ### Sign Contract
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
+If positive align on terms and sign the contract
 
 #start
 
