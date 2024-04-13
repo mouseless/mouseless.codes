@@ -41,35 +41,66 @@ flowchart TD
 
 ::block
 
+:::banner
+
 ## Custom Software Development
 
-We advise our clients to prioritize core product features and leverage pre-built
-software solutions for non-core needs. While this approach suits startups and
-early-stage products, there comes a point where custom development becomes
-essential, even for complementary functions like notification services and
-integration systems.
+We provide an agile, self-managing software development team to align with your
+business demands.
 
-That's where we come in. We offer our services to ensure you can maintain your
-focus on core business concerns without compromising your custom requirements.
+:::
 
-We function as a self-managing software engineering team, handling the entire
-development process from design and planning to implementation, with all
-technical aspects, including maintenance and upgrades, professionally managed
-out of the box to ensure a seamless experience for you.
-how we can assist you.
+:::box-layout{:itemWidths='["85%", "15%"]'}
+
+#text
+
+If you struggle to keep your team's capacity aligned with your business demands,
+we offer an established self-managing software development team. As a team that
+embraces agile software development practices, we eagerly tackle any engineering
+challenge.
+
+At Mouseless, we've designed our collective to be centered around the software
+engineering profession. This environment naturally encourages us to research,
+experiment, and share our learnings with our customers.
+
+#image
+
+![Custom Software Development](images/services/csd.png)
+
+:::
+
+::
+
+::block
+
+:::banner
 
 ## Software Re-engineering
 
-If you have custom-developed software serving as a secondary system, it's
-probable that this software may eventually become outdated and miss out on
-essential technology upgrades. This occurs because organizations naturally
-prioritize their core business challenges over technical needs of auxiliary
-systems. This creates a persistent problem that requires professional attention.
+We offer our expertise to update and maintain your legacy in-house software.
+
+:::
+
+:::box-layout{:itemWidths='["85%", "15%"]'}
+
+#text
+
+If you have a custom-developed software, it's probable that this software has
+eventually become outdated and miss out essential technology upgrades. This
+occurs because organizations naturally prioritize their business challenges over
+technical needs which creates a persistent problem that requires professional
+attention.
 
 We're more than willing to offer our expertise to take the full responsibility
 for such systems. Through this approach, we aim to create a win-win scenario. It
-enables your workforce to focus on core business concerns while granting us an
+enables your workforce to focus on business concerns while granting us an
 opportunity to address engineering challenges.
+
+#image
+
+![Software Re-engineering](images/services/sr.png)
+
+:::
 
 ::
 

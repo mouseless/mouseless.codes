@@ -29,9 +29,9 @@ their business objectives.
 
 #rs
 
-:::box{title="Re-engineering Services" image-align="left"}
+:::box{title="Software Re-engineering" image-align="left"}
 ---
-image: /images/services/rs.png
+image: /images/services/sr.png
 ---
 
 We specialize in revamping outdated custom-developed software, taking full
