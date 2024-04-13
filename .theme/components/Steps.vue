@@ -1,10 +1,5 @@
 <template>
   <div class="steps">
-    <div class="steps__scroll">
-      <div class="steps__content">
-        <slot :name="steps[currentIndex]" />
-      </div>
-    </div>
     <div class="flow steps__flow">
       <div v-for="index in stepCount" :key="index" class="flow__step">
         <div
@@ -30,10 +25,15 @@
         </div>
         <img
           v-if="index !== stepCount"
+          src="/components/steps/arrow.png"
           class="flow__arrow"
-          :class="`arrow--color_${color}`"
-          :src="`/components/steps/step-arrow-${color}.svg`"
+          :class="`flow__arrow--color_${color}`"
         >
+      </div>
+    </div>
+    <div class="steps__scroll">
+      <div class="steps__content">
+        <slot :name="steps[currentIndex]" />
       </div>
     </div>
   </div>
@@ -64,13 +64,9 @@ function changeContent(index) {
 <style lang="scss">
 .steps {
   border-radius: var(--border-radius);
-  padding: var(--border-radius);
-
-  &__flow {
-    margin-top: 2em;
-  }
 
   &__scroll {
+    margin-top: 2em;
     height: v-bind(height);
     overflow: auto;
   }
@@ -79,7 +75,7 @@ function changeContent(index) {
 .flow {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 
   &__step {
     display: flex;
@@ -88,7 +84,15 @@ function changeContent(index) {
 
   &__arrow {
     width: 80px;
-    height: 50px;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &--color {
+      &_light {
+        filter: invert(1);
+      }
+    }
   }
 }
 
@@ -101,37 +105,40 @@ function changeContent(index) {
   padding: 1.5em;
   cursor: pointer;
   width: 100px;
-  margin-top: 2em;
+  gap: 0.5em;
 
   &--color {
     &_dark {
       color: var(--color-white);
       background-color: var(--color-fg);
+
+      &:hover {
+        background-color: var(--color-black-lightest);
+      }
     }
 
     &_light {
       color: var(--color-fg);
       background-color: var(--color-bg-soft);
-    }
-  }
 
-  &:hover, &--active {
-    margin-top: 1em;
-    margin-bottom: 1em;
+      &:hover {
+        background-color: var(--color-bg-mute);
+      }
+    }
   }
 
   &__number {
     border-radius: var(--border-radius);
     width: 7ch;
     height: 3ch;
-    font-size: medium;
     margin-top: -2em;
+    font-size: medium;
     color: var(--color-bg);
     text-align: center;
 
     &--color {
       &_dark {
-        background-color: var(--color-black-lightest);
+        background-color: var(--color-fg-mute);
       }
 
       &_light {
@@ -147,6 +154,7 @@ function changeContent(index) {
   &__name {
     display: flex;
     align-items: center;
+    font-family: var(--font-heading);
     font-size: large;
     font-weight: bold;
     height: 100%;

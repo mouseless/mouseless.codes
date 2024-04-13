@@ -69,7 +69,12 @@ experiment, and share our learnings with our customers.
 
 :::
 
+:br
+:include{content="contents/become-partner.md"}
+
 ::
+
+:block{content="contents/reach-out.md" color=black}
 
 ::block
 
@@ -102,17 +107,12 @@ opportunity to address engineering challenges.
 
 :::
 
-::
-
-::block{color=black}
-
-## What's Next
-
+:br
 :include{content="contents/become-partner.md"}
 
 ::
 
-:block{content="contents/reach-out.md"}
-:block{content="contents/built-value.md" color=black}
+:block{content="contents/reach-out.md" color=black}
 :block{content="contents/balancing-quality.md"}
+:block{content="contents/built-value.md"}
 :block{content="contents/our-collective.md" color=black}

@@ -1,48 +1,30 @@
-:::steps{:titles='["Meet Us", "Check if we fit", "Proposal", "Sign Contract", "Start Delivering", "Monthly Report"]' height="30ch"}
+:::steps{:titles='["Meet", "Proposal", "Decide", "Deliver"]' height="20ch"}
 
-#meet-us
+#meet
 
-### Meet Us
+### Meet
 
 Reach out and tell us about your need and let us tell about our collective and
-how we work
+how we work.
 
 #proposal
 
-
 ### Proposal
 
-We provide the details of how we approach your need
-#we-fit
+We provide the details of how we approach to your need.
 
+#decide
 
+### Decide
 
-### Check if we fit
+Assess our proposal and check if we are the best fit for your need. If positive
+align on terms and sign the contract.
 
-Assess our proposal and check if we are the best fit for your need
+#deliver
 
-#sign
+### Deliver
 
-### Sign Contract
-
-If positive align on terms and sign the contract
-
-#start
-
-### Start Delivering
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
-
-#report
-
-### Monthly Report
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
+Kick-off the project and start making our 3-day software deliveries with our
+agile process while getting a progress report each month.
 
 :::
