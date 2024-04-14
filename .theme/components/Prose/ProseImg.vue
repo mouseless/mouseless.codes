@@ -40,7 +40,6 @@ p {
     border-radius: var(--border-radius);
     padding: 30px 5px 18px 5px;
     width: 100%;
-    text-align: center;
   }
 
   .diagram {

@@ -17,9 +17,8 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 ### We Offer;
 # Staff Augmentation
 
-We take __full responsibility__ for software systems that you'd rather
-outsource. This allows you to maintain your focus on your core business
-concerns.
+We are willing to take the __full responsibility__ of the in-house software that
+you'd rather outsource.
 
 :::
 
@@ -28,13 +27,13 @@ concerns.
 ::block{color=black}
 
 ```mermaid
-flowchart TD
+flowchart LR
     Q(When you need\nsenior\ndevelopers&nbsp;)
     CSD(Custom Software\nDevelopment)
     RE(Software\nRe-engineering)
 
-    Q -->|to develop\na unique software| CSD
-    Q -->|to improve\nan existing solution| RE
+    Q -->|to develop a unique software| CSD
+    Q -->|to improve an existing solution| RE
 ```
 
 ::

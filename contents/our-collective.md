@@ -1,9 +1,11 @@
 ::banner
 
-## A software development collective,
-## connected through the craft
+### A software development collective,
+### connected through the craft
 
 Our collective is a team of 3-7 software engineers guided by;
+
+::
 
 :::bullet-list
 
@@ -16,5 +18,3 @@ Our collective is a team of 3-7 software engineers guided by;
 :::
 
 [See more](about.md)
-
-::

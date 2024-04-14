@@ -1,6 +1,10 @@
-## We are ready to tackle all the tedious work!
+::banner
+
+### We are ready to tackle all the tedious work!
 
 We don't just face complex software challenges; we welcome them with enthusiasm.
+
+::
 
 Our strategy transforms the seemingly tedious into gateways for innovation and
 advancement. Specializing in custom software development, we craft bespoke

@@ -70,6 +70,10 @@ function changeContent(index) {
     height: v-bind(height);
     overflow: auto;
   }
+
+  &__content {
+    max-width: 80ch;
+  }
 }
 
 .flow {
