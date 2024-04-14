@@ -70,13 +70,7 @@ experiment, and share our learnings with our customers.
 :::
 
 :br
-:include{content="contents/become-partner.md"}
-
-::
-
-:block{content="contents/reach-out.md" color=black}
-
-::block
+:br
 
 :::banner
 
@@ -86,7 +80,11 @@ We offer our expertise to update and maintain your legacy in-house software.
 
 :::
 
-:::box-layout{:itemWidths='["85%", "15%"]'}
+:::box-layout{:itemWidths='["15%", "85%"]'}
+
+#image
+
+![Software Re-engineering](images/services/sr.png)
 
 #text
 
@@ -101,18 +99,12 @@ for such systems. Through this approach, we aim to create a win-win scenario. It
 enables your workforce to focus on business concerns while granting us an
 opportunity to address engineering challenges.
 
-#image
-
-![Software Re-engineering](images/services/sr.png)
-
 :::
-
-:br
-:include{content="contents/become-partner.md"}
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
+:block{content="contents/become-partner.md" color=black}
+:block{content="contents/reach-out.md"}
+:block{content="contents/built-value.md" color=black}
 :block{content="contents/balancing-quality.md"}
-:block{content="contents/built-value.md"}
 :block{content="contents/our-collective.md" color=black}

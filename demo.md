@@ -217,6 +217,38 @@ flowchart LR
 
 :pr-list{:repos='["mouseless.codes", "do", "learn-nuxt", "learn-css", "prebuild"]'}
 
+## Prose
+
+# Head1
+
+## Head2
+
+### Head3
+
+#### Head4
+
+##### Head5
+
+###### Head6
+
+Normal Text
+
+**Bold Text**
+
+__Bold Text__
+
+*Italic Text*
+
+_Italic Text_
+
+> Blockquotes
+
+[Link](#demo)
+
+[External Link](http://mouseless.codes)
+
+![](images/card-bg-wall.jpg)
+
 ## Slider
 
 :::slider{height="15ch"}
@@ -286,38 +318,6 @@ tenetur error, harum nesciunt ipsum debitis quas aliquid.
 Step 3 body
 
 :::
-
-## Prose
-
-Normal Text
-
-**Bold Text**
-
-__Bold Text__
-
-*Italic Text*
-
-_Italic Text_
-
-> Blockquotes
-
-[Link](#demo)
-
-[External Link](http://mouseless.codes)
-
-![](images/card-bg-wall.jpg)
-
-# Head1
-
-## Head2
-
-### Head3
-
-#### Head4
-
-##### Head5
-
-###### Head6
 
 ::
 

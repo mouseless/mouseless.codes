@@ -1,3 +1,14 @@
+::banner
+
+### Become a Partner
+
+We prefer to build a long-term partnership with our customers to get the most
+out of the collaboration.
+
+::
+
+:br
+
 :::steps{:titles='["Meet", "Proposal", "Decide", "Deliver"]' height="20ch"}
 
 #meet

@@ -66,7 +66,7 @@ function changeContent(index) {
   border-radius: var(--border-radius);
 
   &__scroll {
-    margin-top: 2em;
+    margin-top: 3em;
     height: v-bind(height);
     overflow: auto;
   }
@@ -83,8 +83,8 @@ function changeContent(index) {
   }
 
   &__arrow {
-    width: 80px;
-    height: 80px;
+    width: 3em;
+    height: 3em;
     margin-top: auto;
     margin-bottom: auto;
 
@@ -102,7 +102,7 @@ function changeContent(index) {
   justify-content: center;
   align-items: center;
   border-radius: var(--border-radius);
-  padding: 1.5em;
+  padding: 1em;
   cursor: pointer;
   width: 100px;
   gap: 0.5em;
@@ -130,23 +130,13 @@ function changeContent(index) {
   &__number {
     border-radius: var(--border-radius);
     width: 7ch;
-    height: 3ch;
-    margin-top: -2em;
-    font-size: medium;
     color: var(--color-bg);
     text-align: center;
 
-    &--color {
-      &_dark {
-        background-color: var(--color-fg-mute);
-      }
-
-      &_light {
-        background-color: var(--color-gray-darkest);
-      }
-    }
+    &--color_light { color: var(--color-fg); }
 
     &--active {
+      color: var(--color-bg);
       background-color: var(--color-logo-mark);
     }
   }
