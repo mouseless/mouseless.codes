@@ -17,8 +17,8 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 ### We Offer;
 # Staff Augmentation
 
-We are willing to take the __full responsibility__ of the in-house software that
-you'd rather outsource.
+We build long-term partnerships to take the __full responsibility__ of the
+in-house software that you'd rather outsource.
 
 :::
 
@@ -28,7 +28,7 @@ you'd rather outsource.
 
 ```mermaid
 flowchart LR
-    Q(When you need\nsenior\ndevelopers&nbsp;)
+    Q(When you need)
     CSD(Custom Software\nDevelopment)
     RE(Software\nRe-engineering)
 
@@ -87,16 +87,14 @@ We offer our expertise to update and maintain your legacy in-house software.
 
 #text
 
-If you have a custom-developed software, it's probable that this software has
-eventually become outdated and miss out essential technology upgrades. This
-occurs because organizations naturally prioritize their business challenges over
-technical needs which creates a persistent problem that requires professional
-attention.
+If you develop an in-house software, it's likely to become outdated and miss out
+essential technology upgrades. Organizations naturally prioritize their business
+challenges over technical needs which creates a persistent problem that requires
+professional attention.
 
 We're more than willing to offer our expertise to take the full responsibility
-for such systems. Through this approach, we aim to create a win-win scenario. It
-enables your workforce to focus on business concerns while granting us an
-opportunity to address engineering challenges.
+for such systems. It enables your workforce to focus on business concerns while
+granting us an opportunity to address engineering challenges.
 
 :::
 

@@ -43,7 +43,7 @@ p {
   }
 
   .diagram {
-    min-width: 50%;
+    min-width: 70%;
   }
 }
 </style>
