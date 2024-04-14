@@ -321,4 +321,4 @@ Step 3 body
 
 ::
 
-:block{debug="true" content="contents/demo.md"}
+:block{:debug=true content="contents/demo.md"}
