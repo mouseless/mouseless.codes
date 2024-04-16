@@ -16,7 +16,7 @@
             </button>
           </li>
         </ul>
-        <Switcher :action="switcher" :status="prState" />
+        <Switcher :action="switcher" :status="prState" class="repo-list__switcher" />
       </div>
     </div>
     <div class="pr-list__prs">
@@ -28,12 +28,14 @@
             :pr="slides[pageNumber]"
             :height="height"
           />
-          <div v-else>
-            <strong>To see more pull requests </strong>
-            <NuxtLink
-              :text="`${repos[repoIndex]}/pulls`"
-              :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
-            />
+          <div v-else class="pr-list__see-more pr">
+            <div class="pr__body">
+              <strong>To see more pull requests, please visit </strong>
+              <NuxtLink
+                :text="`github.com/${repos[repoIndex]}/pulls`"
+                :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
+              />
+            </div>
           </div>
         </template>
       </SliderInner>
@@ -88,10 +90,9 @@ async function getPullRequests(state) {
 </script>
 <style lang="scss">
 .pr-list {
-  display: grid;
-  grid-template: "column column";
-  grid-template-columns: 25ch auto;
-  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 
   &__repos {
     margin-right: 1em;
@@ -117,18 +118,34 @@ async function getPullRequests(state) {
       transform: rotate(360deg);
     }
   }
+
+  &__see-more {
+    background-color: var(--color-black-lightest);
+    border-radius: var(--border-radius);
+    padding: var(--border-radius);
+    color: var(--color-bg);
+
+    /* couldn't find a quick way, manually calculated according to pr's heading part's height */
+    height: calc(v-bind(height) + 152px);
+  }
 }
 
 .repo-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   padding: 0;
 
   &__items {
+    margin: 0;
     padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
   }
 
   &__item {
-    margin-bottom: 1em;
-
     &::marker {
       content: none;
     }
@@ -166,6 +183,11 @@ async function getPullRequests(state) {
     &--active, &--active:hover {
       opacity: 1;
     }
+  }
+
+  &__switcher {
+    margin-left: auto;
+    margin-right: 0
   }
 }
 </style>

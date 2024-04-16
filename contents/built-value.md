@@ -1,6 +1,6 @@
 ## Explore our long-term partnerships
 
-::slider{height="45ch"}
+::slider{height="50ch"}
 
 #inventiv
 

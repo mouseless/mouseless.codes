@@ -42,7 +42,8 @@ function getState(object) {
 </script>
 <style lang="scss" scoped>
 .pr {
-  background-color: var(--color-black-lightest); border-radius: var(--border-radius);
+  background-color: var(--color-black-lightest);
+  border-radius: var(--border-radius);
   color: var(--color-bg);
   padding: 2em;
   overflow: hidden;
@@ -110,8 +111,12 @@ function getState(object) {
     h5 { font-size: 1.25em; }
     h6 { font-size: 1.125em; }
 
-    h1, h2, h3, h4, h5, h6 {
+    a, h1, h2, h3, h4, h5, h6 {
       color: var(--color-bg) !important;
+    }
+
+    a:hover {
+      color: var(--color-green) !important;
     }
   }
 }

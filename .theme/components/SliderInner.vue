@@ -87,6 +87,8 @@ function changeSlide(page) {
   grid-template-areas:
     "previous content next"
     ". boxes .";
+  margin-left: -50px;
+  margin-right: -50px;
 
   &__previous {
     grid-area: previous;
@@ -96,7 +98,6 @@ function changeSlide(page) {
     grid-area: content;
     color: var(--color-fg);
     min-height: v-bind(height);
-    padding-inline: 1em;
 
     h2 {
       margin-top: 0;
@@ -194,7 +195,7 @@ function changeSlide(page) {
   &__image {
     height: 25px;
     object-fit: cover;
-    padding-inline: 2em 0;
+    padding-inline: 3em 0;
 
     &--reverse {
       transform: scaleX(-1);
