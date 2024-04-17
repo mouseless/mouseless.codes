@@ -11,18 +11,14 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::box-layout
+:::banner
 
-::::box
+### A software development collective,
+# connected through the craft
 
-## **We** love to develop software, together
-
-We are a software development collective, connected through our craft. Our
-collective is a team of 3-7 software engineers guided by our people-centric
+Our collective is a team of 3-7 software engineers guided by our people-centric
 philosophy. We prioritize excellence and efficiency, focusing on delivering
 quality work collaboratively.
-
-::::
 
 :::
 
@@ -36,103 +32,68 @@ quality work collaboratively.
 
 :::
 
-:::box-layout{display=stack itemWidth="48%"}
+:::box-layout{display=stack itemWidth="30%"}
 
-#excellence
+#excellent
 
-::::box{imageAlign="left"}
----
-image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
----
+:::card{image="images/our-collective/excellent.png"}
 
-:::::banner
-
-### **We** strive for excellence
-
-:::::
+### Excellent
 
 We view perfection as doing the best we can each day, understanding that it's a
 dynamic goal, not an unchanging ideal. With this perspective, we pursue
 excellence in our work every day.
 
-::::
+:::
 
 #unconventional
 
-::::box{align="left" imageAlign="left"}
----
-image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
----
+:::card{image="images/our-collective/unconventional.png"}
 
-:::::banner{align=left}
-
-### **We** welcome the unconventional
-
-:::::
+### Unconventional
 
 It is our path to evolution. It involves trying and experimenting, embracing new
 approaches even when they make us feel strange and uneasy. We are perfectly fine
 with stepping out of the comfort zone, inviting the unconventional.
 
-::::
+:::
 
-#craft
+#passionate
 
-::::box{align="left" imageAlign="left"}
----
-image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
----
+:::card{image="images/our-collective/passionate.png"}
 
-:::::banner
-
-### **We** love our craft
-
-:::::
+### Passionate
 
 As software engineers, we constantly debate over better and cleaner ways to
 write code, even after its delivery. It's not just about the end product; it's
 the inherently elegant and fascinating nature of the work itself that keeps us
 engaged.
 
-::::
+:::
 
 #efficient
 
-::::box{align="left" imageAlign="left"}
----
-image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
----
+:::card{image="images/our-collective/efficient.png"}
 
-:::::banner
-
-### **We** are efficient
-
-:::::
+### Efficient
 
 We prioritize quality over speed, understanding that rushing can result in
 costly errors. To achieve a balance between quality and productivity, we employ
 effective scope management and incremental delivery.
 
-::::
+:::
 
 #people-centric
 
-::::box{align="left" imageAlign="left"}
----
-image: //mouseless.github.io/brand/assets/logo/svg/logo-mark-primary.svg
----
+:::card{image="images/our-collective/people-centric.png"}
 
-:::::banner
-
-### **We** are people-centric
-
-:::::
+### People-centric
 
 We prioritize our people above all else, promoting open communication and
 efficiency. With this philosophy, our collective keeps its focus on its craft
 which eventually leads to excellence.
 
-::::
+:::
 
 ::
 

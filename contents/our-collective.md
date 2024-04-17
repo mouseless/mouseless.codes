@@ -3,17 +3,17 @@
 ### A software development collective,
 ### connected through the craft
 
-Our collective is a team of 3-7 software engineers guided by;
+We are a team of 3-7 software engineers guided by our culture.
 
 ::
 
 :::bullet-list
 
-- Striving for excellence
-- Welcoming the unconventional
-- Love for the craft
-- Efficiency
-- People-centricity
+- Excellent
+- Unconventional
+- Passionate
+- Efficient
+- People-centric
 
 :::
 
