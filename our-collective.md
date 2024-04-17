@@ -138,31 +138,24 @@ which eventually leads to excellence.
 
 ::block
 
+:::banner
+
 ## Our Structure
-
-:::box-layout{:itemWidths='["30ch", "100%"]'}
-
-#chart
-
-```mermaid
-flowchart TB
-    Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
-```
-
-#text
 
 At Mouseless, we function as a cohesive software development collective. Our
 structure is designed to promote collaboration and communication, aligning with
 our people-centric philosophy.
 
+:::
+
+:::box-layout{:itemWidths='["100%", "20ch"]'}
+
+#text
+
 Within our collective, one of our engineers serves as the main point of contact
 for a client. This _Single Point of Contact_ manages all client communications
 and operations seamlessly while we, as Mouseless, focus on delivering software
 increments continuously.
-
-:::
-
-:::box
 
 ### Why a collective?
 
@@ -176,17 +169,54 @@ products.
 
 Recognizing this, we've chosen to be a collective.
 
+#chart
+
+```mermaid
+flowchart TB
+    Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
+```
+
 :::
 
 ::
 
 ::block{color=black}
 
+:::box-layout{:itemWidths='["100%", "19ch"]'}
+
+#content
+
+::::banner
+
 ## Our People
 
-:::box-layout{:itemWidths='["30ch", "100%"]'}
+We are exclusive in expertise, inclusive in participation.
 
-#chart
+::::
+
+::::box-layout{:itemWidths='["34%", "66%"]'}
+
+#people
+
+We are independent engineers who are committed to work in accordance with [the
+mouseless way](./how-we-work.md) where everyone has a contribution rate that
+aligns with their level of experience in the field.
+
+:people
+
+#join
+
+If you are an experienced software engineer and you think you align with our
+principles and appreciate what you've seen on our [GitHub][github], let us know.
+
+If you are a recent graduate seeking opportunities, consider our _Fresh
+Engineer_ program. You join us as a new graduate. We'll guide you through our
+way, assign you with real customer tasks, and regraduate you after two years of
+dedicated work.
+
+::::
+
+#diagram
 
 ```mermaid
 flowchart TB
@@ -200,29 +230,7 @@ flowchart TB
     4 --Principal--> 5
 ```
 
-#text
-
-We are exclusive in expertise, inclusive in participation.
-
-Our people consists of independent engineers who are committed to work in
-accordance with our [process](./how-we-work.md). Each engineer's contribution
-aligns with their level of experience in the field.
-
-:people{align=center}
-
 :::
-
-::
-
-::block{color="gray"}
-
-If you are a recent graduate seeking opportunities, consider our _Fresh
-Engineer_ program. You join us as a new graduate. We'll guide you through our
-way, assign you with real customer tasks, and regraduate you after two years of
-dedicated work.
-
-Or, if you are an experienced software engineer and you think you align with our
-principles and appreciate what you've seen on our [GitHub][github], let us know.
 
 ::
 

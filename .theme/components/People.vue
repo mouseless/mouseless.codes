@@ -16,7 +16,11 @@
 defineProps({
   align: {
     type: String,
-    default: "center"
+    default: "left"
+  },
+  itemHeight: {
+    type: String,
+    default: "50px"
   }
 });
 
@@ -29,6 +33,8 @@ onBeforeMount(async() => members.value = await getPeople());
 </script>
 <style lang="scss" scoped>
 .people {
+  margin-top: 1em;
+  margin-bottom: 1em;
   width: 100%;
 
   &--align {
@@ -47,15 +53,17 @@ onBeforeMount(async() => members.value = await getPeople());
 
   &__members {
     display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
 .members {
   &__image {
-    width: 60px;
-    height: 60px;
-    margin: 0 5px;
-    border-radius: var(--border-radius);
+    width: v-bind(itemHeight);
+    height: v-bind(itemHeight);
+    border-radius: v-bind(itemHeight);
   }
 }
 </style>
