@@ -4,7 +4,7 @@
 
 #inventiv
 
-:::box-layout{:itemWidths='["52%","48%"]'}
+:::box-layout{:itemWidths='["55%","45%"]'}
 
 #text
 

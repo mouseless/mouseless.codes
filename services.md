@@ -17,8 +17,8 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 ### We Offer;
 # Staff Augmentation
 
-We build long-term partnerships to take the __full responsibility__ of the
-in-house software that you'd rather outsource.
+We build long-term partnerships to take __full responsibility__ of in-house
+software that you'd rather outsource.
 
 :::
 
@@ -92,8 +92,8 @@ essential technology upgrades. Organizations naturally prioritize their business
 challenges over technical needs which creates a persistent problem that requires
 professional attention.
 
-We're more than willing to offer our expertise to take the full responsibility
-for such systems. It enables your workforce to focus on business concerns while
+We're more than willing to offer our expertise to take full responsibility for
+such systems. It enables your workforce to focus on business concerns while
 granting us an opportunity to address engineering challenges.
 
 :::
@@ -101,7 +101,7 @@ granting us an opportunity to address engineering challenges.
 ::
 
 :block{content="contents/become-partner.md" color=black}
-:block{content="contents/reach-out.md"}
-:block{content="contents/built-value.md" color=black}
+:block{content="contents/lets-meet.md"}
+:block{content="contents/explore-long-term.md" color=black}
 :block{content="contents/balancing-quality.md"}
 :block{content="contents/our-collective.md" color=black}

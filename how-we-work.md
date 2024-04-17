@@ -1,9 +1,9 @@
 ---
-title: mouseless -- process
+title: mouseless -- how we work
 menu-title: how we work
-position: 2
+position: 3
 seo-title: >
-  > mouseless -- process_
+  > mouseless -- how we work_
 seo-description: >
   run on a flexible, pay-as-you-go model.
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
@@ -313,7 +313,7 @@ See what we've open sourced so far;
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
+:block{content="contents/lets-meet.md" color=black}
 
 ::block
 
@@ -367,6 +367,6 @@ flowchart TB
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
+:block{content="contents/lets-meet.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/our-collective.md"}

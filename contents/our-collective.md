@@ -17,4 +17,4 @@ Our collective is a team of 3-7 software engineers guided by;
 
 :::
 
-[See more](about.md)
+[See more](our-collective.md)

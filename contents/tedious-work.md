@@ -2,14 +2,11 @@
 
 ### We are ready to tackle all the tedious work!
 
-We don't just face complex software challenges; we welcome them with enthusiasm.
+Turning legacy systems into opportunities for progress and creativity is
+our specialty. With a focus on creating in-house software, our aim is to design
+unique solutions that perfectly match your business goals.
 
 ::
-
-Our strategy transforms the seemingly tedious into gateways for innovation and
-advancement. Specializing in custom software development, we craft bespoke
-solutions that align perfectly with your business objectives. Let us empower
-your digital infrastructure to not just meet the curve but redefine it.
 
 :br
 
@@ -22,10 +19,10 @@ your digital infrastructure to not just meet the curve but redefine it.
 image: /images/services/csd.png
 ---
 
-We provide tailored software solutions, seamlessly integrating custom
-development to prioritize core and auxiliary functionalities while managing the
-entire development process, allowing clients to maintain a relentless focus on
-their business objectives.
+If you struggle to keep your team's capacity aligned with your business demands,
+we offer an established self-managing software development team. As a team that
+embraces agile software development practices, we eagerly tackle any engineering
+challenge.
 
 [See more](services.md#custom-software-development)
 
@@ -38,10 +35,11 @@ their business objectives.
 image: /images/services/sr.png
 ---
 
-We specialize in revamping outdated custom-developed software, taking full
-responsibility for secondary systems to ensure essential technology upgrades,
-enabling businesses to concentrate on core challenges while we address
-engineering obstacles.
+Developing in-house software often leads to it becoming outdated and missing
+important technology upgrades. Organizations tend to focus more on business
+challenges than technical needs, creating a persistent problem that needs
+professional attention. We're here to help by taking full responsibility for
+these systems.
 
 [See more](services.md#software-re-engineering)
 

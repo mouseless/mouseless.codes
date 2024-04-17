@@ -1,9 +1,9 @@
 ---
-title: mouseless -- case-studies
+title: mouseless -- case studies
 menu-title: case studies
-position: 3
+position: 2
 seo-title: >
-  > mouseless -- case-studies_
+  > mouseless -- case studies_
 seo-description: >
   explore our real-world success stories and discover how we've made a
   difference for our clients.
@@ -132,7 +132,7 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 ::
 
-:block{content="contents/reach-out.md" color=black}
+:block{content="contents/lets-meet.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/our-collective.md"}
 

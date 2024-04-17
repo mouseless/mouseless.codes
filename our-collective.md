@@ -1,11 +1,11 @@
 ---
-title: mouseless -- about
+title: mouseless -- our collective
 menu-title: our collective
 position: 4
 seo-title: >
-  > mouseless -- about_
+  > mouseless -- our collective_
 seo-description: >
-  a software development collective, connected through our craft.
+  a software development collective, connected through the craft.
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
@@ -205,8 +205,8 @@ flowchart TB
 We are exclusive in expertise, inclusive in participation.
 
 Our people consists of independent engineers who are committed to work in
-accordance with our [process](./process.md). Each engineer's contribution aligns
-with their level of experience in the field.
+accordance with our [process](./how-we-work.md). Each engineer's contribution
+aligns with their level of experience in the field.
 
 :people{align=center}
 

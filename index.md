@@ -24,21 +24,8 @@ bring mutual benefits to every challenge.
 ::
 
 :block{content="contents/tedious-work.md"}
-:block{content="contents/built-value.md" color=black}
-:block{content="contents/reach-out.md"}
+:block{content="contents/explore-long-term.md" color=black}
+:block{content="contents/lets-meet.md"}
 :block{content="contents/balancing-quality.md" color=black}
-
-::block
-
-## See Mouseless in Action
-
-Explore our live work through pull requests of public repositories in
-[github/mouseless](https://github.com/mouseless).
-
-:br
-
-:pr-list{:repos='["do", "learn-nuxt", "learn-dotnet", "mouseless.codes"]'}
-
-::
-
+:block{content="contents/mouseless-in-action.md"}
 :block{content="contents/our-collective.md" color=black}
