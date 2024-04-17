@@ -26,6 +26,7 @@
           v-for="menu in menus"
           :key="menu['menu-title']"
           :to="menu._path == $route.path ? '' : menu._path"
+          class="footer__menu-item"
         >
           {{ menu['menu-title'] }}
         </NuxtLink>
@@ -43,6 +44,11 @@ const menus = store.pageMeta.filter(m => !!m.position);
 .footer {
   margin-top: 2em;
   opacity: 0.5;
+  font-size: smaller;
+
+  &__logo .logo {
+    height: 10px;
+  }
 
   &__content {
     justify-content: space-between;
@@ -56,6 +62,10 @@ const menus = store.pageMeta.filter(m => !!m.position);
     flex-direction: row;
     gap: 1em;
     line-height: 3em;
+  }
+
+  &__menu-item {
+    text-decoration: none;
   }
 }
 </style>

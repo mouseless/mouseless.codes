@@ -1,4 +1,4 @@
-## See Mouseless in Action
+## Mouseless in action
 
 Explore our live work through pull requests of public repositories in
 [github/mouseless](https://github.com/mouseless).
