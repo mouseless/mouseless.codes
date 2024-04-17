@@ -40,7 +40,7 @@ which eventually leads to excellence.
 
 #passionate
 
-:::card{image="images/our-collective/passionate.png"}
+::::card{image="images/our-collective/passionate.png"}
 
 ### Passionate
 
@@ -49,11 +49,11 @@ write code, even after its delivery. It's not just about the end product; it's
 the inherently elegant and fascinating nature of the work itself that keeps us
 engaged.
 
-:::
+::::
 
 #efficient
 
-:::card{image="images/our-collective/efficient.png"}
+::::card{image="images/our-collective/efficient.png"}
 
 ### Efficient
 
@@ -61,11 +61,11 @@ We prioritize quality over speed, understanding that rushing can result in
 costly errors. To achieve a balance between quality and productivity, we employ
 effective scope management and incremental delivery.
 
-:::
+::::
 
 #unconventional
 
-:::card{image="images/our-collective/unconventional.png"}
+::::card{image="images/our-collective/unconventional.png"}
 
 ### Unconventional
 
@@ -73,17 +73,19 @@ It is our path to evolution. It involves trying and experimenting, embracing new
 approaches even when they make us feel strange and uneasy. We are perfectly fine
 with stepping out of the comfort zone, inviting the unconventional.
 
-:::
+::::
 
 #excellent
 
-:::card{image="images/our-collective/excellent.png"}
+::::card{image="images/our-collective/excellent.png"}
 
 ### Excellent
 
 We view perfection as doing the best we can each day, understanding that it's a
 dynamic goal, not an unchanging ideal. With this perspective, we pursue
 excellence in our work every day.
+
+::::
 
 :::
 
