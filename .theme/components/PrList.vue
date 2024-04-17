@@ -90,6 +90,7 @@ async function getPullRequests(state) {
 </script>
 <style lang="scss">
 .pr-list {
+  margin-top: 3em;
   display: flex;
   flex-direction: column;
   gap: 1em;

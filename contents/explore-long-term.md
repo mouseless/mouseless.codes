@@ -1,4 +1,11 @@
-## Explore our long-term partnerships
+::banner
+
+### Explore our long-term partnerships
+
+Explore our real-world success stories and discover how we've made a difference
+for our clients.
+
+::
 
 ::slider{height="50ch"}
 

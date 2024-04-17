@@ -1,7 +1,7 @@
 ::banner
 
-## Balancing quality and productivity
-## with our unique approach
+### Balancing quality and productivity
+### with our unique approach
 
 We run on a flexible, pay-as-you-go model. We prioritize timely feature
 delivery, automated testing, code refactoring, and keeping technology up to date

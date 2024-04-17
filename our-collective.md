@@ -17,8 +17,8 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 # connected through the craft
 
 Our collective is a team of 3-7 software engineers guided by our people-centric
-philosophy. We prioritize excellence and efficiency, focusing on delivering
-quality work collaboratively.
+philosophy. We value excellence and efficiency, focusing on delivering quality
+work collaboratively.
 
 :::
 
@@ -28,35 +28,15 @@ quality work collaboratively.
 
 :::banner
 
-## Our Culture
+### People-centric
+
+We prioritize our people above all else, promoting open communication and
+efficiency. With this philosophy, our collective keeps its focus on its craft
+which eventually leads to excellence.
 
 :::
 
-:::box-layout{display=stack itemWidth="30%"}
-
-#excellent
-
-:::card{image="images/our-collective/excellent.png"}
-
-### Excellent
-
-We view perfection as doing the best we can each day, understanding that it's a
-dynamic goal, not an unchanging ideal. With this perspective, we pursue
-excellence in our work every day.
-
-:::
-
-#unconventional
-
-:::card{image="images/our-collective/unconventional.png"}
-
-### Unconventional
-
-It is our path to evolution. It involves trying and experimenting, embracing new
-approaches even when they make us feel strange and uneasy. We are perfectly fine
-with stepping out of the comfort zone, inviting the unconventional.
-
-:::
+:::box-layout
 
 #passionate
 
@@ -83,15 +63,27 @@ effective scope management and incremental delivery.
 
 :::
 
-#people-centric
+#unconventional
 
-:::card{image="images/our-collective/people-centric.png"}
+:::card{image="images/our-collective/unconventional.png"}
 
-### People-centric
+### Unconventional
 
-We prioritize our people above all else, promoting open communication and
-efficiency. With this philosophy, our collective keeps its focus on its craft
-which eventually leads to excellence.
+It is our path to evolution. It involves trying and experimenting, embracing new
+approaches even when they make us feel strange and uneasy. We are perfectly fine
+with stepping out of the comfort zone, inviting the unconventional.
+
+:::
+
+#excellent
+
+:::card{image="images/our-collective/excellent.png"}
+
+### Excellent
+
+We view perfection as doing the best we can each day, understanding that it's a
+dynamic goal, not an unchanging ideal. With this perspective, we pursue
+excellence in our work every day.
 
 :::
 
@@ -101,7 +93,7 @@ which eventually leads to excellence.
 
 :::banner
 
-## Our Structure
+### Our Structure
 
 At Mouseless, we function as a cohesive software development collective. Our
 structure is designed to promote collaboration and communication, aligning with
@@ -114,7 +106,7 @@ our people-centric philosophy.
 #text
 
 Within our collective, one of our engineers serves as the main point of contact
-for a client. This _Single Point of Contact_ manages all client communications
+for a client. This __Single Point of Contact__ manages all client communications
 and operations seamlessly while we, as Mouseless, focus on delivering software
 increments continuously.
 
@@ -149,7 +141,7 @@ flowchart TB
 
 ::::banner
 
-## Our People
+### Our People
 
 We are exclusive in expertise, inclusive in participation.
 
@@ -168,10 +160,11 @@ aligns with their level of experience in the field.
 #join
 
 If you are an experienced software engineer and you think you align with our
-principles and appreciate what you've seen on our [GitHub][github], let us know.
+principles and appreciate what you've seen in [github.com/mouseless][github],
+let us know.
 
-If you are a recent graduate seeking opportunities, consider our _Fresh
-Engineer_ program. You join us as a new graduate. We'll guide you through our
+If you are a recent graduate seeking opportunities, consider our __Fresh
+Engineer__ program. You join us as a new graduate. We'll guide you through our
 way, assign you with real customer tasks, and regraduate you after two years of
 dedicated work.
 
@@ -194,6 +187,11 @@ flowchart TB
 :::
 
 ::
+
+:block{content="contents/lets-meet.md"}
+:block{content="contents/balancing-quality.md" color=black}
+:block{content="contents/tedious-work.md"}
+:block{content="contents/explore-long-term.md" color=black}
 
 [github]: https://github.com/mouseless
 [mail]: mailto:connect@mouseless.codes
