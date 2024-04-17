@@ -8,7 +8,7 @@ We're more than happy to meet and discover ways to collaborate.
 
 :::
 
-:::box-layout
+:::columns
 
 #form
 

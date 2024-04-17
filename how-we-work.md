@@ -11,43 +11,12 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::box-layout
+:::banner
 
-::::box
+## Experiment, learn and progress
 
-## **We** experiment, learn and progress
-
-We run on a flexible, pay-as-you-go model. We prioritize timely feature
-delivery, automated testing, code refactoring, and keeping technology up to date
-without extra cost.
-
-::::
-
-:::
-
-::
-
-::block{color=black}
-
-:::box-layout
-
-#text
-
-### Low Cost of Change
-
-We employ __automated tests__ for robustness, engage in __constant refactoring__
-to maintain code quality. We keep our technology up to date __at no extra cost__
-to our clients.
-
-#bullet
-
-::::bullet-list
-
-- test automation
-- refactoring
-- tech-stack update
-
-::::
+We prioritize timely feature delivery, automated testing, code refactoring, and
+keeping technology up to date without extra cost.
 
 :::
 
@@ -57,78 +26,54 @@ to our clients.
 
 :::banner
 
-#### See in action
+### Low Cost of Change
+
+Our approach minimizes change costs through automated testing and continuous
+refactoring, ensuring adaptability without additional expenses.
+
+::::bullet-list
+
+- Test automation
+- Refactoring
+- Tech-stack update
+
+::::
 
 :::
 
-:::box-layout{display="stack"}
+:br
+
+### See in action
+
+:::columns
 
 #do-builds
 
-::::box
-
-##### Tests and Coverage
+#### Tests and Coverage
 
 Check out one of our open source project, DO, to see how we utilize test
 automation;
 
 :link-button{to="https://github.com/mouseless/do/actions/runs/8344718124" text="See in GitHub"}
 
-::::
-
 #net-upgrade
 
-::::box
-
-##### Research Upgrades
+#### Research Upgrades
 
 We provide our customers with technology upgrades out of the box. Check out how
 we manage tech upgrades.
 
 :link-button{to="https://github.com/mouseless/learn-dotnet/pull/17" text="See in GitHub"}
 
-::::
-
 #do-net-upgrade
 
-::::box
-
-##### Apply Upgrades
+#### Apply Upgrades
 
 Using our headless opinionated .NET framework we manage to easily upgrade
 customer projects.
 
 :link-button{to="https://do.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in DO"}
 
-::::
-
-:::
-
-::
-
-::block
-
-:::box-layout
-
-#text
-
-### Continuous Delivery
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
-
-#bullet
-
-::::bullet-list
-
-- 3 days of average lead-time
-- no estimation -> continuous planning
-- end to end CI/CD setup
-
-::::
-
 :::
 
 ::
@@ -137,62 +82,42 @@ sollicitudin magna.
 
 :::banner
 
-#### See in action
+### Continuous Delivery
+
+We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
+setup, prioritizing efficiency and reliability.
+
+::::bullet-list
+
+- 3 days of average lead-time
+- No estimation, continuous planning
+- End to end CI/CD setup
+
+::::
 
 :::
 
-:::box-layout{display="stack"}
+:br
+
+### See in action
+
+:::columns
 
 #freq-releases
 
-::::box
-
-##### Frequent Releases
+#### Frequent Releases
 
 Check out DO releases to see frequency of our delivery cycle;
 
 :link-button{to="https://github.com/mouseless/do/releases" text="See in GitHub"}
 
-::::
-
 #lead-time
 
-::::box
-
-##### Lead-Time
+#### Lead-Time
 
 See how we build software incrementally;
 
 :link-button{to="https://github.com/mouseless/do/pulls?q=label%3APublish+is%3Aclosed" text="See in GitHub"}
-
-::::
-
-:::
-
-::
-
-::block{color=black}
-
-:::box-layout
-
-#text
-
-### Progress Visibility
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui id
-sagittis suscipit. Curabitur dignissim nisi vitae enim ultrices, ac faucibus
-elit faucibus. Fusce ut tempor arcu. Aenean sit amet commodo orci, ac
-sollicitudin magna.
-
-#bullet
-
-::::bullet-list
-
-- __Draft PRs__ right from beginning
-- Well detailed __task lists__
-- Clear __commit messages__
-
-::::
 
 :::
 
@@ -202,35 +127,42 @@ sollicitudin magna.
 
 :::banner
 
-#### See in action
+### Progress Visibility
+
+Through draft PRs from project inception, detailed task management, and clear
+communication, we maintain transparency at every development stage.
+
+::::bullet-list
+
+- Draft PRs right from beginning
+- Well detailed task lists
+- Clear commit messages
+
+::::
 
 :::
 
-:::box-layout{display="stack"}
+:br
+
+### See in action
+
+:::columns
 
 #do-epic
 
-::::box
-
-##### PRs
+#### PRs
 
 Check out our live work right from GitHub;
 
 :link-button{to="https://github.com/mouseless/do/pulls" text="See in GitHub"}
 
-::::
-
 #learn-task
 
-::::box
-
-##### Tasks
+#### Tasks
 
 See how we care work descriptions and tasks;
 
 :link-button{to="https://github.com/mouseless/learn-css/pull/2" text="See in GitHub"}
-
-::::
 
 :::
 
@@ -238,19 +170,12 @@ See how we care work descriptions and tasks;
 
 ::block
 
-:::box-layout
-
-#text
+:::banner
 
 ### Cross Pollination
 
-Our development style produces high-quality software which requires considerable
-effort. To provide top-tier services that are also cost-effective, we follow a
-philosophy of cross-pollination by open sourcing everything we own. This
-approach ensures our clients avoid potential risks of depending on a service
-provider and allows them to benefit from our total experience.
-
-#bullet
+Our commitment to open source and diverse project engagement promotes knowledge
+exchange, enhancing innovation across the community.
 
 ::::bullet-list
 
@@ -261,53 +186,35 @@ provider and allows them to benefit from our total experience.
 
 :::
 
-::
+:br
 
-::block
+### See in action
 
-:::banner
-
-#### See in action
-
-:::
-
-:::box-layout{display="stack"}
+:::columns
 
 #do-docs
 
-::::box
-
-##### DO
+#### DO
 
 Check out DO, our opinionated framework for .NET;
 
 :link-button{to="https://do.mouseless.codes" text="See DO"}
 
-::::
-
 #learn-nuxt
 
-::::box
-
-##### Learn
+#### Learn
 
 See how we learned, documented and use Nuxt;
 
 :link-button{to="https://mouseless.github.io/learn-nuxt" text="Learn Nuxt"}
 
-::::
-
 #all-open-source
 
-::::box
-
-##### Open Source
+#### Open Source
 
 See what we've open sourced so far;
 
 :link-button{to="https://github.com/mouseless?type=public" text="See in GitHub"}
-
-::::
 
 :::
 
@@ -319,29 +226,13 @@ See what we've open sourced so far;
 
 :::banner
 
-## Engagement Model
-
-**We** are self-organized.
-
-:::
+### Delivering at pace
 
 We are a __self-managing__ team with a single point of contact assigned per
 client. We operate on a __time & materials__ basis without requiring a
 fixed-budget or a fixed-plan thanks to our fast response time.
 
-::
-
-::block{color=gray}
-
-## Become Partner
-
-:include{content="contents/become-partner.md"}
-
-::
-
-::block
-
-### Delivery Process
+:::
 
 ```mermaid
 flowchart TB
@@ -367,6 +258,8 @@ flowchart TB
 
 ::
 
-:block{content="contents/lets-meet.md" color=black}
-:block{content="contents/tedious-work.md"}
-:block{content="contents/our-collective.md"}
+:block{content="contents/become-partner.md" color=black}
+:block{content="contents/lets-meet.md"}
+:block{content="contents/tedious-work.md" color=black}
+:block{content="contents/explore-long-term.md"}
+:block{content="contents/our-collective.md" color=black}

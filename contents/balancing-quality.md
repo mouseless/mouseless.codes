@@ -11,7 +11,7 @@ without extra cost.
 
 :br
 
-::box-layout
+::columns
 
 #lcoc
 

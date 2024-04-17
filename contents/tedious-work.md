@@ -10,7 +10,7 @@ unique solutions that perfectly match your business goals.
 
 :br
 
-::box-layout{display=flex}
+::columns
 
 #csd
 

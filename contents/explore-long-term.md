@@ -7,11 +7,11 @@ for our clients.
 
 ::
 
-::slider{height="50ch"}
+::slider{height="46ch"}
 
 #inventiv
 
-:::box-layout{:itemWidths='["55%","45%"]'}
+:::columns{:itemWidths='["55%","45%"]'}
 
 #text
 
@@ -34,7 +34,7 @@ an open source service framework [Routine][].
 
 #forward
 
-:::box-layout{:itemWidths='["58%","42%"]'}
+:::columns{:itemWidths='["58%","42%"]'}
 
 #text
 

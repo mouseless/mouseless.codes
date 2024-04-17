@@ -39,24 +39,6 @@ image: images/services/csd.png
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 :::
 
-## Box Layout
-
-:::box-layout{display="stack"}
-
-#item-1
-
-::::box{title="Box 1"}
-Lorem ipsum dolor sit amet consectetur adipisicing elit
-::::
-
-#item-2
-
-::::box{title="Box 2"}
-Maxime mollitia, molestiae quas vel sint commodi repudiandae
-::::
-
-:::
-
 ## Bullet List
 
 :::bullet-list{align=left}
@@ -102,7 +84,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## Card
 
-:::box-layout{display="flex"}
+:::columns
 
 #item-1
 
@@ -126,7 +108,7 @@ autem.
 
 :::
 
-:::box-layout{display="stack" itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
+:::columns{itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
 
 #item-1
 
@@ -169,13 +151,31 @@ Completely clear and straightforward
 
 :::
 
+## Columns
+
+:::columns
+
+#item-1
+
+::::box{title="Box 1"}
+Lorem ipsum dolor sit amet consectetur adipisicing elit
+::::
+
+#item-2
+
+::::box{title="Box 2"}
+Maxime mollitia, molestiae quas vel sint commodi repudiandae
+::::
+
+:::
+
 ## Contact Form
 
 :contact-form
 
 ## Diagrams
 
-:::box-layout{display="stack" :itemWidths='["30%", "65%"]'}
+:::columns{:itemWidths='["30%", "65%"]'}
 
 #diagram-1
 

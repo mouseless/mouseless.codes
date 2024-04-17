@@ -49,7 +49,7 @@ business demands.
 
 :::
 
-:::box-layout{:itemWidths='["85%", "15%"]'}
+:::columns{:itemWidths='["85%", "15%"]'}
 
 #text
 
@@ -79,7 +79,7 @@ We offer our expertise to update and maintain your legacy in-house software.
 
 :::
 
-:::box-layout{:itemWidths='["15%", "85%"]'}
+:::columns{:itemWidths='["15%", "85%"]'}
 
 #image
 

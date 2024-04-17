@@ -36,7 +36,7 @@ which eventually leads to excellence.
 
 :::
 
-:::box-layout
+:::columns
 
 #passionate
 
@@ -101,7 +101,7 @@ our people-centric philosophy.
 
 :::
 
-:::box-layout{:itemWidths='["100%", "20ch"]'}
+:::columns{:itemWidths='["100%", "20ch"]'}
 
 #text
 
@@ -135,7 +135,7 @@ flowchart TB
 
 ::block{color=black}
 
-:::box-layout{:itemWidths='["100%", "19ch"]'}
+:::columns{:itemWidths='["100%", "19ch"]'}
 
 #content
 
@@ -147,7 +147,7 @@ We are exclusive in expertise, inclusive in participation.
 
 ::::
 
-::::box-layout{:itemWidths='["34%", "66%"]'}
+::::columns{:itemWidths='["34%", "66%"]'}
 
 #people
 

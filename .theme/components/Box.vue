@@ -46,7 +46,6 @@ $column-gap: 3em;
     "title"
     "detail";
   width: 100%;
-  align-items: top;
   column-gap: $column-gap;
 
   &__title {
