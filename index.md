@@ -3,70 +3,29 @@ title: mouseless -- a software development collective
 seo-title: >
   > mouseless -- a software development collective_
 seo-description: >
-  we love to develop software, together.
+  Crafting software; Where your vision meets our passion
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
-::block
-
-:::banner{:hr=false align=center}
-
-## **We** love to develop software, together.
-
-:::
-
-::
-
-::block{color=gray}
-
-## If you need
-
-custom software development and re-engineering services.
-
-:link-button{to="./services" type="default" text="see more"}
-
-::
-
-::block
-
-:::box-layout{display=flex}
-
-#item-1
-
-::::box
-
-## How?
-
-We experiment, learn, and progress, open-sourcing the artifacts we create.
-
-:link-button{to="./process" type="default" text="see more"}
-
-::::
-
-#item-2
-
-::::box
-
-## Who?
-
-We are a software development collective, connected through our craft.
-
-:link-button{to="./about" type="default" text="see more"}
-
-::::
-
-:::
-
-::
-
 ::block{color=black}
 
-:::banner{:hr=false align=center}
+:::banner
 
-## If you're interested
+### Crafting software;
+# Where your vision,
+# meets our passion
 
-:link-button{to="mailto:connect@mouseless.codes" type="cta" text="Reach Out"}
+Our love for __software development__ merge with your needs to create
+exceptional projects. We foster an approach where shared passion and expertise
+bring mutual benefits to every challenge.
 
 :::
 
 ::
+
+:block{content="contents/tedious-work.md"}
+:block{content="contents/explore-long-term.md" color=black}
+:block{content="contents/lets-meet.md"}
+:block{content="contents/balancing-quality.md" color=black}
+:block{content="contents/mouseless-in-action.md"}
+:block{content="contents/our-collective.md" color=black}

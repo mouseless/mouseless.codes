@@ -15,7 +15,7 @@
 defineProps({
   align: {
     type: String,
-    default: "center"
+    default: "left"
   }
 });
 const color = inject("block-child-color", "dark");
@@ -32,30 +32,34 @@ const color = inject("block-child-color", "dark");
 
   &--color {
     &_dark { color: var(--color-black); }
-    &_light { color: var(--color-white); }
+    &_light {
+      color: var(--color-white);
+
+      li::before {
+        filter: invert(1);
+      }
+    }
   }
 
   &__inner {
     &--align {
-      &_left { padding-inline-start: 4ch; }
+      &_left { padding-inline-start: 0; }
       &_right {
         padding-inline-start: 0;
-        padding-inline-end: 4ch;
+        padding-inline-end: 0;
       }
     }
   }
 
   li {
     text-align: start;
+    line-height: 2em;
+    list-style-position: inside;
 
     &::marker {
-      content: "";
-    }
-
-    &::before {
-      content: url("/components/bullet-list/explosion-star.png");
-      margin-right: 1em;
-      vertical-align: middle;
+      content: "_ ";
+      color: var(--color-logo-mark);
+      font-size: 1.5em;
     }
   }
 }

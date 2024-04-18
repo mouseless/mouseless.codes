@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <article class="article">
     <ContentQuery
       v-slot="{ data: footer }"
       find="one"
@@ -8,30 +8,30 @@
         _path: { $eq: '/footer' },
       }"
     >
-      <div class="footer__content">
-        <div class="footer__logo">
-          <NuxtLink to="/">
-            <img class="mouseless logo mono">
-          </NuxtLink>
-          <ContentRenderer>
-            <ContentRendererMarkdown :value="footer" />
-          </ContentRenderer>
-        </div>
-        <div class="footer__menu">
-          <ul>
-            <li v-for="menu in menus" :key="menu['menu-title']">
-              <NuxtLink :to="menu._path == $route.path ? '' : menu._path">
-                {{ menu['menu-title'] }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <br>
-        <span> Mouseless &copy; {{ footer.copyright }} </span>
-      </div>
+      <ContentRenderer>
+        <ContentRendererMarkdown :value="footer" />
+      </ContentRenderer>
     </ContentQuery>
+  </article>
+  <footer class="footer content">
+    <div class="footer__content">
+      <div class="footer__logo">
+        <NuxtLink to="/">
+          <img class="mouseless logo mono short">
+        </NuxtLink>
+        &copy; 2024, GC Brains.
+      </div>
+      <div class="footer__menu">
+        <NuxtLink
+          v-for="menu in menus"
+          :key="menu['menu-title']"
+          :to="menu._path == $route.path ? '' : menu._path"
+          class="footer__menu-item"
+        >
+          {{ menu['menu-title'] }}
+        </NuxtLink>
+      </div>
+    </div>
   </footer>
 </template>
 <script setup>
@@ -43,22 +43,29 @@ const menus = store.pageMeta.filter(m => !!m.position);
 <style lang="scss" scoped>
 .footer {
   margin-top: 2em;
+  opacity: 0.5;
+  font-size: smaller;
 
-  &__logo {
-    height: 1em;
-    opacity: 0.50;
+  &__logo .logo {
+    height: 10px;
   }
 
   &__content {
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 1em;
+    line-height: 3em;
   }
 
   &__menu {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 1em;
+    line-height: 3em;
+  }
+
+  &__menu-item {
+    text-decoration: none;
   }
 }
 </style>

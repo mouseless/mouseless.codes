@@ -13,20 +13,30 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ## Banner
 
-### Banner Option 1
+:::banner
 
-:::banner{:hr=true}
+### Our Collective
 
-#### Our Collective
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 :::
 
-### Banner Option 2
+## Box
 
-:::banner{:hr="false" align="right"}
+:::box{title="Box Header" image-align="left"}
+---
+image: images/services/rs.png
+---
 
-**We** Offer
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+:::
 
+:::box{title="Box Header" image-align="right"}
+---
+image: images/services/csd.png
+---
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
 :::
 
 ## Bullet List
@@ -62,54 +72,6 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :link-button{to="#buttons" type="cta" text="CTA Button"}
 
-## Box
-
-:::box{title="Box Header" image-align="left"}
----
-image: images/card-bg-wall.jpg
----
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-:::
-
-## Box Layout
-
-### Box Option 1
-
-:::box-layout{display="stack" align="left"}
-
-#item-1
-
-::::box{title="Box 1"}
-Lorem ipsum dolor sit amet consectetur adipisicing elit
-::::
-
-#item-2
-
-::::box{title="Box 2"}
-Maxime mollitia, molestiae quas vel sint commodi repudiandae
-::::
-
-:::
-
-### Box Option 2
-
-:::box-layout{display="flex" align="center"}
-
-#item-1
-
-::::box{title="Box 1"}
-Lorem ipsum dolor sit amet consectetur adipisicing elit
-::::
-
-#item-2
-
-::::box{title="Box 2"}
-Maxime mollitia, molestiae quas vel sint commodi repudiandae
-::::
-
-:::
-
 ## Call To Action
 
 :::call-to-action
@@ -122,7 +84,7 @@ Maxime mollitia, molestiae quas vel sint commodi repudiandae
 
 ## Card
 
-:::box-layout{display="flex" align="center"}
+:::columns
 
 #item-1
 
@@ -146,7 +108,7 @@ autem.
 
 :::
 
-:::box-layout{display="stack" align="left" itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
+:::columns{itemWidth="30ch" :itemWidths='["35ch", "45ch"]'}
 
 #item-1
 
@@ -189,9 +151,31 @@ Completely clear and straightforward
 
 :::
 
+## Columns
+
+:::columns
+
+#item-1
+
+::::box{title="Box 1"}
+Lorem ipsum dolor sit amet consectetur adipisicing elit
+::::
+
+#item-2
+
+::::box{title="Box 2"}
+Maxime mollitia, molestiae quas vel sint commodi repudiandae
+::::
+
+:::
+
+## Contact Form
+
+:contact-form
+
 ## Diagrams
 
-:::box-layout{display="stack" align="left" :itemWidths='["30%", "65%"]'}
+:::columns{:itemWidths='["30%", "65%"]'}
 
 #diagram-1
 
@@ -221,24 +205,7 @@ flowchart LR
 
 :::
 
-## Include
-
 :include{content="contents/demo.md"}
-:block{color="red" content="contents/demo.md"}
-
-## Inline Frame
-
-:::box-layout{display="stack" align="center" :itemWidths='["37%", "60%"]'}
-
-#item-1
-
-:inline-frame{source="https://docs.google.com/forms/d/e/1FAIpQLScTupsQqnyg6-SJgZLY_RG6dkzhl0I84FE_CC0DlxxFLJ8WpA/viewform?embedded=true" height="900px" width="100%"}
-
-#item-2
-
-:inline-frame{source="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JvSZEhFcpTFazLdx54wKj2WdrCH8vL58t7oqIla5YbPVgrrbGd2oB-gy7UfqNjhLt_8NZyIc8?gv=true" height="900px" width="100%"}
-
-:::
 
 ## People
 
@@ -249,6 +216,38 @@ flowchart LR
 ## PR List
 
 :pr-list{:repos='["mouseless.codes", "do", "learn-nuxt", "learn-css", "prebuild"]'}
+
+## Prose
+
+# Head1
+
+## Head2
+
+### Head3
+
+#### Head4
+
+##### Head5
+
+###### Head6
+
+Normal Text
+
+**Bold Text**
+
+__Bold Text__
+
+*Italic Text*
+
+_Italic Text_
+
+> Blockquotes
+
+[Link](#demo)
+
+[External Link](http://mouseless.codes)
+
+![](images/card-bg-wall.jpg)
 
 ## Slider
 
@@ -275,7 +274,7 @@ nihil, eveniet aliquid
 
 ## Steps
 
-:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]' height="40ch"}
+:::steps{:titles='["Step 1", "Step 2 Long Text", "Step 3"]' height="20ch"}
 
 #step-1
 
@@ -320,36 +319,6 @@ Step 3 body
 
 :::
 
-## Prose
-
-Normal Text
-
-**Bold Text**
-
-__Bold Text__
-
-*Italic Text*
-
-_Italic Text_
-
-> Blockquotes
-
-[Link](#demo)
-
-[External Link](http://mouseless.codes)
-
-![](images/card-bg-wall.jpg)
-
-# Head1
-
-## Head2
-
-### Head3
-
-#### Head4
-
-##### Head5
-
-###### Head6
-
 ::
+
+:block{:debug=true content="contents/demo.md"}

@@ -43,6 +43,7 @@ const root = computed(() => `/${route.path.split("/")[1]}`);
     margin-left: 1em;
     padding: 1em;
     text-decoration: none;
+    font-family: var(--font-default);
 
     &--active {
       background: var(--color-fg-mute);

@@ -44,9 +44,9 @@ tasks:
         theme: base
         deviceScaleFactor: 1
         headless: new
+        flowchart:
+          useMaxWidth: false
         themeVariables:
-          fontFamily: '"Roboto Mono", monospace'
-          fontSize: '16px'
           primaryColor: '#fa465b'
           primaryTextColor: '#f6f6f6'
           primaryBorderColor': '#fa465b'

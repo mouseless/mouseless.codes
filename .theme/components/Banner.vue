@@ -1,47 +1,27 @@
 <template>
   <div
     class="banner"
-    :class="`banner--align_${align}`"
   >
-    <hr
-      v-if="hr"
-      class="banner__line"
-      :class="`banner__line--color_${color}`"
+    <div
+      class="banner__text"
+      :class="`banner__text--color_${color}`"
     >
-    <div class="banner__text" :class="`banner__text--color_${color}`">
       <slot />
     </div>
-    <hr
-      v-if="hr"
-      class="banner__line"
-      :class="`banner__line--color_${color}`"
-    >
   </div>
 </template>
 <script setup>
-defineProps({
-  hr: {
-    type: Boolean,
-    default: true
-  },
-  align: {
-    type: String,
-    default: null
-  }
-});
-
 const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
-.banner {
-  align-items: center;
-  display: flex;
+.block:has(.banner) {
+  padding: 8em 0;
+}
 
-  &--align {
-    &_center { justify-content: center; }
-    &_left { justify-content: flex-start; }
-    &_right { justify-content: flex-end; }
-  }
+.banner {
+  align-items: left;
+  width: 100%;
+  font-size: 1.5em;
 
   &__line {
     border: none;
@@ -57,10 +37,6 @@ const color = inject("block-child-color", "dark");
   }
 
   &__text {
-    flex: 0 0 auto;
-    margin: 0 10px;
-    text-align: center;
-
     strong {
       color: var(--color-logo-mark);
     }

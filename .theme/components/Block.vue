@@ -6,10 +6,6 @@
       `color--${colors[currentColor]}`
     ]"
   >
-    <div class="content">
-      <Include v-if="content !== null" :content="content" />
-      <slot v-else />
-    </div>
     <div v-if="debug" class="block__colors">
       <button
         v-for="(_, item) in colors"
@@ -18,6 +14,10 @@
         :class="`color--${item}`"
         @click="backgroundChange(item)"
       />
+    </div>
+    <div class="content">
+      <Include v-if="content !== null" :content="content" />
+      <slot v-else />
     </div>
   </div>
 </template>
@@ -58,21 +58,23 @@ function backgroundChange(color) {
 </script>
 <style lang="scss">
 .block {
-  text-align: center;
-  padding: 2em 0;
+  text-align: left;
+  padding: 5em 0;
 
   p {
     margin-left: auto;
     margin-right: auto;
   }
 
-  h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+  h1, h2, h3, h4, h5, h6 { margin: 0; }
 
   &__colors {
-    position: fixed;
-    left: 20px;
-    top: 100px;
+    position: sticky;
+    left: 2em;
+    top: 2em;
     width: 20px;
+    height: 0;
+    margin-top: -3em;
   }
 
   &__color-btn {
@@ -87,7 +89,7 @@ function backgroundChange(color) {
 
 .color {
   &--default { background-color: transparent; }
-  &--black { background-color: hsl(from var(--color-black-lightest) h s calc(l + .0)); }
+  &--black { background-color: hsl(from var(--color-black-lighter) h s calc(l + .0)); }
   &--gray { background-color: hsl(from var(--color-gray-darkest) h s calc(l - .0)); }
   &--white { background-color: hsl(from var(--color-white) h s calc(l - .0)); }
   &--yellow { background-color: hsl(from var(--color-yellow) h s calc(l + .1)); }

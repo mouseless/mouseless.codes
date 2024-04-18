@@ -1,25 +1,24 @@
 <template>
-  <div>
-    <h2 class="title">
-      <NuxtLink
-        :to="pr?.html_url"
-        class="title__link"
-        :class="`title__link--color_${color}`"
-      >
-        {{ pr?.title }}
-      </NuxtLink>
+  <div class="pr">
+    <h3 class="pr__title title">
+      {{ pr?.title }}
       <div
-        class="pr-state"
-        :class="`pr-state--${getState(pr)}`"
+        class="title__state"
+        :class="`title__state--${getState(pr)}`"
       >
         <img
-          class="pr-state__icon"
+          class="title__state-icon"
           :src="`/components/pr/${getState(pr)}.svg`"
         >
         {{ getState(pr) }}
       </div>
-    </h2>
-    <MarkdownFormat :body="pr?.body" tag="article" />
+    </h3>
+    <div class="pr__body">
+      <MarkdownFormat :body="pr?.body" tag="article" />
+    </div>
+    <NuxtLink :to="pr?.html_url" class="pr__link">
+      See in GitHub
+    </NuxtLink>
   </div>
 </template>
 <script setup>
@@ -27,11 +26,12 @@ defineProps({
   pr: {
     type: Object,
     default: null
+  },
+  height: {
+    type: String,
+    default: null
   }
 });
-
-const color = inject("block-child-color", "dark");
-
 function getState(object) {
   if(object.state === "closed") {
     return object.merged_at !== null ? "merged" : "closed";
@@ -41,66 +41,84 @@ function getState(object) {
 }
 </script>
 <style lang="scss" scoped>
-.pr-state {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
+.pr {
+  background-color: var(--color-black-lightest);
   border-radius: var(--border-radius);
-  text-transform: capitalize;
-  padding: 0 1em;
-  font-size: 60%;
-  height: 2.5em;
-  color: var(--color-fg);
+  color: var(--color-bg);
+  padding: 2em;
+  overflow: hidden;
 
-  &--draft {
-    background-color: var(--color-gray-darker);
+  &__title {
+    margin-bottom: 0.5em;
+    color: var(--color-bg);
   }
 
-  &--open {
-    background-color: var(--color-green);
+  &__body {
+    height: v-bind(height);
+    overflow: hidden;
   }
 
-  &--closed {
-    background-color: var(--color-red);
-    color: var(--color-white);
-  }
+  &__link {
+    display: block;
+    color: var(--color-bg);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: -2em;
+    line-height: 3em;
 
-  &--merged {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-  }
-
-  &__icon {
-    width: 1em;
-    height: 1em;
+    &:hover {
+      color: var(--color-green);
+    }
   }
 }
 
 .title {
   display: inline-flex;
-  gap: 0.5em;
-  align-items: center;
+  align-items: flex-start;
+  gap: 0.25em;
+  flex-direction: column;
 
-  &__link {
-    text-decoration: none;
+  &__state {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: var(--border-radius);
+    text-transform: capitalize;
+    padding: 0 1em;
+    font-size: 40%;
+    height: 2em;
+    color: var(--color-fg);
 
-    &--color{
-      &_dark {
-        color: var(--color-fg);
+    &--draft { background-color: var(--color-gray-darker); }
+    &--open { background-color: var(--color-green); }
+    &--closed { background-color: var(--color-red); color: var(--color-white); }
+    &--merged { background-color: var(--color-blue); color: var(--color-white); }
+  }
 
-        &:hover {
-          color: var(--color-logo-mark);
-        }
-      }
+  &__state-icon {
+    width: 1em;
+    height: 1em;
+  }
+}
+</style>
+<style lang="scss">
+.pr {
+  &__body {
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.7em; }
+    h4 { font-size: 1.5em; }
+    h5 { font-size: 1.25em; }
+    h6 { font-size: 1.125em; }
 
-      &_light {
-        color: var(--color-bg-mute);
+    a, h1, h2, h3, h4, h5, h6 {
+      color: var(--color-bg) !important;
+    }
 
-        &:hover {
-          color: var(--color-green);
-        }
-      }
+    a:hover {
+      color: var(--color-green) !important;
     }
   }
 }
+
 </style>

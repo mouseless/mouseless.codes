@@ -34,7 +34,6 @@ defineProps({
   height: 25px;
   position: relative;
   width: 63px;
-  margin: 0 auto;
 
   &--status {
     &_open {

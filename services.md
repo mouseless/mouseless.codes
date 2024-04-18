@@ -5,111 +5,102 @@ position: 1
 seo-title: >
   > mouseless -- services_
 seo-description: >
-  a staff augmentation service provider, offering full responsibility for
-  software systems that you'd rather outsource.
+  We offer; staff augmentation
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
 ::block
 
-:::banner{:hr=false align=center}
+:::banner
 
-## **We** offer our expertise through the software increments we develop.
+### We offer;
+# Staff augmentation
 
-:::
-
-We position ourselves as a __staff augmentation__ service provider, offering
-full responsibility for software systems that you'd rather outsource. This
-allows you to maintain your focus on your core business concerns.
-
-::
-
-::block{color=green}
-
-## Custom Software Development
-
-:::banner{:hr=false align=center}
-
-**We** help you progress.
+We build long-term partnerships to take __full responsibility__ of in-house
+software that you'd rather outsource.
 
 :::
-
-We advise our clients to prioritize core product features and leverage pre-built
-software solutions for non-core needs. While this approach suits startups and
-early-stage products, there comes a point where custom development becomes
-essential, even for complementary functions like notification services and
-integration systems.
-
-That's where we come in. We offer our services to ensure you can maintain your
-focus on core business concerns without compromising your custom requirements.
-
-We function as a self-managing software engineering team, handling the entire
-development process from design and planning to implementation, with all
-technical aspects, including maintenance and upgrades, professionally managed
-out of the box to ensure a seamless experience for you.
-
-Explore our [case studies](./case-studies.md) to have a better understanding of
-how we can assist you.
-
-::
-
-::block
-
-## Re-engineering
-
-:::banner{:hr=false align=center}
-
-**We** help you maintain focus.
-
-:::
-
-If you have custom-developed software serving as a secondary system, it's
-probable that this software may eventually become outdated and miss out on
-essential technology upgrades. This occurs because organizations naturally
-prioritize their core business challenges over technical needs of auxiliary
-systems. This creates a persistent problem that requires professional attention.
-
-We're more than willing to offer our expertise to take the full responsibility
-for such systems. Through this approach, we aim to create a win-win scenario. It
-enables your workforce to focus on core business concerns while granting us an
-opportunity to address engineering challenges.
-
-Explore our [case studies](./case-studies.md) to have a better understanding of
-how we can assist you.
 
 ::
 
 ::block{color=black}
 
-## Long-term Partnership
+```mermaid
+flowchart LR
+    Q(When you need)
+    CSD(Custom Software\nDevelopment)
+    RE(Software\nRe-engineering)
 
-:::banner{:hr=false align=center}
-
-**We** value trust.
-
-:::
-
-Software development requires a keen focus. It's not something achievable
-through a short-term deal. At Mouseless, we consider trust-building a
-fundamental step to have a high-performing team. Let's connect, establish a
-long-term partnership, and explore the possibilities together.
-
-Reach out.
-
-We are [here][github] and [here][mail].
+    Q -->|to develop a unique software| CSD
+    Q -->|to improve an existing solution| RE
+```
 
 ::
 
-::block{color=red}
+::block
 
 :::banner
 
-Interested in learning more? Explore [our process](./process.md) and discover
-[more about us](./about.md).
+## Custom Software Development
+
+We provide an agile, self-managing software development team to align with your
+business demands.
+
+:::
+
+:::columns{:itemWidths='["85%", "15%"]'}
+
+#text
+
+If you struggle to keep your team's capacity aligned with your business demands,
+we offer an established self-managing software development team. As a team that
+embraces agile software development practices, we eagerly tackle any engineering
+challenge.
+
+At Mouseless, we've designed our collective to be centered around the software
+engineering profession. This environment naturally encourages us to research,
+experiment, and share our learnings with our customers.
+
+#image
+
+![Custom Software Development](images/services/csd.png)
+
+:::
+
+:br
+:br
+
+:::banner
+
+## Software Re-engineering
+
+We offer our expertise to update and maintain your legacy in-house software.
+
+:::
+
+:::columns{:itemWidths='["15%", "85%"]'}
+
+#image
+
+![Software Re-engineering](images/services/sr.png)
+
+#text
+
+If you develop an in-house software, it's likely to become outdated and miss out
+essential technology upgrades. Organizations naturally prioritize their business
+challenges over technical needs which creates a persistent problem that requires
+professional attention.
+
+We're more than willing to offer our expertise to take full responsibility for
+such systems. It enables your workforce to focus on business concerns while
+granting us an opportunity to address engineering challenges.
 
 :::
 
 ::
 
-[github]: https://github.com/mouseless
-[mail]: mailto:connect@mouseless.codes
+:block{content="contents/become-partner.md" color=black}
+:block{content="contents/lets-meet.md"}
+:block{content="contents/explore-long-term.md" color=black}
+:block{content="contents/balancing-quality.md"}
+:block{content="contents/our-collective.md" color=black}

@@ -1,7 +1,11 @@
 <template>
   <div class="slider">
-    <div v-if="pageNumber != 0" class="navigation slider__previous">
-      <button class="navigation__button" @click="left">
+    <div class="navigation slider__previous">
+      <button
+        class="navigation__button"
+        :class="{ 'navigation__button--disabled': pageNumber == 0}"
+        @click="left"
+      >
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
           class="navigation__image navigation__image--reverse"
@@ -17,8 +21,12 @@
     >
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div v-if="pageNumber != upToDateSlides.length - 1 && upToDateSlides.length != 0" class="navigation slider__next">
-      <button class="navigation__button" @click="right">
+    <div class="navigation slider__next">
+      <button
+        class="navigation__button"
+        :class="{ 'navigation__button--disabled': pageNumber == upToDateSlides.length - 1 || upToDateSlides.length == 0}"
+        @click="right"
+      >
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
           class="navigation__image"
@@ -79,6 +87,8 @@ function changeSlide(page) {
   grid-template-areas:
     "previous content next"
     ". boxes .";
+  margin-left: -50px;
+  margin-right: -50px;
 
   &__previous {
     grid-area: previous;
@@ -87,9 +97,7 @@ function changeSlide(page) {
   &__content {
     grid-area: content;
     color: var(--color-fg);
-    overflow: auto;
-    height: v-bind(height);
-    padding-inline: 1em;
+    min-height: v-bind(height);
 
     h2 {
       margin-top: 0;
@@ -99,34 +107,15 @@ function changeSlide(page) {
       &_dark {
         color: var(--color-fg);
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
           color: var(--color-fg-mute);
-        }
-
-        code {
-          background-color: var(--color-bg-mute);
         }
       }
 
       &_light {
         color: var(--color-bg-mute);
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          color: var(--color-bg);
-        }
-
-        code {
-          background-color: var(--color-fg-mute);
+        h1, h2, h3, h4, h5, h6 {
           color: var(--color-bg);
         }
       }
@@ -163,6 +152,7 @@ function changeSlide(page) {
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    gap: 3px;
   }
 
   &__dot {
@@ -175,8 +165,8 @@ function changeSlide(page) {
     width: 10px;
 
     &--color {
-      &_dark { background-color: var(--color-gray-darkest); }
-      &_light { background-color: var(--color-gray-darkest); }
+      &_dark { background-color: var(--color-gray); }
+      &_light { background-color: var(--color-black-lightest); }
     }
 
     &--active.slider__dot--color_dark {
@@ -194,13 +184,18 @@ function changeSlide(page) {
     background-color: transparent;
     border: 0;
     padding: 0;
+    cursor: pointer;
+
+    &--disabled {
+      opacity: 0.25;
+      cursor: default;
+    }
   }
 
   &__image {
-    cursor: pointer;
     height: 25px;
     object-fit: cover;
-    padding-inline: 2em 0;
+    padding-inline: 3em 0;
 
     &--reverse {
       transform: scaleX(-1);
