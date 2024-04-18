@@ -13,8 +13,8 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::banner
 
-### A software development collective,
-# connected through the craft
+### A software development collective;
+# Connected through the craft
 
 Our collective is a team of 3-7 software engineers guided by our people-centric
 philosophy. We value excellence and efficiency, focusing on delivering quality

@@ -6,13 +6,13 @@
     ]"
     class="box"
   >
-    <h4
+    <h5
       v-if="title !== null"
       class="box__title"
       :class="`box__title--color_${color}`"
     >
       {{ title }}
-    </h4>
+    </h5>
     <div class="box__detail">
       <slot />
     </div>

@@ -24,7 +24,7 @@ an open source service framework [Routine][].
 
 :br
 
-:link-button{to="/case-studies" text="See more"}
+:link-button{to="/case-studies#inventiv-multinet-up" text="See more"}
 
 #image
 
@@ -47,7 +47,7 @@ their customers integrate with CRM and more.
 
 :br
 
-:link-button{to="/case-studies" text="See more"}
+:link-button{to="/case-studies#forward" text="See more"}
 
 #image
 

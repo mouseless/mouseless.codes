@@ -12,26 +12,24 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ::block
 
-:::columns
+:::banner
 
-::::box
-
-## **We**'ve built value, together
+# Building value, together
 
 Explore our real-world success stories and discover how we've made a difference
-for our clients. These case studies provide insights into our custom software
-development and re-engineering projects, showcasing how we've helped businesses
-overcome challenges and achieve their goals.
-
-::::
+for our clients.
 
 :::
 
 ::
 
-::block
+::block{color=black}
 
-:::box{imageAlign="right" image="images/logos/inventiv.svg"}
+:::columns{:itemWidths='["100%", "100ch"]'}
+
+#text
+
+:include{content="contents/tech-stacks/inventiv.md"}
 
 ## Inventiv - Multinet | Up
 
@@ -45,8 +43,6 @@ an open source service framework [Routine][] for the customer.
 
 ::::
 
-:include{content="contents/tech-stacks/inventiv.md"}
-
 ::::details
 
 :::::summary
@@ -54,8 +50,6 @@ an open source service framework [Routine][] for the customer.
 :link-button{text="Read more..."}
 
 :::::
-
-### Customer
 
 [Inventiv][] is the technology subsidiary of [Multinet | Up][], specializing in
 payment technology. They have a strong in-house software development culture,
@@ -71,7 +65,7 @@ introducing new features, planning and managing releases, researching and
 implementing the latest .NET advancements into the framework, managing
 technology upgrades, and maintaining the framework's documentation.
 
-### History
+### Our History
 
 We initiated the design and development of _Multinet | Up_'s framework, with the
 first version released in 2014. We've open-sourced Routine, and turn their
@@ -83,9 +77,21 @@ grateful.
 
 ::::
 
+#image
+
+![Gazel Running](images/case-studies/gazel-running.png)
+
 :::
 
-:::box{imageAlign="left" image="images/logos/forward.png"}
+::
+
+::block
+
+:::columns{:itemWidths='["100%", "100ch"]'}
+
+#text
+
+:include{content="contents/tech-stacks/forward.md"}
 
 ## Forward
 
@@ -100,8 +106,6 @@ their customers integrate with CRM and more.
 
 ::::
 
-:include{content="contents/tech-stacks/forward.md"}
-
 ::::details
 
 :::::summary
@@ -109,8 +113,6 @@ their customers integrate with CRM and more.
 :link-button{text="Read more..."}
 
 :::::
-
-### Customer
 
 [Forward][] is a sales enablement tool that empowers B2B companies to enhance
 their buyer engagement through digital sales rooms, shared with a single link.
@@ -120,7 +122,7 @@ is where we came in. Currently, we are helping them establish an integration
 gateway, ensuring they can maintain their focus on enhencing the seller and
 buyer experience they provide.
 
-### History
+### Our History
 
 We have collaborated on several projects with the Forward team, with some dating
 back to 2015, even before our collective was born. With this strong
@@ -128,13 +130,19 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 ::::
 
+#image
+
+![Forward - HubSpot App](images/case-studies/forward-hubspot-app.png)
+
 :::
 
 ::
 
 :block{content="contents/lets-meet.md" color=black}
 :block{content="contents/tedious-work.md"}
-:block{content="contents/our-collective.md"}
+:block{content="contents/balancing-quality.md" color=black}
+:block{content="contents/mouseless-in-action.md"}
+:block{content="contents/our-collective.md" color=black}
 
 [Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/
