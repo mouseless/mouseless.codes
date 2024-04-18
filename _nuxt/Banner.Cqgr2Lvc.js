@@ -1,0 +1,1 @@
+import{k as s,o,c as r,a as n,r as t,n as c,m as l}from"./entry.Bs-lsIbI.js";const _={class:"banner"},p={__name:"Banner",setup(d){const e=s("block-child-color","dark");return(a,i)=>(o(),r("div",_,[n("div",{class:c(["banner__text",`banner__text--color_${l(e)}`])},[t(a.$slots,"default")],2)]))}};export{p as default};
