@@ -5,8 +5,7 @@ position: 2
 seo-title: >
   > mouseless -- case studies_
 seo-description: >
-  explore our real-world success stories and discover how we've made a
-  difference for our clients.
+  Building value, together
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 

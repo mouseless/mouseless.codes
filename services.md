@@ -5,8 +5,7 @@ position: 1
 seo-title: >
   > mouseless -- services_
 seo-description: >
-  a staff augmentation service provider, offering full responsibility for
-  software systems that you'd rather outsource.
+  We offer; staff augmentation
 seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
 ---
 
@@ -14,8 +13,8 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::banner
 
-### We Offer;
-# Staff Augmentation
+### We offer;
+# Staff augmentation
 
 We build long-term partnerships to take __full responsibility__ of in-house
 software that you'd rather outsource.
