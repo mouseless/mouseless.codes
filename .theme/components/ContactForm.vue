@@ -15,7 +15,6 @@
     height: 875px;
     width: 750px;
     margin-left: -37px;
-    scale: 1;
   }
 }
 </style>

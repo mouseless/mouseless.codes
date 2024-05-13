@@ -1,6 +1,6 @@
 <template>
   <div
-    class="columns"
+    class="columns s s--mv_md"
   >
     <div
       v-for="i in Array(count)
@@ -33,8 +33,7 @@ const count = computed(() => items.length);
 <style lang="scss" scoped>
 .columns {
   display: flex;
-  gap: 3em;
-  margin: 2em 0;
+  gap: var(--space-md);
   align-items: flex-start;
 
   &__item {

@@ -1,16 +1,9 @@
 <template>
   <div
-    :class="[
-      image !== null ? `box--image-align_${imageAlign}` : '',
-      `box--color_${color}`
-    ]"
     class="box"
+    :class="image !== null ? `box--image-align_${imageAlign}` : ''"
   >
-    <h5
-      v-if="title !== null"
-      class="box__title"
-      :class="`box__title--color_${color}`"
-    >
+    <h5 v-if="title !== null" class="box__title">
       {{ title }}
     </h5>
     <div class="box__detail">
@@ -34,8 +27,6 @@ defineProps({
     default: null
   }
 });
-
-const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 $column-gap: 3em;
@@ -50,12 +41,6 @@ $column-gap: 3em;
 
   &__title {
     grid-area: title;
-    margin: 0px;
-
-    &--color {
-      &_dark { color: var(--color-fg); }
-      &_light { color: var(--color-bg); }
-    }
   }
 
   &__detail {
@@ -80,17 +65,6 @@ $column-gap: 3em;
         "title image"
         "detail image";
       grid-template-columns: 75% calc(25% - $column-gap);
-    }
-  }
-
-  &--color {
-    &_dark {
-      border-color: var(--color-gray-darkest);
-      color: var(--color-fg);
-    }
-    &_light {
-      border-color: var(--color-gray-darkest);
-      color: var(--color-bg);
     }
   }
 }

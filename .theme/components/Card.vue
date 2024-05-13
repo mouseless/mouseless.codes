@@ -24,7 +24,7 @@ defineProps({
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2em;
+  gap: var(--space-md);
 
   &__image { width: 50%; }
 }

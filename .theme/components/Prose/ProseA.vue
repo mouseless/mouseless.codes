@@ -34,7 +34,7 @@ const color = inject("block-child-color", "dark");
       color: var(--color-fg);
 
       &:hover {
-        color: var(--color-logo-mark);
+        color: var(--color-red-0);
       }
     }
 
@@ -42,13 +42,13 @@ const color = inject("block-child-color", "dark");
       color: var(--color-bg);
 
       &:hover {
-        color: var(--color-green);
+        color: var(--color-green-0);
       }
     }
   }
 
   &__icon {
-    margin-left: 0.3em;
+    margin-left: var(--space-xs);
   }
 
   & > img + &__icon {

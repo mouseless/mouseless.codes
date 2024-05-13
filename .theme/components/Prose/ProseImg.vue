@@ -47,15 +47,15 @@ img {
 </style>
 <style lang="scss">
 p:has(.diagram) {
-  padding: 20px;
+  padding: var(--space-sm);
   border-radius: var(--border-radius);
 }
 
 p:has(.diagram--color_dark) {
-  background-color: var(--color-white-lightest);
+  background-color: var(--color-white);
 }
 
 p:has(.diagram--color_light) {
-  background-color: var(--color-border-box);
+  background-color: var(--color-darkgreen-800);
 }
 </style>

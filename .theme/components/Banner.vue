@@ -1,6 +1,6 @@
 <template>
   <div
-    class="banner"
+    class="banner f f--xl"
   >
     <div
       class="banner__text"
@@ -15,45 +15,30 @@ const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .block:has(.banner) {
-  padding: 8em 0;
+  padding: var(--space-xl) 0;
 }
 
 .banner {
-  align-items: left;
   width: 100%;
-  font-size: 1.5em;
-
-  &__line {
-    border: none;
-    border-top: 2px solid var(--color-fg);
-    border-radius: var(--border-radius);
-    flex: 1;
-    margin: 0;
-
-    &--color {
-      &_dark { border-color: var(--color-fg); }
-      &_light { border-color: var(--color-bg); }
-    }
-  }
 
   &__text {
     strong {
-      color: var(--color-logo-mark);
+      color: var(--color-red-0);
     }
 
     &--color {
       &_dark {
-        color: var(--color-fg);
+        color: var(--color-darkgreen-900);
 
-        h1, h2, h3, h4, h5, h6 { color: var(--color-fg); }
+        h1, h2, h3, h4, h5, h6 { color: var(--color-black); }
       }
       &_light {
-        color: var(--color-bg);
+        color: var(--color-gray-400);
 
-        h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
+        h1, h2, h3, h4, h5, h6 { color: var(--color-white); }
 
         strong {
-          color: var(--color-green);
+          color: var(--color-green-0);
         }
       }
     }

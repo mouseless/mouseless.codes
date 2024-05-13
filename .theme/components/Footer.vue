@@ -13,7 +13,7 @@
       </ContentRenderer>
     </ContentQuery>
   </article>
-  <footer class="footer content">
+  <footer class="footer content f f--sm s s--mv_sm">
     <div class="footer__content">
       <div class="footer__logo">
         <NuxtLink to="/">
@@ -42,9 +42,7 @@ const menus = store.pageMeta.filter(m => !!m.position);
 </script>
 <style lang="scss" scoped>
 .footer {
-  margin-top: 2em;
   opacity: 0.5;
-  font-size: smaller;
 
   &__logo .logo {
     height: 10px;
@@ -54,14 +52,12 @@ const menus = store.pageMeta.filter(m => !!m.position);
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    line-height: 3em;
   }
 
   &__menu {
     display: flex;
     flex-direction: row;
-    gap: 1em;
-    line-height: 3em;
+    gap: var(--space-sm);
   }
 
   &__menu-item {
