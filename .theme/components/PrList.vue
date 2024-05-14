@@ -159,12 +159,13 @@ async function getPullRequests(state) {
     background-color: var(--color-darkgreen-700);
     border: 0px;
     cursor: pointer;
-    border-radius: var(--space-sm);
+    border-radius: var(--space-xs);
     width: 100%;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-xs) var(--space-sm);
     text-align: left;
     white-space: nowrap;
     font-family: var(--font-default);
+    font-size: medium;
 
     &--color{
       &_dark {

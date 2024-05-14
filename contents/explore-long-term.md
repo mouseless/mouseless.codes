@@ -7,7 +7,7 @@ for our clients.
 
 ::
 
-::slider{height="46ch"}
+::slider{height="49ch"}
 
 #inventiv
 

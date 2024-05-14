@@ -47,7 +47,7 @@ defineProps({
     }
 
     &_all {
-      background-color: var(--color-gray-500);
+      background-color: var(--color-gray-300);
       justify-content: end;
 
       .switcher__btn {

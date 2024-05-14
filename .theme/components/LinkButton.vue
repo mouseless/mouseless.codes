@@ -60,8 +60,8 @@ const color = inject("block-child-color", "dark");
     color: var(--color-gray-100);
 
     &:hover {
-      background-color: var(--color-red-300);
-      color: var(--color-darkgreen-900);
+      background-color: var(--color-red-800);
+      color: var(--color-gray-100);
     }
   }
 

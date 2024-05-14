@@ -1,6 +1,6 @@
 <template>
   <div
-    class="columns s s--mv_md"
+    class="columns s s--mv_sm"
   >
     <div
       v-for="i in Array(count)
