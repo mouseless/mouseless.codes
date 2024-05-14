@@ -31,18 +31,18 @@ const color = inject("block-child-color", "dark");
 .anchor {
   &--color {
     &_dark {
-      color: var(--color-fg);
+      color: var(--color-dark-link);
 
       &:hover {
-        color: var(--color-red-0);
+        color: var(--color-dark-link-hover);
       }
     }
 
     &_light {
-      color: var(--color-bg);
+      color: var(--color-light-link);
 
       &:hover {
-        color: var(--color-green-0);
+        color: var(--color-light-link-hover);
       }
     }
   }

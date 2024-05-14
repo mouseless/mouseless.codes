@@ -52,10 +52,10 @@ p:has(.diagram) {
 }
 
 p:has(.diagram--color_dark) {
-  background-color: var(--color-white);
+  background-color: var(--color-dark-box-bg);
 }
 
 p:has(.diagram--color_light) {
-  background-color: var(--color-darkgreen-800);
+  background-color: var(--color-light-box-bg);
 }
 </style>

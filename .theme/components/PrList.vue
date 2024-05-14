@@ -30,9 +30,9 @@
           />
           <div v-else class="pr-list__see-more pr">
             <div class="pr__body">
-              <strong>To see more pull requests, please visit </strong>
+              To see more pull requests, please visit
               <NuxtLink
-                :text="`github.com/${repos[repoIndex]}/pulls`"
+                :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"
                 :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
               />
             </div>
@@ -95,6 +95,9 @@ async function getPullRequests(state) {
   flex-direction: column;
   gap: 1em;
 
+  /* couldn't find a better way, manually calculated */
+  min-height: calc(v-bind(height) + 142px + 190px);
+
   &__repos {
     margin-right: 1em;
   }
@@ -121,13 +124,13 @@ async function getPullRequests(state) {
   }
 
   &__see-more {
-    background-color: var(--color-black-lightest);
+    color: var(--color-gray-100);
+    background-color: var(--color-darkgreen-700);
     border-radius: var(--border-radius);
     padding: var(--border-radius);
-    color: var(--color-bg);
 
-    /* couldn't find a quick way, manually calculated according to pr's heading part's height */
-    height: calc(v-bind(height) + 152px);
+    /* couldn't find a better way, manually calculated */
+    height: calc(v-bind(height) + 142px);
   }
 }
 
@@ -153,22 +156,20 @@ async function getPullRequests(state) {
   }
 
   &__item-link {
-    background-color: var(--color-bg-soft);
+    background-color: var(--color-darkgreen-700);
     border: 0px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: var(--space-sm);
     width: 100%;
-    height: 50px;
-    padding: 0 var(--border-radius);
+    padding: var(--space-sm) var(--space-md);
     text-align: left;
+    white-space: nowrap;
     font-family: var(--font-default);
-    font-size: 1em;
-    opacity: 0.70;
 
     &--color{
       &_dark {
-        background-color: var(--color-fg);
-        color: var(--color-bg-mute);
+        background-color: var(--color-gray-300);
+        color: var(--color-darkgreen-900);
       }
 
       &_light {
@@ -178,11 +179,12 @@ async function getPullRequests(state) {
     }
 
     &:hover {
-      opacity: 0.85;
+      background-color: var(--color-gray-400);
     }
 
     &--active, &--active:hover {
-      opacity: 1;
+      background-color: var(--color-darkgreen-700);
+      color: var(--color-gray-100);
     }
   }
 

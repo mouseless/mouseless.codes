@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="link-button"
+    class="link-button s s--pv_xs s--ph_sm"
     :class="[
       `link-button--type_${type}`,
       `link-button--color_${color}`
@@ -30,50 +30,48 @@ const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
 .link-button {
-  align-items: center;
   display: inline-flex;
-  justify-content: center;
-  padding-inline: 18px;
-  padding-block: 9px;
   text-decoration: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--space-xs);
 
   &--type_default {
-    background: var(--color-fg-mute);
-    color: var(--color-bg-mute);
+    background: var(--color-dark-link);
+    color: var(--color-gray-100);
 
     &:hover {
-      background-color: hsl(from var(--color-fg-mute) h calc(s + .35) l);
-      color: var(--color-bg-mute);
+      background-color: var(--color-dark-link-hover);
+      color: var(--color-gray-100);
     }
   }
 
   &--type_default.link-button--color_light {
-    background: var(--color-bg-mute);
-    color: var(--color-fg-mute);
+    background: var(--color-light-link);
+    color: var(--color-gray-900);
 
     &:hover {
-      background-color: hsl(from var(--color-bg-mute) h s calc(l + .1));
+      background: var(--color-light-link-hover);
+      color: var(--color-gray-900);
     }
   }
 
   &--type_cta {
-    background-color: hsl(from var(--color-logo-mark) h calc(s - .1) calc(l - .25));
-    color: var(--color-white-lightest);
-    padding: 1em 2em;
+    font-size: x-large;
+    background-color: var(--color-red-700);
+    color: var(--color-gray-100);
 
     &:hover {
-      background-color: hsl(from var(--color-logo-mark) h calc(s + .1) calc(l - .25));
-      color: var(--color-white-lightest);
+      background-color: var(--color-red-300);
+      color: var(--color-darkgreen-900);
     }
   }
 
   &--type_cta.link-button--color_light {
-    background-color: var(--color-bg-soft);
-    color: hsl(from var(--color-logo-mark) h calc(s - .1) calc(l - .25));
+    background-color: var(--color-green-500);
+    color: var(--color-darkgreen-900);
 
     &:hover {
-      background-color: var(--color-white-lightest);
+      background-color: var(--color-green-800);
+      color: var(--color-gray-100);
     }
   }
 }

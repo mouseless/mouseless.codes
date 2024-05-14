@@ -29,7 +29,7 @@ defineProps({
 });
 </script>
 <style lang="scss">
-$column-gap: 3em;
+$column-gap: var(--space-md);
 
 .box {
   display: grid;

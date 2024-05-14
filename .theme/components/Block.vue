@@ -91,10 +91,18 @@ function backgroundChange(color) {
   &--blue { background-color: var(--color-blue-900); }
   &--green { background-color: var(--color-green-900); }
 
-  &--light {
-    color: var(--color-gray-400);
+  &--dark {
+    color: var(--color-dark-text-normal);
 
-    h1, h2, h3, h4, h5, h6 { color: var(--color-white); }
+    h1, h2, h3, h4, h5, h6 { color: var(--color-dark-text-heading); }
+    strong { color: var(--color-dark-text-highlight); }
+  }
+
+  &--light {
+    color: var(--color-light-text-normal);
+
+    h1, h2, h3, h4, h5, h6 { color: var(--color-light-text-heading); }
+    strong { color: var(--color-light-text-highlight); }
   }
 }
 </style>

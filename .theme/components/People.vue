@@ -5,8 +5,8 @@
   >
     <div class="members people__members">
       <div v-for="member in members" :key="member.login">
-        <a :href="member.html_url" target="_blank">
-          <img :src="member.avatar_url" class="members__image">
+        <a :href="member.html_url" target="_blank" class="members__member member">
+          <img :src="member.avatar_url" class="member__image">
         </a>
       </div>
     </div>
@@ -38,32 +38,29 @@ onBeforeMount(async() => members.value = await getPeople());
   width: 100%;
 
   &--align {
-    &_left {
-      text-align: left;
-    }
-
-    &_center {
-      text-align: center;
-    }
-
-    &_right {
-      text-align: right;
-    }
+    &_left { text-align: left; }
+    &_center { text-align: center; }
+    &_right { text-align: right; }
   }
 
   &__members {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: var(--space-xs);
   }
 }
 
-.members {
+.member {
   &__image {
     width: v-bind(itemHeight);
     height: v-bind(itemHeight);
     border-radius: v-bind(itemHeight);
+
+    &:hover {
+      transition: scale 0.2s cubic-bezier(0.175, 0.885, 0.32, 2);
+      scale: 1.5;
+    }
   }
 }
 </style>
