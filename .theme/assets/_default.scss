@@ -40,14 +40,6 @@ h4 { font-size: 2em; }
 h5 { font-size: 1.7em; }
 h6 { font-size: 1.5em; }
 
-h1+h1, h2+h2, h3+h3, h4+h4, h5+h5, h6+h6 {
-  margin-top: -0.5em !important;
-}
-
-h3+h1 {
-  margin-top: -0.2em !important;
-}
-
 .content {
   width: 100%;
   margin-left: auto;
@@ -71,7 +63,7 @@ summary {
 }
 
 @media (min-width: $page-l) {
-  .d--h_l { display: none; }
+  .d--h_l { display: none !important; }
 }
 
 @media (max-width: $page-l) {
@@ -84,11 +76,11 @@ summary {
     max-width: 1024px;
   }
 
-  .d--v_l { display: none; }
+  .d--v_l { display: none !important; }
 }
 
 @media (min-width: $page-m) {
-  .d--h_m { display: none; }
+  .d--h_m { display: none !important; }
 }
 
 @media (max-width: $page-m) {
@@ -96,11 +88,11 @@ summary {
     max-width: 800px;
   }
 
-  .d--v_m { display: none; }
+  .d--v_m { display: none !important; }
 }
 
 @media (min-width: $page-s) {
-  .d--h_s { display: none; }
+  .d--h_s { display: none !important; }
 }
 
 @media (max-width: $page-s) {
@@ -109,23 +101,14 @@ summary {
   }
 
   .content {
-    max-width: 95%;
+    max-width: 90%;
   }
 
-  .d--v_s { display: none; }
+  .d--v_s { display: none !important; }
 
-  h1 { font-size: 2em; }
-  h2 { font-size: 1.75em; }
-  h3 { font-size: 1.5em; }
-  h4 { font-size: 1.25em; }
-  h5 { font-size: 1.125em; }
-  h6 { font-size: 1em; }
-
-  h1+h1, h2+h2, h3+h3, h4+h4, h5+h5, h6+h6 {
-    margin-top: -0.75em !important;
-  }
-
-  h3+h1 {
-    margin-top: -0.2em !important;
-  }
+  .f--xl { font-size: 1.125em; }
+  .f--lg { font-size: 1.0675m; }
+  .f--md { font-size: 1em; }
+  .f--sm { font-size: 0.875em; }
+  .f--xs { font-size: 0.75em; }
 }

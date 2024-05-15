@@ -105,4 +105,22 @@ function backgroundChange(color) {
     strong { color: var(--color-light-text-highlight); }
   }
 }
+
+@media (max-width: $page-s) {
+  .block {
+    &__colors {
+      gap: var(--space-sm);
+      left: var(--space-xs);
+      top: var(--space-md);
+      width: var(--space-xs);
+      margin-top: calc(var(--space-md) * -1);
+    }
+
+    &__color-btn {
+      height: var(--space-sm);
+      width: var(--space-sm);
+      margin-bottom: var(--space-sm);
+    }
+  }
+}
 </style>

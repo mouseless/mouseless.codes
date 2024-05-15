@@ -29,7 +29,9 @@ defineProps({
 });
 </script>
 <style lang="scss">
-$column-gap: var(--space-md);
+:root {
+  --column-gap: var(--space-md);
+}
 
 .box {
   display: grid;
@@ -37,7 +39,7 @@ $column-gap: var(--space-md);
     "title"
     "detail";
   width: 100%;
-  column-gap: $column-gap;
+  column-gap: var(--column-gap);
 
   &__title {
     grid-area: title;
@@ -57,14 +59,48 @@ $column-gap: var(--space-md);
       grid-template-areas:
         "image title"
         "image detail";
-      grid-template-columns: calc(25% - $column-gap) 75%;
+      grid-template-columns: calc(25% - var(--column-gap)) 75%;
     }
 
     &_right {
       grid-template-areas:
         "title image"
         "detail image";
-      grid-template-columns: 75% calc(25% - $column-gap);
+      grid-template-columns: 75% calc(25% - var(--column-gap));
+    }
+  }
+}
+
+@media (max-width: $page-m) {
+  .box {
+    gap: var(--space-sm);
+
+    &__detail {
+      p:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__img {
+      max-width: 5em;
+    }
+
+    &--image-align {
+      &_left {
+        grid-template-areas:
+          "image"
+          "title"
+          "detail";
+        grid-template-columns: 100%;
+      }
+
+      &_right {
+        grid-template-areas:
+          "image"
+          "title"
+          "detail";
+        grid-template-columns: 100%;
+      }
     }
   }
 }

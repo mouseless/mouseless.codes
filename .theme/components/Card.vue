@@ -28,4 +28,13 @@ defineProps({
 
   &__image { width: 50%; }
 }
+
+@media (max-width: $page-m) {
+  .card {
+    gap: var(--space-sm);
+
+    &__image { max-width: 5em; }
+    &__slot { max-width: 80ch; }
+  }
+}
 </style>

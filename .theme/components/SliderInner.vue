@@ -1,14 +1,14 @@
 <template>
   <div class="slider">
-    <div class="navigation slider__previous">
+    <div class="slider__previous d d--v_s">
       <button
-        class="navigation__button"
-        :class="{ 'navigation__button--disabled': pageNumber == 0}"
+        class="button"
+        :class="{ 'button--disabled': pageNumber == 0}"
         @click="left"
       >
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
-          class="navigation__image navigation__image--reverse"
+          class="button__image button__image--reverse"
         >
       </button>
     </div>
@@ -21,19 +21,29 @@
     >
       <slot :page-number="pageNumber" :slides="upToDateSlides" />
     </div>
-    <div class="navigation slider__next">
+    <div class="slider__next d d--v_s">
       <button
-        class="navigation__button"
-        :class="{ 'navigation__button--disabled': pageNumber == upToDateSlides.length - 1 || upToDateSlides.length == 0}"
+        class="button"
+        :class="{ 'button--disabled': pageNumber == upToDateSlides.length - 1 || upToDateSlides.length == 0}"
         @click="right"
       >
         <img
           :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
-          class="navigation__image"
+          class="button__image"
         >
       </button>
     </div>
     <div class="slider__thumb">
+      <button
+        class="button d d--h_s"
+        :class="{ 'button--disabled': pageNumber == 0}"
+        @click="left"
+      >
+        <img
+          :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
+          class="button__image button__image--reverse"
+        >
+      </button>
       <button
         v-for="n in slides.length"
         :key="n"
@@ -44,6 +54,16 @@
         class="slider__dot"
         @click="changeSlide(n - 1)"
       />
+      <button
+        class="button d d--h_s"
+        :class="{ 'button--disabled': pageNumber == upToDateSlides.length - 1 || upToDateSlides.length == 0}"
+        @click="right"
+      >
+        <img
+          :class="`mouseless logo mark mono ${color == 'light' ? 'invert' : ''}`"
+          class="button__image"
+        >
+      </button>
     </div>
   </div>
 </template>
@@ -155,17 +175,15 @@ function changeSlide(page) {
   }
 }
 
-.navigation {
-  &__button {
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
+.button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 
-    &--disabled {
-      opacity: 0.25;
-      cursor: default;
-    }
+  &--disabled {
+    opacity: 0.25;
+    cursor: default;
   }
 
   &__image {
@@ -183,6 +201,10 @@ function changeSlide(page) {
   .slider {
     margin-left: 0;
     margin-right: 0;
+    grid-template-areas:
+      "content"
+      "boxes";
+    grid-template-columns: auto;
   }
 }
 </style>

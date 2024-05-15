@@ -157,8 +157,39 @@ function changeContent(index) {
 }
 
 @media (max-width: $page-m) {
+  .steps {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: var(--space-md);
+
+    &__scroll {
+      margin-top: 0;
+      width: 100%;
+      height: fit-content;
+    }
+  }
+
+  .step {
+    padding: var(--space-xs);
+    border-radius: var(--space-xs);
+    gap: 0;
+  }
+
   .flow {
     flex-direction: column;
+    gap: var(--space-xs);
+
+    &__step {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__arrow {
+      width: 1.5em;
+      height: 1.5em;
+      margin-top: var(--space-xs);
+      transform: rotate(90deg);
+    }
   }
 }
 </style>

@@ -43,7 +43,7 @@ function getState(object) {
 <style lang="scss" scoped>
 .pr {
   background-color: var(--color-darkgreen-700);
-  border-radius: var(--border-radius);
+  border-radius: var(--space-md);
   color: var(--color-bg);
   padding: var(--space-md);
   overflow: hidden;

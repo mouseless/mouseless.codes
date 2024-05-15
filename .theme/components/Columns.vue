@@ -44,6 +44,7 @@ const count = computed(() => items.length);
 @media (max-width: $page-m) {
   .columns {
     flex-direction: column;
+    gap: var(--space-md);
 
     &__item {
       width: 100% !important;
