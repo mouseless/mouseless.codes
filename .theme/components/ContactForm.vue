@@ -17,4 +17,13 @@
     margin-left: -37px;
   }
 }
+
+@media (max-width: $page-m) {
+  .inline-frame {
+    &__frame {
+      width: 95%;
+      margin: 0;
+    }
+  }
+}
 </style>

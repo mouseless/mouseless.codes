@@ -155,4 +155,10 @@ function changeContent(index) {
     height: 100%;
   }
 }
+
+@media (max-width: $page-m) {
+  .flow {
+    flex-direction: column;
+  }
+}
 </style>

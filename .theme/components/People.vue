@@ -20,7 +20,7 @@ defineProps({
   },
   itemHeight: {
     type: String,
-    default: "50px"
+    default: "4em"
   }
 });
 

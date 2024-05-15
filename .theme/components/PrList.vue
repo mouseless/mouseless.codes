@@ -98,10 +98,6 @@ async function getPullRequests(state) {
   /* couldn't find a better way, manually calculated */
   min-height: calc(v-bind(height) + 142px + 190px);
 
-  &__repos {
-    margin-right: 1em;
-  }
-
   &__prs {
     margin: auto;
     width: 100%;
@@ -192,6 +188,23 @@ async function getPullRequests(state) {
   &__switcher {
     margin-left: auto;
     margin-right: 0
+  }
+}
+
+@media (max-width: $page-s) {
+  .repo-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+
+    &__items {
+      flex-wrap: wrap;
+    }
+
+    &__switcher {
+      margin-left: 0;
+      margin-right: auto;
+    }
   }
 }
 </style>

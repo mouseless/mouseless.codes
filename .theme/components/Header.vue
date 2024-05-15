@@ -1,7 +1,8 @@
 <template>
   <header class="header s s--pv_md">
     <NuxtLink class="header__logo" to="/">
-      <img class="mouseless logo">
+      <img class="mouseless logo d d--v_m">
+      <img class="mouseless logo short d d--h_m">
     </NuxtLink>
     <nav class="menu header__menu">
       <NuxtLink
@@ -37,6 +38,11 @@ const root = computed(() => `/${route.path.split("/")[1]}`);
 .header {
   display: flex;
   justify-content: space-between;
+
+  &__logo {
+    align-content: center;
+    line-height: 0;
+  }
 }
 
 .menu {

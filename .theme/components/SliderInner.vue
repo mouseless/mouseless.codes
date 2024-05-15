@@ -178,4 +178,11 @@ function changeSlide(page) {
     }
   }
 }
+
+@media (max-width: $page-s) {
+  .slider {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 </style>

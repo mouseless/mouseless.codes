@@ -40,4 +40,14 @@ const count = computed(() => items.length);
     max-width: 100%;
   }
 }
+
+@media (max-width: $page-m) {
+  .columns {
+    flex-direction: column;
+
+    &__item {
+      width: 100% !important;
+    }
+  }
+}
 </style>
