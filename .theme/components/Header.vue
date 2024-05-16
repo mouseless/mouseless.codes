@@ -102,6 +102,8 @@ function close() { menuShown.value = false; }
 
 @media (max-width: $page-s) {
   .header {
+    padding: var(--space-sm) 0;
+
     &__overlay {
       position: fixed;
       width: 100%;
@@ -138,12 +140,21 @@ function close() { menuShown.value = false; }
       margin-left: var(--space-sm);
       padding: var(--space-xs) 0;
 
+      &:hover {
+        color: var(--color-light-link-hover);
+        border-bottom: 0;
+      }
+
       &--selected {
         color: var(--color-light-link);
         border-bottom: none;
-        border-left: solid var(--space-xs) var(--color-dark-link-hover);
+        border-left: solid var(--space-xs) var(--color-light-link-hover);
         margin-left: calc(var(--space-xs) * -1);
         padding-left: var(--space-sm);
+
+        &:hover {
+          color: var(--color-light-link);
+        }
       }
     }
   }

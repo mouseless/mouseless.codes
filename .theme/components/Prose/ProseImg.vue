@@ -4,7 +4,8 @@
     :alt="alt"
     :width="width"
     :height="height"
-    :class="`${alt}--color_${color}`"
+    class="prose"
+    :class="`${alt} ${alt}--color_${color}`"
   />
 </template>
 <script setup>

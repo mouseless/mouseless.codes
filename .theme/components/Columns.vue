@@ -30,7 +30,7 @@ const slots = useSlots();
 const items = Object.keys(slots);
 const count = computed(() => items.length);
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .columns {
   display: flex;
   gap: var(--space-md);
@@ -48,6 +48,10 @@ const count = computed(() => items.length);
 
     &__item {
       width: 100% !important;
+    }
+
+    &__item:has(img.prose:only-child) {
+      display: none;
     }
   }
 }
