@@ -25,7 +25,7 @@
 const props = defineProps({
   color: {
     type: String,
-    default: "default"
+    default: "white"
   },
   content: {
     type: String,
@@ -84,7 +84,6 @@ function backgroundChange(color) {
 }
 
 .color {
-  &--default { background-color: transparent; }
   &--black { background-color: var(--color-darkgreen-900); }
   &--white { background-color: var(--color-gray-100); }
   &--yellow { background-color: var(--color-yellow-500); }
@@ -95,14 +94,12 @@ function backgroundChange(color) {
     color: var(--color-dark-text-normal);
 
     h1, h2, h3, h4, h5, h6 { color: var(--color-dark-text-heading); }
-    strong { color: var(--color-dark-text-highlight); }
   }
 
   &--light {
     color: var(--color-light-text-normal);
 
     h1, h2, h3, h4, h5, h6 { color: var(--color-light-text-heading); }
-    strong { color: var(--color-light-text-highlight); }
   }
 }
 

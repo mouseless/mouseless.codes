@@ -1,7 +1,6 @@
 <template>
   <Image
     :src="src"
-    :alt="alt"
     :width="width"
     :height="height"
     class="prose"
@@ -34,6 +33,10 @@ const color = inject("block-child-color", "dark");
 img {
   max-width: 100%;
   border-radius: var(--border-radius);
+}
+
+.icon {
+  border-radius: 0;
 }
 
 .diagram {

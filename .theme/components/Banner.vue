@@ -8,6 +8,16 @@
 <style lang="scss">
 .block:has(.banner) {
   padding: var(--space-xl) 0;
+
+  &.color {
+    &--dark {
+      strong { color: var(--color-dark-text-highlight); }
+    }
+
+    &--light {
+      strong { color: var(--color-light-text-highlight); }
+    }
+  }
 }
 
 .banner {
