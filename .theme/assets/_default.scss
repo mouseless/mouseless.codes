@@ -97,7 +97,7 @@ summary {
 
 @media (max-width: $page-s) {
   body {
-    min-width: 500px;
+    min-width: $page-min;
   }
 
   .content {
