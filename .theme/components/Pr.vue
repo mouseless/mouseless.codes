@@ -42,7 +42,7 @@ function getState(object) {
 </script>
 <style lang="scss" scoped>
 .pr {
-  background-color: var(--color-darkgreen-700);
+  background-color: var(--color-darkgreen-800);
   border-radius: var(--space-md);
   color: var(--color-bg);
   padding: var(--space-md);
@@ -75,8 +75,9 @@ function getState(object) {
 .title {
   display: inline-flex;
   align-items: flex-start;
-  gap: var(--space-xs);
   flex-direction: column;
+  max-width: calc($page-min / 2);
+  white-space: nowrap;
 
   &__state {
     display: flex;
@@ -119,7 +120,13 @@ function getState(object) {
       color: var(--color-green-500) !important;
     }
 
-    .language-markdown {
+    code, a {
+      word-break: break-all;
+      white-space: break-spaces;
+    }
+
+    pre {
+      background-color: var(--color-darkgreen-700);
       border-radius: var(--space-sm);
       padding: var(--space-sm);
       line-height: var(--space-sm);

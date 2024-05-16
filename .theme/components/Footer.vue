@@ -27,6 +27,7 @@
           :key="menu['menu-title']"
           :to="menu._path == $route.path ? '' : menu._path"
           class="footer__menu-item"
+          :class="{ 'footer__menu-item--selected': (menu._path == $route.path)}"
         >
           {{ menu['menu-title'] }}
         </NuxtLink>
@@ -62,6 +63,10 @@ const menus = store.pageMeta.filter(m => !!m.position);
 
   &__menu-item {
     text-decoration: none;
+
+    &--selected:hover {
+      color: inherit;
+    }
   }
 }
 

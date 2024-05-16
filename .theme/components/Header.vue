@@ -15,6 +15,7 @@
         :class="{ 'menu--active': menuShown }"
       >
         <NuxtLink
+          to="javascript:void(0)"
           class="menu__item d d--h_s s s--mb_sm f f--xl"
           @click="toggle"
         >
@@ -41,6 +42,7 @@
           to="#contact-us"
         />
         <NuxtLink
+          to="javascript:void(0)"
           class="header__menu-item d d--h_s s s--ml_md"
           @click="toggle"
         >
@@ -73,6 +75,10 @@ function close() { menuShown.value = false; }
     line-height: 0;
   }
 
+  &__menu {
+    font-family: var(--font-default);
+  }
+
   &__menu-container {
     display: flex;
     gap: var(--space-sm);
@@ -84,7 +90,6 @@ function close() { menuShown.value = false; }
 
   &__item {
     text-decoration: none;
-    font-family: var(--font-default);
 
     &--selected {
       color: var(--color-dark-link);

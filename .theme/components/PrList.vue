@@ -89,14 +89,17 @@ async function getPullRequests(state) {
 }
 </script>
 <style lang="scss">
+:root {
+  /* couldn't find a better way, manually calculated */
+  --min-height-pr: 7.6em;
+}
+
 .pr-list {
   margin-top: 3em;
   display: flex;
   flex-direction: column;
   gap: 1em;
-
-  /* couldn't find a better way, manually calculated */
-  min-height: calc(v-bind(height) + 142px + 190px);
+  min-height: calc(v-bind(height) + var(--min-height-pr) + 19.6em);
 
   &__prs {
     margin: auto;
@@ -121,12 +124,10 @@ async function getPullRequests(state) {
 
   &__see-more {
     color: var(--color-gray-100);
-    background-color: var(--color-darkgreen-700);
+    background-color: var(--color-darkgreen-800);
     border-radius: var(--border-radius);
     padding: var(--border-radius);
-
-    /* couldn't find a better way, manually calculated */
-    height: calc(v-bind(height) + 142px);
+    height: calc(v-bind(height) + var(--min-height-pr));
   }
 }
 
