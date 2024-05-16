@@ -1,0 +1,1 @@
+.block:has(.banner){padding:var(--space-xl) 0}.block:has(.banner).color--dark strong{color:var(--color-dark-text-highlight)}.block:has(.banner).color--light strong{color:var(--color-light-text-highlight)}.banner{width:100%}.banner h1,.banner h2,.banner h3,.banner h4,.banner h5,.banner h6{line-height:1.2em}
