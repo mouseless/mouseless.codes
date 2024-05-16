@@ -51,7 +51,7 @@ summary {
   }
 }
 
-@media (min-width: $page-l) {
+@media (min-width: calc($page-l + 1px)) {
   .d--h_l { display: none !important; }
 }
 
@@ -68,7 +68,7 @@ summary {
   .d--v_l { display: none !important; }
 }
 
-@media (min-width: $page-m) {
+@media (min-width: calc($page-m + 1px)) {
   .d--h_m { display: none !important; }
 }
 
@@ -80,7 +80,7 @@ summary {
   .d--v_m { display: none !important; }
 }
 
-@media (min-width: $page-s) {
+@media (min-width: calc($page-s + 1px)) {
   .d--h_s { display: none !important; }
 }
 
