@@ -1,16 +1,9 @@
 <template>
   <div
-    :class="[
-      image !== null ? `box--image-align_${imageAlign}` : '',
-      `box--color_${color}`
-    ]"
     class="box"
+    :class="image !== null ? `box--image-align_${imageAlign}` : ''"
   >
-    <h5
-      v-if="title !== null"
-      class="box__title"
-      :class="`box__title--color_${color}`"
-    >
+    <h5 v-if="title !== null" class="box__title">
       {{ title }}
     </h5>
     <div class="box__detail">
@@ -34,11 +27,11 @@ defineProps({
     default: null
   }
 });
-
-const color = inject("block-child-color", "dark");
 </script>
 <style lang="scss">
-$column-gap: 3em;
+:root {
+  --column-gap: var(--space-md);
+}
 
 .box {
   display: grid;
@@ -46,16 +39,10 @@ $column-gap: 3em;
     "title"
     "detail";
   width: 100%;
-  column-gap: $column-gap;
+  column-gap: var(--column-gap);
 
   &__title {
     grid-area: title;
-    margin: 0px;
-
-    &--color {
-      &_dark { color: var(--color-fg); }
-      &_light { color: var(--color-bg); }
-    }
   }
 
   &__detail {
@@ -72,25 +59,48 @@ $column-gap: 3em;
       grid-template-areas:
         "image title"
         "image detail";
-      grid-template-columns: calc(25% - $column-gap) 75%;
+      grid-template-columns: calc(25% - var(--column-gap)) 75%;
     }
 
     &_right {
       grid-template-areas:
         "title image"
         "detail image";
-      grid-template-columns: 75% calc(25% - $column-gap);
+      grid-template-columns: 75% calc(25% - var(--column-gap));
     }
   }
+}
 
-  &--color {
-    &_dark {
-      border-color: var(--color-gray-darkest);
-      color: var(--color-fg);
+@media (max-width: $page-m) {
+  .box {
+    gap: var(--space-sm);
+
+    &__detail {
+      p:first-child {
+        margin-top: 0;
+      }
     }
-    &_light {
-      border-color: var(--color-gray-darkest);
-      color: var(--color-bg);
+
+    &__img {
+      max-width: 5em;
+    }
+
+    &--image-align {
+      &_left {
+        grid-template-areas:
+          "image"
+          "title"
+          "detail";
+        grid-template-columns: 100%;
+      }
+
+      &_right {
+        grid-template-areas:
+          "image"
+          "title"
+          "detail";
+        grid-template-columns: 100%;
+      }
     }
   }
 }

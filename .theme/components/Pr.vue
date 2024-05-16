@@ -42,14 +42,14 @@ function getState(object) {
 </script>
 <style lang="scss" scoped>
 .pr {
-  background-color: var(--color-black-lightest);
-  border-radius: var(--border-radius);
+  background-color: var(--color-darkgreen-800);
+  border-radius: var(--space-md);
   color: var(--color-bg);
-  padding: 2em;
+  padding: var(--space-md);
   overflow: hidden;
 
   &__title {
-    margin-bottom: 0.5em;
+    margin-bottom: var(--space-xs);
     color: var(--color-bg);
   }
 
@@ -63,11 +63,11 @@ function getState(object) {
     color: var(--color-bg);
     text-decoration: none;
     text-align: center;
-    margin-bottom: -2em;
-    line-height: 3em;
+    margin-bottom: calc(var(--space-md) * -1);
+    line-height: var(--space-md);
 
     &:hover {
-      color: var(--color-green);
+      color: var(--color-light-link-hover);
     }
   }
 }
@@ -75,8 +75,9 @@ function getState(object) {
 .title {
   display: inline-flex;
   align-items: flex-start;
-  gap: 0.25em;
   flex-direction: column;
+  max-width: calc($page-min / 2);
+  white-space: nowrap;
 
   &__state {
     display: flex;
@@ -89,10 +90,10 @@ function getState(object) {
     height: 2em;
     color: var(--color-fg);
 
-    &--draft { background-color: var(--color-gray-darker); }
-    &--open { background-color: var(--color-green); }
-    &--closed { background-color: var(--color-red); color: var(--color-white); }
-    &--merged { background-color: var(--color-blue); color: var(--color-white); }
+    &--draft { background-color: var(--color-gray-500); }
+    &--open { background-color: var(--color-green-500); }
+    &--closed { background-color: var(--color-red-700); color: var(--color-gray-100); }
+    &--merged { background-color: var(--color-blue-600); color: var(--color-gray-100); }
   }
 
   &__state-icon {
@@ -112,11 +113,23 @@ function getState(object) {
     h6 { font-size: 1.125em; }
 
     a, h1, h2, h3, h4, h5, h6 {
-      color: var(--color-bg) !important;
+      color: var(--color-light-text-heading) !important;
     }
 
     a:hover {
-      color: var(--color-green) !important;
+      color: var(--color-green-500) !important;
+    }
+
+    code, a {
+      word-break: break-all;
+      white-space: break-spaces;
+    }
+
+    pre {
+      background-color: var(--color-darkgreen-700);
+      border-radius: var(--space-sm);
+      padding: var(--space-sm);
+      line-height: var(--space-sm);
     }
   }
 }

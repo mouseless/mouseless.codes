@@ -30,9 +30,9 @@
           />
           <div v-else class="pr-list__see-more pr">
             <div class="pr__body">
-              <strong>To see more pull requests, please visit </strong>
+              To see more pull requests, please visit
               <NuxtLink
-                :text="`github.com/${repos[repoIndex]}/pulls`"
+                :text="`github.com/mouseless/${repos[repoIndex]}/pulls`"
                 :to="`https://github.com/mouseless/${repos[repoIndex]}/pulls${prState == 'all' ? '?q=is%3Apr' : ''}`"
               />
             </div>
@@ -89,15 +89,17 @@ async function getPullRequests(state) {
 }
 </script>
 <style lang="scss">
+:root {
+  /* couldn't find a better way, manually calculated */
+  --min-height-pr: 7.6em;
+}
+
 .pr-list {
   margin-top: 3em;
   display: flex;
   flex-direction: column;
   gap: 1em;
-
-  &__repos {
-    margin-right: 1em;
-  }
+  min-height: calc(v-bind(height) + var(--min-height-pr) + 19.6em);
 
   &__prs {
     margin: auto;
@@ -121,13 +123,11 @@ async function getPullRequests(state) {
   }
 
   &__see-more {
-    background-color: var(--color-black-lightest);
+    color: var(--color-gray-100);
+    background-color: var(--color-darkgreen-800);
     border-radius: var(--border-radius);
     padding: var(--border-radius);
-    color: var(--color-bg);
-
-    /* couldn't find a quick way, manually calculated according to pr's heading part's height */
-    height: calc(v-bind(height) + 152px);
+    height: calc(v-bind(height) + var(--min-height-pr));
   }
 }
 
@@ -153,22 +153,21 @@ async function getPullRequests(state) {
   }
 
   &__item-link {
-    background-color: var(--color-bg-soft);
+    background-color: var(--color-darkgreen-700);
     border: 0px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: var(--space-xs);
     width: 100%;
-    height: 50px;
-    padding: 0 var(--border-radius);
+    padding: var(--space-xs) var(--space-sm);
     text-align: left;
+    white-space: nowrap;
     font-family: var(--font-default);
-    font-size: 1em;
-    opacity: 0.70;
+    font-size: medium;
 
     &--color{
       &_dark {
-        background-color: var(--color-fg);
-        color: var(--color-bg-mute);
+        background-color: var(--color-gray-300);
+        color: var(--color-darkgreen-900);
       }
 
       &_light {
@@ -178,17 +177,35 @@ async function getPullRequests(state) {
     }
 
     &:hover {
-      opacity: 0.85;
+      background-color: var(--color-gray-400);
     }
 
     &--active, &--active:hover {
-      opacity: 1;
+      background-color: var(--color-darkgreen-700);
+      color: var(--color-gray-100);
     }
   }
 
   &__switcher {
     margin-left: auto;
     margin-right: 0
+  }
+}
+
+@media (max-width: $page-s) {
+  .repo-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+
+    &__items {
+      flex-wrap: wrap;
+    }
+
+    &__switcher {
+      margin-left: 0;
+      margin-right: auto;
+    }
   }
 }
 </style>

@@ -26,16 +26,26 @@ keeping technology up to date without extra cost.
 
 :::banner
 
+::::columns{:itemWidths='["80%", "20%"]'}
+
+#text
+
 ### Low Cost of Change
 
 Our approach minimizes change costs through automated testing and continuous
 refactoring, ensuring adaptability without additional expenses.
 
-::::bullet-list
+:::::bullet-list
 
 - Test automation
 - Refactoring
 - Tech-stack update
+
+:::::
+
+#image
+
+![icon](images/how-we-work/lcoc.png)
 
 ::::
 
@@ -82,16 +92,26 @@ customer projects.
 
 :::banner
 
+::::columns{:itemWidths='["80%", "20%"]'}
+
+#text
+
 ### Continuous Delivery
 
 We guarantee rapid delivery with a 3-day lead time and an end-to-end CI/CD
 setup, prioritizing efficiency and reliability.
 
-::::bullet-list
+:::::bullet-list
 
 - 3 days of average lead-time
 - No estimation, continuous planning
 - End to end CI/CD setup
+
+:::::
+
+#image
+
+![icon](images/how-we-work/cd.png)
 
 ::::
 
@@ -127,16 +147,26 @@ See how we build software incrementally;
 
 :::banner
 
+::::columns{:itemWidths='["80%", "20%"]'}
+
+#text
+
 ### Progress Visibility
 
 Through draft PRs from project inception, detailed task management, and clear
 communication, we maintain transparency at every development stage.
 
-::::bullet-list
+:::::bullet-list
 
 - Draft PRs right from beginning
 - Well detailed task lists
 - Clear commit messages
+
+:::::
+
+#image
+
+![icon](images/how-we-work/pv.png)
 
 ::::
 
@@ -172,15 +202,25 @@ See how we care work descriptions and tasks;
 
 :::banner
 
+::::columns{:itemWidths='["80%", "20%"]'}
+
+#text
+
 ### Cross Pollination
 
 Our commitment to open source and diverse project engagement promotes knowledge
 exchange, enhancing innovation across the community.
 
-::::bullet-list
+:::::bullet-list
 
 - Open Source
 - Continuous Learning
+
+:::::
+
+#image
+
+![icon](images/how-we-work/cp.png)
 
 ::::
 

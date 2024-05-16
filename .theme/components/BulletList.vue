@@ -31,13 +31,8 @@ const color = inject("block-child-color", "dark");
   }
 
   &--color {
-    &_dark { color: var(--color-black); }
     &_light {
-      color: var(--color-white);
-
-      li::before {
-        filter: invert(1);
-      }
+      li::before { filter: invert(1); }
     }
   }
 
@@ -58,8 +53,9 @@ const color = inject("block-child-color", "dark");
 
     &::marker {
       content: "_ ";
-      color: var(--color-logo-mark);
-      font-size: 1.5em;
+      color: var(--color-red-500);
+      font-size: x-large;
+      font-weight: 600;
     }
   }
 }

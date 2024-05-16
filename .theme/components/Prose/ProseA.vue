@@ -31,24 +31,24 @@ const color = inject("block-child-color", "dark");
 .anchor {
   &--color {
     &_dark {
-      color: var(--color-fg);
+      color: var(--color-dark-link);
 
       &:hover {
-        color: var(--color-logo-mark);
+        color: var(--color-dark-link-hover);
       }
     }
 
     &_light {
-      color: var(--color-bg);
+      color: var(--color-light-link);
 
       &:hover {
-        color: var(--color-green);
+        color: var(--color-light-link-hover);
       }
     }
   }
 
   &__icon {
-    margin-left: 0.3em;
+    margin-left: var(--space-xs);
   }
 
   & > img + &__icon {

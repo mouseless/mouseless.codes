@@ -1,6 +1,6 @@
 <template>
   <div
-    class="block color"
+    class="block s s--pv_lg color"
     :class="[
       `color--${currentColor}`,
       `color--${colors[currentColor]}`
@@ -25,7 +25,7 @@
 const props = defineProps({
   color: {
     type: String,
-    default: "default"
+    default: "white"
   },
   content: {
     type: String,
@@ -39,13 +39,10 @@ const props = defineProps({
 
 const colors = {
   black: "light",
-  gray: "dark",
   white: "dark",
   yellow: "dark",
-  orange: "dark",
-  red: "light",
-  blue: "dark",
-  green: "dark"
+  blue: "light",
+  green: "light"
 };
 const currentColor = ref(props.color);
 const childColor = computed(() => colors[currentColor.value] || "dark");
@@ -59,7 +56,6 @@ function backgroundChange(color) {
 <style lang="scss">
 .block {
   text-align: left;
-  padding: 5em 0;
 
   p {
     margin-left: auto;
@@ -70,38 +66,58 @@ function backgroundChange(color) {
 
   &__colors {
     position: sticky;
-    left: 2em;
-    top: 2em;
-    width: 20px;
+    left: var(--space-md);
+    top: var(--space-md);
+    width: var(--space-md);
     height: 0;
-    margin-top: -3em;
+    margin-top: calc(var(--space-md) * -1);
   }
 
   &__color-btn {
     cursor: pointer;
-    border-radius: var(--border-radius);
+    border-radius: var(--space-xs);
     border-width: 0px;
-    height: 20px;
-    margin-bottom: 10px;
-    width: 20px;
+    height: var(--space-sm);
+    margin-bottom: var(--space-xs);
+    width: var(--space-md);
   }
 }
 
 .color {
-  &--default { background-color: transparent; }
-  &--black { background-color: hsl(from var(--color-black-lighter) h s calc(l + .0)); }
-  &--gray { background-color: hsl(from var(--color-gray-darkest) h s calc(l - .0)); }
-  &--white { background-color: hsl(from var(--color-white) h s calc(l - .0)); }
-  &--yellow { background-color: hsl(from var(--color-yellow) h s calc(l + .1)); }
-  &--orange { background-color: hsl(from var(--color-orange) h s calc(l + .1)); }
-  &--red { background-color: hsl(from var(--color-red) h calc(s - .6) calc(l - .2)); }
-  &--blue { background-color: hsl(from var(--color-blue) h s calc(l + .2)); }
-  &--green { background-color: hsl(from var(--color-green) h s calc(l + .3)); }
+  &--black { background-color: var(--color-darkgreen-900); }
+  &--white { background-color: var(--color-gray-100); }
+  &--yellow { background-color: var(--color-yellow-500); }
+  &--blue { background-color: var(--color-blue-900); }
+  &--green { background-color: var(--color-green-900); }
+
+  &--dark {
+    color: var(--color-dark-text-normal);
+
+    h1, h2, h3, h4, h5, h6 { color: var(--color-dark-text-heading); }
+  }
 
   &--light {
-    color: var(--color-bg);
+    color: var(--color-light-text-normal);
 
-    h1, h2, h3, h4, h5, h6 { color: var(--color-bg); }
+    h1, h2, h3, h4, h5, h6 { color: var(--color-light-text-heading); }
+  }
+}
+
+@media (max-width: $page-s) {
+  .block {
+    &__colors {
+      gap: var(--space-sm);
+      left: var(--space-xs);
+      top: var(--space-md);
+      width: var(--space-xs);
+      margin-top: calc(var(--space-md) * -1);
+    }
+
+    &__color-btn {
+      height: var(--space-sm);
+      width: var(--space-sm);
+      margin-bottom: var(--space-sm);
+    }
   }
 }
 </style>

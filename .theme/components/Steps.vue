@@ -66,7 +66,7 @@ function changeContent(index) {
   border-radius: var(--border-radius);
 
   &__scroll {
-    margin-top: 3em;
+    margin-top: var(--space-md);
     height: v-bind(height);
     overflow: auto;
   }
@@ -105,35 +105,35 @@ function changeContent(index) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: var(--border-radius);
-  padding: 1em;
+  border-radius: var(--space-sm);
+  padding: var(--space-sm);
   cursor: pointer;
   width: 100px;
-  gap: 0.5em;
+  gap: var(--space-xs);
 
   &--color {
     &_dark {
-      color: var(--color-white);
-      background-color: var(--color-fg);
+      color: var(--color-gray-100);
+      background-color: var(--color-darkgreen-900);
 
       &:hover {
-        background-color: var(--color-black-lightest);
+        background-color: var(--color-darkgreen-800);
       }
     }
 
     &_light {
-      color: var(--color-fg);
-      background-color: var(--color-bg-soft);
+      color: var(--color-darkgreen-900);
+      background-color: var(--color-darkgreen-100);
 
       &:hover {
-        background-color: var(--color-bg-mute);
+        background-color: var(--color-darkgreen-200);
       }
     }
   }
 
   &__number {
-    border-radius: var(--border-radius);
-    width: 7ch;
+    border-radius: var(--space-xs);
+    padding: 0 var(--space-md);
     color: var(--color-bg);
     text-align: center;
 
@@ -141,17 +141,55 @@ function changeContent(index) {
 
     &--active {
       color: var(--color-bg);
-      background-color: var(--color-logo-mark);
+      background-color: var(--color-red-700);
     }
   }
 
   &__name {
     display: flex;
     align-items: center;
+    text-align: center;
     font-family: var(--font-heading);
     font-size: large;
     font-weight: bold;
     height: 100%;
+  }
+}
+
+@media (max-width: $page-m) {
+  .steps {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: var(--space-md);
+
+    &__scroll {
+      margin-top: 0;
+      width: 100%;
+      height: fit-content;
+    }
+  }
+
+  .step {
+    padding: var(--space-xs);
+    border-radius: var(--space-xs);
+    gap: 0;
+  }
+
+  .flow {
+    flex-direction: column;
+    gap: var(--space-xs);
+
+    &__step {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__arrow {
+      width: 1.5em;
+      height: 1.5em;
+      margin-top: var(--space-xs);
+      transform: rotate(90deg);
+    }
   }
 }
 </style>

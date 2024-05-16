@@ -33,12 +33,12 @@ defineProps({
   font-size: smaller;
   height: 25px;
   position: relative;
-  width: 63px;
+  width: 65px;
 
   &--status {
     &_open {
-      background-color: hsl(from var(--color-green) h s calc(l - .2));
-      color: var(--color-white);
+      background-color: var(--color-green-800);
+      color: var(--color-gray-100);
       justify-content: start;
 
       .switcher__btn {
@@ -47,7 +47,7 @@ defineProps({
     }
 
     &_all {
-      background-color: var(--color-gray);
+      background-color: var(--color-gray-300);
       justify-content: end;
 
       .switcher__btn {
@@ -65,7 +65,7 @@ defineProps({
     position: absolute;
     width: 21px;
     height: 21px;
-    background-color: var(--color-white);
+    background-color: var(--color-gray-100);
     border-radius: 50%;
     border: 0;
     cursor: pointer;

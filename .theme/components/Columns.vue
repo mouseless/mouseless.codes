@@ -1,6 +1,6 @@
 <template>
   <div
-    class="columns"
+    class="columns s s--mv_sm"
   >
     <div
       v-for="i in Array(count)
@@ -30,15 +30,29 @@ const slots = useSlots();
 const items = Object.keys(slots);
 const count = computed(() => items.length);
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .columns {
   display: flex;
-  gap: 3em;
-  margin: 2em 0;
+  gap: var(--space-md);
   align-items: flex-start;
 
   &__item {
     max-width: 100%;
+  }
+}
+
+@media (max-width: $page-m) {
+  .columns {
+    flex-direction: column;
+    gap: var(--space-md);
+
+    &__item {
+      width: 100% !important;
+    }
+
+    &__item:has(img.prose:only-child) {
+      display: none;
+    }
   }
 }
 </style>

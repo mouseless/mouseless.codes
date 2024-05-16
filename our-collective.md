@@ -36,6 +36,8 @@ which eventually leads to excellence.
 
 :::
 
+:br
+
 :::columns
 
 #passionate
@@ -95,7 +97,7 @@ excellence in our work every day.
 
 :::banner
 
-### Our Structure
+### Our structure
 
 At Mouseless, we function as a cohesive software development collective. Our
 structure is designed to promote collaboration and communication, aligning with
@@ -143,7 +145,7 @@ flowchart TB
 
 ::::banner
 
-### Our People
+### Our people
 
 We are exclusive in expertise, inclusive in participation.
 
@@ -151,7 +153,9 @@ We are exclusive in expertise, inclusive in participation.
 
 ::::columns{:itemWidths='["34%", "66%"]'}
 
-#people
+#team
+
+#### Team
 
 We are independent engineers who are committed to work in accordance with [the
 mouseless way](./how-we-work.md) where everyone has a contribution rate that
@@ -160,6 +164,8 @@ aligns with their level of experience in the field.
 :people
 
 #join
+
+#### Join us
 
 If you are an experienced software engineer and you think you align with our
 principles and appreciate what you've seen in [github.com/mouseless][github],

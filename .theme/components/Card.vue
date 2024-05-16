@@ -23,9 +23,25 @@ defineProps({
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2em;
+  gap: var(--space-md);
 
-  &__image { width: 50%; }
+  &__image {
+    max-width: 10em;
+  }
+}
+
+@media (max-width: $page-m) {
+  .card {
+    gap: var(--space-sm);
+
+    &__image { max-width: 7em; }
+    &__slot { max-width: 80ch; }
+  }
+}
+
+@media (max-width: $page-s) {
+  .card {
+    &__image { max-width: 5em; }
+  }
 }
 </style>

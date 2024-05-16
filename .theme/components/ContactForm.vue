@@ -14,8 +14,24 @@
     border-width: 0;
     height: 875px;
     width: 750px;
-    margin-left: -37px;
-    scale: 1;
+    max-width: 750px;
+    margin-left: -5%;
+  }
+}
+
+@media (max-width: $page-m) {
+  .inline-frame {
+    &__frame {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $page-s) {
+  .inline-frame {
+    &__frame {
+      width: 100%;
+    }
   }
 }
 </style>

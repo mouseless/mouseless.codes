@@ -1,10 +1,10 @@
 <template>
   <Image
     :src="src"
-    :alt="alt"
     :width="width"
     :height="height"
-    :class="`${alt}--color_${color}`"
+    class="prose"
+    :class="`${alt} ${alt}--color_${color}`"
   />
 </template>
 <script setup>
@@ -35,6 +35,10 @@ img {
   border-radius: var(--border-radius);
 }
 
+.icon {
+  border-radius: 0;
+}
+
 .diagram {
   min-width: 100%;
 
@@ -47,15 +51,15 @@ img {
 </style>
 <style lang="scss">
 p:has(.diagram) {
-  padding: 20px;
+  padding: var(--space-sm);
   border-radius: var(--border-radius);
 }
 
 p:has(.diagram--color_dark) {
-  background-color: var(--color-white-lightest);
+  background-color: var(--color-dark-box-bg);
 }
 
 p:has(.diagram--color_light) {
-  background-color: var(--color-border-box);
+  background-color: var(--color-light-box-bg);
 }
 </style>

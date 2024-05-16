@@ -17,7 +17,7 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 ### Our Collective
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Lorem **ipsum** dolor sit amet consectetur adipisicing elit.
 
 :::
 
@@ -25,7 +25,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 :::box{title="Box Header" image-align="left"}
 ---
-image: images/services/rs.png
+image: images/services/sr.png
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -62,48 +62,40 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 :::
 
-## Buttons
-
-### Default
-
-:link-button{to="#buttons" type="default" text="Default Button"}
-
-### CTA
-
-:link-button{to="#buttons" type="cta" text="CTA Button"}
-
-## Call To Action
-
-:::call-to-action
-
-### We value trust
-
-:link-button{to="https://www.mouseless.codes" type="cta" text="Reach out!"}
-
-:::
-
 ## Card
 
 :::columns
 
 #item-1
 
-::::card{image="images/card-bg-wall.jpg"}
+::::card{image="images/our-collective/efficient.png"}
 
-### An Epic on DO
+### Lorem ipsum
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum
+
 ::::
 
 #item-2
 
-::::card{image="images/card-bg-wall.jpg"}
+::::card{image="images/our-collective/excellent.png"}
 
-### An Epic on Learn-Nuxt
+### Iusto fuga
 
 Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
 autem.
+
+::::
+
+#item-3
+
+::::card{image="images/our-collective/passionate.png"}
+
+### Veritatis obcaecati
+
+Veritatis obcaecati tenetur iure eius earum ut molestias architecto
+
 ::::
 
 :::
@@ -114,7 +106,7 @@ autem.
 
 ::::card
 
-### An Epic on DO
+### Lorem ipsum
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -125,29 +117,12 @@ numquam blanditiis harum quisquam eius sed odit fugiat
 
 ::::card
 
-### An Epic on Learn-Nuxt
+### Iusto fuga
 
 Iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo
 autem.
-::::
-
-#item-3
-
-::::card
-
-### An Epic on Prebuild
-
-Veritatis obcaecati tenetur iure eius earum ut molestias architecto
 
 ::::
-
-:::
-
-:::card{image="images/card-bg-wall.jpg"}
-
-### An Epic on Learn-Nuxt
-
-Completely clear and straightforward
 
 :::
 
@@ -158,13 +133,17 @@ Completely clear and straightforward
 #item-1
 
 ::::box{title="Box 1"}
+
 Lorem ipsum dolor sit amet consectetur adipisicing elit
+
 ::::
 
 #item-2
 
 ::::box{title="Box 2"}
+
 Maxime mollitia, molestiae quas vel sint commodi repudiandae
+
 ::::
 
 :::
@@ -207,6 +186,16 @@ flowchart LR
 
 :include{content="contents/demo.md"}
 
+## Link Button
+
+### Default
+
+:link-button{to="#buttons" type="default" text="Default Button"}
+
+### CTA
+
+:link-button{to="#buttons" type="cta" text="CTA Button"}
+
 ## People
 
 :people{align=left}
@@ -247,7 +236,7 @@ _Italic Text_
 
 [External Link](http://mouseless.codes)
 
-![](images/card-bg-wall.jpg)
+![](images/case-studies/gazel-running.png)
 
 ## Slider
 
