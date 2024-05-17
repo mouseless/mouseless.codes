@@ -13,16 +13,47 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::banner
 
-# Experiment, learn and progress
+### Experiment and learn, while
+# Delivering at pace
 
-We prioritize timely feature delivery, automated testing, code refactoring, and
-keeping technology up to date without extra cost.
+We are a __self-managing__ team with a single point of contact assigned per
+client, operating on a __time & materials__ basis without requiring a
+fixed-budget or a fixed-plan thanks to our fast response time.
 
 :::
 
 ::
 
 ::block{color=black}
+
+```mermaid
+flowchart TB
+    R(Requirement\nEmerges)
+
+    subgraph LC[Done in 3 days]
+        W(Work starts\nwith Draft PR)
+        S(Write specs\nas automated\ntests)
+        DR(Develop &\nCode Review)
+        C(Customer\nReviews)
+
+        W --> S
+        S --> DR
+        DR --> C
+        C --> S
+    end
+
+    D(Deliver)
+
+    R --> LC
+    LC --> D
+```
+
+::
+
+:block{content="contents/become-partner.md"}
+:block{content="contents/lets-meet.md" color=black}
+
+::block
 
 :::banner
 
@@ -88,7 +119,7 @@ customer projects.
 
 ::
 
-::block
+::block{color=black}
 
 :::banner
 
@@ -143,7 +174,7 @@ See how we build software incrementally;
 
 ::
 
-::block{color=black}
+::block
 
 :::banner
 
@@ -198,7 +229,7 @@ See how we care work descriptions and tasks;
 
 ::
 
-::block
+::block{color=black}
 
 :::banner
 
@@ -260,45 +291,6 @@ See what we've open sourced so far;
 
 ::
 
-:block{content="contents/lets-meet.md" color=black}
-
-::block
-
-:::banner
-
-### Delivering at pace
-
-We are a __self-managing__ team with a single point of contact assigned per
-client. We operate on a __time & materials__ basis without requiring a
-fixed-budget or a fixed-plan thanks to our fast response time.
-
-:::
-
-```mermaid
-flowchart TB
-    R(Requirement\nEmerges)
-
-    subgraph LC[Done in 3 days]
-        W(Work starts\nwith Draft PR)
-        S(Write specs\nas automated\ntests)
-        DR(Develop &\nCode Review)
-        C(Customer\nReviews)
-
-        W --> S
-        S --> DR
-        DR --> C
-        C --> S
-    end
-
-    D(Deliver)
-
-    R --> LC
-    LC --> D
-```
-
-::
-
-:block{content="contents/become-partner.md" color=black}
 :block{content="contents/lets-meet.md"}
 :block{content="contents/tedious-work.md" color=black}
 :block{content="contents/explore-long-term.md"}
