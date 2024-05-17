@@ -3,7 +3,7 @@
 ### A software development collective,
 ### connected through the craft
 
-We are a team of 3-7 software engineers guided by our people-centric philosophy.
+We are a team of software engineers guided by our people-centric philosophy.
 
 ::
 

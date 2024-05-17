@@ -16,15 +16,57 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 ### A software development collective;
 # Connected through the craft
 
-Our collective is a team of 3-7 software engineers guided by our people-centric
-philosophy. We value excellence and efficiency, focusing on delivering quality
-work collaboratively.
+Our collective is a team of software engineers guided by our people-centric
+philosophy, focusing on delivering quality work collaboratively.
 
 :::
 
 ::
 
 ::block{color=black}
+
+:::banner
+
+### Our structure
+
+At Mouseless, we function as a cohesive software development collective. Our
+structure is designed to promote collaboration and communication, aligning with
+our people-centric philosophy.
+
+:::
+
+:::columns{:itemWidths='["100%", "20ch"]'}
+
+#text
+
+Within our collective, one of our engineers serves as the single point of
+contact who manages all client communications and operations seamlessly while
+we, as Mouseless, focus on delivering software increments continuously.
+
+### Why a collective?
+
+A collective is inherently centered around its people, creating an environment
+of communication and efficiency. In contrast, a business centers on its core
+product vision, emphasizing product delivery, regardless of obstacles.
+
+When faced with an inevitable choice between the product and the people,
+collectives lean toward their people, whereas businesses lean toward their
+products.
+
+Recognizing this, we've chosen to be a collective.
+
+#chart
+
+```mermaid
+flowchart TB
+    Mouseless --consists of--> Individuals --with--> LE(Legal Entities) --bound by--> C(Contract)
+```
+
+:::
+
+::
+
+::block
 
 :::banner
 
@@ -88,50 +130,6 @@ dynamic goal, not an unchanging ideal. With this perspective, we pursue
 excellence in our work every day.
 
 ::::
-
-:::
-
-::
-
-::block
-
-:::banner
-
-### Our structure
-
-At Mouseless, we function as a cohesive software development collective. Our
-structure is designed to promote collaboration and communication, aligning with
-our people-centric philosophy.
-
-:::
-
-:::columns{:itemWidths='["100%", "20ch"]'}
-
-#text
-
-Within our collective, one of our engineers serves as the main point of contact
-for a client. This __Single Point of Contact__ manages all client communications
-and operations seamlessly while we, as Mouseless, focus on delivering software
-increments continuously.
-
-### Why a collective?
-
-A collective is inherently centered around its people, creating an environment
-of communication and efficiency. In contrast, a business centers on its core
-product vision, emphasizing product delivery, regardless of obstacles.
-
-When faced with an inevitable choice between the product and the people,
-collectives lean toward their people, whereas businesses lean toward their
-products.
-
-Recognizing this, we've chosen to be a collective.
-
-#chart
-
-```mermaid
-flowchart TB
-    Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
-```
 
 :::
 

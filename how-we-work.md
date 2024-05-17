@@ -13,7 +13,7 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 
 :::banner
 
-## Experiment, learn and progress
+# Experiment, learn and progress
 
 We prioritize timely feature delivery, automated testing, code refactoring, and
 keeping technology up to date without extra cost.
