@@ -5,8 +5,8 @@ position: 4
 seo-title: >
   > mouseless -- our collective_
 seo-description: >
-  A software development collective; Connected through the craft.
-seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
+  A software development collective, connected through the craft
+seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
 ::block

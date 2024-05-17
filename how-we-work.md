@@ -5,8 +5,8 @@ position: 3
 seo-title: >
   > mouseless -- how we work_
 seo-description: >
-  Experiment, learn and progress
-seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
+  Experiment and learn, while delivering at pace
+seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
 ::block

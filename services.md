@@ -6,7 +6,7 @@ seo-title: >
   > mouseless -- services_
 seo-description: >
   We offer; staff augmentation
-seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
+seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
 ::block
