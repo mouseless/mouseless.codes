@@ -15,9 +15,9 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 # Where your vision,
 # meets our passion
 
-Our love for __software development__ merge with your needs to create
-exceptional projects. We foster an approach where shared passion and expertise
-bring mutual benefits to every challenge.
+Hire a senior __software engineering team__ with no management and HR overhead.
+Completely self-managing, taking full responsibility. Explore the best way to
+work with software engineers.
 
 :::
 
