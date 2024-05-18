@@ -42,12 +42,20 @@ code {
   background-color: transparent;
 }
 
-summary {
+details {
   margin-top: var(--space-sm);
-  margin-bottom: var(--space-md);
 
-  a {
+  summary {
     cursor: pointer;
+    list-style-position: outside;
+
+    > *:not(.link-button):first-child {
+      display: inline;
+    }
+  }
+
+  &[open] {
+    margin-bottom: var(--space-md);
   }
 }
 

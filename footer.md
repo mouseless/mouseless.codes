@@ -1,3 +1,6 @@
+:block{content="contents/lets-meet.md"}
+:block{content="contents/common-questions.md" color=black}
+
 ::block
 
 :::banner
