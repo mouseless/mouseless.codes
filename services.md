@@ -5,7 +5,7 @@ position: 1
 seo-title: >
   > mouseless -- services_
 seo-description: >
-  We offer; staff augmentation
+  We offer; software development as a service
 seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
@@ -14,7 +14,8 @@ seo-image: images/logo-profile-mark-primary-500px.png
 :::banner
 
 ### We offer;
-# Staff augmentation
+# Software Development
+# as a Service
 
 We build long-term partnerships to take __full responsibility__ of in-house
 software that you'd rather outsource.
