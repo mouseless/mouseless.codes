@@ -41,6 +41,29 @@ those, we are eager to embrace the opportunity.
 
 ::
 
+::details
+
+:::summary
+
+##### [How much do you cost?]()
+
+:hr
+
+:::
+
+We operate on a pay-as-you-go basis, meaning you only pay for the work
+completed. There are no extra management or HR costs for you. Additionally, we
+handle technology upgrades for the software systems we maintain at no additional
+cost, leveraging our cross-pollination and open-source approach.
+
+Each engineer has a seniority rate that determines their monthly contribution.
+This helps us calculate costs transparently. Our single price policy makes it
+easy for you to compare our services with other providers.
+
+If you’d like more details, please feel free to [reach out](#contact-us).
+
+::
+
 :br
 
 ...

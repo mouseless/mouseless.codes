@@ -23,32 +23,19 @@ needs which best suits for;
 
 :::summary
 
-##### [TODO: For which type of projects can we get support?]()
+##### [What types of software projects fit your services?]()
 
 :hr
 
 :::
 
-TODO: We only require our contact to review and accept our software
-increments...
+There are no categorical restrictions, only practical ones.
 
-::
+We are currently proficient in delivering backend systems with public APIs along
+with an admin frontend. We also develop responsive web apps and sites.
 
-::details
-
-:::summary
-
-##### [TODO: What is your cost?]()
-
-:hr
-
-:::
-
-- TODO: We are pay as you go.
-- TODO: No extra management cost.
-- TODO: Tech upgrades out of the box, thanks to our cross pollination and open
-  source policy.
-- TODO: No HR cost on your side, we are a collective of enthusiastic software
-  professionals bound to each other by contract via our legal entites.
+Additionally, thanks to our culture of experimentation, we are well-suited for
+projects where you need to explore new technologies or systems, such as
+integration gateways or any kind of software-related proof of concepts (PoCs).
 
 ::
