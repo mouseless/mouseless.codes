@@ -24,14 +24,18 @@ Recognizing this, we've chosen to be a collective.
 
 :::summary
 
-##### [TODO: How can I trust a collective, what if you just disband?]()
+##### [What risks do I face when working with a collective?]()
 
 :hr
 
 :::
 
-- TODO: We take full responsibility of the systems we work on.
-- TODO: We are not one legal entity, but many.
-- TODO: Your risk has never been lower
+The risks have never been lower. When you engage with a company, your agreement
+typically guarantees your bond with its legal entity, not its personnel. At
+Mouseless, we prioritize our people over their legal entities. We work together
+not only for business reasons, but also due to our shared interest in the
+profession of software engineering. This structure provides our clients with low
+turnover while maintaining professional relationships through the companies of
+our people.
 
 ::
