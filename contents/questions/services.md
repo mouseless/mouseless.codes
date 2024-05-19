@@ -2,7 +2,9 @@
 
 :::summary
 
-#### [How does SDaaS differ from outsourcing?]()
+##### [How does SDaaS differ from outsourcing?]()
+
+:hr
 
 :::
 
@@ -21,7 +23,9 @@ needs which best suits for;
 
 :::summary
 
-#### [TODO: For which type of projects can we get support?]()
+##### [TODO: For which type of projects can we get support?]()
+
+:hr
 
 :::
 
@@ -34,7 +38,9 @@ increments...
 
 :::summary
 
-#### [TODO: What is your cost?]()
+##### [TODO: What is your cost?]()
+
+:hr
 
 :::
 

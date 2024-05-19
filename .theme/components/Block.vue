@@ -40,7 +40,6 @@ const props = defineProps({
 const colors = {
   black: "light",
   white: "dark",
-  yellow: "dark",
   blue: "light",
   green: "light"
 };
@@ -86,7 +85,6 @@ function backgroundChange(color) {
 .color {
   &--black { background-color: var(--color-darkgreen-900); }
   &--white { background-color: var(--color-gray-100); }
-  &--yellow { background-color: var(--color-yellow-500); }
   &--blue { background-color: var(--color-blue-900); }
   &--green { background-color: var(--color-green-900); }
 

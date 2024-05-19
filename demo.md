@@ -220,6 +220,8 @@ flowchart LR
 
 ###### Head6
 
+:hr
+
 Normal Text
 
 **Bold Text**

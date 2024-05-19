@@ -2,7 +2,9 @@
 
 :::summary
 
-#### [Why a collective?]()
+##### [Why a collective?]()
+
+:hr
 
 :::
 
@@ -22,7 +24,9 @@ Recognizing this, we've chosen to be a collective.
 
 :::summary
 
-#### [TODO: How can I trust a collective, what if you just disband?]()
+##### [TODO: How can I trust a collective, what if you just disband?]()
+
+:hr
 
 :::
 

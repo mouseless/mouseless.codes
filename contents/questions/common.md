@@ -2,7 +2,9 @@
 
 :::summary
 
-#### [Why Mouseless?]()
+##### [Why Mouseless?]()
+
+:hr
 
 :::
 
@@ -12,7 +14,9 @@
 
 :::summary
 
-#### [What business domains does Mouseless work in?]()
+##### [What business domains does Mouseless work in?]()
+
+:hr
 
 :::
 
@@ -28,7 +32,9 @@ Software Development.
 
 :::summary
 
-#### [What technologies do you have experience in?]()
+##### [What technologies do you have experience in?]()
+
+:hr
 
 :::
 

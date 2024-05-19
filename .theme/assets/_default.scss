@@ -1,10 +1,11 @@
 :root {
   --color-dark-link: var(--color-darkgreen-900);
   --color-dark-link-hover: var(--color-red-700);
-  --color-dark-box-bg: var(--color-white);
+  --color-dark-box-bg: var(--color-darkgreen-800);
   --color-dark-text-heading: var(--color-black);
   --color-dark-text-normal: var(--color-darkgreen-900);
   --color-dark-text-highlight: var(--color-red-700);
+  --color-dark-text-mute: var(--color-gray-300);
 
   --color-light-link: var(--color-gray-100);
   --color-light-link-hover: var(--color-green-500);
@@ -12,6 +13,7 @@
   --color-light-text-heading: var(--color-white);
   --color-light-text-normal: var(--color-gray-400);
   --color-light-text-highlight: var(--color-green-500);
+  --color-light-text-mute: var(--color-darkgreen-800);
 
   --font-size: 16px;
   --height-logo: 30px;

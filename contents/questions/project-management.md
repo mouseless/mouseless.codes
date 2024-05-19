@@ -2,7 +2,9 @@
 
 :::summary
 
-#### [How do you work without deadlines?]()
+##### [How do you work without deadlines?]()
+
+:hr
 
 :::
 
@@ -25,7 +27,9 @@ time.
 
 :::summary
 
-#### [How does it differ from a turnkey project management style?]()
+##### [How does it differ from a turnkey project management style?]()
+
+:hr
 
 :::
 
@@ -41,7 +45,9 @@ prioritizations and detailed analyses on the go.
 
 :::summary
 
-#### [Is there a support phase in iterative development approaches?]()
+##### [Is there a support phase in iterative development approaches?]()
+
+:hr
 
 :::
 
