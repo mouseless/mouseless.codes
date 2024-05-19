@@ -25,7 +25,7 @@ philosophy, focusing on delivering quality work collaboratively.
 
 ::block{color=black}
 
-:::columns{:itemWidths='["100%", "20ch"]'}
+:::columns{:itemWidths='["100%", "25ch"]'}
 
 #text
 
@@ -33,15 +33,25 @@ philosophy, focusing on delivering quality work collaboratively.
 
 ### Our structure
 
-At Mouseless, we function as a cohesive software development collective. Our
-structure is designed to promote collaboration and communication, aligning with
-our people-centric philosophy.
+At Mouseless, we function as a cohesive team of engineers. Our structure is
+designed to promote collaboration and communication, aligning with our
+people-centric philosophy.
 
 ::::
 
 Within our collective, one of our engineers serves as the single point of
-contact who manages all client communications and operations seamlessly while
-we, as Mouseless, focus on delivering software increments continuously.
+contact, managing all client communications and operations seamlessly. This
+ensures clear and efficient communication, allowing us to focus on delivering
+continuous software increments.
+
+We use our Discord server for daily communication. For detailed governance
+information, please see [github.com/mouseless/governance][]. Development is
+split into small increments, each with an owner and a reviewer, targeted for
+completion within a week.
+
+At the end of each month, we analyze our worklogs and discuss how to organize
+for upcoming tasks. This helps us maintain a balance between different types of
+work and skills, ensuring continuous improvement and high-quality outcomes.
 
 #chart
 
@@ -198,4 +208,4 @@ flowchart TB
 ::
 
 [github]: https://github.com/mouseless
-[mail]: mailto:connect@mouseless.codes
+[github.com/mouseless/governance]: https://github.com/mouseless/governance

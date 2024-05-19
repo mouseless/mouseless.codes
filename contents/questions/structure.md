@@ -24,20 +24,20 @@ Recognizing this, we've chosen to be a collective.
 
 :::summary
 
-##### [What risks do I face when working with a collective?]()
+##### [What should I consider when working with a collective?]()
 
 :hr
 
 :::
 
-The risks have never been lower. When you engage with a company, your agreement
-typically guarantees your bond with its legal entity, not its personnel.
+When you engage with a company, your agreement typically guarantees your bond
+with its legal entity, not its personnel.
 
 At Mouseless, we prioritize our people over their legal entities. We work
 together not only for business reasons, but also due to our shared interest in
 the profession of software engineering.
 
-This structure provides our clients with low turnover while maintaining
+This structure provides our clients with a low turnover rate while maintaining
 professional relationships through the companies of our people.
 
 ::
