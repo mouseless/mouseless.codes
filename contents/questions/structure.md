@@ -31,11 +31,13 @@ Recognizing this, we've chosen to be a collective.
 :::
 
 The risks have never been lower. When you engage with a company, your agreement
-typically guarantees your bond with its legal entity, not its personnel. At
-Mouseless, we prioritize our people over their legal entities. We work together
-not only for business reasons, but also due to our shared interest in the
-profession of software engineering. This structure provides our clients with low
-turnover while maintaining professional relationships through the companies of
-our people.
+typically guarantees your bond with its legal entity, not its personnel.
+
+At Mouseless, we prioritize our people over their legal entities. We work
+together not only for business reasons, but also due to our shared interest in
+the profession of software engineering.
+
+This structure provides our clients with low turnover while maintaining
+professional relationships through the companies of our people.
 
 ::

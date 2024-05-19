@@ -190,7 +190,7 @@ flowchart TB
 
 ::block{color=black}
 
-## Common Questions
+## Questions you might have
 
 :include{content="contents/questions/structure.md"}
 :include{content="contents/questions/common.md"}

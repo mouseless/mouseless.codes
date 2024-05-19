@@ -64,7 +64,7 @@ introducing new features, planning and managing releases, researching and
 implementing the latest .NET advancements into the framework, managing
 technology upgrades, and maintaining the framework's documentation.
 
-### Our History
+### Our history
 
 We initiated the design and development of _Multinet Up_'s framework, with the
 first version released in 2014. We've open-sourced Routine, and turn their
@@ -121,7 +121,7 @@ is where we came in. Currently, we are helping them establish an integration
 gateway, ensuring they can maintain their focus on enhencing the seller and
 buyer experience they provide.
 
-### Our History
+### Our history
 
 We have collaborated on several projects with the Forward team, with some dating
 back to 2015, even before our collective was born. With this strong
@@ -146,7 +146,7 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 ::block{color=black}
 
-## Common Questions
+## Questions you might have
 
 :include{content="contents/questions/services.md"}
 :include{content="contents/questions/common.md"}

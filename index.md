@@ -33,7 +33,7 @@ work with software engineers.
 
 ::block{color=black}
 
-## Common Questions
+## Questions you might have
 
 :include{content="contents/questions/common.md"}
 

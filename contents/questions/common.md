@@ -2,18 +2,6 @@
 
 :::summary
 
-##### [Why Mouseless?]()
-
-:hr
-
-:::
-
-::
-
-::details
-
-:::summary
-
 ##### [What business domains does Mouseless work in?]()
 
 :hr
@@ -22,9 +10,10 @@
 
 We don't limit our services to certain business domains by definition. Our
 business domain is software development itself, and we offer our services to
-those who have expertise in their own business domains. That being said, we have
-more experience in Fintech, Shipping and Delivery, E-Commerce, SaaS, and Agile
-Software Development.
+those who have expertise in their own business domains.
+
+That being said, we have more experience in Fintech, Shipping and Delivery,
+E-Commerce, SaaS, and Agile Software Development.
 
 ::
 
@@ -51,3 +40,9 @@ We're actively exploring __Go__ and __Flutter__ as well. If you need help with
 those, we are eager to embrace the opportunity.
 
 ::
+
+:br
+
+...
+
+If you have other questions in mind, please reach out to us from below.

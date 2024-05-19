@@ -109,7 +109,7 @@ granting us an opportunity to address engineering challenges.
 
 ::block{color=black}
 
-## Common Questions
+## Questions you might have
 
 :include{content="contents/questions/services.md"}
 :include{content="contents/questions/common.md"}

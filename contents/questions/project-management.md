@@ -35,9 +35,11 @@ time.
 
 It depends on what you mean by turnkey. If you mean having a fixed scope before
 we start working on a project, this is not our way of managing software
-development. However, we are perfectly fine with fixed-budget project
-management. With a fixed budget, we can start developing right away and make
-prioritizations and detailed analyses on the go.
+development.
+
+However, we are perfectly fine with fixed budget project management. With a
+fixed budget, we can start developing right away and make prioritizations and
+detailed analyses on the go.
 
 ::
 
@@ -54,10 +56,11 @@ prioritizations and detailed analyses on the go.
 Yes. We see software development as continuous work that starts with a minimal
 scope and builds upon it in every iteration. What we do is create a minimum
 viable and functional software and deploy it to production as soon as possible,
-usually within 2-4 weeks. We then continue developing new versions while
-providing support for the production version.
+usually within 2-4 weeks.
 
-If you find a version sufficient at any given moment, we focus on maintaining it
-by addressing bugs and issues, as well as applying technology upgrades.
+We continue developing new versions while providing support for the production
+version. If you find a version sufficient at any given moment, we focus on
+maintaining it by addressing bugs and issues, as well as applying technology
+upgrades.
 
 ::
