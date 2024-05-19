@@ -142,6 +142,16 @@ relationship, we are happy to support Forwardians in achieving their goals.
 :block{content="contents/balancing-quality.md" color=black}
 :block{content="contents/mouseless-in-action.md"}
 :block{content="contents/our-collective.md" color=black}
+:block{content="contents/lets-meet.md"}
+
+::block{color=black}
+
+## Common Questions
+
+:include{content="contents/questions/services.md"}
+:include{content="contents/questions/common.md"}
+
+::
 
 [Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/

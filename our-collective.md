@@ -25,7 +25,11 @@ philosophy, focusing on delivering quality work collaboratively.
 
 ::block{color=black}
 
-:::banner
+:::columns{:itemWidths='["100%", "20ch"]'}
+
+#text
+
+::::banner
 
 ### Our structure
 
@@ -33,27 +37,11 @@ At Mouseless, we function as a cohesive software development collective. Our
 structure is designed to promote collaboration and communication, aligning with
 our people-centric philosophy.
 
-:::
-
-:::columns{:itemWidths='["100%", "20ch"]'}
-
-#text
+::::
 
 Within our collective, one of our engineers serves as the single point of
 contact who manages all client communications and operations seamlessly while
 we, as Mouseless, focus on delivering software increments continuously.
-
-### Why a collective?
-
-A collective is inherently centered around its people, creating an environment
-of communication and efficiency. In contrast, a business centers on its core
-product vision, emphasizing product delivery, regardless of obstacles.
-
-When faced with an inevitable choice between the product and the people,
-collectives lean toward their people, whereas businesses lean toward their
-products.
-
-Recognizing this, we've chosen to be a collective.
 
 #chart
 
@@ -198,6 +186,16 @@ flowchart TB
 :block{content="contents/balancing-quality.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/explore-long-term.md" color=black}
+:block{content="contents/lets-meet.md"}
+
+::block{color=black}
+
+## Common Questions
+
+:include{content="contents/questions/structure.md"}
+:include{content="contents/questions/common.md"}
+
+::
 
 [github]: https://github.com/mouseless
 [mail]: mailto:connect@mouseless.codes

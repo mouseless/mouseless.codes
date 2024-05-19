@@ -1,24 +1,3 @@
-## Common questions
-
-::details
-
-:::summary
-
-#### [How does SDaaS differ from outsourcing?]()
-
-:::
-
-It is a specific type of outsourcing where you hire an established software
-development team. This helps you to skip HR overhead and focus on your business
-needs which best suits for;
-
-- Temporarily requiring a highly-skilled team
-- Quick experimentations for business ideas
-- Managing custom developed in-house softwares that are not in your core
-  business
-
-::
-
 ::details
 
 :::summary
@@ -62,7 +41,7 @@ prioritizations and detailed analyses on the go.
 
 :::summary
 
-#### [Will we get support after project ends?]()
+#### [Is there a support phase in iterative development approaches?]()
 
 :::
 
@@ -73,6 +52,6 @@ usually within 2-4 weeks. We then continue developing new versions while
 providing support for the production version.
 
 If you find a version sufficient at any given moment, we focus on maintaining it
-by addressing bugs and issues, as well as applying technical upgrades.
+by addressing bugs and issues, as well as applying technology upgrades.
 
 ::

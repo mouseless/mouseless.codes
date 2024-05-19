@@ -295,3 +295,13 @@ See what we've open sourced so far;
 :block{content="contents/tedious-work.md" color=black}
 :block{content="contents/explore-long-term.md"}
 :block{content="contents/our-collective.md" color=black}
+:block{content="contents/lets-meet.md"}
+
+::block{color=black}
+
+## Common Questions
+
+:include{content="contents/questions/project-management.md"}
+:include{content="contents/questions/common.md"}
+
+::
