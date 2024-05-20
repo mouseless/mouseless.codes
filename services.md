@@ -5,8 +5,8 @@ position: 1
 seo-title: >
   > mouseless -- services_
 seo-description: >
-  We offer; staff augmentation
-seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
+  We offer; software development as a service
+seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
 ::block
@@ -14,10 +14,11 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 :::banner
 
 ### We offer;
-# Staff augmentation
+# Software Development
+# as a Service
 
 We build long-term partnerships to take __full responsibility__ of in-house
-software that you'd rather outsource.
+software and modernize legacy systems.
 
 :::
 
@@ -25,15 +26,42 @@ software that you'd rather outsource.
 
 ::block{color=black}
 
-```mermaid
-flowchart LR
-    Q(When you need)
-    CSD(Custom Software\nDevelopment)
-    RE(Software\nRe-engineering)
+:::columns{:itemWidths='["100%", "130ch"]'}
 
-    Q -->|to develop a unique software| CSD
-    Q -->|to improve an existing solution| RE
+#text
+
+::::banner
+
+### Let's match your business needs
+
+We're here to develop software solutions, whether you're a small startup or a
+big player in the market.
+
+::::
+
+For large enterprises in high-tech environments, we specialize in developing
+custom software solutions to keep them at the forefront of technology.
+Similarly, for those in low-tech environments, we offer modernizing legacy
+systems to enhance efficiency and competitiveness.
+
+For small and medium-sized enterprises (SMEs) navigating high-tech landscapes,
+we offer expertise in scaling their growth through strategic IT solutions. While
+we recognize the importance of SMEs in low-tech environments, our focus lies
+elsewhere at present.
+
+#chart
+
+```mermaid
+quadrantChart
+    x-axis SME --> Large Enterprise
+    y-axis Low Tech --> High Tech
+    quadrant-1 "✔️  Develop Custom Software"
+    quadrant-2 "✔️  Scale Your Growth"
+    quadrant-3 "✖️  Outside Our Focus"
+    quadrant-4 "✔️  Modernize Legacy Systems"
 ```
+
+:::
 
 ::
 
@@ -63,7 +91,7 @@ experiment, and share our learnings with our customers.
 
 #image
 
-![Custom Software Development](images/services/csd.png)
+![icon](images/services/csd.png)
 
 :::
 
@@ -82,7 +110,7 @@ We offer our expertise to update and maintain your legacy in-house software.
 
 #image
 
-![Software Re-engineering](images/services/sr.png)
+![icon](images/services/sr.png)
 
 #text
 
@@ -104,3 +132,13 @@ granting us an opportunity to address engineering challenges.
 :block{content="contents/explore-long-term.md" color=black}
 :block{content="contents/balancing-quality.md"}
 :block{content="contents/our-collective.md" color=black}
+:block{content="contents/lets-meet.md"}
+
+::block{color=black}
+
+## Questions you might have
+
+:include{content="contents/questions/services.md"}
+:include{content="contents/questions/common.md"}
+
+::

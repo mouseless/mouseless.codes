@@ -6,7 +6,7 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           type: "text/css",
-          href: "https://mouseless.github.io/brand/assets/css/secondary.css"
+          href: "https://brand.mouseless.codes/assets/css/secondary.css"
         },
         {
           rel: "stylesheet",

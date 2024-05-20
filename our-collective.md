@@ -5,8 +5,8 @@ position: 4
 seo-title: >
   > mouseless -- our collective_
 seo-description: >
-  A software development collective; Connected through the craft.
-seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
+  A software development collective, connected through the craft
+seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
 ::block
@@ -16,15 +16,57 @@ seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-ma
 ### A software development collective;
 # Connected through the craft
 
-Our collective is a team of 3-7 software engineers guided by our people-centric
-philosophy. We value excellence and efficiency, focusing on delivering quality
-work collaboratively.
+Our collective is a team of software engineers guided by our people-centric
+philosophy, focusing on delivering quality work collaboratively.
 
 :::
 
 ::
 
 ::block{color=black}
+
+:::columns{:itemWidths='["100%", "25ch"]'}
+
+#text
+
+::::banner
+
+### Our structure
+
+At Mouseless, we function as a cohesive team of engineers. Our structure is
+designed to promote collaboration and communication, aligning with our
+people-centric philosophy.
+
+::::
+
+Within our collective, one of our engineers serves as the single point of
+contact, managing all client communications and operations seamlessly. This
+ensures clear and efficient communication, allowing us to focus on delivering
+continuous software increments.
+
+We use our Discord server for daily communication. For detailed governance
+information, please see [github.com/mouseless/governance][].
+
+Development is split into small increments, each with an owner and a reviewer,
+targeted for completion within a week. At the end of each month, we analyze our
+worklogs and discuss how to organize for upcoming tasks. This helps us maintain
+a balance between different types of work and skills, ensuring continuous
+improvement and high-quality outcomes.
+
+#chart
+
+```mermaid
+flowchart TB
+    M(Mouseless) --consists of--> I(Individuals)
+    I --with--> LE(Legal Entities)
+    LE --bound by--> C(Contract)
+```
+
+:::
+
+::
+
+::block
 
 :::banner
 
@@ -93,50 +135,6 @@ excellence in our work every day.
 
 ::
 
-::block
-
-:::banner
-
-### Our structure
-
-At Mouseless, we function as a cohesive software development collective. Our
-structure is designed to promote collaboration and communication, aligning with
-our people-centric philosophy.
-
-:::
-
-:::columns{:itemWidths='["100%", "20ch"]'}
-
-#text
-
-Within our collective, one of our engineers serves as the main point of contact
-for a client. This __Single Point of Contact__ manages all client communications
-and operations seamlessly while we, as Mouseless, focus on delivering software
-increments continuously.
-
-### Why a collective?
-
-A collective is inherently centered around its people, creating an environment
-of communication and efficiency. In contrast, a business centers on its core
-product vision, emphasizing product delivery, regardless of obstacles.
-
-When faced with an inevitable choice between the product and the people,
-collectives lean toward their people, whereas businesses lean toward their
-products.
-
-Recognizing this, we've chosen to be a collective.
-
-#chart
-
-```mermaid
-flowchart TB
-    Mouseless --consists of--> Individuals --with--> LE[Legal Entities] --bound by--> C[Contract]
-```
-
-:::
-
-::
-
 ::block{color=black}
 
 :::columns{:itemWidths='["100%", "19ch"]'}
@@ -182,14 +180,9 @@ dedicated work.
 
 ```mermaid
 flowchart TB
-    2([ ])
-    3([ ])
-    4([ ])
-    5([ ])
-
-    2 --Senior--> 3
-    3 --Lead--> 4
-    4 --Principal--> 5
+    2([ ]) --Senior--> 3([ ])
+    3 --Lead--> 4([ ])
+    4 --Principal--> 5([ ])
 ```
 
 :::
@@ -200,6 +193,16 @@ flowchart TB
 :block{content="contents/balancing-quality.md" color=black}
 :block{content="contents/tedious-work.md"}
 :block{content="contents/explore-long-term.md" color=black}
+:block{content="contents/lets-meet.md"}
+
+::block{color=black}
+
+## Questions you might have
+
+:include{content="contents/questions/structure.md"}
+:include{content="contents/questions/common.md"}
+
+::
 
 [github]: https://github.com/mouseless
-[mail]: mailto:connect@mouseless.codes
+[github.com/mouseless/governance]: https://github.com/mouseless/governance

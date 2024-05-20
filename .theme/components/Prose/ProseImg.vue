@@ -35,7 +35,7 @@ img {
   border-radius: var(--border-radius);
 }
 
-.icon {
+.icon, .diagram {
   border-radius: 0;
 }
 

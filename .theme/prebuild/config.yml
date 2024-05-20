@@ -46,6 +46,8 @@ tasks:
         headless: new
         flowchart:
           useMaxWidth: false
+        quadrantChart:
+          xAxisPosition: 'bottom'
         themeVariables:
           primaryColor: '#FA465B'
           primaryTextColor: '#F7F7F7'
@@ -56,6 +58,12 @@ tasks:
           secondaryBorderColor: '#031819'
           tertiaryColor: '#154245'
           activationBkgColor: '#FA465B'
+          quadrant1Fill: '#255759'
+          quadrant2Fill: '#154245'
+          quadrant3Fill: '#092C2E'
+          quadrant4Fill: '#154245'
+          quadrantInternalBorderStrokeFill: '#031819'
+          quadrantExternalBorderStrokeFill: '#031819'
   - move:
       extension: .svg
       source: ./.theme/.temp

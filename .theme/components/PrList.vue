@@ -20,8 +20,15 @@
       </div>
     </div>
     <div class="pr-list__prs">
-      <div v-if="!render" class="pr-list__loading" />
-      <SliderInner v-if="render" :align="'left'" :slides="pullRequests">
+      <div v-if="!render" class="pr-list__loading loading">
+        <div class="loading__icon" />
+      </div>
+      <SliderInner
+        v-if="render"
+        :align="'left'"
+        :slides="pullRequests"
+        :height="height"
+      >
         <template #default="{pageNumber, slides}">
           <Pr
             v-if="slides.length !== 0 && pageNumber != slides.length - 1"
@@ -46,7 +53,7 @@
 const props = defineProps({
   height: {
     type: String,
-    default: "30ch"
+    default: "50ch"
   },
   repos: {
     type: Array,
@@ -89,24 +96,32 @@ async function getPullRequests(state) {
 }
 </script>
 <style lang="scss">
-:root {
-  /* couldn't find a better way, manually calculated */
-  --min-height-pr: 7.6em;
-}
-
 .pr-list {
   margin-top: 3em;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  min-height: calc(v-bind(height) + var(--min-height-pr) + 19.6em);
 
   &__prs {
     margin: auto;
     width: 100%;
   }
 
-  &__loading {
+  &__see-more {
+    color: var(--color-gray-100);
+    background-color: var(--color-darkgreen-800);
+    border-radius: var(--border-radius);
+    padding: var(--border-radius);
+    height: v-bind(height);
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  height: v-bind(height);
+
+  &__icon {
     animation: spin 1s linear infinite;
     border: 4px solid var(--color-bg-soft);
     border-left-color: var(--color-fg);
@@ -120,14 +135,6 @@ async function getPullRequests(state) {
     to {
       transform: rotate(360deg);
     }
-  }
-
-  &__see-more {
-    color: var(--color-gray-100);
-    background-color: var(--color-darkgreen-800);
-    border-radius: var(--border-radius);
-    padding: var(--border-radius);
-    height: calc(v-bind(height) + var(--min-height-pr));
   }
 }
 

@@ -31,6 +31,13 @@
         >
           {{ menu['menu-title'] }}
         </NuxtLink>
+        <NuxtLink
+          to="//brand.mouseless.codes"
+          class="footer__menu-item"
+          target="_blank"
+        >
+          brand <i class="fa-solid fa-arrow-up-right-from-square" />
+        </NuxtLink>
       </div>
     </div>
   </footer>
@@ -67,6 +74,10 @@ const menus = store.pageMeta.filter(m => !!m.position);
     &--selected:hover {
       color: inherit;
     }
+
+    &:last-child {
+      margin-left: var(--space-sm);
+    }
   }
 }
 
@@ -76,6 +87,26 @@ const menus = store.pageMeta.filter(m => !!m.position);
       flex-direction: column;
       align-items: flex-end;
       gap: var(--space-xs);
+    }
+
+    &__menu-item {
+      &:last-child {
+        margin-left: 0;
+        margin-top: var(--space-xs);
+      }
+    }
+  }
+}
+
+@media (max-width: $page-s) {
+  .footer {
+    &__content {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    &__menu {
+      align-items: flex-start;
     }
   }
 }

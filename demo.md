@@ -5,8 +5,8 @@ position: 5
 seo-title: >
   > mouseless -- demo_
 seo-description: >
-  demo page to find out how to use components.
-seo-image: https://mouseless.github.io/brand/assets/logo/profile/logo-profile-mark-primary-500px.png
+  Demo page to find out how to use components
+seo-image: images/logo-profile-mark-primary-500px.png
 ---
 
 ::block{:debug=true}
@@ -219,6 +219,8 @@ flowchart LR
 ##### Head5
 
 ###### Head6
+
+:hr
 
 Normal Text
 
