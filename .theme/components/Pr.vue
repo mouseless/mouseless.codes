@@ -47,6 +47,9 @@ function getState(object) {
   color: var(--color-bg);
   padding: var(--space-md);
   overflow: hidden;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  height: v-bind(height);
 
   &__title {
     margin-bottom: var(--space-xs);
@@ -54,7 +57,6 @@ function getState(object) {
   }
 
   &__body {
-    height: v-bind(height);
     overflow: hidden;
   }
 
