@@ -18,7 +18,7 @@ seo-image: images/logo-profile-mark-primary-500px.png
 # as a Service
 
 We build long-term partnerships to take __full responsibility__ of in-house
-software that you'd rather outsource.
+software and modernize legacy systems.
 
 :::
 
@@ -26,15 +26,42 @@ software that you'd rather outsource.
 
 ::block{color=black}
 
-```mermaid
-flowchart LR
-    Q(When you need)
-    CSD(Custom Software\nDevelopment)
-    RE(Software\nRe-engineering)
+:::columns{:itemWidths='["100%", "130ch"]'}
 
-    Q -->|to develop a unique software| CSD
-    Q -->|to improve an existing solution| RE
+#text
+
+::::banner
+
+### Let's match your business needs
+
+We're here to develop software solutions, whether you're a small startup or a
+big player in the market.
+
+::::
+
+For large enterprises in high-tech environments, we specialize in developing
+custom software solutions to keep them at the forefront of technology.
+Similarly, for those in low-tech environments, we offer modernizing legacy
+systems to enhance efficiency and competitiveness.
+
+For small and medium-sized enterprises (SMEs) navigating high-tech landscapes,
+we offer expertise in scaling their growth through strategic IT solutions. While
+we recognize the importance of SMEs in low-tech environments, our focus lies
+elsewhere at present.
+
+#chart
+
+```mermaid
+quadrantChart
+    x-axis SME --> Large Enterprise
+    y-axis Low Tech --> High Tech
+    quadrant-1 "✔️  Develop Custom Software"
+    quadrant-2 "✔️  Scale Your Growth"
+    quadrant-3 "✖️  Outside Our Focus"
+    quadrant-4 "✔️  Modernize Legacy Systems"
 ```
+
+:::
 
 ::
 

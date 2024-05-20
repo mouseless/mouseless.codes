@@ -57,7 +57,9 @@ improvement and high-quality outcomes.
 
 ```mermaid
 flowchart TB
-    Mouseless --consists of--> Individuals --with--> LE(Legal Entities) --bound by--> C(Contract)
+    M(Mouseless) --consists of--> I(Individuals)
+    I --with--> LE(Legal Entities)
+    LE --bound by--> C(Contract)
 ```
 
 :::
@@ -178,14 +180,9 @@ dedicated work.
 
 ```mermaid
 flowchart TB
-    2([ ])
-    3([ ])
-    4([ ])
-    5([ ])
-
-    2 --Senior--> 3
-    3 --Lead--> 4
-    4 --Principal--> 5
+    2([ ]) --Senior--> 3([ ])
+    3 --Lead--> 4([ ])
+    4 --Principal--> 5([ ])
 ```
 
 :::
