@@ -45,13 +45,13 @@ ensures clear and efficient communication, allowing us to focus on delivering
 continuous software increments.
 
 We use our Discord server for daily communication. For detailed governance
-information, please see [github.com/mouseless/governance][]. Development is
-split into small increments, each with an owner and a reviewer, targeted for
-completion within a week.
+information, please see [github.com/mouseless/governance][].
 
-At the end of each month, we analyze our worklogs and discuss how to organize
-for upcoming tasks. This helps us maintain a balance between different types of
-work and skills, ensuring continuous improvement and high-quality outcomes.
+Development is split into small increments, each with an owner and a reviewer,
+targeted for completion within a week. At the end of each month, we analyze our
+worklogs and discuss how to organize for upcoming tasks. This helps us maintain
+a balance between different types of work and skills, ensuring continuous
+improvement and high-quality outcomes.
 
 #chart
 
