@@ -91,7 +91,7 @@ experiment, and share our learnings with our customers.
 
 #image
 
-![Custom Software Development](images/services/csd.png)
+![icon](images/services/csd.png)
 
 :::
 
@@ -110,7 +110,7 @@ We offer our expertise to update and maintain your legacy in-house software.
 
 #image
 
-![Software Re-engineering](images/services/sr.png)
+![icon](images/services/sr.png)
 
 #text
 

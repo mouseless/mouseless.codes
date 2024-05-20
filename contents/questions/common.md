@@ -28,9 +28,9 @@ E-Commerce, SaaS, and Agile Software Development.
 :::
 
 It's widely accepted that empowering senior software engineers to select their
-preferred tech stack yields optimal results. Mouseless is no different. We work
-as an autonomous software development team, where we expect our clients to give
-us this freedom.
+preferred tech stack tends to produce successful outcomes. Mouseless is no
+different. We work as an autonomous software development team, where we expect
+our clients to give us this freedom.
 
 Our current expertise lies in __C#__ and __.NET__ in the backend, and __Vue__ +
 __Nuxt__ in the frontend. We also have experience in __Java__ and __Spring__ in
