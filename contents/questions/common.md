@@ -45,7 +45,7 @@ those, we are eager to embrace the opportunity.
 
 :::summary
 
-##### [How much do you cost?]()
+##### [What are your pricing options?]()
 
 :hr
 

@@ -15,8 +15,8 @@ seo-image: images/logo-profile-mark-primary-500px.png
 # Where your vision,
 # meets our passion
 
-Hire an elite __software engineering team__ with no management and HR overhead.
-Completely self-managing, taking full responsibility. Explore the best way to
+Hire an elite __software engineering team__ with no management and HR overhead,
+completely self-managing, taking full responsibility. Explore the best way to
 work with software engineers.
 
 :::

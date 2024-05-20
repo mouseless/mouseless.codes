@@ -2,9 +2,9 @@
 
 ### We are ready to tackle all the tedious work!
 
-Turning legacy systems into opportunities for progress and creativity is
-our specialty. With a focus on creating in-house software, our aim is to design
-unique solutions that perfectly match your business goals.
+We develop custom software solutions for both SMEs and large enterprises,
+specializing in keeping high-tech companies at the forefront of technology while
+offering modernization services for low-tech environments.
 
 ::
 
