@@ -204,7 +204,7 @@ flowchart LR
 
 ## PR List
 
-:pr-list{:repos='["mouseless.codes", "do", "learn-nuxt", "learn-css", "prebuild"]'}
+:pr-list{:repos='["mouseless.codes", "baked", "learn-nuxt", "learn-css", "prebuild"]'}
 
 ## Prose
 

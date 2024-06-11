@@ -7,4 +7,4 @@ Explore our live work through pull requests of public repositories in
 
 ::
 
-:pr-list{:repos='["do", "learn-nuxt", "learn-dotnet", "mouseless.codes"]'}
+:pr-list{:repos='["baked", "learn-nuxt", "learn-dotnet", "mouseless.codes"]'}
