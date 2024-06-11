@@ -1,0 +1,1 @@
+import{_ as r}from"./_plugin-vue_export-helper.DlAUqK2U.js";import{o,c as n,r as s}from"./entry.CYhYUOHD.js";const t={},c={class:"banner f f--xl"};function a(e,f){return o(),n("div",c,[s(e.$slots,"default")])}const d=r(t,[["render",a]]);export{d as default};
