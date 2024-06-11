@@ -88,14 +88,14 @@ refactoring, ensuring adaptability without additional expenses.
 
 :::columns
 
-#do-builds
+#baked-builds
 
 #### Tests and Coverage
 
-Check out one of our open source project, DO, to see how we utilize test
+Check out one of our open source project, Baked, to see how we utilize test
 automation;
 
-:link-button{to="https://github.com/mouseless/do/actions/runs/8344718124" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/actions/runs/9302744692" text="See in GitHub"}
 
 #net-upgrade
 
@@ -106,14 +106,14 @@ we manage tech upgrades.
 
 :link-button{to="https://github.com/mouseless/learn-dotnet/pull/17" text="See in GitHub"}
 
-#do-net-upgrade
+#baked-net-upgrade
 
 #### Apply Upgrades
 
 Using our headless opinionated .NET framework we manage to easily upgrade
 customer projects.
 
-:link-button{to="https://do.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in DO"}
+:link-button{to="https://baked.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in Baked"}
 
 :::
 
@@ -158,9 +158,9 @@ setup, prioritizing efficiency and reliability.
 
 #### Frequent Releases
 
-Check out DO releases to see frequency of our delivery cycle;
+Check out Baked releases to see frequency of our delivery cycle;
 
-:link-button{to="https://github.com/mouseless/do/releases" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/releases" text="See in GitHub"}
 
 #lead-time
 
@@ -168,7 +168,7 @@ Check out DO releases to see frequency of our delivery cycle;
 
 See how we build software incrementally;
 
-:link-button{to="https://github.com/mouseless/do/pulls?q=label%3APublish+is%3Aclosed" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/pulls?q=label%3APublish+is%3Aclosed" text="See in GitHub"}
 
 :::
 
@@ -209,13 +209,13 @@ communication, we maintain transparency at every development stage.
 
 :::columns
 
-#do-epic
+#baked-epic
 
 #### PRs
 
 Check out our live work right from GitHub;
 
-:link-button{to="https://github.com/mouseless/do/pulls" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/pulls" text="See in GitHub"}
 
 #learn-task
 
@@ -263,13 +263,13 @@ exchange, enhancing innovation across the community.
 
 :::columns
 
-#do-docs
+#baked-docs
 
-#### DO
+#### Baked
 
-Check out DO, our opinionated framework for .NET;
+Check out Baked, our opinionated framework for .NET;
 
-:link-button{to="https://do.mouseless.codes" text="See DO"}
+:link-button{to="https://baked.mouseless.codes" text="See Baked"}
 
 #learn-nuxt
 
