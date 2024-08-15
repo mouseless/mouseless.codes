@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <Header class="content" />
-    <article class="article">
-      <slot />
-    </article>
-    <Footer class="content" />
-  </div>
+  <Header class="content" />
+  <article class="article">
+    <slot />
+  </article>
+  <Footer class="content" />
 </template>
 <style lang="scss">
 .article {
