@@ -21,7 +21,7 @@ jobs:
           cd .theme/
           npm install
           npm run generate:production
-          touch .theme/.output/public/.nojekyll
+          touch .output/public/.nojekyll
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
