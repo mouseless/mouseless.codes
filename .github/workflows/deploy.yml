@@ -21,13 +21,13 @@ jobs:
           cd .theme/
           npm install
           npm run generate:production
-          touch .output/public/.nojekyll
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: docs
           path: .theme/.output/public
           if-no-files-found: error
+          include-hidden-files: true
   publish:
     needs: generate
     name: Publish
