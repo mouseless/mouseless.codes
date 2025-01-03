@@ -23,7 +23,7 @@ We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
 
 :br
 
-:link-button{to="/case-studies#yurtici-kargo" text="See more"}
+:link-button{to="/case-studies#yurtiçi-kargo" text="See more"}
 
 #image
 
