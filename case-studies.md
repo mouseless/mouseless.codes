@@ -78,7 +78,7 @@ grateful.
 
 #image
 
-![Gazel Running](images/case-studies/gazel-running.png)
+![Inventiv - Gazel - Website](images/case-studies/inventiv-gazel-website.png)
 
 :::
 
@@ -94,7 +94,7 @@ grateful.
 
 ## Forward
 
-We're building integration gateway server for [Forward][]'s web app to allow
+We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
 
 ::::bullet-list
@@ -131,7 +131,7 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 #image
 
-![Forward - HubSpot App](images/case-studies/forward-hubspot-app.png)
+![Forward - Gateway - ApiDoc](images/case-studies/forward-gateway-apidoc.png)
 
 :::
 
