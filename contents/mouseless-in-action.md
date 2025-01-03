@@ -7,4 +7,16 @@ Explore our live work through pull requests of public repositories in
 
 ::
 
-:pr-list{:repos='["baked", "learn-nuxt", "learn-dotnet", "mouseless.codes"]'}
+::pr-list
+---
+repos:
+  - baked
+  - brand
+  - governance
+  - learn-nuxt
+  - learn-dotnet
+  - learn-javascript
+  - mouseless.art
+  - mouseless.codes
+---
+::
