@@ -22,6 +22,8 @@ Don't like filling out forms in websites?
 
 Send an e-mail to [connect@mouseless.codes](mailto:connect@mouseless.codes).
 
+Or join our matrix space via [#collective:mouseless.org](https://matrix.to/#/#collective:mouseless.org)
+
 :::
 
 ::
