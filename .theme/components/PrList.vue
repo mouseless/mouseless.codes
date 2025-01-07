@@ -147,9 +147,11 @@ async function getPullRequests(state) {
   &__items {
     margin: 0;
     padding: 0;
+    max-width: 90%;
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1em;
   }
 
@@ -204,10 +206,6 @@ async function getPullRequests(state) {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-sm);
-
-    &__items {
-      flex-wrap: wrap;
-    }
 
     &__switcher {
       margin-left: 0;

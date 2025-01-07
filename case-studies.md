@@ -28,6 +28,60 @@ for our clients.
 
 #text
 
+:include{content="contents/tech-stacks/yk.md"}
+
+## Yurtiçi Kargo
+
+We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
+
+::::bullet-list
+
+- __Industry__: Logistics
+- __Project Management__: GitLab, Jira, Mattermost
+
+::::
+
+::::details
+
+:::::summary
+
+:link-button{text="Read more..."}
+
+:::::
+
+[Yurtiçi Kargo][] is one of Turkey's leading logistics companies, offering
+reliable and efficient parcel delivery services nationwide. With a strong focus
+on innovation, they continuously enhance their operations through technology and
+customer-focused solutions.
+
+Their internal dashboard portal was outdated, making it an ideal candidate for
+our services. We successfully kicked off the project to rewrite the software
+using modern technologies and a refreshed user interface.
+
+### Our history
+
+Our connection dates back to the late 2000s, when we developed Yurtiçi Kargo's
+first mobile application, along with many other projects.
+
+Yurtiçi Kargo's strong corporate culture demands high-quality software, shaping
+us over the years to balance excellence and efficiency.
+
+::::
+
+#image
+
+![Yurtiçi Kargo - MisPort](images/case-studies/yk-misport.png)
+
+:::
+
+::
+
+::block
+
+:::columns{:itemWidths='["100%", "100ch"]'}
+
+#text
+
 :include{content="contents/tech-stacks/inventiv.md"}
 
 ## Inventiv - Multinet Up
@@ -78,13 +132,13 @@ grateful.
 
 #image
 
-![Gazel Running](images/case-studies/gazel-running.png)
+![Inventiv - Gazel - Website](images/case-studies/inventiv-gazel-website.png)
 
 :::
 
 ::
 
-::block
+::block{color=black}
 
 :::columns{:itemWidths='["100%", "100ch"]'}
 
@@ -94,7 +148,7 @@ grateful.
 
 ## Forward
 
-We're building integration gateway server for [Forward][]'s web app to allow
+We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
 
 ::::bullet-list
@@ -131,15 +185,16 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 #image
 
-![Forward - HubSpot App](images/case-studies/forward-hubspot-app.png)
+![Forward - Gateway - ApiDoc](images/case-studies/forward-gateway-apidoc.png)
 
 :::
 
 ::
 
+:block{content="contents/lets-meet.md"}
+:block{content="contents/tedious-work.md" color=black}
+:block{content="contents/balancing-quality.md"}
 :block{content="contents/lets-meet.md" color=black}
-:block{content="contents/tedious-work.md"}
-:block{content="contents/balancing-quality.md" color=black}
 :block{content="contents/mouseless-in-action.md"}
 :block{content="contents/our-collective.md" color=black}
 :block{content="contents/lets-meet.md"}
@@ -153,9 +208,9 @@ relationship, we are happy to support Forwardians in achieving their goals.
 
 ::
 
-[Flopal]: https://flopal.com.tr/en-US/Home/Index
 [Forward]: https://dealforward.com/
 [Gazel]: https://gazel.io/
 [Inventiv]: https://inventiv.com.tr/en/home
 [Multinet Up]: https://multinet.com.tr/
 [Routine]: https://github.com/multinetinventiv/routine
+[Yurtiçi Kargo]: https://yurticikargo.com

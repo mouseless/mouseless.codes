@@ -7,7 +7,29 @@ for our clients.
 
 ::
 
-::slider{height="49ch"}
+::slider{height="45ch"}
+
+#yk
+
+:::columns{:itemWidths='["65%","35%"]'}
+
+#text
+
+:include{content="/contents/tech-stacks/yk.md"}
+
+#### Yurtiçi Kargo
+
+We are rewriting and maintaining [Yurtiçi Kargo][]'s internal dashboard portal.
+
+:br
+
+:link-button{to="/case-studies#yurtiçi-kargo" text="See more"}
+
+#image
+
+![Yurtiçi Kargo - MisPort](images/case-studies/yk-misport.png)
+
+:::
 
 #inventiv
 
@@ -28,13 +50,13 @@ an open source service framework [Routine][].
 
 #image
 
-![Gazel](/images/case-studies/gazel-running.png)
+![Inventiv - Gazel - Website](/images/case-studies/inventiv-gazel-website.png)
 
 :::
 
 #forward
 
-:::columns{:itemWidths='["58%","42%"]'}
+:::columns{:itemWidths='["65%","35%"]'}
 
 #text
 
@@ -42,7 +64,7 @@ an open source service framework [Routine][].
 
 #### Forward
 
-We're building integration gateway server for [Forward][]'s web app to allow
+We've built the integration gateway server for [Forward][]'s web app to allow
 their customers integrate with CRM and more.
 
 :br
@@ -51,7 +73,7 @@ their customers integrate with CRM and more.
 
 #image
 
-![Forward](/images/case-studies/forward-hubspot-app.png)
+![Forward - Gateway - ApiDoc](/images/case-studies/forward-gateway-apidoc.png)
 
 :::
 
@@ -61,3 +83,4 @@ their customers integrate with CRM and more.
 [Gazel]: https://gazel.io/
 [Inventiv]: https://inventiv.com.tr/en/home
 [Routine]: https://github.com/multinetinventiv/routine
+[Yurtiçi Kargo]: https://yurticikargo.com
