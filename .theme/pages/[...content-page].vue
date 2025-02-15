@@ -1,19 +1,15 @@
 <template>
-  <ContentDoc>
-    <template #not-found>
-      <ContentDoc path="/not-found" />
-    </template>
-  </ContentDoc>
+  <ContentRenderer v-if="page" :value="page" />
+  <ContentRenderer v-else :value="notFound" />
 </template>
 <script setup>
 import { joinURL } from "ufo";
-import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const route = useRoute();
-const store = usePageMetaStore();
 const runtimeConfig = useRuntimeConfig();
 
-const page = store.pageMeta?.find(page => page._path === route.path) ?? { };
+const page = await queryCollection("content").path(route.path).first();
+const notFound = await queryCollection("notFound").first();
 
 useSeoMeta({
   ogTitle: page["seo-title"] ?? page.title,

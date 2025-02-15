@@ -7,18 +7,17 @@
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
-const excludePath = ["/footer", "/header", "/not-found", "/readme"];
+const { data: menus } = await useAsyncData("menus", () =>
+  queryCollection("menus").andWhere(query => {
+    var groupQuery = query.where("position", "IS NOT NULL");
+    if(!import.meta.dev)
+    {
+      groupQuery.where("path", "<>", "/demo");
+    }
 
-if(!import.meta.dev) {
-  excludePath.push("/demo");
-}
-
-const { data: pageMeta } = await useAsyncData("pageMeta", () => queryContent()
-  .where({ _path: { $not: { $in: excludePath } } })
-  .only(["_path", "menu-title", "position", "seo-title", "seo-description", "seo-image"])
-  .sort({ position: 1, $numeric: true })
-  .find()
+    return groupQuery;
+  }).order("position", "ASC").all()
 );
 
-store.setPageMeta(pageMeta.value);
+store.setPageMeta(menus.value);
 </script>

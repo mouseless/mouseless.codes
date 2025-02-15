@@ -10,42 +10,27 @@ export default defineContentConfig({
       type: "page",
       source: "**/not-found.md"
     }),
-    pageData: defineCollection({
-      type: "data",
-      source: "**/*.md",
-      schema: z.object({
-        path: z.string(),
-        title: z.string(),
-        pages: z.array(z.string()),
-        position: z.number(),
-        sort: z.object(
-          {
-            by: z.string(),
-            order: z.string(),
-            version: z.boolean()
-          }
-        )
-      })
-    }),
-    sections: defineCollection({
+    menus: defineCollection({
       type: "data",
       source: {
-        include: "**/**/index.md"
+        include: "**/*.md",
+        exclude: [
+          "**/footer.md",
+          "**/header.md",
+          "**/not-found.md",
+          "**/readme.md"
+        ]
       },
       schema: z.object({
         path: z.string(),
         title: z.string(),
+        "menu-title": z.string(),
         position: z.number()
       })
     }),
-    sectionOrder: defineCollection({
-      type: "data",
-      source: {
-        include: "index.md"
-      },
-      schema: z.object({
-        sections: z.array(z.string())
-      })
+    footer: defineCollection({
+      type: "page",
+      source: "**/footer.md"
     })
   }
 });
