@@ -9,7 +9,7 @@ import { usePageMetaStore } from "~/store/pageMetaStore";
 const store = usePageMetaStore();
 const excludePath = ["/footer", "/header", "/not-found", "/readme"];
 
-if(!process.dev) {
+if(!import.meta.dev) {
   excludePath.push("/demo");
 }
 
