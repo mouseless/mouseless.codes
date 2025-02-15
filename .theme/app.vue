@@ -9,7 +9,7 @@ import { usePageMetaStore } from "~/store/pageMetaStore";
 const store = usePageMetaStore();
 const { data: menus } = await useAsyncData("menus", () =>
   queryCollection("menus").andWhere(query => {
-    var groupQuery = query.where("position", "IS NOT NULL");
+    const groupQuery = query.where("position", "IS NOT NULL");
     if(!import.meta.dev)
     {
       groupQuery.where("path", "<>", "/demo");
