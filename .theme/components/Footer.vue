@@ -8,7 +8,7 @@
         <NuxtLink to="/">
           <img class="mouseless logo mono short">
         </NuxtLink>
-        &copy; 2024, GC Brains.
+        &copy; 2025, GC Brains.
       </div>
       <div class="footer__menu">
         <NuxtLink
