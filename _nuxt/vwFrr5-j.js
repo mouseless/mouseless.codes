@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{f as r,z as t,p as s}from"./ciaMPvop.js";const c={};function n(e,a){return s(),r("code",null,[t(e.$slots,"default")])}const _=o(c,[["render",n]]);export{_ as default};

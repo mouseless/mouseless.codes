@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{f as e,n as s,h as c,F as a,p as l}from"./ciaMPvop.js";const t={__name:"ProseHr",setup(n){const r=a("block-child-color","dark");return(_,p)=>(l(),e("hr",{class:s(["ruler",`ruler--color_${c(r)}`])},null,2))}},f=o(t,[["__scopeId","data-v-e45ca778"]]);export{f as default};

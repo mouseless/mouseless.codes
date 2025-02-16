@@ -1,1 +1,0 @@
-import{_ as o}from"./DlAUqK2U.js";import{k as e,o as c,c as s,n as a,m as l}from"./ByoSPicl.js";const t={__name:"ProseHr",setup(n){const r=e("block-child-color","dark");return(_,m)=>(c(),s("hr",{class:a(["ruler",`ruler--color_${l(r)}`])},null,2))}},f=o(t,[["__scopeId","data-v-e45ca778"]]);export{f as default};

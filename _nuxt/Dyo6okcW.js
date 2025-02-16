@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{f as s,z as t,p as c}from"./ciaMPvop.js";const r={},n={class:"blockquote s s--pl_sm"};function a(e,_){return c(),s("blockquote",n,[t(e.$slots,"default",{},void 0,!0)])}const f=o(r,[["render",a],["__scopeId","data-v-d75ec558"]]);export{f as default};
