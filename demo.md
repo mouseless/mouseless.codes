@@ -238,7 +238,7 @@ _Italic Text_
 
 [External Link](http://mouseless.codes)
 
-![](images/case-studies/gazel-running.png)
+![](images/our-collective/unconventional.png)
 
 ## Slider
 
