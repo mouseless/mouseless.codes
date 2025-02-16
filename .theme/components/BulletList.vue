@@ -7,7 +7,7 @@
     ]"
   >
     <ul class="bullet-list__inner" :class="`bullet-list__inner--align_${align}`">
-      <slot :use="$slots.default" unwrap="ul" />
+      <slot :use="$slots.default" mdc-unwrap="ul" />
     </ul>
   </div>
 </template>
