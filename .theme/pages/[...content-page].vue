@@ -9,7 +9,6 @@ const route = useRoute();
 const runtimeConfig = useRuntimeConfig();
 
 const page = await queryCollection("content").path(route.path).first();
-console.log(page);
 const notFound = await queryCollection("notFound").first();
 
 useSeoMeta({
