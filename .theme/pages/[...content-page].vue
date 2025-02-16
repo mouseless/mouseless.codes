@@ -9,15 +9,16 @@ const route = useRoute();
 const runtimeConfig = useRuntimeConfig();
 
 const page = await queryCollection("content").path(route.path).first();
+console.log(page);
 const notFound = await queryCollection("notFound").first();
 
 useSeoMeta({
-  ogTitle: page["seo-title"] ?? page.title,
-  ogDescription: page["seo-description"],
-  ogImage: fullUrl(page["seo-image"]),
-  twitterTitle: page["seo-title"] ?? page.title,
-  twitterDescription: page["seo-description"],
-  twitterImage: fullUrl(page["seo-image"])
+  ogTitle: page.meta["seo-title"] ?? page.title,
+  ogDescription: page.meta["seo-description"],
+  ogImage: fullUrl(page.meta["seo-image"]),
+  twitterTitle: page.meta["seo-title"] ?? page.title,
+  twitterDescription: page.meta["seo-description"],
+  twitterImage: fullUrl(page.meta["seo-image"])
 });
 
 function fullUrl(path) {
