@@ -1,7 +1,9 @@
 <template>
-  <ContentRenderer :value="data" />
+  <ContentRenderer v-if="data" :value="data" />
 </template>
 <script setup>
+import { withLeadingSlash } from "ufo";
+
 const props = defineProps({
   content: {
     type: String,
@@ -10,5 +12,5 @@ const props = defineProps({
 });
 
 const path = props.content.replace(/\.md$/, "");
-const { data } = await useAsyncData(path, () => queryContent(path).findOne());
+const data = await queryCollection("content").path(withLeadingSlash(path)).first();
 </script>

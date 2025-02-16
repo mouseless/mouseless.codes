@@ -1,17 +1,6 @@
 <template>
   <article class="article">
-    <ContentQuery
-      v-slot="{ data: footer }"
-      find="one"
-      path="/"
-      :where="{
-        _path: { $eq: '/footer' },
-      }"
-    >
-      <ContentRenderer>
-        <ContentRendererMarkdown :value="footer" />
-      </ContentRenderer>
-    </ContentQuery>
+    <ContentRenderer v-if="content" :value="content"/>
   </article>
   <footer class="footer content f f--sm s s--mv_sm">
     <div class="footer__content">
@@ -19,17 +8,17 @@
         <NuxtLink to="/">
           <img class="mouseless logo mono short">
         </NuxtLink>
-        &copy; 2024, GC Brains.
+        &copy; 2025, GC Brains.
       </div>
       <div class="footer__menu">
         <NuxtLink
           v-for="menu in menus"
-          :key="menu['menu-title']"
-          :to="menu._path == $route.path ? '' : menu._path"
+          :key="menu['menu-title'] ?? menu.title"
+          :to="menu.path == $route.path ? '' : menu.path"
           class="footer__menu-item"
-          :class="{ 'footer__menu-item--selected': (menu._path == $route.path)}"
+          :class="{ 'footer__menu-item--selected': (menu.path == $route.path)}"
         >
-          {{ menu['menu-title'] }}
+          {{ menu['menu-title'] ?? menu.title }}
         </NuxtLink>
         <NuxtLink
           to="//brand.mouseless.codes"
@@ -46,7 +35,8 @@
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
-const menus = store.pageMeta.filter(m => !!m.position);
+const menus = store.pageMeta;
+const content = await queryCollection("footer").first();
 </script>
 <style lang="scss" scoped>
 .footer {

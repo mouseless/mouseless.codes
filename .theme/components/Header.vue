@@ -23,16 +23,16 @@
         </NuxtLink>
         <NuxtLink
           v-for="menu in menus"
-          :key="menu['menu-title']"
+          :key="menu['menu-title'] ?? menu.title"
           class="menu__item s s--mh_sm s--mv_xs s--pb_sm"
           :class="{
-            'menu__item--selected': menu._path === root,
-            'link': menu._path !== root
+            'menu__item--selected': menu.path === root,
+            'link': menu.path !== root
           }"
-          :to="menu._path == $route.path ? '' : menu._path"
+          :to="menu.path == $route.path ? '' : menu.path"
           @click="close"
         >
-          {{ menu['menu-title'] }}
+          {{ menu['menu-title'] ?? menu.title }}
         </NuxtLink>
       </nav>
       <nav class="header__menu">
@@ -57,7 +57,7 @@ import { useRoute } from "#imports";
 import { usePageMetaStore } from "~/store/pageMetaStore";
 
 const store = usePageMetaStore();
-const menus = store.pageMeta.filter(m => !!m.position);
+const menus = store.pageMeta;
 const route = useRoute();
 const root = computed(() => `/${route.path.split("/")[1]}`);
 const menuShown = ref(false);
