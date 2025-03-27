@@ -1,1 +1,0 @@
-import{_ as r}from"./DlAUqK2U.js";import{f as n,z as o,p as s}from"./ciaMPvop.js";const t={},a={class:"banner f f--xl"};function c(e,f){return s(),n("div",a,[o(e.$slots,"default")])}const d=r(t,[["render",c]]);export{d as default};
