@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{k as r,v as n,o as s}from"./FdLLbHUU.js";const t={},a={class:"banner f f--xl"};function c(e,f){return s(),r("div",a,[n(e.$slots,"default")])}const d=o(t,[["render",c]]);export{d as default};
