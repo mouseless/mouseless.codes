@@ -20,7 +20,7 @@
     "@nuxt/content": "^3.4.0",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint": "^1.2.0",
-    "@nuxtjs/mdc": "^0.16.1",
+    "@nuxtjs/mdc": "^0.17.2",
     "@pinia/nuxt": "^0.10.1",
     "eslint": "^9.23.0",
     "log-symbols": "^7.0.0",
