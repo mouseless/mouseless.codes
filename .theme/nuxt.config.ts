@@ -26,6 +26,9 @@ export default defineNuxtConfig({
         h5: false,
         h6: false
       }
+    },
+    experimental: {
+      nativeSqlite: true
     }
   },
   components: {
