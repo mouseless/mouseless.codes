@@ -16,26 +16,27 @@
     "local": "npx http-server .output/public -p 3000"
   },
   "devDependencies": {
-    "@mermaid-js/mermaid-cli": "^11.4.2",
-    "@nuxt/content": "^3.4.0",
+    "@mermaid-js/mermaid-cli": "11.6.0",
+    "@nuxt/content": "3.6.3",
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "^1.2.0",
-    "@nuxtjs/mdc": "^0.16.1",
-    "@pinia/nuxt": "^0.10.1",
-    "eslint": "^9.23.0",
-    "log-symbols": "^7.0.0",
-    "nuxt": "^3.16.1",
-    "pinia": "^3.0.1",
-    "sass": "^1.86.0",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "@nuxt/eslint": "1.5.2",
+    "@nuxtjs/mdc": "0.17.2",
+    "@pinia/nuxt": "0.11.2",
+    "better-sqlite3": "12.2.0",
+    "eslint": "9.31.0",
+    "log-symbols": "7.0.1",
+    "nuxt": "3.17.7",
+    "pinia": "3.0.3",
+    "sass": "1.89.0",
+    "vue": "3.5.17",
+    "vue-router": "4.5.1"
   },
   "overrides": {
     "@mermaid-js/mermaid-cli": {
-      "puppeteer": "^22.15.0"
+      "puppeteer": "22.15.0"
     }
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.34.7"
+    "@rollup/rollup-linux-x64-gnu": "4.34.7"
   }
 }
