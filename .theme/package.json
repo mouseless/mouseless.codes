@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "11.9.0",
-    "@nuxt/content": "3.6.3",
+    "@nuxt/content": "3.7.1",
     "@nuxt/devtools": "2.6.3",
     "@nuxt/eslint": "1.9.0",
     "@nuxtjs/mdc": "0.17.4",
