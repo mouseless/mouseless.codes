@@ -17,15 +17,15 @@
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "11.9.0",
-    "@nuxt/content": "3.6.3",
+    "@nuxt/content": "3.7.1",
     "@nuxt/devtools": "2.6.3",
     "@nuxt/eslint": "1.9.0",
     "@nuxtjs/mdc": "0.17.4",
     "@pinia/nuxt": "0.11.2",
-    "better-sqlite3": "12.2.0",
+    "better-sqlite3": "12.3.0",
     "eslint": "9.35.0",
     "log-symbols": "7.0.1",
-    "nuxt": "3.17.7",
+    "nuxt": "4.1.2",
     "pinia": "3.0.3",
     "sass": "1.92.1",
     "vue": "3.5.21",
@@ -35,8 +35,5 @@
     "@mermaid-js/mermaid-cli": {
       "puppeteer": "22.15.0"
     }
-  },
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.34.7"
   }
 }
