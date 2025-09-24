@@ -56,7 +56,6 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/mdc", "@pinia/nuxt"],
   nitro: {
     prerender: {
-      ignore: ["/demoe/error/non-existent-content"],
       routes: ["/not-found"]
     }
   },
