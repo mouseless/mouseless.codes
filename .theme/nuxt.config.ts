@@ -1,6 +1,5 @@
 export default defineNuxtConfig({
   app: {
-    baseURL: process.env.NUXT_PUBLIC_BASE_URL,
     head: {
       link: [
         {
@@ -54,10 +53,12 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: false
   },
-  generate: {
-    routes: ["/not-found"]
-  },
   modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/mdc", "@pinia/nuxt"],
+  nitro: {
+    prerender: {
+      routes: ["/not-found"]
+    }
+  },
   runtimeConfig: {
     public: {
       authority: "",
