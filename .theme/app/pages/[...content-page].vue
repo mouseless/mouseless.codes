@@ -11,6 +11,7 @@ const runtimeConfig = useRuntimeConfig();
 const page = await queryCollection("content").path(route.path).first();
 const notFound = await queryCollection("notFound").first();
 
+useHead({ title: page.title });
 useSeoMeta({
   ogTitle: page.meta["seo-title"] ?? page.title,
   ogDescription: page.meta["seo-description"],

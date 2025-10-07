@@ -5,7 +5,7 @@
 [docker]: https://docker.com/
 [dotnet]: https://dotnet.microsoft.com/
 [nuxt]: https://nuxt.com/
-[oracle]: https://https://www.oracle.com/
+[oracle]: https://www.oracle.com/
 [postgres]: https://www.postgresql.org/
 [primevue]: https://primevue.org/
 

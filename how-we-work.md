@@ -28,13 +28,13 @@ fixed-budget or a fixed-plan thanks to our fast response time.
 
 ```mermaid
 flowchart TB
-    R(Requirement\nEmerges)
+    R(Requirement<br>Emerges)
 
-    subgraph LC[Done in 3 days]
-        W(Work starts\nwith Draft PR)
-        S(Write specs\nas automated\ntests)
-        DR(Develop &\nCode Review)
-        C(Customer\nReviews)
+    subgraph LC[Done in 5 days]
+        W(Work starts<br>with Draft PR)
+        S(Write specs<br>as automated<br>tests)
+        DR(Develop &<br>Code Review)
+        C(Customer<br>Reviews)
 
         W --> S
         S --> DR
@@ -95,7 +95,7 @@ refactoring, ensuring adaptability without additional expenses.
 Check out one of our open source project, Baked, to see how we utilize test
 automation;
 
-:link-button{to="https://github.com/mouseless/baked/actions/runs/9302744692" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/actions/runs/18309280610" text="See in GitHub"}
 
 #net-upgrade
 
@@ -104,7 +104,7 @@ automation;
 We provide our customers with technology upgrades out of the box. Check out how
 we manage tech upgrades.
 
-:link-button{to="https://github.com/mouseless/learn-dotnet/pull/17" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/learn-nuxt/pull/68" text="See in GitHub"}
 
 #baked-net-upgrade
 
@@ -113,7 +113,7 @@ we manage tech upgrades.
 Using our headless opinionated .NET framework we manage to easily upgrade
 customer projects.
 
-:link-button{to="https://baked.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in Baked"}
+:link-button{to="https://baked.mouseless.codes/release-notes/v0-13#net-upgrade" text="See in Baked"}
 
 :::
 
@@ -134,7 +134,7 @@ setup, prioritizing efficiency and reliability.
 
 :::::bullet-list
 
-- 3 days of average lead-time
+- 5 days of average lead-time
 - No estimation, continuous planning
 - End to end CI/CD setup
 
@@ -223,7 +223,7 @@ Check out our live work right from GitHub;
 
 See how we care work descriptions and tasks;
 
-:link-button{to="https://github.com/mouseless/learn-css/pull/2" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/pull/312" text="See in GitHub"}
 
 :::
 
