@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{c as e,v as c,h as s,n as a,o as l}from"#entry";const t={__name:"ProseHr",setup(n){const r=a("block-child-color","dark");return(_,p)=>(l(),e("hr",{class:c(["ruler",`ruler--color_${s(r)}`])},null,2))}},f=o(t,[["__scopeId","data-v-e45ca778"]]);export{f as default};
