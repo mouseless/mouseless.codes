@@ -95,7 +95,7 @@ refactoring, ensuring adaptability without additional expenses.
 Check out one of our open source project, Baked, to see how we utilize test
 automation;
 
-:link-button{to="https://github.com/mouseless/baked/actions/runs/9302744692" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/actions/runs/18309280610" text="See in GitHub"}
 
 #net-upgrade
 
@@ -104,7 +104,7 @@ automation;
 We provide our customers with technology upgrades out of the box. Check out how
 we manage tech upgrades.
 
-:link-button{to="https://github.com/mouseless/learn-dotnet/pull/17" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/learn-nuxt/pull/68" text="See in GitHub"}
 
 #baked-net-upgrade
 
@@ -113,7 +113,7 @@ we manage tech upgrades.
 Using our headless opinionated .NET framework we manage to easily upgrade
 customer projects.
 
-:link-button{to="https://baked.mouseless.codes/release-notes/v0-6#net-upgrade" text="See in Baked"}
+:link-button{to="https://baked.mouseless.codes/release-notes/v0-13#net-upgrade" text="See in Baked"}
 
 :::
 
@@ -223,7 +223,7 @@ Check out our live work right from GitHub;
 
 See how we care work descriptions and tasks;
 
-:link-button{to="https://github.com/mouseless/learn-css/pull/2" text="See in GitHub"}
+:link-button{to="https://github.com/mouseless/baked/pull/312" text="See in GitHub"}
 
 :::
 
