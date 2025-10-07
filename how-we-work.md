@@ -28,13 +28,13 @@ fixed-budget or a fixed-plan thanks to our fast response time.
 
 ```mermaid
 flowchart TB
-    R(Requirement\nEmerges)
+    R(Requirement<br>Emerges)
 
     subgraph LC[Done in 3 days]
-        W(Work starts\nwith Draft PR)
-        S(Write specs\nas automated\ntests)
-        DR(Develop &\nCode Review)
-        C(Customer\nReviews)
+        W(Work starts<br>with Draft PR)
+        S(Write specs<br>as automated<br>tests)
+        DR(Develop &<br>Code Review)
+        C(Customer<br>Reviews)
 
         W --> S
         S --> DR

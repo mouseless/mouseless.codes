@@ -44,7 +44,7 @@ contact, managing all client communications and operations seamlessly. This
 ensures clear and efficient communication, allowing us to focus on delivering
 continuous software increments.
 
-We use our Discord server for daily communication. For detailed governance
+We use our Matrix server for daily communication. For detailed governance
 information, please see [github.com/mouseless/governance][].
 
 Development is split into small increments, each with an owner and a reviewer,
