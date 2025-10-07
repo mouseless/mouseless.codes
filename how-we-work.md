@@ -30,7 +30,7 @@ fixed-budget or a fixed-plan thanks to our fast response time.
 flowchart TB
     R(Requirement<br>Emerges)
 
-    subgraph LC[Done in 3 days]
+    subgraph LC[Done in 5 days]
         W(Work starts<br>with Draft PR)
         S(Write specs<br>as automated<br>tests)
         DR(Develop &<br>Code Review)
@@ -134,7 +134,7 @@ setup, prioritizing efficiency and reliability.
 
 :::::bullet-list
 
-- 3 days of average lead-time
+- 5 days of average lead-time
 - No estimation, continuous planning
 - End to end CI/CD setup
 
